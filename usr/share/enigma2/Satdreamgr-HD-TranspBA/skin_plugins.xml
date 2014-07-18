@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<skin>
+  <!-- Softwaremanager Menu -->
+  <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="DoubleTemplate" />
+    <panel name="KeyMenuTemplate" />
+    <panel name="ButtonTemplate_1S" />
+    <widget source="menu" render="Listbox" position="50,155" size="780,355" transparent="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (2, 2), size = (710, 24), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+						],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 45
+					}
+				</convert>
+    </widget>
+    <widget source="menu" render="Listbox" position="875,190" size="360,300" transparent="1" scrollbarMode="showNever" foregroundColor="un11aaff" selectionDisabled="1">
+      <convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0, 0), size = (373, 300), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
+						],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 300
+					}
+				</convert>
+    </widget>
+    <widget source="status" render="Label" position="51,512" zPosition="10" size="780,25" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" foregroundColor="un1f771f" backgroundColor="transpBA" />
+  </screen>
+  <screen name="PluginManager" title="Plugin manager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_3S" />
+    <widget source="list" render="Listbox" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (51,[
+                MultiContentEntryText(pos = (5,1), size = (660,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                MultiContentEntryText(pos = (5,27), size = (660,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+                MultiContentEntryPixmapAlphaTest(pos = (700,0), size = (48,48), png = 5), # index 5 is the status pixmap
+                MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (780,2), png = 6), # index 6 is the div pixmap
+                ]),
+                "category": (40,[
+                MultiContentEntryText(pos = (5,0), size = (775,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                MultiContentEntryText(pos = (5,22), size = (775,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+                MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (780,2), png = 3), # index 3 is the div pixmap
+                ])
+                },
+                "fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
+                "itemHeight": 53
+                }
+      </convert>
+    </widget>
+    <widget source="status" render="Label" position="250,530" size="780,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
+  </screen>
+  <screen name="PluginManagerInfo" title="Plugin manager activity" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_2S" />
+    <widget source="list" render="Listbox" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+                {"template": [
+                        MultiContentEntryPixmapAlphaTest(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
+                        MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+                        MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+                    ],
+                "fonts": [gFont("Regular",22),gFont("Regular",17)],
+                "itemHeight": 75
+                }
+      </convert>
+    </widget>
+    <widget source="status" render="Label" position="250,530" size="780,25" backgroundColor="transpBA" transparent="1" font="Regular;22" halign="center" foregroundColor="un11aaff" />
+  </screen>
+  <screen name="PluginManagerHelp" title="Plugin manager help" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_1S" />
+    <widget source="list" render="Listbox" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+                {"template": [
+                        MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+                        MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+                        MultiContentEntryPixmapAlphaTest(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
+                    ],
+                "fonts": [gFont("Regular",22),gFont("Regular",17)],
+                "itemHeight": 75
+                }
+      </convert>
+    </widget>
+    <widget source="status" render="Label" position="250,530" size="780,25" backgroundColor="transpBA" transparent="1" font="Regular;22" halign="center" foregroundColor="un11aaff" />
+  </screen>
+  <screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" title="Plugin Details" backgroundColor="transparent">
+    <panel name="GrandeTemplateA" />
+    <panel name="ButtonTemplate_2S" />
+    <widget name="statuspic" position=" 710,635" size=" 48,48" alphatest="on" backgroundColor="transpBA" />
+    <widget source="author" render="Label" position="250,94" size="783,28" zPosition="10" font="Regular;24" backgroundColor="transpBA" transparent="1" foregroundColor="jeaune" halign="center" />
+    <widget name="detailtext" position="250,155" size="780,260" font="Regular;20" backgroundColor="transpBA" transparent="1" />
+    <widget name="screenshot" position="center,417" size="352,151" alphatest="on" halign="left" backgroundColor="transpBA" />
+    <widget name="divpic" position="0,0" size="0,0" />
+  </screen>
+  <!-- Ipkg installer -->
+  <screen name="IpkgInstaller" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_RGBS" />
+    <eLabel text="Install extensions" position="250,94" size="783,28" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget name="list" position="250,155" size="780,360" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+    <widget source="introduction" render="Label" position="250,530" size="780,25" backgroundColor="transpBA" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="un11aaff" font="Regular;24" halign="center" />
+  </screen>
+  <screen name="Ipkg" title="Installing Software" position="0,0" size="1280,720" flags="wfNoBorder" zPosition="2" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <widget name="package" position="285,155" size="710,67" backgroundColor="transpBA" transparent="1" font="Regular;20" />
+    <widget name="status" position="285,250" size="710,125" backgroundColor="transpBA" transparent="1" font="Regular;20" />
+    <widget name="activityslider" position="center,514" size="600,30" transparent="1" borderWidth="1" borderColor="foreground" alphatest="on" zPosition="2" backgroundColor="transpBA" />
+    <widget name="slider" position="center,439" size="600,17" zPosition="2" transparent="1" backgroundColor="transpBA" />
+  </screen>
+  <!-- Choose upgrade source -->
+  <screen name="IPKGMenu" title="Select IPKG source" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_2S" />
+    <widget name="filelist" position="250,155" size="780,360" font="Regular;22" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+  </screen>
+  <!-- Edit upgrade source -->
+  <screen name="IPKGSource" title="IPKG source" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_2S" />
+    <widget name="text" position="250,250" size="780,46" font="Regular;23" zPosition="3" transparent="1" backgroundColor="transpBA" foregroundColor="un11aaff" />
+  </screen>
+  <!-- Softwaremanager -->
+  <screen flags="wfNoBorder" name="SoftwareManagerSetup" position="0,0" size="1280,720" title="SoftwareManager setup" backgroundColor="transparent">
+    <panel name="DoubleTemplate" />
+    <panel name="ButtonTemplate_2S" />
+    <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="50,155" size="780,355" transparent="1" backgroundColor="transpBA" />
+    <widget source="introduction" render="Label" position="875,190" size="360,300" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" />
+  </screen>
+  <!-- Backup -->
+  <screen name="BackupScreen" title="Backup is running" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <widget name="config" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
+  </screen>
+  <!-- title="Select files/folders to backup" -->
+  <screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="DoubleTemplate" />
+    <panel name="ButtonTemplate_3S" />
+    <ePixmap alphatest="blend" position="875,190" size="360,300" zPosition="1" />
+    <widget name="checkList" position="50,155" size="780,355" backgroundColor="transpBA" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+  </screen>
+  <!-- Packet Manager -->
+  <screen name="PacketManager" title="IPKG upgrade" position="0,0" size="1285,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_2S" />
+    <panel name="ButtonTemplate_RGS" />
+    <widget source="list" render="Listbox" position="250,155" size="780,365" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+        {"template": [
+        MultiContentEntryText(pos = (5,1), size = (480,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+        MultiContentEntryText(pos = (5,27), size = (480,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+        MultiContentEntryPixmapAlphaTest(pos = (700,0), size = (48,48), png = 4), # index 5 is the status pixmap
+        MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (780,2), png = 5), # index 6 is the div pixmap
+        ],
+        "fonts": [gFont("Regular",22),gFont("Regular",18)],
+        "itemHeight": 52
+        }
+      </convert>
+    </widget>
+  </screen>
+  <!-- Packet Manager -->
+  <screen name="UpdatePlugin" position="0,0" size="1280,724" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <widget source="package" render="Label" position="340,235" size="600,28" backgroundColor="transpBA" transparent="1" font="Regular;24" />
+    <widget source="status" render="Label" position="340,290" size="600,56" backgroundColor="transpBA" transparent="1" font="Regular;24" />
+    <widget name="slider" position="338,363" size="601,17" zPosition="2" transparent="1" backgroundColor="transpBA" />
+    <widget name="activityslider" position="338,393" foregroundColor="un99dd" size="601,17" transparent="1" borderWidth="1" />
+  </screen>
+  <!-- Restore screen -->
+  <screen name="RestoreScreen" title="Restore is running" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <widget name="config" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
+  </screen>
+  <!-- Restore -->
+  <screen name="RestoreMenu" title="Restore Backups" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_3S" />
+    <widget name="filelist" position="250,155" size="780,360" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+  </screen>
+  <!-- ImageWizard -->
+  <screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplateA" />
+    <eLabel text="Welcome..." position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget name="text" transparent="1" position="250,155" size="780,180" font="Regular;22" backgroundColor="transpBA" halign="left" foregroundColor="un11aaff" />
+    <widget source="list" render="Listbox" position="250,350" size="780,100" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <widget name="config" position="250,450" size="780,100" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="235,641" size="30,30" alphatest="on" />
+    <widget name="languagetext" position="270,644" size="320,26" font="Regular;18" backgroundColor="transpBA" />
+    <!-- <widget name="wizard" pixmap="skin_default/wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on" />-->
+    <widget name="rc" position="1054,71" size="154,517" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" backgroundColor="transpBA" />
+  </screen>
+  <screen name="SoftwareManagerInfo" title="SoftwareManager information" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_1S" />
+    <widget source="list" render="Listbox" position="250,155" size="780,360" scrollbarMode="showOnDemand" transparent="1" selectionDisabled="0">
+      <convert type="TemplatedMultiContent">
+            {"template": [
+                    MultiContentEntryText(pos = (0, 0), size = (720, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                    ],
+            "fonts": [gFont("Regular", 20),gFont("Regular", 20)],
+            "itemHeight": 25
+            }
+        </convert>
+    </widget>
+    <widget source="introduction" render="Label" position="250,530" size="780,50" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" />
+  </screen>
+  <!--Devices Manager-->
+  <screen name="HddSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <widget source="menu" render="Listbox" position="350,155" size="570,360" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (65, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (405, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 50
+				}
+			</convert>
+    </widget>
+  </screen>
+  <!--Devices Manager -->
+  <screen name="HddPartitions" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <widget name="label_disk" position="350,519" font="Regular;20" size="570,22" transparent="1" backgroundColor="transpBA" foregroundColor="un11aaff" halign="center" />
+    <widget source="menu" render="Listbox" position="350,155" size="570,360" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (65, 10), size = (425, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 48
+				}
+			</convert>
+    </widget>
+  </screen>
+  <!-- Devices Manager-->
+  <screen name="HddInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <widget name="config" itemHeight="35" position="250,155" size="710,500" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="model" itemHeight="35" position="250,205" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="serial" itemHeight="35" position="250,245" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="firmware" itemHeight="35" position="250,285" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="cylinders" itemHeight="35" position="250,325" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="heads" itemHeight="35" position="250,365" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="sectors" itemHeight="35" position="250,405" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="readDisk" itemHeight="35" position="250,445" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="readCache" itemHeight="35" position="250,485" size="710,460" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="temp" itemHeight="35" position="250,525" size="710,460" font="Regular;22" crollbarMode="showOnDemand" transparent="1" zPosition="9" />
+  </screen>
+  <!-- Devices Manager-->
+  <screen name="HddFastRemove" position="0,0" size="1280,720" flags="wfNoBorder" transparent="1" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <eLabel text="Hard Drive Fast Umount" position="350,516" size="570,26" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="un11aaff" />
+    <widget source="menu" render="Listbox" position="350,155" size="570,360" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (65, 3), size = (190, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (165, 27), size = (290, 38), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 18)],
+					"itemHeight": 50
+				}
+			</convert>
+    </widget>
+  </screen>
+  <!-- Devices Manager-->
+  <screen name="HddMount" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <widget name="menu" itemHeight="35" position="350,155" size="570,360" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+  </screen>
+  <!-- AutoBackup screen -->
+  <screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_3S" />
+    <widget name="checkList" position="350,155" size="570,360" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
+  </screen>
+  <screen name="Config" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <panel name="KeyMenuTemplate" />
+    <widget name="config" position="center,155" size="570,250" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
+    <widget name="status" position="center,409" size="570,115" font="Regular;16" transparent="1" backgroundColor="transpBA" />
+    <widget name="statusbar" position="center,530" size="570,20" font="Regular;18" transparent="1" backgroundColor="transpBA" />
+  </screen>
+  <!-- Cdinfo -->
+  <screen name="CDInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_RGBS" />
+    <widget source="info" render="Label" position="350,155" size="570,48" font="Regular;20" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" />
+    <widget name="config" position="350,210" size="570,240" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
+    <widget source="info2" render="Label" position="350,460" size="570,120" font="Regular;20" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" />
+  </screen>
+  <!-- Epgimport screen -->
+  <screen name="EPGImportConfig" position="0,0" size="1280,720" title="EPG Import" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <ePixmap pixmap="Satdreamgr-HD-transpBA/buttons/key_info.png" alphatest="on" position="65,643" size="42,33" />
+    <widget name="config" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
+    <widget name="statusbar" position="251,457" size="780,22" font="Regular;20" transparent="1" zPosition="3" backgroundColor="transpBA" />
+    <widget name="status" position="250,418" size="780,24" font="Regular;20" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="un11aaff" />
+  </screen>
+  <screen name="EPGImportLog" position="0,0" size="1280,720" title="EPG Import Log" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <widget name="list" position="250,155" size="780,360" font="Regular;18" transparent="1" />
+  </screen>
+  <screen name="EPGImportSources" position="0,0" size="1280,720" title="EPG Import Sources" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GrandeTemplate" />
+    <panel name="ButtonTemplate_2" />
+    <widget name="list" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand" />
+  </screen>
+  <!-- Osd3dsetup -->
+  <screen name="OSD3DSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="PetiteTemplateA" />
+  <panel name="ButtonTemplate_2" />
+    <eLabel text="OSD3 Setup" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+
+  <widget name="config" position="350,155" size="570,360" transparent="1" />
+</screen>
+  <!-- OpenWebIf -->
+  <screen name="OpenWebifConfig" position="0,0" size="1280,720" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_2" />
+    <widget name="config" position="350,155" size="570,360" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
+    <widget name="lab1" position="350,521" halign="center" size="570,28" zPosition="1" font="Regular;24" valign="center" transparent="1" backgroundColor="transpBA" foregroundColor="un11aaff" />
+  </screen>
+  <!-- AC3LipSyncSetup  -->
+  <screen name="AC3LipSyncSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplateA" />
+    <panel name="ButtonTemplate_2" />
+    <eLabel text="AC3 Lip Sync Setup" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget name="config" scrollbarMode="showOnDemand" position="350,155" size="570,360" font="Regular;22" transparent="1" />
+    <widget name="PluginInfo" position="350,520" size="570,20" zPosition="4" font="Regular;18" transparent="1" foregroundColor="un11aaff" backgroundColor="transpBA" halign="center" />
+  </screen>
+  <!-- Picture-Player -->
+  <screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="PetiteTemplate" />
+  <panel name="ButtonTemplate_4S" />
+  <widget name="thn" position="14,356" size="330,196" alphatest="on" transparent="1" backgroundColor="black" />
+  <widget name="filelist" position="350,155" size="570,360" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
+  <widget name="label" position="522,590" size="260,25" transparent="1" font="Regular;20" />
+</screen>
+  <screen name="Pic_Exif" title="Info" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="GrandeTemplate" />
+  <panel name="ButtonTemplate_1S" />
+  <widget source="menu" render="Listbox" position="250,155" size="780,385" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Satdreamgr-HD/sel/sel35.png">
+    <convert type="TemplatedMultiContent">
+                {"template": [  MultiContentEntryText(pos = (5,7),size = (250,30),flags = RT_HALIGN_LEFT,text = 0),
+                MultiContentEntryText(pos = (260,7),size = (430,30),flags = RT_HALIGN_LEFT,text = 1)],
+                "fonts": [gFont("Regular",20)],
+                "itemHeight": 35 }
+      </convert>
+  </widget>
+</screen>
+  <screen name="Pic_Setup" title="Settings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="GrandeTemplate" />
+  <panel name="ButtonTemplate_2" />
+  <widget name="config" position="250,155" size="780,385" itemHeight="29" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
+</screen>
+  <screen name="Pic_Full_View" position="0,0" size="1280,720" title="Picture" flags="wfNoBorder">
+    <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="black" />
+    <widget name="pic" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
+    <eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="black" transparent="1" />
+    <widget name="point" position="27,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
+    <widget name="play_icon" position="30,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
+    <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2" />
+  </screen>
+</skin>
