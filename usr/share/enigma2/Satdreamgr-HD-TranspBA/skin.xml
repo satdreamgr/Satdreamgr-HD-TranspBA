@@ -505,7 +505,7 @@
       <convert type="TranspBACryptoInfo">BetaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" render="FixedLabel" text="B" font="Regular; 20" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
       <convert type="TranspBACryptoInfo">BetaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -514,7 +514,7 @@
       <convert type="TranspBACryptoInfo">IrdCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" render="FixedLabel" text="I" font="Regular; 20" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
       <convert type="TranspBACryptoInfo">IrdEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -523,7 +523,7 @@
       <convert type="TranspBACryptoInfo">SecaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" render="FixedLabel" text="S" font="Regular; 20" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
       <convert type="TranspBACryptoInfo">SecaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -541,7 +541,7 @@
       <convert type="TranspBACryptoInfo">NagraCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" render="FixedLabel" text="N" font="Regular; 20" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
       <convert type="TranspBACryptoInfo">NagraEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -550,7 +550,7 @@
       <convert type="TranspBACryptoInfo">CrwCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" render="FixedLabel" text="CW" font="Regular; 20" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
       <convert type="TranspBACryptoInfo">CrwEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -559,7 +559,7 @@
       <convert type="TranspBACryptoInfo">NdsCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" render="FixedLabel" text="ND" font="Regular; 20" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
       <convert type="TranspBACryptoInfo">NdsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -568,10 +568,19 @@
       <convert type="TranspBACryptoInfo">ConaxCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" render="FixedLabel" text="CO" font="Regular; 20" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <eLabel text="BI" font="Regular; 20" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="foreground" transparent="1" valign="center" zPosition="3" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="BI">
+      <convert type="TranspBACryptoInfo">BissCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="BI" font="Regular; 20" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+      <convert type="TranspBACryptoInfo">BissEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>    
     <!-- TunerInfo start -->
     <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S:" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
@@ -846,6 +855,15 @@
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <eLabel text="BI" font="Regular; 20" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="foreground" transparent="1" valign="center" zPosition="3" />
+    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="BI">
+      <convert type="TranspBACryptoInfo">BissCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="BI" font="Regular; 20" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+      <convert type="TranspBACryptoInfo">BissEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>        
     <!-- TunerInfo start -->
     <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S:" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
@@ -1191,7 +1209,7 @@
     <widget name="channel" position="865,155" size="380,30" transparent="0" font="Regular;22" halign="center" foregroundColor="jeaune" backgroundColor="transpBA" />
     <widget name="datetime" position="863,305" size="161,30" transparent="0" font="Regular;22" halign="center" backgroundColor="transpBA" />
     <widget name="duration" position="1024,306" size="122,30" transparent="0" font="Regular;22" halign="center" backgroundColor="transpBA" />
-    <widget name="epg_description" position="40,155" size="780,365" transparent="1" scrollbarMode="showNever" font="Regular;22" />
+    <widget name="epg_description" position="40,155" size="780,365" transparent="1" font="Regular;22" />
     <widget source="session.Event_Now" render="Label" position="1148,307" size="95,30" transparent="0" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right" backgroundColor="transpBA">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>

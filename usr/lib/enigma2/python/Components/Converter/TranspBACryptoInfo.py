@@ -16,14 +16,17 @@ class TranspBACryptoInfo(Poll, Converter, object):
     BETACRYPT = 5
     CRWCRYPT = 6
     NDSCRYPT = 7
-    IRDECM = 8
-    SECAECM = 9
-    NAGRAECM = 10
-    VIAECM = 11
-    CONAXECM = 12
-    BETAECM = 13
-    CRWECM = 14
-    NDSECM = 15
+    BISSCRYPT = 8  
+    IRDECM = 9
+    SECAECM = 10
+    NAGRAECM = 11
+    VIAECM = 12
+    CONAXECM = 13
+    BETAECM = 14
+    CRWECM = 15
+    NDSECM = 16
+    BISSECM = 17   
+    
 
     def __init__(self, type):
         Converter.__init__(self, type)
@@ -46,6 +49,8 @@ class TranspBACryptoInfo(Poll, Converter, object):
             self.type = self.CRWCRYPT
         elif type == 'NdsCrypt':
             self.type = self.NDSCRYPT
+        elif type == 'BissCrypt':
+            self.type = self.BISSCRYPT           
         elif type == 'IrdEcm':
             self.type = self.IRDECM
         elif type == 'SecaEcm':
@@ -62,6 +67,8 @@ class TranspBACryptoInfo(Poll, Converter, object):
             self.type = self.CRWECM
         elif type == 'NdsEcm':
             self.type = self.NDSECM
+        elif type == 'BissEcm':
+            self.type = self.BISSECM           
 
     @cached
     def getBoolean(self):
@@ -96,6 +103,10 @@ class TranspBACryptoInfo(Poll, Converter, object):
             if self.type == self.NDSCRYPT:
                 caemm = self.getCrypt('09', searchcaids)
                 return caemm
+            if self.type == self.BISSCRYPT:
+                caemm = self.getCrypt('26', searchcaids)
+                return caemm               
+                
             if self.type == self.IRDECM:
                 if currentcaid == '06':
                     return True
@@ -120,6 +131,10 @@ class TranspBACryptoInfo(Poll, Converter, object):
             elif self.type == self.NDSECM:
                 if currentcaid == '09':
                     return True
+            elif self.type == self.BISSECM:
+                if currentcaid == '26':
+                    return True                    
+                    
         else:
             self.poll_enabled = False
         return False
