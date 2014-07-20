@@ -9,45 +9,39 @@
     </widget>
     <widget name="config" position="350,155" size="570,200" zPosition="1" transparent="1" backgroundColor="transpBA" />
     <widget name="info" position="350,386" size="570,190" font="Fixed;18" transparent="1" zPosition="1" backgroundColor="transpBA" halign="left" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,645" size="30,30" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,645" size="30,30" transparent="0" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/blue.png" position="970,645" size="30,30" />
-    <widget name="key_red" position="185,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
-    <widget name="key_green" position="460,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
-    <widget name="key_blue" position="1010,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,683" size="250,14" transparent="0" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/blue.png" position="970,683" size="250,14" />
+    <widget name="key_red" position="145,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
+    <widget name="key_green" position="420,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
+    <widget name="key_blue" position="969,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
   </screen>
   <!-- Archive Explorer -->
   <screen name="PluginStart" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="PetiteTemplate" />
-  
-  <widget name="myliste" itemHeight="35" font="Regular;26" position="355,155" size="570,385" scrollbarMode="showOnDemand" transparent="1" zPosition="4" halign="left" valign="center" backgroundColor="transpBA" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,645" size="30,30" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,645" size="30,30" transparent="0" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/blue.png" position="970,645" size="30,30" />
-  <widget name="key_red" position="185,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
-  <widget name="key_green" position="460,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
-  <widget name="key_blue" position="1010,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
-</screen>
+    <panel name="PetiteTemplate" />
+    <widget name="myliste" itemHeight="35" font="Regular;26" position="355,155" size="570,385" scrollbarMode="showOnDemand" transparent="1" zPosition="4" halign="left" valign="center" backgroundColor="transpBA" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,683" size="250,14" transparent="0" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/blue.png" position="970,683" size="250,14" />
+    <widget name="key_red" position="145,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
+    <widget name="key_green" position="420,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
+    <widget name="key_blue" position="970,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
+  </screen>
   <!-- Archive Explorer -->
   <screen name="TextExit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplate" />
     <widget name="filedata" position="350,155" size="570,360" transparent="1" halign="center" foregroundColor="un11aaff" valign="center" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,645" size="30,30" />
-    <eLabel position="188,647" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" />
-    <widget name="key_red" position="185,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <widget name="key_red" position="144,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
   </screen>
   <!-- Archive Explorer -->
-  <screen flags="wfNoBorder" name="PictureExplorer" position="0,0" size="1280,720" title="Picture-Explorer">
-    <widget name="Picture" position="0,0" size="1280,720" zPosition="1" alphatest="on" transparent="1" />
-    <widget name="State" font="Regular;20" halign="center" position="0,650" size="1280,70" backgroundColor="un1080911" foregroundColor="selectedFG" transparent="0" zPosition="9" />
-  </screen>
-  <!-- Archive Explorer -->
-  <screen name="AboutScreen" position="0,0" size="1280,720" title="About Explorer" backgroundColor="transparent">
+  <screen name="AboutScreen" position="0,0" size="1280,720" title="About Explorer" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PetiteTemplate" />
     <widget name="text" position="350,155" size="570,360" font="Regular;24" transparent="1" halign="center" noWrap="1" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,645" size="30,30" />
-    <eLabel position="188,647" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" />
-    <widget name="key_red" position="185,645" size="220,60" backgroundColor="black" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <widget name="key_red" position="144,630" size="250,60" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
   </screen>
   <!-- GreekStream-->
   <screen name="GSMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -81,17 +75,17 @@
   </screen>
   <!-- Remove Opkg-->
   <screen name="Removeopkg" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="GrandeTemplate" />
-  <widget name="list" itemHeight="35" font="Regular;22" position="267,155" size="750,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,630" size="30,30" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,630" size="30,30" transparent="0" />
-  <widget name="key_red" position="185,630" size="220,48" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
-  <widget name="key_green" position="460,630" size="700,48" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="left" valign="top" />
-</screen>
+    <panel name="GrandeTemplate" />
+    <widget name="list" itemHeight="35" font="Regular;22" position="267,155" size="750,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="520,683" size="250,14" transparent="0" />
+    <widget name="key_red" position="145,630" size="250,48" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
+    <widget name="key_green" position="460,630" size="380,48" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="top" />
+  </screen>
   <!-- Settings-->
   <screen name="SDG_Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplateA" />
-    <eLabel text="Setting Enigma2" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Enigma2" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="list" render="Listbox" position="375,155" size="530,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -103,14 +97,13 @@
 					}
 				</convert>
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,630" size="30,30" />
-    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="282,630" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
   <!-- Settings-->
   <screen name="SDG_Morpheus" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplateA" />
-    <eLabel text="Setting Morpheus" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Morpheus" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="list" render="Listbox" position="355,155" size="570,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
@@ -122,14 +115,13 @@
 					}
 				</convert>
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,630" size="30,30" />
-    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="282,630" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
   <!-- Settings-->
   <screen name="SDG_Satdreamgr" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplateA" />
-    <eLabel text="Setting Cyrus" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Cyrus" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="list" render="Listbox" position="375,155" size="530,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
@@ -141,14 +133,13 @@
 					}
 				</convert>
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,630" size="30,30" />
-    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="282,630" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
   <!-- Settings-->
   <screen name="SDG_Vhannibal" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplateA" />
-    <eLabel text="Setting Vhannibal" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Vhannibal" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="list" render="Listbox" position="375,155" size="530,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
@@ -160,9 +151,8 @@
 					}
 				</convert>
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,630" size="30,30" />
-    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="282,630" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
   <!-- Settings-->
   <screen name="SDG_ActionBox" position="center,center" size="560,70" title=" ">
@@ -174,10 +164,10 @@
     <panel name="PetiteTemplateA" />
     <eLabel text="Swap Menu" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="list" itemHeight="35" font="Regular;22" position="375,155" size="530,80" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,630" size="40,32" zPosition="1" alphatest="blend" />
-    <eLabel position="151,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="286,630" size="40,32" zPosition="1" alphatest="blend" />
-    <eLabel position="331,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="494,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
   <screen name="SwapInfo" position="0,0" size="1280,720" title="Swap info and delete" backgroundColor="transparent">
     <panel name="GrandeTemplateA" />
@@ -188,27 +178,27 @@
     <eLabel text="Used:" font="Regular;17" position="852,160" size="100,20" transparent="1" backgroundColor="transpBA" />
     <eLabel text="Priority:" font="Regular;17" position="952,160" size="100,20" transparent="1" backgroundColor="transpBA" />
     <widget name="list" position="267,185" size="750,100" scrollbarMode="showOnDemand" zPosition="2" transparent="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,630" size="40,32" zPosition="1" alphatest="blend" />
-    <eLabel position="148,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/yellow.png" position="275,630" size="40,32" zPosition="1" alphatest="blend" />
-    <eLabel position="318,630" size="130,32" font="Regular;22" text="Delete" transparent="1" zPosition="2" backgroundColor="transpBA" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="429,630" size="250,32" font="Regular;22" text="Delete" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
   <screen name="SwapCreate" position="0,0" size="1280,720" title="Swap create" backgroundColor="transparent">
     <panel name="PetiteTemplateA" />
     <eLabel text="Swap create" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="375,155" size="530,50" zPosition="2" transparent="1" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,630" size="40,32" zPosition="1" alphatest="blend" />
-    <eLabel position="150,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="287,630" size="40,32" zPosition="1" alphatest="blend" />
-    <eLabel position="332,630" size="100,32" font="Regular;22" text="Create" transparent="1" zPosition="2" backgroundColor="transpBA" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="427,630" size="250,32" font="Regular;22" text="Create" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
   <screen name="SDGBackup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0" zPosition="-1">
     <panel name="PetiteTemplateA" />
     <widget name="menu" position="375,154" size="530,385" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
     <eLabel text="SDGBackup Dreambox Enigma2" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,640" size="30,30" />
-    <eLabel position="188,640" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,640" size="30,30" transparent="0" />
-    <eLabel position="460,640" size="220,32" font="Regular;22" text="OK" transparent="1" zPosition="2" backgroundColor="transpBA" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
+    <eLabel position="494,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
 </skin>
