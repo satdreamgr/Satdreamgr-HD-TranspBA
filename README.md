@@ -1,1 +1,1 @@
-test
+Skin SatDreamGr-HD-TranspBA
