@@ -523,157 +523,157 @@
     <widget source="global.CurrentTime" render="Label" position="1062,598" size="110,30" backgroundColor="transpBA" transparent="0" zPosition="8" font="LCD; 30" halign="right" valign="top">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1168,598" zPosition="8" size="30,20" font="LCD; 20" halign="left" valign="top" transparent="0" backgroundColor="transpBA" foregroundColor="un11aaff">
+    <widget source="global.CurrentTime" render="Label" position="1173,598" zPosition="8" size="30,20" font="LCD; 20" halign="left" valign="top" transparent="0" backgroundColor="transpBA" foregroundColor="un11aaff">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="790,643" size="430,20" transparent="0" zPosition="5" backgroundColor="transpBA" font="Regular;18">
       <convert type="TranspBAExtraInfo">All</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="71,525" size="110,20" transparent="1" zPosition="1" foregroundColor="un1f771f" backgroundColor="transpBA" font="Regular; 18" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="780,525" size="110,20" transparent="1" zPosition="1" foregroundColor="un1f771f" backgroundColor="transpBA" font="Regular; 18" valign="center" halign="left">
       <convert type="TranspBAExtraInfo">VideoCodec</convert>
     </widget>
     <!-- Crypt Info -->
-    <eLabel text="B" font="Regular; 18" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="B">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/beg.png" render="Pixmap" position="220,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/bej.png" render="Pixmap" font="Regular; 18" position="220,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">BetaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="B" font="Regular; 18" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/bev.png" render="Pixmap" font="Regular; 18" position="220,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">BetaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="I" font="Regular; 18" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="I">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/irg.png" render="Pixmap" position="190,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/irj.png" render="Pixmap" font="Regular; 18" position="190,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">IrdCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="I" font="Regular; 18" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/irv.png" render="Pixmap" font="Regular; 18" position="190,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">IrdEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="S" font="Regular; 18" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="S">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/seg.png" render="Pixmap" position="130,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/sej.png" render="Pixmap" font="Regular; 18" position="130,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">SecaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="S" font="Regular; 18" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/sev.png" render="Pixmap" font="Regular; 18" position="130,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">SecaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="V" font="Regular; 18" position="855,525" size="18,22" halign="center" backgroundColor="transpBA" transparent="1" valign="center" zPosition="3" foregroundColor="grey" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="855,525" size="18,22" halign="center" backgroundColor="transpBA" zPosition="4" foregroundColor="yellow" transparent="1" valign="center" text="V">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/vig.png" render="Pixmap" position="100,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/vij.png" render="Pixmap" font="Regular; 18" position="100,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">ViaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="V" font="Regular; 18" position="855,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/viv.png" render="Pixmap" font="Regular; 18" position="100,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">ViaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="N" font="Regular; 18" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="N">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/nag.png" render="Pixmap" position="160,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/naj.png" render="Pixmap" font="Regular; 18" position="160,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">NagraCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="N" font="Regular; 18" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/nav.png" render="Pixmap" font="Regular; 18" position="160,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">NagraEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="CW" font="Regular; 18" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="CW">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cwg.png" render="Pixmap" position="250,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cwj.png" render="Pixmap" font="Regular; 18" position="250,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">CrwCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="CW" font="Regular; 18" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cwv.png" render="Pixmap" font="Regular; 18" position="250,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">CrwEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="ND" font="Regular; 18" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="ND">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/ndg.png" render="Pixmap" position="280,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/ndj.png" render="Pixmap" font="Regular; 18" position="280,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">NdsCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="ND" font="Regular; 18" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/ndv.png" render="Pixmap" font="Regular; 18" position="280,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">NdsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="CO" font="Regular; 18" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="CO">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cog.png" render="Pixmap" position="310,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/coj.png" render="Pixmap" font="Regular; 18" position="310,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">ConaxCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="CO" font="Regular; 18" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cov.png" render="Pixmap" font="Regular; 18" position="310,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="BI" font="Regular; 18" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="BI">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/big.png" render="Pixmap" position="70,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/biJ.png" render="Pixmap" position="70,525" size="28,25" zPosition="4" backgroundColor="transpBA" alphatest="blend" transparent="0">
       <convert type="TranspBACryptoInfo">BissCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="BI" font="Regular; 18" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/biv.png" render="Pixmap" position="70,525" size="28,25" zPosition="5" backgroundColor="transpBA" alphatest="blend" transparent="0">
       <convert type="TranspBACryptoInfo">BissEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- TunerInfo start -->
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S:" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1020,525" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1020,525" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1020,525" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!--TUNER STATUS A -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a_no.png" size="30,25" position="1065,525" zPosition="1" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a_akt.png" size="30,25" position="1065,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunera.png" size="28,25" position="1090,525" zPosition="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a_akt.png" size="28,25" position="1090,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a.png" size="30,25" position="1065,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a.png" size="28,25" position="1090,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!--TUNER STATUS B  -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b_no.png" size="30,25" position="1095,525" zPosition="1" transparent="0" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b_akt.png" size="30,25" position="1095,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunerb.png" size="28,25" position="1120,525" zPosition="1" transparent="0" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b_akt.png" size="28,25" position="1120,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b.png" size="30,25" position="1095,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b.png" size="28,25" position="1120,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- TUNER STATUS C -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c_no.png" size="30,25" position="1125,525" zPosition="1" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c_akt.png" size="30,25" position="1135,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunerc.png" size="28,25" position="1150,525" zPosition="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c_akt.png" size="28,25" position="1150,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c.png" size="30,25" position="1125,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c.png" size="28,25" position="1150,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- TUNER STATUS D -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d_no.png" size="30,25" position="1155,525" zPosition="1" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d_akt.png" size="30,25" position="1155,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunerd.png" size="28,25" position="1180,525" zPosition="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d_akt.png" size="28,25" position="1180,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d.png" size="30,25" position="1155,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d.png" size="28,25" position="1180,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
@@ -732,7 +732,8 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_crypt_on.png" position="center,525" size="16,21" zPosition="1" alphatest="blend">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/crypt_of.png" position="340,525" size="38,27" zPosition="2" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/crypt_on.png" position="340,525" size="38,27" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -762,7 +763,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/rec.png" position="50,485" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget render="VideoSize" source="session.CurrentService" position="185,525" size="110,20" font="Regular;18" backgroundColor="secondBG" foregroundColor="un1f771f" transparent="1" zPosition="1" />
+    <widget render="VideoSize" source="session.CurrentService" position="900,525" size="110,20" font="Regular;18" backgroundColor="secondBG" foregroundColor="un1f771f" transparent="1" zPosition="1" />
   </screen>
   <!-- second infobar -->
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
@@ -823,157 +824,157 @@
     <widget source="global.CurrentTime" render="Label" position="1062,598" size="110,30" backgroundColor="transpBA" transparent="0" zPosition="8" font="LCD; 30" halign="right" valign="top">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1168,598" zPosition="8" size="30,20" font="LCD; 20" halign="left" valign="top" transparent="0" backgroundColor="transpBA" foregroundColor="un11aaff">
+    <widget source="global.CurrentTime" render="Label" position="1173,598" zPosition="8" size="30,20" font="LCD; 20" halign="left" valign="top" transparent="0" backgroundColor="transpBA" foregroundColor="un11aaff">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="790,643" size="430,20" transparent="0" zPosition="5" backgroundColor="transpBA" font="Regular;18">
       <convert type="TranspBAExtraInfo">All</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="71,525" size="110,20" transparent="1" zPosition="1" foregroundColor="un1f771f" backgroundColor="transpBA" font="Regular; 18" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="780,525" size="110,20" transparent="1" zPosition="1" foregroundColor="un1f771f" backgroundColor="transpBA" font="Regular; 18" valign="center" halign="left">
       <convert type="TranspBAExtraInfo">VideoCodec</convert>
     </widget>
     <!-- Crypt Info -->
-    <eLabel text="B" font="Regular; 18" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="B">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/beg.png" render="Pixmap" position="220,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/bej.png" render="Pixmap" font="Regular; 18" position="220,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">BetaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="B" font="Regular; 18" position="795,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/bev.png" render="Pixmap" font="Regular; 18" position="220,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">BetaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="I" font="Regular; 18" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="I">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/irg.png" render="Pixmap" position="190,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/irj.png" render="Pixmap" font="Regular; 18" position="190,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">IrdCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="I" font="Regular; 18" position="815,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/irv.png" render="Pixmap" font="Regular; 18" position="190,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">IrdEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="S" font="Regular; 18" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="S">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/seg.png" render="Pixmap" position="130,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/sej.png" render="Pixmap" font="Regular; 18" position="130,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">SecaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="S" font="Regular; 18" position="835,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/sev.png" render="Pixmap" font="Regular; 18" position="130,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">SecaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="V" font="Regular; 18" position="855,525" size="18,22" halign="center" backgroundColor="transpBA" transparent="1" valign="center" zPosition="3" foregroundColor="grey" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="855,525" size="18,22" halign="center" backgroundColor="transpBA" zPosition="4" foregroundColor="yellow" transparent="1" valign="center" text="V">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/vig.png" render="Pixmap" position="100,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/vij.png" render="Pixmap" font="Regular; 18" position="100,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">ViaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="V" font="Regular; 18" position="855,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/viv.png" render="Pixmap" font="Regular; 18" position="100,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">ViaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="N" font="Regular; 18" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="N">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/nag.png" render="Pixmap" position="160,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/naj.png" render="Pixmap" font="Regular; 18" position="160,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">NagraCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="N" font="Regular; 18" position="875,525" size="18,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/nav.png" render="Pixmap" font="Regular; 18" position="160,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">NagraEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="CW" font="Regular; 18" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="CW">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cwg.png" render="Pixmap" position="250,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cwj.png" render="Pixmap" font="Regular; 18" position="250,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">CrwCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="CW" font="Regular; 18" position="895,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cwv.png" render="Pixmap" font="Regular; 18" position="250,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">CrwEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="ND" font="Regular; 18" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="ND">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/ndg.png" render="Pixmap" position="280,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/ndj.png" render="Pixmap" font="Regular; 18" position="280,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">NdsCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="ND" font="Regular; 18" position="935,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/ndv.png" render="Pixmap" font="Regular; 18" position="280,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">NdsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="CO" font="Regular; 18" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="CO">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cog.png" render="Pixmap" position="310,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/coj.png" render="Pixmap" font="Regular; 18" position="310,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="4" transparent="0">
       <convert type="TranspBACryptoInfo">ConaxCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="CO" font="Regular; 18" position="975,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/cov.png" render="Pixmap" font="Regular; 18" position="310,525" size="28,25" backgroundColor="transpBA" alphatest="blend" zPosition="5" transparent="0">
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="BI" font="Regular; 18" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" valign="center" zPosition="3" />
-    <widget source="session.CurrentService" render="FixedLabel" font="Regular; 18" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="yellow" zPosition="4" transparent="1" valign="center" text="BI">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/big.png" render="Pixmap" position="70,525" size="28,25" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/biJ.png" render="Pixmap" position="70,525" size="28,25" zPosition="4" backgroundColor="transpBA" alphatest="blend" transparent="0">
       <convert type="TranspBACryptoInfo">BissCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="BI" font="Regular; 18" position="1015,525" size="40,22" halign="center" backgroundColor="transpBA" foregroundColor="green" zPosition="5" transparent="0" valign="center">
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/cryptoinfo/biv.png" render="Pixmap" position="70,525" size="28,25" zPosition="5" backgroundColor="transpBA" alphatest="blend" transparent="0">
       <convert type="TranspBACryptoInfo">BissEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- TunerInfo start -->
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S:" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1020,525" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1020,525" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="307,524" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1020,525" size="65,20" font="Regular; 18" foregroundColor="uncccccc" backgroundColor="transpBA" transparent="0" halign="left">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!--TUNER STATUS A -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a_no.png" size="30,25" position="1065,525" zPosition="1" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a_akt.png" size="30,25" position="1065,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunera.png" size="28,25" position="1090,525" zPosition="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a_akt.png" size="28,25" position="1090,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a.png" size="30,25" position="1065,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_a.png" size="28,25" position="1090,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!--TUNER STATUS B  -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b_no.png" size="30,25" position="1095,525" zPosition="1" transparent="0" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b_akt.png" size="30,25" position="1095,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunerb.png" size="28,25" position="1120,525" zPosition="1" transparent="0" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b_akt.png" size="28,25" position="1120,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b.png" size="30,25" position="1095,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_b.png" size="28,25" position="1120,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- TUNER STATUS C -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c_no.png" size="30,25" position="1125,525" zPosition="1" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c_akt.png" size="30,25" position="1135,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunerc.png" size="28,25" position="1150,525" zPosition="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c_akt.png" size="28,25" position="1150,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c.png" size="30,25" position="1125,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_c.png" size="28,25" position="1150,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- TUNER STATUS D -->
-    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d_no.png" size="30,25" position="1155,525" zPosition="1" />
-    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d_akt.png" size="30,25" position="1155,525" zPosition="2" alphatest="blend">
+    <ePixmap alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/tuner/tunerd.png" size="28,25" position="1180,525" zPosition="1" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d_akt.png" size="28,25" position="1180,525" zPosition="2" alphatest="blend">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d.png" size="30,25" position="1155,525" zPosition="3" alphatest="blend">
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/tuner/icon_d.png" size="28,25" position="1180,525" zPosition="3" alphatest="blend">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
@@ -1032,7 +1033,8 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_crypt_on.png" position="center,525" size="16,21" zPosition="1" alphatest="blend">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/crypt_of.png" position="340,525" size="38,27" zPosition="2" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/crypt_on.png" position="340,525" size="38,27" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1062,7 +1064,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/rec.png" position="50,485" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget render="VideoSize" source="session.CurrentService" position="185,525" size="110,20" font="Regular;18" backgroundColor="secondBG" foregroundColor="un1f771f" transparent="1" zPosition="1" />
+    <widget render="VideoSize" source="session.CurrentService" position="900,525" size="110,20" font="Regular;18" backgroundColor="secondBG" foregroundColor="un1f771f" transparent="1" zPosition="1" />
     <!-- +++++ -->
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="678,65" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1197,65" size="32,32" transparent="0" zPosition="8" alphatest="on" />
