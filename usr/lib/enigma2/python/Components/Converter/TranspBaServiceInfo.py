@@ -3,6 +3,7 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from enigma import eServiceCenter, eServiceReference, iServiceInformation
 from xml.etree.cElementTree import parse
+from Tools.Directories import fileCheck
 
 class TranspBaServiceInfo(Converter, object):
     SERVICENAME = 0
@@ -96,7 +97,9 @@ class TranspBaServiceInfo(Converter, object):
         self.radio_list = self.getListFromRef(eServiceReference('1:7:2:0:0:0:0:0:0:0:(type == 2) FROM BOUQUET "bouquets.radio" ORDER BY bouquet'))
 
     def readSatXml(self):
-        satXml = parse('/etc/tuxbox/satellites.xml').getroot()
+        satellitesFilename = fileCheck('/etc/tuxbox/satellites.xml') or fileCheck('/etc/tuxbox/satellites.xml')
+        satXml = parse(satellitesFilename).getroot()        
+        
         if satXml is not None:
             for sat in satXml.findall('sat'):
                 name = sat.get('name') or None
