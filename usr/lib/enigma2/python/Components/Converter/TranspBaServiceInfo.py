@@ -97,7 +97,7 @@ class TranspBaServiceInfo(Converter, object):
         self.radio_list = self.getListFromRef(eServiceReference('1:7:2:0:0:0:0:0:0:0:(type == 2) FROM BOUQUET "bouquets.radio" ORDER BY bouquet'))
 
     def readSatXml(self):
-        satellitesFilename = fileCheck('/etc/tuxbox/satellites.xml') or fileCheck('/etc/tuxbox/satellites.xml')
+        satellitesFilename = fileCheck('/etc/enigma2/satellites.xml') or fileCheck('/etc/tuxbox/satellites.xml')
         satXml = parse(satellitesFilename).getroot()        
         
         if satXml is not None:
