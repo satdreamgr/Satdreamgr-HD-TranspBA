@@ -68,7 +68,7 @@
     <color name="ListboxBackground" color="transpBA" />
     <color name="ListboxForeground" color="foreground" />
     <color name="ListboxSelectedBackground" color="transpBA" />
-    <color name="ListboxSelectedForeground" color="white" />
+    <color name="ListboxSelectedForeground" color="un11aaff" />
     <color name="ListboxMarkedBackground" color="un253658a4" />
     <color name="ListboxMarkedForeground" color="unff0000" />
     <color name="ListboxMarkedAndSelectedBackground" color="un800000" />
@@ -441,10 +441,38 @@
   </screen>
   <!-- Screen Menus -->
   <screen name="Menu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
-    <panel name="MenuTemplate" />
+    <panel name="MenuTemplate" />    
   </screen>
   <screen name="menu_mainmenu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="5" position="100,center" size="198,250">
+      <convert type="MenuEntryCompare">cam_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>   
+      <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/media-player.png" zPosition="5" position="100,center" size="198,250">
+      <convert type="MenuEntryCompare">media_player</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>      
+     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/timer.png" zPosition="5" position="100,center" size="198,250">
+      <convert type="MenuEntryCompare">timer_edit</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>       
+      <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information.png" zPosition="5" position="100,center" size="198,250">
+      <convert type="MenuEntryCompare">info_screen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>      
+     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/plugins.png" zPosition="5" position="100,center" size="198,250">
+      <convert type="MenuEntryCompare">plugin_selection</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>        
+     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby.png" zPosition="5" position="100,center" size="198,250">
+      <convert type="MenuEntryCompare">standby_restart_list</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>      
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup.png" zPosition="5" position="100,center" size="198,250">
+      <convert type="MenuEntryCompare">setup_selection</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>     
   </screen>
   <screen name="menu_information" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
@@ -463,6 +491,8 @@
   </screen>
   <screen name="cam_setup" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
+   
+    
   </screen>
   <!-- InfoBars -->
   <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
