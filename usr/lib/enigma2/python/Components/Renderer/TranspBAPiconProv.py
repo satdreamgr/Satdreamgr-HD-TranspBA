@@ -81,7 +81,7 @@ class TranspBAPiconProv(Renderer):
        
            
         if (animok == True):
-            pathanim = '/usr/share/enigma2/eins/anim/a'
+            pathanim = '/usr/share/enigma2/Satdreamgr-HD-TranspBA/spinner/a'
             self.pics = []
             for x in range(self.slide):
                 self.pics.append(LoadPixmap(((pathanim + str(x)) + '.png')))

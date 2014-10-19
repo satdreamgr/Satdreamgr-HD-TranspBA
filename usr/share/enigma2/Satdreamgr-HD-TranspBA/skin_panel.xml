@@ -159,39 +159,18 @@
     <widget alphatest="on" name="logo" position="10,10" size="48,48" transparent="1" zPosition="2" backgroundColor="background" />
     <widget font="Regular;20" halign="center" name="message" position="10,10" size="538,48" valign="center" foregroundColor="foreground" backgroundColor="background" />
   </screen>
-  <!-- Swap Manager-->
-  <screen name="swap_manager" position="0,0" size="1280,720" title="Swap Menu" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="PetiteTemplateA" />
-    <eLabel text="Swap Menu" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="list" itemHeight="35" font="Regular;22" position="375,155" size="530,80" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
-    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
-    <eLabel position="494,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+  <!-- Swap Manager -->
+  <screen name="SystemToolsSwap" title="Auto DiseqC" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_2" />
+    <widget name="entries" itemHeight="35" font="Regular;22" position="center,155" size="530,385" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
   </screen>
-  <screen name="SwapInfo" position="0,0" size="1280,720" title="Swap info and delete" backgroundColor="transparent">
-    <panel name="GrandeTemplateA" />
-    <eLabel text="Swap info and delete" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <eLabel text="Filename:" font="Regular;17" position="269,160" size="250,20" transparent="1" backgroundColor="transpBA" />
-    <eLabel text="Type:" font="Regular;17" position="656,160" size="100,20" transparent="1" backgroundColor="transpBA" />
-    <eLabel text="Size:" font="Regular;17" position="755,160" size="100,20" transparent="1" backgroundColor="transpBA" />
-    <eLabel text="Used:" font="Regular;17" position="852,160" size="100,20" transparent="1" backgroundColor="transpBA" />
-    <eLabel text="Priority:" font="Regular;17" position="952,160" size="100,20" transparent="1" backgroundColor="transpBA" />
-    <widget name="list" position="267,185" size="750,100" scrollbarMode="showOnDemand" zPosition="2" transparent="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
-    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
-    <eLabel position="429,630" size="250,32" font="Regular;22" text="Delete" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+  <screen name="SystemToolsTextBox" title="Auto DiseqC" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_2" />
+    <widget name="text" itemHeight="35" font="Regular;22" position="center,155" size="530,385" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
   </screen>
-  <screen name="SwapCreate" position="0,0" size="1280,720" title="Swap create" backgroundColor="transparent">
-    <panel name="PetiteTemplateA" />
-    <eLabel text="Swap create" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="config" position="375,155" size="530,50" zPosition="2" transparent="1" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="104,683" size="250,14" zPosition="1" alphatest="blend" />
-    <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
-    <eLabel position="427,630" size="250,32" font="Regular;22" text="Create" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
-  </screen>
+    <!-- SDG Backup-->
   <screen name="SDGBackup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0" zPosition="-1">
     <panel name="PetiteTemplateA" />
     <widget name="menu" position="375,154" size="530,385" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
