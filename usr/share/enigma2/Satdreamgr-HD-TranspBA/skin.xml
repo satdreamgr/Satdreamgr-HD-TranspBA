@@ -1005,7 +1005,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_off.png" position="1185,483" size="24,24" alphatest="blend" zPosition="1">
-      <convert type="AlwaysTrue" />
+      <convert type="TranspBAAlwaysTrue" />
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
@@ -1369,7 +1369,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_off.png" position="1185,483" size="24,24" alphatest="blend" zPosition="1">
-      <convert type="AlwaysTrue" />
+      <convert type="TranspBAAlwaysTrue" />
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
