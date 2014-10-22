@@ -302,7 +302,7 @@
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="128,73" size="145,21" zPosition="2" backgroundColor="transpBA" foregroundColor="foreground" font="Regular;20" borderWidth="2" valign="top" halign="left">
-      <convert type="sdgExtraInfo">ResolutionString</convert>
+      <convert type="TranspBAExtraInfo">ResolutionString</convert>
     </widget>
   </screen>
   <!-- Templates -->
@@ -926,7 +926,7 @@
     <widget source="session.CurrentService" render="ChannelNumber" position="89,485" size="85,20" backgroundColor="transpBA" foregroundColor="uncccccc" noWrap="1" transparent="0" zPosition="1" font="Regular;18">
     </widget>
     <widget source="session.CurrentService" render="Label" position="783,668" size="430,20" backgroundColor="transpBA" font="Regular;18" transparent="0" zPosition="3" halign="center" foregroundColor="un1f771f">
-      <convert type="TranspBaServiceInfo">SatName</convert>
+      <convert type="TranspBAServName">Satellite</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="289,481" size="702,30" font="Regular; 26" backgroundColor="transpBA" foregroundColor="jeaune" zPosition="2" noWrap="1" transparent="0" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
@@ -963,7 +963,7 @@
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_iptv_on.png" position="793,523" size="40,25" alphatest="blend" zPosition="2" transparent="0">
-      <convert type="SDGServiceInfo">IsStream</convert>
+      <convert type="TranspBAServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_sub_on.png" position="452,523" size="40,25" zPosition="1" alphatest="blend" transparent="0">
@@ -1226,7 +1226,7 @@
     <widget source="session.CurrentService" render="ChannelNumber" position="89,485" size="85,20" backgroundColor="transpBA" foregroundColor="uncccccc" noWrap="1" transparent="0" zPosition="1" font="Regular;18">
     </widget>
     <widget source="session.CurrentService" render="Label" position="783,668" size="430,20" backgroundColor="transpBA" font="Regular;18" transparent="0" zPosition="3" halign="center" foregroundColor="un1f771f">
-      <convert type="TranspBaServiceInfo">SatName</convert>
+      <convert type="TranspBAServName">Satellite</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="289,481" size="702,30" font="Regular; 26" backgroundColor="transpBA" foregroundColor="jeaune" zPosition="2" noWrap="1" transparent="0" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
@@ -1263,7 +1263,7 @@
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_iptv_on.png" position="793,523" size="40,25" alphatest="blend" zPosition="2" transparent="0">
-      <convert type="SDGServiceInfo">IsStream</convert>
+      <convert type="TranspBAServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_sub_on.png" position="452,523" size="40,25" zPosition="1" alphatest="blend" transparent="0">
@@ -1379,7 +1379,7 @@
   </screen>
   <!-- Volume -->
   <screen name="Volume" title="Volume" position="110,234" size="51,230" zPosition="1" flags="wfNoBorder">
-    <widget font="Regular;18" foregroundColor="white" render="SdgvolumeText" source="global.CurrentTime" halign="center" position="5,203" size="40,20" />
+    <widget font="Regular;18" foregroundColor="white" render="TranspBAvolumeText" source="global.CurrentTime" halign="center" position="5,203" size="40,20" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/vol_box.png" position="2,1" size="49,217" alphatest="blend" transparent="1" />
     <widget name="Volume" pixmap="Satdreamgr-HD-TranspBA/infobar/volumeslider.png" position="12,35" zPosition="1" orientation="orBottomToTop" size="41,152" transparent="1" />
   </screen>
@@ -2511,7 +2511,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Label" position="114,656" size="145,21" zPosition="2" backgroundColor="transpBA" foregroundColor="foreground" font="Regular;20" borderWidth="2" valign="top" halign="left">
-      <convert type="sdgExtraInfo">ResolutionString</convert>
+      <convert type="TranspBAExtraInfo">ResolutionString</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="840,35" size="215,37" backgroundColor="transpBA" transparent="0" zPosition="2" font="Regular; 26" valign="center" halign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format:%a %d-%m-%Y</convert>
