@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
   <!-- Softwaremanager Menu -->
-  <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+   <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="DoubleTemplate" />
     <panel name="KeyMenuTemplate" />
     <panel name="ButtonTemplate_1S" />
     <widget source="menu" render="Listbox" position="50,155" size="780,355" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 					{"template": [
-							MultiContentEntryText(pos = (2, 2), size = (710, 24), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+							MultiContentEntryText(pos = (10, 2), size = (710, 24), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 						],
 					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 45
+					"itemHeight": 35
 					}
 				</convert>
     </widget>
@@ -27,22 +27,23 @@
     </widget>
     <widget source="status" render="Label" position="51,512" zPosition="10" size="780,25" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" foregroundColor="un1f771f" backgroundColor="transpBA" />
   </screen>
+  <!-- Manager extensions enigma -->
   <screen name="PluginManager" title="Plugin manager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <panel name="ButtonTemplate_3S" />
-    <widget source="list" render="Listbox" position="250,155" size="780,360" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="list" render="Listbox" position="250,155" size="780,350" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
                 {"templates":
-                {"default": (51,[
+                {"default": (70,[
                 MultiContentEntryText(pos = (5,1), size = (660,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-                MultiContentEntryText(pos = (5,27), size = (660,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-                MultiContentEntryPixmapAlphaTest(pos = (700,0), size = (48,48), png = 5), # index 5 is the status pixmap
-                MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (780,2), png = 6), # index 6 is the div pixmap
+                MultiContentEntryText(pos = (5,40), size = (660,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+                MultiContentEntryPixmapAlphaTest(pos = (700,10), size = (52,52), png = 5), # index 5 is the status pixmap
+                MultiContentEntryPixmapAlphaTest(pos = (0,69), size = (780,2), png = 6), # index 6 is the div pixmap
                 ]),
-                "category": (40,[
+                "category": (70,[
                 MultiContentEntryText(pos = (5,0), size = (775,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-                MultiContentEntryText(pos = (5,22), size = (775,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-                MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (780,2), png = 3), # index 3 is the div pixmap
+                MultiContentEntryText(pos = (5,40), size = (775,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+                MultiContentEntryPixmapAlphaTest(pos = (0,69), size = (780,2), png = 3), # index 3 is the div pixmap
                 ])
                 },
                 "fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
@@ -52,6 +53,9 @@
     </widget>
     <widget source="status" render="Label" position="250,530" size="780,25" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
   </screen>
+  
+  
+  
   <screen name="PluginManagerInfo" title="Plugin manager activity" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <panel name="ButtonTemplate_2S" />
