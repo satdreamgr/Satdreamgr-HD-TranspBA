@@ -436,7 +436,6 @@
     <eLabel position="28,623" zPosition="-12" size="1224,74" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
     <eLabel position="28,29" zPosition="-12" size="1224,40" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
     <eLabel position="30,31" zPosition="-11" size="1220,36" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap position="1081,96" size="24,24" transparent="0" pixmap="Satdreamgr-HD-TranspBA/icons/clock.png" zPosition="5" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="883,106" size="170,26" backgroundColor="transpBA" transparent="1" font="Regular; 24" valign="center" halign="center">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
@@ -503,7 +502,10 @@
     <eLabel position="335,75" zPosition="-11" size="610,520" backgroundColor="transpBA" transparent="0" />
     <eLabel position="333,598" zPosition="-12" size="614,74" backgroundColor="white" transparent="0" />
     <eLabel position="335,600" zPosition="-11" size="610,70" backgroundColor="transpBA" transparent="0" />
-    <ePixmap position="599,604" size="24,24" transparent="0" pixmap="Satdreamgr-HD-TranspBA/icons/clock.png" zPosition="5" alphatest="on" />
+    <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/clock.png" position="599,604" size="24,24" alphatest="blend" zPosition="10">
+      <convert type="TranspBAAlwaysTrue" />
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
     <widget source="title" render="Label" position="370,95" size="544,28" backgroundColor="transpBA" transparent="1" zPosition="2" font="Regular; 26" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
     <eLabel backgroundColor="uncccccc" position="center,580" size="400,1" zPosition="0" />
     <widget source="global.CurrentTime" render="Label" position="338,637" size="170,26" backgroundColor="transpBA" transparent="1" font="Regular; 24" valign="center" halign="center">
@@ -1522,6 +1524,10 @@
     <panel name="DoubleTemplateB" />
     <panel name="ButtonTemplate_4" />
     <panel name="KeyMenuInfoTemplate" />
+    <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/clock.png" position="1076,97" size="24,24" alphatest="blend" zPosition="10">
+      <convert type="TranspBAAlwaysTrue" />
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
     <widget source="ServiceEvent" render="Label" position="870,140" zPosition="1" size="370,56" font="Regular; 20" halign="center" valign="center" transparent="0" backgroundColor="transpBA">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -1589,7 +1595,7 @@
   <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <panel name="ButtonTemplate_4" />
-    <widget name="list" position="262,158" size="754,379" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+    <widget name="list" position="245,155" size="790,392" scrollbarMode="showOnDemand" transparent="1" zPosition="3" foregroundColorServiceNotAvail="grey2" serviceItemHeight="28" serviceNumberFont="Regular;19" serviceNameFont="Regular;22" serviceInfoFont="Regular;20" colorServiceDescription="un11aaff" colorServiceDescriptionSelected="jeaune" colorEventProgressbar="jeaune" colorEventProgressbarSelected="jeaune" colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="white" />
   </screen>
   <!-- EPG Stuff LISTE -->
   <screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -2232,8 +2238,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="GrandeTemplate" />
     <panel name="ButtonTemplate_4S" />
     <widget name="config" position="250,155" size="780,340" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" font="Regular; 18" />
-    <widget source="current_address" render="Label" position="250,496" size="780,25" transparent="1" zPosition="10" font="Regular; 22" halign="center" valign="center" foregroundColor="un11aaff" />
-    <widget source="fixed_address" render="Label" position="250,528" size="780,25" zPosition="10" transparent="1" font="Regular; 22" halign="left" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
+    <widget source="current_address" render="Label" position="250,496" size="780,25" transparent="1" zPosition="10" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
+    <widget source="fixed_address" render="Label" position="250,528" size="780,25" zPosition="10" transparent="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
   </screen>
   <!-- Input Device Configuration -->
   <screen name="InputDeviceSelection" title="Select input device" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
