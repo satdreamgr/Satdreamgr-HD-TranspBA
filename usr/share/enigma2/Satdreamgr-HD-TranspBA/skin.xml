@@ -359,9 +359,9 @@
   </screen>
   <!-- Screen Tres Grande Template -->
   <screen name="TresGrandeTemplate" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel position="0,0" zPosition="-11" size="1280,720" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <widget source="Title" render="Label" position="250,35" size="783,28" backgroundColor="secondBG" transparent="1" zPosition="-3" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
-    <eLabel position="0,625" zPosition="-3" size="1280,70" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <eLabel position="0,0" zPosition="-11" size="1280,720" transparent="0" font="Regular; 0" />
+    <widget source="Title" render="Label" position="250,35" size="783,28" backgroundColor="background" transparent="1" zPosition="-3" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <eLabel position="0,625" zPosition="0" size="1280,70" backgroundColor="black" transparent="0" font="Regular; 0" foregroundColor="transparent" />
   </screen>
   <!-- Screen Double Template -->
   <screen name="DoubleTemplate" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
@@ -1648,11 +1648,15 @@
   </screen>
   <!-- EPGSelectionMulti -->
   <screen flags="wfNoBorder" name="EPGSelectionMulti" position="0,0" size="1280,720" title="EPG Selection" backgroundColor="transparent">
-    <panel name="DoubleTemplate" />
+    <panel name="DoubleTemplateA" />
     <panel name="ButtonTemplate_4" />
     <panel name="KeyMenuInfoTemplate" />
-    <widget enableWrapAround="1" name="list" itemHeight="26" position="40,198" scrollbarMode="showOnDemand" size="780,338" transparent="1" zPosition="2" />
-    <widget source="Event" render="Label" position="875,207" size="362,347" font="Regular;20" foregroundColor="foreground" backgroundColor="background" transparent="1">
+    <widget source="Event" render="Label" position="876,201" size="359,57" backgroundColor="transpBA" transparent="1" zPosition="1" foregroundColor="jeaune" font="Regular; 20" halign="center">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel text="EPG selection" position="50,93" size="783,28" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <widget enableWrapAround="1" name="list" itemHeight="26" position="39,198" scrollbarMode="showOnDemand" size="805,338" transparent="1" zPosition="2" />
+    <widget source="Event" render="Label" position="876,253" size="362,310" font="Regular;20" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="875,141" size="359,57" font="Regular; 20" foregroundColor="jeaune" backgroundColor="background" transparent="1" halign="center">
@@ -1682,7 +1686,7 @@
     <widget font="Regular; 22" name="text" position="305,230" size="693,50" halign="center" valign="center" transparent="1" zPosition="1" foregroundColor="un11aaff" backgroundColor="transpBA" />
   </screen>
   <!-- GraphMultiEPG -->
-  <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black">
+  <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TresGrandeTemplate" />
     <panel name="ButtonTemplate_4" />
     <panel name="KeyMenuTemplate" />
@@ -1691,14 +1695,20 @@
     <eLabel position="0,615" size="1280,1" backgroundColor="white" />
     <eLabel position="0,70" size="1280,1" backgroundColor="white" />
     <eLabel position="0,494" size="1280,1" backgroundColor="white" />
-    <eLabel position="0,122" size="1280,1" backgroundColor="white" />
-    <widget name="bouquetlist" position="77,293" size="1150,110" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
-    <widget source="Title" render="Label" position="251,35" size="783,28" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
-    <widget name="list" position="40,134" size="1200,355" scrollbarMode="showOnDemand" EntryBackgroundColor="unffffff" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" foreColorSelected="white" transparent="1" />
-    <widget source="Event" render="Label" position="539,502" size="150,24" backgroundColor="background" transparent="1" foregroundColor="unffffff" font="Regular;22" valign="top">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">ShortDate</convert>
+    <eLabel position="0,120" size="1280,1" backgroundColor="white" />
+    <eLabel position="0,0" size="1280,720" backgroundColor="black" zPosition="-10" />
+    <widget name="timeline0" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
+    <widget name="timeline1" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
+    <widget name="timeline2" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
+    <widget name="timeline3" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
+    <widget name="timeline4" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
+    <widget name="timeline5" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
+    <widget name="bouquetlist" position="7,135" size="1200,355" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
+    <eLabel position="0,0" size="1280,720" zPosition="-19" backgroundColor="transpBA" />
+    <widget source="global.CurrentTime" render="Label" position="32,85" size="350,25" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
+    <widget name="list" position="0,134" size="1610,355" itemHeight="60" backgroundColor="black" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
     <widget source="Event" render="Label" position="728,504" size="80,24" backgroundColor="background" transparent="1" foregroundColor="unffffff" font="Regular;22" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
@@ -1707,7 +1717,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="42,502" size="443,24" backgroundColor="transpBA" transparent="1" foregroundColor="jeaune" font="Regular; 22" valign="center" halign="center">
+    <widget source="Event" render="Label" position="42,502" size="667,24" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" font="Regular; 22" valign="center" halign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/pbar.png" position="813,511" size="320,10" transparent="1" borderWidth="2" borderColor="un33333a">
@@ -1716,8 +1726,8 @@
     <widget source="Event" render="Label" position="43,540" size="1200,74" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="109,87" size="1134,28" foregroundColor="un99dd" backgroundColor="transpBA" transparent="1" />
-    <widget name="timeline_now" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline-now.png" position="14,134" size="19,355" zPosition="2" alphatest="on" />
+    <widget name="timeline_text" position="126,82" size="1120,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
+    <widget name="timeline_now" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline-now.png" position="6,132" size="19,355" zPosition="21" alphatest="on" />
   </screen>
   <!-- GraphMultiEPG List -->
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transpBA">
@@ -1725,16 +1735,23 @@
     <panel name="ButtonTemplate_4" />
     <panel name="KeyMenuTemplate" />
     <panel name="KeyInfoTemplate" />
+    <eLabel position="0,79" size="1280,1" backgroundColor="white" />
+    <eLabel position="0,612" size="1280,1" backgroundColor="white" />
+    <eLabel position="0,143" size="1280,1" backgroundColor="white" />
+    <eLabel position="0,0" size="1280,720" backgroundColor="black" zPosition="-10" />
+    <widget source="global.CurrentTime" render="Label" position="25,106" size="350,25" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
     <widget source="Title" render="Label" position="251,35" size="783,28" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
-    <widget name="list" position="40,154" size="1200,450" itemHeight="60" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
-    <widget name="timeline_text" position="50,122" size="1180,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
-    <widget name="timeline0" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline1" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline2" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline3" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline4" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline5" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline_now" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline-now.png" position="4,137" size="19,496" zPosition="2" alphatest="on" />
+    <widget name="list" position="0,154" size="1280,450" itemHeight="60" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
+    <widget name="timeline_text" position="102,107" size="1180,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
+    <widget name="timeline0" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
+    <widget name="timeline1" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
+    <widget name="timeline2" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
+    <widget name="timeline3" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
+    <widget name="timeline4" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
+    <widget name="timeline5" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
+    <widget name="timeline_now" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline-now.png" position="8,153" size="19,450" zPosition="2" alphatest="on" />
   </screen>
   <!-- GraphMultiEPG Setup -->
   <screen name="GraphMultiEpgSetup" position="0,0" size="1280,720" title="Electronic Program Guide Setup" flags="wfNoBorder" backgroundColor="transparent">
