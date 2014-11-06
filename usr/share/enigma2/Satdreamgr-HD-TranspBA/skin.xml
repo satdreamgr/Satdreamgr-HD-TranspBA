@@ -2985,8 +2985,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <eLabel position="center,213" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
   <eLabel position="center,446" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/reboot.png" position="center,267" size="68,68" alphatest="on" />
-  <eLabel text="SatDreamGr!" position="53,146" size="1168,62" font="Regular; 60" foregroundColor="un11aaff" backgroundColor="transparent" shadowColor="white" halign="center" transparent="1" />
+  <eLabel text="SatDreamGr!" position="53,146" size="1168,62" font="Regular; 60" foregroundColor="un11aaff" backgroundColor="transparent" halign="center" transparent="1" />
   <widget name="text" position="279,339" size="720,100" font="Regular; 24" halign="center" foregroundColor="jeaune" valign="center" />
-  <eLabel text="Please wait..." position="68,575" size="1132,26" font="Regular; 24" foregroundColor="white" backgroundColor="transparent" shadowColor="white" halign="center" transparent="1" />
+  <eLabel text="Please wait..." position="68,575" size="1132,26" font="Regular; 24" foregroundColor="white" backgroundColor="transparent" halign="center" transparent="1" />
 </screen>  
 </skin>
