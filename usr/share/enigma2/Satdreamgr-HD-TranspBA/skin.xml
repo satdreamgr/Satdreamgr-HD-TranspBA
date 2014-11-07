@@ -1892,47 +1892,90 @@
     <widget name="config" position="45,155" size="785,380" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
   </screen>
   <!-- MessageBoxSimple -->
-  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message">
-    <widget name="text" position="65,8" size="520,0" font="Regular;22" />
-    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="list" position="100,100" size="480,250" />
+  <screen name="MessageBoxSimple" position="340,175" size="600,10" title="Message">
+    <widget name="text" position="110,25" size="680,0" font="Regular;22" />
+    <widget name="list" position="20,95" size="760,300" scrollbarMode="showOnDemand" />
+    <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_error.png" position="30,30" size="53,53" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_question.png" position="30,30" size="53,53" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_info.png" position="30,30" size="53,53" alphatest="blend" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
+ 
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
+ 
 # y size still must be fixed in font stuff...
 textsize = (textsize[0] + 80, textsize[1] + 80)
 offset = 20
 if self.type == self.TYPE_YESNO:
-	offset = 80
-wsizex = textsize[0] + 80
+	offset = 60
+wsizex = textsize[0] + 120
 wsizey = textsize[1] + offset
 if (600 &gt; wsizex):
 	wsizex = 600
 wsize = (wsizex, wsizey)
+ 
+ 
 # resize
 self.instance.resize(eSize(*wsize))
+ 
 # resize label
 self["text"].instance.resize(eSize(*textsize))
+ 
 # move list
 listsize = (wsizex - 20, 50)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
+ 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
+ 
 		</applet>
   </screen>
   <!-- Choice box -->
-  <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="ChoiceBox" position="130,140" size="750,600" title="Input">
     <!-- Input ect. -->
-    <panel name="GrandeTemplateA" />
-    <widget name="text" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="list" position="250,155" size="780,360" backgroundColor="transpBA" scrollbarMode="showOnDemand" />
+    <widget name="text" position="20,35" size="710,66" font="Regular;24" foregroundColor="un11aaff" />
+    <widget name="list" position="20,65" size="710,320" itemHeight="32" scrollbarMode="showOnDemand" />
+    <applet type="onLayoutFinish">
+# this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint
+ 
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self["text"].getSize()
+ 
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 80, textsize[1] + 80)
+count = len(self.list)
+if count &gt; 10:
+	count = 10
+offset = 32 * count
+wsizex = textsize[0] + 80
+wsizey = textsize[1] + offset + 20
+ 
+if (710 &gt; wsizex):
+	wsizex = 710
+wsize = (wsizex, wsizey)
+ 
+# resize
+self.instance.resize(eSize(*wsize))
+ 
+# resize label
+self["text"].instance.resize(eSize(*textsize))
+ 
+# move list
+listsize = (wsizex - 20, 32 * count)
+self["list"].instance.move(ePoint(10, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+ 
+# center window
+newwidth = wsize[0]
+self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
+		</applet>
   </screen>
   <!-- Network Configuration-->
   <screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
