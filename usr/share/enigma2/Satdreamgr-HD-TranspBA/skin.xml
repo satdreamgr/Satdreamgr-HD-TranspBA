@@ -495,9 +495,9 @@
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1194,39" size="24, 24" alphatest="blend" />
   </screen>
   <!-- Screen Menu Template -->
-  <screen name="MenuTemplate" flags="wfNoBorder" position="0,0" size="1283,726" backgroundColor="transparent">
-    <eLabel position="88,226" zPosition="0" size="146,146" backgroundColor="white" transparent="0" />
-    <eLabel position="90,228" zPosition="0" size="142,142" backgroundColor="transpBA" transparent="0" />
+  <screen name="MenuTemplate" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
+    <eLabel position="108,226" zPosition="0" size="146,146" backgroundColor="white" transparent="0" />
+    <eLabel position="110,228" zPosition="1" size="142,142" backgroundColor="transpBA" transparent="0" />
     <eLabel position="333,159" zPosition="-13" size="614,405" backgroundColor="white" transparent="0" />
     <eLabel position="335,158" zPosition="-11" size="610,403" backgroundColor="transpBA" transparent="0" />
     <eLabel position="333,72" zPosition="-12" size="614,72" backgroundColor="white" transparent="0" />
@@ -534,278 +534,278 @@
       </convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/barre_menu.png" zPosition="10" position="333,141" size="614,20" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="743,594" size="200,43" alphatest="off" transparent="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="743,587" size="200,43" alphatest="off" transparent="1" />
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="896,99" size="24, 24" alphatest="blend" />
   </screen>
   <!-- Screen Menus -->
   <screen name="Menu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/softcam.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/softcam.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">softcam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/hardware.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/hardware.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">harware_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/archives.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/archives.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">archives_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/remove.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/remove.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">removeopkg_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">sdgbackup_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">settings_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">swapmanager_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstreamtv.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstreamtv.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">update_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">GreekStreamTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_mainmenu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/media-player.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/media-player.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">media_player</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/timer.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/timer.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">timer_edit</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">info_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/plugins.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/plugins.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">plugin_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">standby_restart_list</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">setup_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_information" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information/service.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information/service.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">service_info_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information/about.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information/about.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">about_screen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_setup" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/system.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/system.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">system_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/searching.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/searching.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">service_searching_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">ci_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">ci_assign</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/parental.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/parental.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">parental_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/factory.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/factory.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">factory_reset</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/software.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/software.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">software_manager</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_system" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/devices.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/devices.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">deviceManager</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/customize.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/customize.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">usage_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/user-interface.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/user-interface.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">user_interface</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/epg-settings.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/epg-settings.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">epg_settings</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/record.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/record.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">recording_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/subtitles.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/subtitles.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">subtitle_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/language.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/language.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">autolanguage_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">av_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/harddisk.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/harddisk.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">hardisk_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/network.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/network.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">network_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/input-device.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/input-device.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">input_device_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/display.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/display.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">lcd</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/keyboard.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/keyboard.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">keyboard</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/recordings-paths.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/recordings-paths.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">RecordPaths</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/language.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/language.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">language_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/timezone.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/timezone.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">timezone_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/hotkey.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/hotkey.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">hotkey_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/hdmi.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/hdmi.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">hdmi_cec_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/skin.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/skin.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">skin_selector</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/video-tuning.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/video-tuning.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">video_finetune</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_harddisk" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/harddisk-setup.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/harddisk-setup.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">harddisk_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/format.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/format.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">harddisk_init</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/check-harddisk.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/check-harddisk.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">harddisk_check</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/convert-harddisk.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/convert-harddisk.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">harddisk_convert</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_shutdown" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/timer.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/timer.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">sleep</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/standby.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/standby.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">standby</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/restart.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/restart.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">restart</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/restart-enigma.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/restart-enigma.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">restart_enigma</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/off.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/off.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">deep_standby</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_scan" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/tuner.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/tuner.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">tuner_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/auto.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/auto.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">auto_scan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/manual.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/manual.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">manual_scan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/satfinder.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/satfinder.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">satfinder</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/tuner.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/tuner.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">blindscan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/positionner.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/positionner.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">positioner_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/fast.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/fast.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">fastscan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/cable.png" zPosition="5" position="98,235" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/cable.png" zPosition="5" position="117,235" size="128,128">
       <convert type="MenuEntryCompare">cablescan</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -828,7 +828,7 @@
     <eLabel backgroundColor="uncccccc" position="center,515" size="1142,1" />
     <eLabel backgroundColor="uncccccc" position="center,555" size="1142,1" />
     <eLabel backgroundColor="uncccccc" position="center,640" size="1142,1" />
-    <ePixmap position="330,590" size="590,14" pixmap="Satdreamgr-HD-TranspBA/infobar/590x14.png" transparent="0" alphatest="on" zPosition="0" />
+    <ePixmap position="332,590" size="590,14" pixmap="Satdreamgr-HD-TranspBA/infobar/590x14.png" transparent="0" alphatest="on" zPosition="0" />
     <eLabel text="----------" font="Regular; 20" position="168,586" size="150,20" halign="center" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" valign="center" zPosition="8" />
     <eLabel text="----------" font="Regular; 20" position="935,586" size="100,20" halign="center" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" valign="center" zPosition="8" />
     <widget source="session.Event_Now" render="Label" position="165,565" size="77,22" font="Regular; 20" halign="center" backgroundColor="transpBA" transparent="1">
@@ -840,7 +840,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="[" position="922,565" size="10,22" font="Regular; 20" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="3" />
+    <eLabel text="[" position="925,565" size="10,22" font="Regular; 20" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="3" />
     <widget source="session.Event_Now" render="Label" position="926,565" size="120,22" font="Regular; 20" halign="center" backgroundColor="transpBA" transparent="1" zPosition="3">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
@@ -1053,7 +1053,7 @@
     <widget source="session.Event_Now" render="Label" position="332,564" size="590,22" backgroundColor="transpBA" transparent="0" zPosition="1" foregroundColor="un11aaff" font="Regular; 20" halign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="330,593" size="590,8" transparent="1" zPosition="5">
+    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="335,593" size="580,10" transparent="1" zPosition="5">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="332,610" size="590,22" backgroundColor="transpBA" transparent="0" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular; 20" halign="center">
@@ -1353,7 +1353,7 @@
     <widget source="session.Event_Now" render="Label" position="332,564" size="590,22" backgroundColor="transpBA" transparent="0" zPosition="1" foregroundColor="un11aaff" font="Regular; 20" halign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="330,593" size="590,8" transparent="1" zPosition="5">
+    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="335,593" size="580,8" transparent="1" zPosition="5">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="332,610" size="590,22" backgroundColor="transpBA" transparent="0" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular; 20" halign="center">
@@ -1654,24 +1654,24 @@
     <widget source="Event" render="Label" position="876,201" size="359,57" backgroundColor="transpBA" transparent="1" zPosition="1" foregroundColor="jeaune" font="Regular; 20" halign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <eLabel text="EPG selection" position="50,93" size="783,28" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <eLabel text="EPG selection" position="50,93" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="5" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
     <widget enableWrapAround="1" name="list" itemHeight="26" position="39,198" scrollbarMode="showOnDemand" size="805,338" transparent="1" zPosition="2" />
-    <widget source="Event" render="Label" position="876,253" size="362,310" font="Regular;20" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top">
+    <widget source="Event" render="Label" position="876,253" size="362,310" font="Regular;20" foregroundColor="foreground" backgroundColor="transpBA" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="875,141" size="359,57" font="Regular; 20" foregroundColor="jeaune" backgroundColor="background" transparent="1" halign="center">
+    <widget source="Service" render="Label" position="875,141" size="359,57" font="Regular; 20" foregroundColor="jeaune" backgroundColor="transpBA" transparent="1" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget name="date" position="639,146" size="209,31" transparent="1" font="Regular;20" valign="center" halign="center" foregroundColor="un11aaff" />
+    <widget name="date" position="639,146" size="209,31" transparent="1" font="Regular;20" valign="center" halign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
     <widget name="now_button" pixmap="Satdreamgr-HD-TranspBA/border/epg_off.png" position="42,141" zPosition="2" size="180,40" alphatest="blend" />
     <widget name="now_button_sel" pixmap="Satdreamgr-HD-TranspBA/border/epg_now_on.png" position="42,141" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="now_text" position="42,141" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="NOW" font="Regular;20" valign="center" halign="center" />
+    <widget name="now_text" position="42,141" size="180,40" backgroundColor="transpBA" zPosition="4" transparent="1" text="NOW" font="Regular;20" valign="center" halign="center" />
     <widget name="next_button" pixmap="Satdreamgr-HD-TranspBA/border/epg_off.png" position="249,141" zPosition="2" size="180,40" alphatest="blend" />
     <widget name="next_button_sel" pixmap="Satdreamgr-HD-TranspBA/border/epg_next_on.png" position="249,141" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="next_text" position="249,141" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="NEXT" font="Regular;20" valign="center" halign="center" />
+    <widget name="next_text" position="249,141" size="180,40" backgroundColor="transpBA" zPosition="4" transparent="1" text="NEXT" font="Regular;20" valign="center" halign="center" />
     <widget name="more_button" pixmap="Satdreamgr-HD-TranspBA/border/epg_off.png" position="455,141" zPosition="2" size="180,40" alphatest="blend" />
     <widget name="more_button_sel" pixmap="Satdreamgr-HD-TranspBA/border/epg_next_on.png" position="455,141" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="more_text" position="455,141" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
+    <widget name="more_text" position="455,141" size="180,40" backgroundColor="transpBA" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
   </screen>
   <!--Pluginbrowser-->
   <screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1705,9 +1705,6 @@
     <widget name="timeline5" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
     <widget name="bouquetlist" position="7,135" size="1200,355" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
     <eLabel position="0,0" size="1280,720" zPosition="-19" backgroundColor="transpBA" />
-    <widget source="global.CurrentTime" render="Label" position="32,85" size="350,25" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-    </widget>
     <widget name="list" position="0,134" size="1610,355" itemHeight="60" backgroundColor="black" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
     <widget source="Event" render="Label" position="728,504" size="80,24" backgroundColor="background" transparent="1" foregroundColor="unffffff" font="Regular;22" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
@@ -1726,7 +1723,7 @@
     <widget source="Event" render="Label" position="43,540" size="1200,74" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="126,82" size="1120,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
+    <widget name="timeline_text" position="40,82" size="1280,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
     <widget name="timeline_now" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline-now.png" position="6,132" size="19,355" zPosition="21" alphatest="on" />
   </screen>
   <!-- GraphMultiEPG List -->
@@ -1739,12 +1736,9 @@
     <eLabel position="0,612" size="1280,1" backgroundColor="white" />
     <eLabel position="0,143" size="1280,1" backgroundColor="white" />
     <eLabel position="0,0" size="1280,720" backgroundColor="black" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="25,106" size="350,25" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-    </widget>
     <widget source="Title" render="Label" position="251,35" size="783,28" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
     <widget name="list" position="0,154" size="1280,450" itemHeight="60" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
-    <widget name="timeline_text" position="102,107" size="1180,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
+    <widget name="timeline_text" position="40,100" size="1220,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
     <widget name="timeline0" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
     <widget name="timeline1" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
     <widget name="timeline2" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,79" size="1,535" zPosition="1" />
@@ -2979,14 +2973,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="config" position="252,320" size="780,230" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
   </screen>
   <screen name="QuitMainloopScreen" position="0,0" size="1280,720" backgroundColor="transpBA" flags="wfNoBorder" transparent="0">
-  <eLabel position="center,center" zPosition="-12" size="1184,620" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-  <eLabel position="50,51" zPosition="-11" size="1180,616" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="white" />
-  <eLabel position="center,608" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-  <eLabel position="center,213" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-  <eLabel position="center,446" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/reboot.png" position="center,267" size="68,68" alphatest="on" />
-  <eLabel text="SatDreamGr!" position="53,146" size="1168,62" font="Regular; 60" foregroundColor="un11aaff" backgroundColor="transparent" halign="center" transparent="1" />
-  <widget name="text" position="279,339" size="720,100" font="Regular; 24" halign="center" foregroundColor="jeaune" valign="center" />
-  <eLabel text="Please wait..." position="68,575" size="1132,26" font="Regular; 24" foregroundColor="white" backgroundColor="transparent" halign="center" transparent="1" />
-</screen>  
+    <eLabel position="center,center" zPosition="-12" size="1184,620" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="50,51" zPosition="-11" size="1180,616" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="center,608" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="center,213" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="center,446" zPosition="0" size="500,1" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/reboot.png" position="center,267" size="68,68" alphatest="on" />
+    <eLabel text="SatDreamGr!" position="53,146" size="1168,62" font="Regular; 60" foregroundColor="un11aaff" backgroundColor="transparent" halign="center" transparent="1" />
+    <widget name="text" position="279,339" size="720,100" font="Regular; 24" halign="center" foregroundColor="jeaune" valign="center" />
+    <eLabel text="Please wait..." position="68,575" size="1132,26" font="Regular; 24" foregroundColor="white" backgroundColor="transparent" halign="center" transparent="1" />
+  </screen>
 </skin>
