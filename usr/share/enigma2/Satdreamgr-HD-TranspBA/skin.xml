@@ -1671,7 +1671,6 @@
     <widget name="timeline3" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
     <widget name="timeline4" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
     <widget name="timeline5" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
-    <widget name="bouquetlist" position="7,135" size="1200,355" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
     <eLabel position="0,0" size="1280,720" zPosition="-19" backgroundColor="transpBA" />
     <widget name="list" position="0,134" size="1610,355" itemHeight="60" backgroundColor="black" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
     <widget source="Event" render="Label" position="728,504" size="80,24" backgroundColor="background" transparent="1" foregroundColor="unffffff" font="Regular;22" halign="right" valign="top">
