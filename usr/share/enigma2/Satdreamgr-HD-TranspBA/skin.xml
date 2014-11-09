@@ -319,7 +319,7 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1025,90" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="230,70" zPosition="-11" size="820,520" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
     <eLabel position="228,68" zPosition="-12" size="824,524" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-    <eLabel position="center,625" zPosition="-11" size="1220,70" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <eLabel position="30,625" zPosition="-11" size="1220,70" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
     <eLabel position="28,623" zPosition="-12" size="1224,74" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
     <eLabel backgroundColor="uncccccc" position="center,570" size="600,1" zPosition="5" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/double_ta.png" zPosition="10" position="230,128" size="820,15" alphatest="blend" transparent="1" />
@@ -1671,6 +1671,7 @@
     <widget name="timeline3" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
     <widget name="timeline4" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
     <widget name="timeline5" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
+    <widget name="bouquetlist" position="7,135" size="1200,355" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
     <eLabel position="0,0" size="1280,720" zPosition="-19" backgroundColor="transpBA" />
     <widget name="list" position="0,134" size="1610,355" itemHeight="60" backgroundColor="black" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
     <widget source="Event" render="Label" position="728,504" size="80,24" backgroundColor="background" transparent="1" foregroundColor="unffffff" font="Regular;22" halign="right" valign="top">
@@ -2033,7 +2034,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="DNSInfo_Check" position="800,345" size="38,31" transparent="1" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" backgroundColor="transpBA" />
     <widget name="DNSInfo_Text" position="840,350" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" backgroundColor="transpBA" />
     <widget name="DNSInfo" position="840,350" size="200,23" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <widget name="EditSettingsButton" position="970,683" size="250,12" transparent="1" zPosition="1" pixmaps="Satdreamgr-HD-TranspBA/buttons/grey.png,Satdreamgr-HD-TranspBA/buttons/blue.png" alphatest="on" backgroundColor="transpBA" />
+    <widget name="EditSettingsButton" position="971,677" size="250,12" transparent="1" zPosition="1" pixmaps="Satdreamgr-HD-TranspBA/buttons/grey.png,Satdreamgr-HD-TranspBA/buttons/blue.png" alphatest="on" backgroundColor="transpBA" />
     <widget name="EditSettings_Text" position="992,630" size="200,26" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;19" backgroundColor="transpBA" halign="center" />
     <widget name="InfoText" position="245,460" size="722,20" zPosition="25" font="Regular; 20" transparent="0" foregroundColor="un11aaff" backgroundColor="transpBA" halign="center" />
     <widget name="InfoTextBorder" position="241,155" size="800,239" backgroundColor="transpBA" />
@@ -2375,25 +2376,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="GrandeTemplate" />
     <widget name="header" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="250,155" size="780,355" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="introduction" position="0,0" size="0,0" />
+    <widget name="introduction" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
     <panel name="ButtonRed" />
     <eLabel text="Cancel" position="158,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <panel name="ButtonGreen" />
     <eLabel text="Scan" position="430,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
   </screen>
   <!-- Scan simple -->
-  <screen name="ScanSimple" position="0,-2" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <widget name="header" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="250,155" size="780,355" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
-    <widget name="footer" position="0,0" size="0,0" />
+    <widget name="footer" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
     <panel name="ButtonRed" />
     <eLabel text="Cancel" position="157,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <panel name="ButtonGreen" />
     <eLabel text="Scan" position="433,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
   </screen>
   <!-- Service Scan -->
-  <screen name="ServiceScan" position="0,0" size="1285,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="ServiceScan" position="0,0" size="1285,720" flags="wfNoBorder" backgroundColor="bluetransparent">
     <panel name="GrandeTemplateA" />
     <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="240,77" size="64,64" zPosition="2" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
@@ -2422,13 +2423,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="GrandeTemplateA" />
     <eLabel text="Fast Scan" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="250,155" size="780,355" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
-    <widget name="introduction" position="0,0" size="0,0" />
+    <widget name="introduction" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
     <panel name="ButtonRed" />
     <eLabel text="Cancel" position="166,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <panel name="ButtonGreen" />
     <eLabel text="Scan" position="434,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
   </screen>
-  <screen name="FastScanStatus" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="FastScanStatus" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="bluetransparent">
     <panel name="PetiteTemplateA" />
     <eLabel text="Fast Scan" position="355,97" size="575,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="350,155" size="64,64" zPosition="2" transparent="1" alphatest="on" />
@@ -2438,7 +2439,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Satfinder -->
   <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="DoubleTemplate" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/dish.png" position="970,141" size="130,160" zPosition="5" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/dish.png" position="970,141" size="130,180" zPosition="5" alphatest="blend" />
     <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snr.png" position="934,370" size="220,20" borderWidth="2" borderColor="foreground" zPosition="0" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
@@ -2473,7 +2474,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
     <widget name="config" position="50,155" size="780,360" itemHeight="36" font="Regular;26" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
-    <widget name="introduction" position="0,0" size="0,0" zPosition="0" />
+    <widget name="introduction" position="87,526" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
     <panel name="ButtonRed" />
     <eLabel text="Cancel" position="147,635" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="0" font="Regular;24" halign="center" />
     <panel name="ButtonGreen" />
@@ -2496,7 +2497,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="loglist" position="250,155" size="780,275" scrollbarMode="showOnDemand" font="Regular;24" transparent="1" />
     <widget name="logentry" position="250,440" size="780,120" font="Regular;24" backgroundColor="transpBA" foregroundColor="un11aaff" halign="center" />
   </screen>
-  <screen name="TimerSanityConflict" position="-2,0" size="1280,720" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <panel name="ButtonTemplate_4" />
     <!--(Timer1 List)-->
