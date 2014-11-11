@@ -2291,29 +2291,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="introduction" render="Label" position="250,519" size="780,27" backgroundColor="transpBA" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="un11aaff" />
   </screen>
   <!-- NumercalTextInputHelpDialog -->
-  <screen name="NumericalTextInputHelpDialog" position="850,422" size="400,180" backgroundColor="transparent" flags="wfNoBorder">
-    <eLabel position="0,0" size="400,150" backgroundColor="transpBlack" zPosition="-1" borderWidth="1" />
-    <widget name="key1" position="0,0" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" transparent="0" />
-    <widget name="key2" position="200,0" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" />
-    <widget name="key3" position="0,30" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" />
-    <widget name="key4" position="200,30" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="key5" position="0,60" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="key6" position="200,60" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="key7" position="0,90" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="key8" position="200,90" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="key9" position="0,120" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="help1" position="0,150" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="key0" position="200,120" size="200,30" font="Regular;17" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="help2" position="200,150" size="200,30" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
+  <screen name="NumericalTextInputHelpDialog" position="0,0" size="1280,71" flags="wfNoBorder" backgroundColor="transparent" zPosition="10">
+    <eLabel position="28,29" zPosition="-12" size="1224,40" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="30,31" zPosition="-11" size="1220,36" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <widget name="key1" position="34,36" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" transparent="0" foregroundColor="un1f771f" />
+    <widget name="key2" position="138,36" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" foregroundColor="un11aaff" />
+    <widget name="key3" position="241,36" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" foregroundColor="un1f771f" />
+    <widget name="key4" position="344,36" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
+    <widget name="key5" position="446,36" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
+    <widget name="key6" position="548,36" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un1f771f" />
+    <widget name="key7" position="650,36" size="120,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
+    <widget name="key8" position="771,36" size="100,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un1f771f" />
+    <widget name="key9" position="871,36" size="150,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
+    <widget name="help1" position="1185,36" size="30,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
+    <widget name="key0" position="1023,36" size="160,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un1f771f" />
+    <widget name="help2" position="1218,36" size="30,24" font="Regular;20" halign="center" valign="center" backgroundColor="transpBA" />
   </screen>
   <!-- Virtual Keyboard -->
   <screen name="VirtualKeyBoard" position="0,0" size="1280,720" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <eLabel text="Virtual keyboard" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <panel name="ButtonTemplate_3" />
-    <eLabel text="Delete" render="Label" position="185,643" size="220,28" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="left" />
-    <eLabel text="OK" render="Label" position="460,643" size="220,28" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="left" />
-    <widget source="country" render="Label" position="713,643" size="220,28" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="left" />
+    <eLabel text="Delete" render="Label" position="170,643" size="220,28" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="center" />
+    <eLabel text="OK" render="Label" position="445,643" size="220,28" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="center" />
+    <widget source="country" render="Label" position="713,643" size="220,28" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="center" />
     <ePixmap pixmap="skin_default/vkey_text.png" position="366,187" size="542,52" zPosition="-4" alphatest="blend" />
     <widget name="header" position="366,160" size="500,26" transparent="1" noWrap="1" font="Regular;20" valign="top" backgroundColor="transpBA" />
     <widget name="text" position="370,196" size="536,34" transparent="1" noWrap="1" font="Regular;26" valign="center" halign="right" backgroundColor="un11aaff" />
