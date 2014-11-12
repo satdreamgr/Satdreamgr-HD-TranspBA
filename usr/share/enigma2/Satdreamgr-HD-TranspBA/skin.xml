@@ -1805,7 +1805,7 @@
     </widget>
     <widget name="repeat" position="114,587" size=" 70,30" zPosition="10" pixmaps="Satdreamgr-HD-TranspBA/buttons/repeat-off.png,Satdreamgr-HD-TranspBA/buttons/repeat-on.png" alphatest="blend" backgroundColor="transpBA" />
   </screen>
-  <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" />
+  <screen name="SubtitleDisplay" zPosition="-1" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" />
   <!-- Skin Selector Choose your Skin-->
   <screen name="SkinSelector" position="0,0" size="1280,720" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="DoubleTemplateA" />
@@ -3005,6 +3005,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="text" position="279,339" size="720,100" font="Regular; 24" halign="center" foregroundColor="jeaune" valign="center" />
     <eLabel text="Please wait..." position="68,575" size="1132,26" font="Regular; 24" foregroundColor="white" backgroundColor="transparent" halign="center" transparent="1" />
   </screen>
+  <screen name="UnhandledKey" title="UnhandledKey" position="640,63" size="64,64" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
+    <widget name="UnhandledKeyPixmap" pixmap="Satdreamgr-HD-TranspBA/skin_default/unhandled-key.png" position="0,0" size="64,64" alphatest="blend" zPosition="2" />
+    <eLabel backgroundColor="transpBA" name="new eLabel" position="0, 0" size="64,64" zPosition="1" />
+  </screen>
   <!-- Softwaremanager Menu -->
   <!-- ++++++++++++ -->
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -3549,8 +3553,5 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
     <eLabel position="494,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
-  </screen>
-  <screen name="UnhandledKey" title="UnhandledKey" position="643,63" size="44,36" backgroundColor="transpBA" zPosition="100" flags="wfNoBorder">
-    <widget name="UnhandledKeyPixmap" pixmap="Satdreamgr-HD-TranspBA/skin_default/unhandled-key.png" position="0,0" size="44,36" alphatest="blend" />
   </screen>
 </skin>
