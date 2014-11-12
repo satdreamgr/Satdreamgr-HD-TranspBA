@@ -111,6 +111,13 @@
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="black" />
   </windowstyle>
+  <!-- Subtitle effects -->
+  <subtitles>
+    <sub name="Subtitle_TTX" font="Regular;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
+    <sub name="Subtitle_Regular" font="Regular;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
+    <sub name="Subtitle_Bold" font="Replacement;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
+    <sub name="Subtitle_Italic" font="Regular;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
+  </subtitles>
   <!-- Button -->
   <screen name="ButtonRed" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,680" size="250,14" transparent="1" alphatest="blend" />
@@ -3542,5 +3549,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
     <eLabel position="494,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+  </screen>
+  <screen name="UnhandledKey" title="UnhandledKey" position="643,63" size="44,36" backgroundColor="transpBA" zPosition="100" flags="wfNoBorder">
+    <widget name="UnhandledKeyPixmap" pixmap="Satdreamgr-HD-TranspBA/skin_default/unhandled-key.png" position="0,0" size="44,36" alphatest="blend" />
   </screen>
 </skin>
