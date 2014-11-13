@@ -1870,12 +1870,12 @@
     <widget name="config" position="45,155" size="785,380" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
   </screen>
   <!-- MessageBoxSimple -->
-  <screen name="MessageBoxSimple" position="340,175" size="600,10" title="Message">
-    <widget name="text" position="110,25" size="680,0" font="Regular;22" />
-    <widget name="list" position="20,95" size="760,300" scrollbarMode="showOnDemand" />
-    <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_error.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_question.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_info.png" position="30,30" size="53,53" alphatest="blend" />
+  <screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message">
+    <widget name="text" position="65,8" size="520,0" font="Regular;22" />
+    <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_error.png" position="5,5" size="53,53" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_question.png" position="5,5" size="53,53" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_info.png" position="5,5" size="53,53" alphatest="blend" />
+    <widget name="list" position="100,100" size="480,375" scrollbarMode="showOnDemand" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -1914,10 +1914,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
 		</applet>
   </screen>
   <!-- Choice box -->
-  <screen name="ChoiceBox" position="130,140" size="750,600" title="Input">
+  <screen name="ChoiceBox" position="center,center" size="550,400" title="Input">
     <!-- Input ect. -->
-    <widget name="text" position="20,35" size="710,66" font="Regular;24" foregroundColor="un11aaff" />
-    <widget name="list" position="20,65" size="710,320" itemHeight="32" scrollbarMode="showOnDemand" />
+    <widget name="text" position="10,10" size="550,25" font="Regular;20" foregroundColor="un11aaff" />
+    <widget name="list" position="0,30" size="550,335" itemHeight="32" scrollbarMode="showOnDemand" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -2206,12 +2206,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     </widget>
   </screen>
   <!-- Messagebox -->
-  <screen name="MessageBox" position="340,175" size="600,10" title="Message">
-    <widget name="text" position="110,25" size="680,0" font="Regular;22" />
-    <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="list" position="21,95" size="760,300" />
+  <screen name="MessageBox" position="center,center" size="600,10" title="Message">
+    <widget name="text" position="65,8" size="520,0" font="Regular;22" />
+    <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_error.png" position="5,5" size="53,53" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_question.png" position="5,5" size="53,53" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_info.png" position="5,5" size="53,53" alphatest="blend" />
+    <widget name="list" position="100,100" size="480,375" scrollbarMode="showOnDemand" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
