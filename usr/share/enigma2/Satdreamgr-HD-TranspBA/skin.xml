@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<skin>
+﻿<skin>
   <!-- Skin: Satdreamgr-HD-TranspBA -->
   <output id="0">
     <resolution bpp="32" xres="1280" yres="720" />
@@ -67,9 +66,9 @@
     <color name="ListboxForeground" color="foreground" />
     <color name="ListboxSelectedBackground" color="transpBA" />
     <color name="ListboxSelectedForeground" color="un11aaff" />
-    <color name="ListboxMarkedBackground" color="un253658a4" />
-    <color name="ListboxMarkedForeground" color="unff0000" />
-    <color name="ListboxMarkedAndSelectedBackground" color="un800000" />
+    <color name="ListboxMarkedBackground" color="transpBA" />
+    <color name="ListboxMarkedForeground" color="green" />
+    <color name="ListboxMarkedAndSelectedBackground" color="transpBA" />
     <color name="ListboxMarkedAndSelectedForeground" color="un990000" />
     <color name="WindowTitleBackground" color="transpBA" />
     <color name="WindowTitleForeground" color="jeaune" />
