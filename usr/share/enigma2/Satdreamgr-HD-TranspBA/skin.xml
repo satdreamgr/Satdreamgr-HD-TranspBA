@@ -1613,8 +1613,11 @@
   </screen>
   <!--Media-Player-->
   <screen name="MediaPlayer" title="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <panel name="TresGrandeTemplate" />
     <panel name="KeyMenuTemplate" />
+    <eLabel position="0,0" zPosition="-11" size="1280,720" transparent="0" font="Regular; 0" />
+    <widget source="Title" render="Label" position="250,35" size="783,28" backgroundColor="background" transparent="1" zPosition="-3" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <eLabel position="0,0" zPosition="-10" size="1280,720" backgroundColor="un11aaff" transparent="0" font="Regular; 0" foregroundColor="transpBA" />
+    <eLabel position="0,22" zPosition="-9" size="1280,676" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="white" />
     <eLabel backgroundColor="white" position="250,82" size="787,1" zPosition="0" />
     <eLabel backgroundColor="white" position="74,636" size="1145,1" zPosition="0" />
     <eLabel backgroundColor="white" position="74,135" size="1145,1" zPosition="0" />
@@ -1623,13 +1626,13 @@
     <eLabel backgroundColor="white" position="72,135" size="1,501" zPosition="0" />
     <eLabel backgroundColor="white" position="652,135" size="1,265" zPosition="0" />
     <eLabel backgroundColor="white" position="1220,135" size="1,501" zPosition="0" />
-    <widget source="global.CurrentTime" render="Label" position="1041,33" size="154,25" backgroundColor="transpBA" transparent="0" zPosition="2" font="Regular;18" valign="center" halign="center" foregroundColor="jeaune">
+    <widget source="global.CurrentTime" render="Label" position="1058,35" size="154,25" backgroundColor="transpBA" transparent="0" zPosition="2" font="Regular;18" valign="center" halign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format:%a %d/%m %Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1046,61" size="110,35" backgroundColor="transpBA" transparent="0" zPosition="1" font="LCD; 35" halign="right" valign="top">
+    <widget source="global.CurrentTime" render="Label" position="1057,65" size="120,35" backgroundColor="transpBA" transparent="0" zPosition="10" font="Regular; 35" halign="right" valign="top">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1158,64" zPosition="2" size="30,20" font="LCD; 20" halign="left" valign="top" transparent="0" backgroundColor="transpBA" foregroundColor="un11aaff">
+    <widget source="global.CurrentTime" render="Label" position="1178,67" zPosition="10" size="35,20" font="Regular; 20" halign="left" valign="top" transparent="0" backgroundColor="transpBA" foregroundColor="un11aaff">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel position="74,101" size="560,26" zPosition="5" text="F i l e l i s t" foregroundColor="un11aaff" font="Regular;22" halign="center" transparent="1" backgroundColor="transpBA" />
@@ -1648,16 +1651,16 @@
     <widget name="year" position="414,538" size="250,25" backgroundColor="transpBA" transparent="1" font="Regular;20" valign="top" />
     <widget name="genretext" position="666,537" size="100,25" font="Regular;20" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" valign="top" />
     <widget name="genre" position="771,536" size="300,25" font="Regular;20" backgroundColor="transpBA" transparent="1" foregroundColor="darkgrey" valign="top" />
-    <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="110,413" size="150,150" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/dvr/mpslider.png" position="336,593" size="600,16" backgroundColor="transpBA" zPosition="13" alphatest="on" />
-    <widget name="PositionGauge" position="358,595" size="560,14" transparent="0" zPosition="12" pointer="Satdreamgr-HD-TranspBA/dvr/pointer.png:13,3" />
-    <widget source="session.CurrentService" render="Label" position="232,587" size="100,25" backgroundColor="transpBA" transparent="1" font="Regular;22" valign="center" halign="right">
+    <widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="120,430" size="120,120" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/dvr/mpslider.png" position="339,599" size="600,16" backgroundColor="transpBA" zPosition="13" alphatest="on" />
+    <widget name="PositionGauge" position="359,600" size="560,14" transparent="0" zPosition="12" pointer="Satdreamgr-HD-TranspBA/dvr/pointer.png:13,3" />
+    <widget source="session.CurrentService" render="Label" position="235,595" size="100,25" backgroundColor="transpBA" transparent="1" font="Regular;22" valign="center" halign="right">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="941,588" size="100,25" backgroundColor="transpBA" transparent="1" font="Regular;22" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="941,595" size="100,25" backgroundColor="transpBA" transparent="1" font="Regular;22" valign="center" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget name="repeat" position="114,587" size=" 70,30" zPosition="10" pixmaps="Satdreamgr-HD-TranspBA/buttons/repeat-off.png,Satdreamgr-HD-TranspBA/buttons/repeat-on.png" alphatest="blend" backgroundColor="transpBA" />
+    <widget name="repeat" position="114,590" size=" 70,30" zPosition="10" pixmaps="Satdreamgr-HD-TranspBA/buttons/repeat-off.png,Satdreamgr-HD-TranspBA/buttons/repeat-on.png" alphatest="blend" backgroundColor="transpBA" />
   </screen>
   <screen name="SubtitleDisplay" zPosition="-1" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" />
   <!-- Skin Selector Choose your Skin-->
@@ -3038,7 +3041,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="StringList" />
     </widget>
     <widget name="config" position="250,450" size="780,100" transparent="1" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="235,641" size="30,30" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="235,641" size="30,30" alphatest="blend" />
     <widget name="languagetext" position="270,644" size="320,26" font="Regular;18" backgroundColor="transpBA" />
     <!-- <widget name="wizard" pixmap="skin_default/wizard.png" position="541,110" size="110,174" zPosition="10" alphatest="on" />-->
     <widget name="rc" position="1054,71" size="154,517" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" backgroundColor="transpBA" />
@@ -3129,7 +3132,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="HddMount" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplate" />
     <panel name="ButtonTemplate_4" />
-    <widget name="menu" itemHeight="35" position="350,155" size="570,360" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
+    <widget name="menu" itemHeight="35" position="350,155" size="570,385" scrollbarMode="showOnDemand" transparent="1" zPosition="9" />
   </screen>
   <!-- AutoBackup screen -->
   <screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
