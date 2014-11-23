@@ -2243,7 +2243,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <widget name="header" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="config" position="250,155" size="780,355" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="config" position="250,155" size="780,350" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="introduction" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
     <panel name="ButtonRed" />
     <eLabel text="Cancel" position="158,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
@@ -2254,7 +2254,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
     <widget name="header" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="config" position="250,155" size="780,355" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
+    <widget name="config" position="250,155" size="780,350" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
     <widget name="footer" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
     <panel name="ButtonRed" />
     <eLabel text="Cancel" position="157,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
@@ -2290,7 +2290,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="FastScanScreen" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplateA" />
     <eLabel text="Fast Scan" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="config" position="250,155" size="780,355" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
+    <widget name="config" position="250,155" size="780,350" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
     <widget name="introduction" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
     <panel name="ButtonRed" />
     <eLabel text="Cancel" position="166,630" size="220,25" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;24" halign="center" />
@@ -3203,7 +3203,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="ButtonTemplate_4S" />
     <widget name="thn" position="14,356" size="330,196" alphatest="on" transparent="1" backgroundColor="black" />
     <widget name="filelist" position="350,155" size="570,360" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="label" position="522,590" size="260,25" transparent="1" font="Regular;20" />
+    <widget name="label" position="517,538" size="260,25" transparent="1" font="Regular;20" />
   </screen>
   <screen name="Pic_Exif" title="Info" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
@@ -3410,5 +3410,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel position="179,630" size="100,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
     <eLabel position="494,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+  </screen>
+  <!-- openMultiboot-->  
+  <screen name="OMBManagerInstall" title="openMultiboot Install" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="PetiteTemplate" />
+  <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+  <widget name="info" position="376,160" size="540,50" font="Regular;20" zPosition="1" backgroundColor="transpBA" />
+  <widget source="list" render="Listbox" position="375,225" zPosition="1" size="540,306" scrollbarMode="showOnDemand" transparent="1">
+    <convert type="StringList" />
+  </widget>
+  <eLabel position="426,540" size="431,32" font="Regular;22" text="Please press OK to continue." transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="un11aaff" />
+</screen>
+  <screen name="OMBManagerAbout" title="openMultiboot About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <widget name="about" position="376,227" size="540,319" font="Regular;20" zPosition="1" backgroundColor="transpBA" halign="center" foregroundColor="un11aaff" />
+  </screen>
+  <screen name="OMBManagerList" title="openMultiboot Manager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PetiteTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <widget source="list" render="Listbox" position="370,169" zPosition="3" size="540,340" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="StringList" />
+    </widget>
   </screen>
 </skin>
