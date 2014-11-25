@@ -317,7 +317,7 @@
     <eLabel position="28,623" zPosition="-12" size="1224,74" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
     <eLabel backgroundColor="uncccccc" position="center,570" size="600,1" zPosition="5" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/double_ta.png" zPosition="10" position="230,128" size="820,15" alphatest="blend" transparent="1" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1000,97" size="24, 24" alphatest="blend" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1000,95" size="24, 24" alphatest="blend" />
   </screen>
   <!-- Screen Grande Template A -->
   <screen name="GrandeTemplateA" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
@@ -329,7 +329,7 @@
     <eLabel position="28,623" zPosition="-12" size="1224,74" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
     <eLabel backgroundColor="uncccccc" position="center,570" size="600,1" zPosition="5" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/double_ta.png" zPosition="10" position="230,128" size="820,15" alphatest="blend" transparent="1" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1000,97" size="24, 24" alphatest="blend" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1000,95" size="24, 24" alphatest="blend" />
   </screen>
   <!-- Screen Tres Grande Template -->
   <screen name="TresGrandeTemplate" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
@@ -2704,7 +2704,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel backgroundColor="uncccccc" position="230,312" size="822,1" zPosition="5" />
     <eLabel font="Regular; 24" position="250,94" size="783,28" halign="center" text="Default settings" backgroundColor="transpBA" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
     <widget name="text" backgroundColor="transpBA" font="Regular;21" position="250,155" size="780,150" halign="center" valign="center" transparent="1" zPosition="3" />
-    <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="250,320" size="780,230" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="250,320" size="785,210" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 2), size = (550, 33), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 23)],
@@ -2712,8 +2712,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
 				}
 			</convert>
     </widget>
-    <widget name="config" position="250,320" size="780,230" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" zPosition="4" backgroundColor="transpBA" />
+    <widget name="config" position="250,320" size="785,210" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" zPosition="4" backgroundColor="transpBA" />
     <widget backgroundColor="transpBA" foregroundColor="un99dd" name="languagetext" font="Regular;24" halign="center" valign="center" position="center,648" size="420,26" transparent="1" zPosition="12" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="65,641" size="226,40" alphatest="off" transparent="1" />
   </screen>
   <!-- Language Wizard -->
   <screen name="LanguageWizard" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent" title="Welcome...">
@@ -2721,7 +2722,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" position="61,129" size="109,138" zPosition="3" backgroundColor="transpBA" alphatest="blend" transparent="0" />
     <eLabel font="Regular; 24" position="250,94" size="783,28" halign="center" backgroundColor="transpBA" foregroundColor="jeaune" text="Language Selection" transparent="1" zPosition="2" valign="center" />
     <widget name="text" font="Regular; 22" position="center,647" size="420,26" halign="center" valign="center" transparent="1" zPosition="3" foregroundColor="un11aaff" backgroundColor="transpBA" />
-    <widget source="languages" render="Listbox" position="245,155" transparent="1" size="790,400" scrollbarMode="showOnDemand">
+    <widget source="languages" render="Listbox" position="245,155" transparent="1" size="795,400" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
     {"template": [
           MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -2732,6 +2733,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     }
       </convert>
     </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="65,641" size="226,40" alphatest="off" transparent="1" />
   </screen>
   <!-- Default wizard -->
   <screen name="DefaultWizard" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
@@ -2740,7 +2742,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel backgroundColor="uncccccc" position="230,312" size="822,1" zPosition="10" />
     <eLabel font="Regular; 24" position="250,94" size="783,28" halign="center" text="Default settings" backgroundColor="transpBA" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
     <widget name="text" backgroundColor="transpBA" font="Regular;21" position="250,155" size="780,150" halign="center" valign="center" transparent="1" zPosition="3" />
-    <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="250,320" size="780,246" transparent="1" zPosition="2">
+    <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="250,320" size="780,230" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (10, 2), size = (550, 33), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 20)],
@@ -2748,8 +2750,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
 				}
 			</convert>
     </widget>
-    <widget name="config" position="250,320" size="780,246" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" zPosition="4" backgroundColor="transpBA" font="Regular; 20" />
+    <widget name="config" position="250,320" size="780,230" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" zPosition="4" backgroundColor="transpBA" font="Regular; 20" />
     <widget backgroundColor="transpBA" foregroundColor="un99dd" name="languagetext" font="Regular;24" halign="center" valign="center" position="center,648" size="420,26" transparent="1" zPosition="12" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="65,641" size="226,40" alphatest="off" transparent="1" />
   </screen>
   <!-- Hotkey Setup -->
   <screen name="HotkeySetup" position="0,0" size="1280,720" title="HDMI-CEC Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -2796,15 +2799,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="arrowup2" position="1115,318" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
     <widget name="languagetext" position="518,648" size="150,23" font="Regular; 22" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" halign="center" />
     <widget name="text" position="250,155" size="780,150" font="Regular;22" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" />
-    <widget source="list" render="Listbox" position="250,320" size="780,230" zPosition="13" scrollbarMode="showOnDemand" transparent="1">
+    <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="250,330" size="780,210" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (10, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("Regular", 22)],
-				"itemHeight": 32
+				{"template": [ MultiContentEntryText(pos = (10, 2), size = (780, 33), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 30
 				}
 			</convert>
     </widget>
-    <widget name="config" position="250,320" size="780,230" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="config" position="250,330" size="780,210" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" zPosition="4" backgroundColor="transpBA" font="Regular; 20" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="65,641" size="226,40" alphatest="off" transparent="1" />
   </screen>
   <screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplateA" />
@@ -2827,6 +2831,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
 			</convert>
     </widget>
     <widget name="config" position="250,320" size="780,230" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="65,641" size="226,40" alphatest="off" transparent="1" />
   </screen>
   <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GrandeTemplateA" />
@@ -2848,7 +2853,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
 				}
 			</convert>
     </widget>
-    <widget name="config" position="252,320" size="780,230" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="config" position="250,320" size="780,230" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/satdreamgr.png" position="65,641" size="226,40" alphatest="off" transparent="1" />
   </screen>
   <screen name="QuitMainloopScreen" position="0,0" size="1280,720" backgroundColor="transpBA" flags="wfNoBorder" transparent="0">
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1120,90" size="24, 24" alphatest="blend" />
@@ -3411,17 +3417,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="426,683" size="250,14" zPosition="1" alphatest="blend" />
     <eLabel position="494,630" size="100,32" font="Regular;22" text="Ok" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
   </screen>
-  <!-- openMultiboot-->  
+  <!-- openMultiboot-->
   <screen name="OMBManagerInstall" title="openMultiboot Install" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="PetiteTemplate" />
-  <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
-  <widget name="info" position="376,160" size="540,50" font="Regular;20" zPosition="1" backgroundColor="transpBA" />
-  <widget source="list" render="Listbox" position="375,225" zPosition="1" size="540,306" scrollbarMode="showOnDemand" transparent="1">
-    <convert type="StringList" />
-  </widget>
-  <eLabel position="426,540" size="431,32" font="Regular;22" text="Please press OK to continue." transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="un11aaff" />
-</screen>
+    <panel name="PetiteTemplate" />
+    <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
+    <widget name="info" position="376,160" size="540,50" font="Regular;20" zPosition="1" backgroundColor="transpBA" />
+    <widget source="list" render="Listbox" position="375,225" zPosition="1" size="540,306" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <eLabel position="426,540" size="431,32" font="Regular;22" text="Please press OK to continue." transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="un11aaff" />
+  </screen>
   <screen name="OMBManagerAbout" title="openMultiboot About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplate" />
     <eLabel position="188,630" size="150,32" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" />
