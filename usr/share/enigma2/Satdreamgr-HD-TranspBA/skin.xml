@@ -3,6 +3,10 @@
   <output id="0">
     <resolution bpp="32" xres="1280" yres="720" />
   </output>
+  <!-- Parameters -->
+  <parameters>
+    <parameter name="AboutHddSplit" value="1"/>
+  </parameters>
   <!-- Colors -->
   <colors>
     <color name="background" value="#25101010" />
@@ -1745,7 +1749,7 @@
     <panel name="GrandeTemplate" />
     <panel name="ButtonTemplate_2" />
     <eLabel text="About" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="AboutScrollLabel" font="Regular;22" position="250,155" size="790,380" zPosition="2" halign="center" transparent="1" backgroundColor="transpBA" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="250,155" size="790,380" zPosition="2" halign="center" transparent="1" backgroundColor="transpBA" split="1" dividechar=":" colposition="0" />
   </screen>
   <screen flags="wfNoBorder" name="AboutReleaseNotes" position="0,0" size="1280,720" title="Release Notes" backgroundColor="transparent">
     <panel name="GrandeTemplate" />
