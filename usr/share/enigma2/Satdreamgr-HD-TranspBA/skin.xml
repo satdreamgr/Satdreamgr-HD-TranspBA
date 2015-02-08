@@ -3302,8 +3302,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="session.CurrentService" render="Label" position="center,310" zPosition="1" size="480,24" valign="center" halign="center" font="Regular; 22" transparent="1" backgroundColor="transpBA" foregroundColor="un1f771f">
       <convert type="sdgCamd">Camd</convert>
     </widget>
-    <widget name="config" position="350,155" size="570,150" zPosition="1" transparent="1" backgroundColor="transpBA" />
-    <widget name="info" position="350,340" size="550,230" font="Regular; 18" transparent="1" zPosition="1" backgroundColor="transpBA" halign="left" />
+    <widget name="config" position="350,155" size="570,150" zPosition="2" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="info" position="350,340" size="550,230" font="Regular; 18" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" halign="left" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,683" size="250,14" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,683" size="250,14" transparent="0" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/blue.png" position="970,683" size="250,14" />
