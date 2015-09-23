@@ -5,7 +5,7 @@
   </output>
   <!-- Parameters -->
   <parameters>
-    <parameter name="AboutHddSplit" value="1"/>
+    <parameter name="AboutHddSplit" value="1" />
   </parameters>
   <!-- Colors -->
   <colors>
@@ -68,8 +68,8 @@
     <color name="LabelForeground" color="foreground" />
     <color name="ListboxBackground" color="transpBA" />
     <color name="ListboxForeground" color="foreground" />
-    <color name="ListboxSelectedBackground" color="transpBA" />
-    <color name="ListboxSelectedForeground" color="un11aaff" />
+    <color name="ListboxSelectedBackground" color="listbox" />
+    <color name="ListboxSelectedForeground" color="white" />
     <color name="ListboxMarkedBackground" color="transpBA" />
     <color name="ListboxMarkedForeground" color="green" />
     <color name="ListboxMarkedAndSelectedBackground" color="transpBA" />
@@ -1565,16 +1565,16 @@
   </screen>
   <!--Pluginbrowser-->
   <screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="GrandeTemplate" />
-    <panel name="ButtonTemplate2" />
-    <eLabel text="Plugin browser" position="243,94" size="795,28" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
-    <widget name="list" position="245,155" size="790,400" font="Regular;26" enableWrapAround="1" foregroundColorSelected="un11aaff" scrollbarMode="showOnDemand" transparent="1" />
-  </screen>
+  <panel name="GrandeTemplate" />
+  <panel name="ButtonTemplate2" />
+  <eLabel text="Plugin browser" position="243,94" size="795,28" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular; 24" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+  <widget name="list" position="245,155" size="790,400" font="Regular;26" enableWrapAround="1" foregroundColorSelected="white" scrollbarMode="showOnDemand" transparent="1" />
+</screen>
   <screen flags="wfNoBorder" name="PluginDownloadBrowser" position="0,0" size="1280,720" backgroundColor="transparent">
-    <panel name="GrandeTemplate" />
-    <widget enableWrapAround="1" name="list" position="245,155" size="790,400" foregroundColorSelected="un11aaff" backgroundColor="transpBA" scrollbarMode="showOnDemand" transparent="0" zPosition="1" />
-    <widget font="Regular; 22" name="text" position="305,230" size="693,50" halign="center" valign="center" transparent="1" zPosition="1" foregroundColor="un11aaff" backgroundColor="transpBA" />
-  </screen>
+  <panel name="GrandeTemplate" />
+  <widget enableWrapAround="1" name="list" position="245,155" size="790,400" foregroundColorSelected="white" backgroundColor="transpBA" scrollbarMode="showOnDemand" transparent="0" zPosition="1" />
+  <widget font="Regular; 22" name="text" position="305,230" size="693,50" halign="center" valign="center" transparent="1" zPosition="1" foregroundColor="un11aaff" backgroundColor="transpBA" />
+</screen>
   <!-- GraphMultiEPG -->
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TresGrandeTemplate" />
@@ -2299,7 +2299,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!-- Scan setup -->
   <screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="GrandeTemplate" />
+    <panel name="GrandeTemplateA" />
     <widget name="header" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="250,155" size="780,350" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="introduction" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
@@ -2310,7 +2310,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!-- Scan simple -->
   <screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="GrandeTemplate" />
+    <panel name="GrandeTemplateA" />
     <widget name="header" position="250,94" size="783,28" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="250,155" size="780,350" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" />
     <widget name="footer" position="284,524" size="700,30" font="Regular;24" foregroundColor="un11aaff" halign="center" />
