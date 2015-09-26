@@ -23,7 +23,7 @@
     <color name="grey" value="#00777777" />
     <color name="grey2" value="#00777777" />
     <color name="grisc" value="#00b2b4b5" />
-    <color name="jeaune" value="#00bb7700" />
+    <color name="jeaune" value="#00f47d19" />
     <color name="listbox" value="#00214c73" />
     <color name="noTransBG" value="#00101214" />
     <color name="orange" value="#00ffc000" />
@@ -73,7 +73,7 @@
     <color name="ListboxSelectedForeground" color="white" />
     <color name="ListboxMarkedBackground" color="transpBA" />
     <color name="ListboxMarkedForeground" color="green" />
-    <color name="ListboxMarkedAndSelectedBackground" color="transpBA" />
+    <color name="ListboxMarkedAndSelectedBackground" color="noTransBG" />
     <color name="ListboxMarkedAndSelectedForeground" color="un990000" />
     <color name="WindowTitleBackground" color="transpBA" />
     <color name="WindowTitleForeground" color="jeaune" />
@@ -2230,8 +2230,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- ChannelContextMenu -->
   <screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PetiteTemplate" />
-    <eLabel text="Channellist menu" position="355,97" size="575,28" backgroundColor="transpB" transparent="0" zPosition="2" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="menu" position="350,155" size="570,360" itemHeight="30" font="Regular;26" scrollbarMode="showOnDemand" transparent="1" />
+    <eLabel text="Channellist menu" position="355,97" size="575,28" backgroundColor="transpB" transparent="0" zPosition="-10" font="Regular;24" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget name="menu" position="350,155" size="587,390" itemHeight="30" font="Regular;26" scrollbarMode="showOnDemand" transparent="1" />
   </screen>
   <!-- Nim selection Select a tuner-->
   <screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
