@@ -777,7 +777,7 @@
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/iptv-off.png" position="641,674" size="41,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="641,674" size="41,20" alphatest="blend" zPosition="2">
-      <convert type="SDGServiceInfo">IsStream</convert>
+      <convert type="TranspBAServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.Event_Now" render="Label" zPosition="2" position="1069,567" size="75,26" font="Regular; 22" halign="right" backgroundColor="transpBA" transparent="1" valign="top">
@@ -865,7 +865,7 @@
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/iptv-off.png" position="641,674" size="41,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="641,674" size="41,20" alphatest="blend" zPosition="2">
-      <convert type="SDGServiceInfo">IsStream</convert>
+      <convert type="TranspBAServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_sub_off.png" position="342,674" size="27,20" zPosition="1" alphatest="blend" />
