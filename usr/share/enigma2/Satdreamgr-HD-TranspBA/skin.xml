@@ -1118,7 +1118,7 @@
       <convert type="ClockToText">Format:%a %d %b %Y</convert>
     </widget>
   </screen>
-  <!-- Channel,EPG,EventInfo -->
+  <!-- Channel,EPG,EventInfo  -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="30,18" size="900,60" transparent="1" zPosition="5" font="Regular; 28" valign="bottom" halign="left" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="list" zPosition="2" font="Regular; 24" position="30,95" size="596,480" colorEventProgressbarBorderSelected="blue" colorEventProgressbarSelected="blue" colorEventProgressbar="transpBA" colorEventProgressbarBorder="transpBA" foregroundColorServiceNotAvail="grey2" serviceItemHeight="32" serviceNumberFont="Regular;19" serviceNameFont="Regular;24" serviceInfoFont="Regular;0" scrollbarMode="showOnDemand" transparent="1" />
