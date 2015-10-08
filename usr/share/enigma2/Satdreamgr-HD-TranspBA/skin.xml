@@ -1636,26 +1636,46 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
   </screen>
   <!-- Choice box -->
-  <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" backgroundColor="transparent">
+  <screen name="ChoiceBox" position="130,140" size="750,600" title="Input">
     <!-- Input ect. -->
-    <widget source="Title" render="Label" position="359,80" size="568,50" backgroundColor="transpBA" transparent="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" noWrap="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="330,93" size="32,32" transparent="0" zPosition="8" alphatest="on" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="920,93" size="32,32" transparent="0" zPosition="8" alphatest="on" />
-    <eLabel position="335,75" zPosition="-11" size="610,520" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <eLabel position="333,73" zPosition="-12" size="614,524" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-    <eLabel position="335,604" zPosition="-11" size="610,70" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <eLabel position="center,602" zPosition="-12" size="614,74" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-    <eLabel backgroundColor="uncccccc" position="center,580" size="400,1" zPosition="0" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/barre_menu.png" zPosition="10" position="333,131" size="614,15" alphatest="blend" transparent="1" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="896,97" size="24, 24" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="807,612" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="511,628" size="230,26" backgroundColor="transpBA" transparent="1" font="Regular; 24" valign="center" halign="center">
-      <convert type="ClockToText">Format:%a %d %b %Y</convert>
-    </widget>
-    <widget name="text" position="362,152" size="552,50" font="Regular; 22" zPosition="0" backgroundColor="transpBA" valign="center" />
-    <widget name="list" position="360,210" size="550,339" scrollbarMode="showOnDemand" itemHeight="26" />
+    <widget name="text" position="20,35" size="710,66" font="Regular;24" />
+    <widget name="list" position="20,65" size="710,320" itemHeight="32" scrollbarMode="showOnDemand" />
+    <applet type="onLayoutFinish">
+# this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint
+ 
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self["text"].getSize()
+ 
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 80, textsize[1] + 80)
+count = len(self.list)
+if count &gt; 10:
+	count = 10
+offset = 32 * count
+wsizex = textsize[0] + 80
+wsizey = textsize[1] + offset + 20
+ 
+if (710 &gt; wsizex):
+	wsizex = 710
+wsize = (wsizex, wsizey)
+ 
+# resize
+self.instance.resize(eSize(*wsize))
+ 
+# resize label
+self["text"].instance.resize(eSize(*textsize))
+ 
+# move list
+listsize = (wsizex - 20, 32 * count)
+self["list"].instance.move(ePoint(10, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+ 
+# center window
+newwidth = wsize[0]
+self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
+		</applet>
   </screen>
   <!-- Network Configuration-->
   <screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
