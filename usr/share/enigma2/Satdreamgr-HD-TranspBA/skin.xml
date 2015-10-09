@@ -907,12 +907,12 @@
     <eLabel name="new eLabel" position="0,135" zPosition="-1" size="1280,10" backgroundColor="transpBlack" transparent="0" />
     <eLabel name="new eLabel" position="0,20" size="1280,1" zPosition="1" backgroundColor="grey" foregroundColor="grey" />
     <eLabel name="new eLabel" position="0,135" size="1280,1" backgroundColor="grey" foregroundColor="grey" />
-    <widget source="session.CurrentService" render="Label" position="39,32" zPosition="3" size="396,30" font="Regular; 22" transparent="0" halign="left" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="39,32" zPosition="3" size="396,30" font="Regular; 22" transparent="0" halign="left" backgroundColor="transpBA" foregroundColor="blue">
       <convert type="TranspBACamd">Camd</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="38,70" size="706,26" transparent="0" zPosition="1" font="Regular; 20" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBACaidDisplay">Default</convert>
-    </widget>
+  <convert type="TranspBACaidInfo2"></convert>
+</widget>
     <eLabel name="new eLabel" position="0,0" zPosition="-1" size="1280,135" backgroundColor="transpBA" transparent="0" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agci.png" position="1048,40" size="120,14" zPosition="3" transparent="0" borderWidth="1" borderColor="grey" foregroundColor="blue" backgroundColor="transpBA">
       <convert type="FrontendInfo">AGC</convert>
@@ -1058,8 +1058,8 @@
     </widget>
     <widget render="VideoSize" source="session.CurrentService" position="693,104" size="110,28" font="Regular;20" transparent="1" zPosition="5" backgroundColor="transpBA" foregroundColor="white" />
     <widget source="session.CurrentService" render="Label" position="805,104" size="110,28" transparent="1" zPosition="5" font="Regular; 20" backgroundColor="transpBA" foregroundColor="white">
-  <convert type="TranspBAExtraInfo">VideoCodec</convert>
-</widget>
+      <convert type="TranspBAExtraInfo">VideoCodec</convert>
+    </widget>
     <widget source="session.CurrentService" render="TranspBAPiconProv" path="Satdreamgr-HD-TranspBA/prov" position="746,69" size="140,30" zPosition="5" transparent="1" alphatest="blend">
       <convert type="ServiceName">Provider</convert>
     </widget>
@@ -1136,14 +1136,14 @@
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="634,124" size="70,46" font="Regular; 22" transparent="1" zPosition="1" foregroundColor="white" valign="center" backgroundColor="transpBA">
-  <convert type="EventTime">StartTime</convert>
-  <convert type="ClockToText">Default</convert>
-</widget>
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
     <eLabel text="-" position="700,124" size="10,46" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="transpBA" />
     <widget source="ServiceEvent" render="Label" position="710,124" size="70,46" font="Regular; 22" transparent="1" zPosition="1" foregroundColor="white" valign="center" backgroundColor="transpBA">
-  <convert type="EventTime">EndTime</convert>
-  <convert type="ClockToText">Default</convert>
-</widget>
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
     <widget source="ServiceEvent" render="Label" position="634,87" zPosition="1" size="613,36" font="Regular; 26" halign="center" valign="bottom" transparent="0" backgroundColor="blue" foregroundColor="white" noWrap="0">
       <convert type="ServiceName">Name</convert>
     </widget>
