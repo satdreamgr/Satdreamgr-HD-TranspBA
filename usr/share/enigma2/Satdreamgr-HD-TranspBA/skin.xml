@@ -713,7 +713,7 @@
     </widget>
   </screen>
   <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="295,610" size="920,3" transparent="1" zPosition="5">
+    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="295,610" size="915,3" transparent="1" zPosition="5">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="286,564" size="785,40" transparent="0" zPosition="1" font="Regular; 26" halign="left" noWrap="1">
@@ -897,7 +897,7 @@
     </widget>
     <eLabel text="[" zPosition="2" position="40,65" size="10,26" font="Regular; 20" halign="center" backgroundColor="background" transparent="1" valign="center" foregroundColor="blue" />
     <eLabel text="]" zPosition="2" position="765,65" size="10,26" font="Regular; 20" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="blue" />
-    <widget source="session.CurrentService" render="Picon" position="32,569" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+    <widget source="session.CurrentService" render="Picon" position="32,565" zPosition="4" size="220,132" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" position="27,494" size="105,50" valign="center" halign="center" noWrap="1" transparent="0" zPosition="1" font="Regular;36" backgroundColor="transpBlack">
