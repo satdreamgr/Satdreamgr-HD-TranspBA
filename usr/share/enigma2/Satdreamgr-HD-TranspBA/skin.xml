@@ -1228,10 +1228,10 @@
     <panel name="DoubleTemplateA" />
     <panel name="ButtonTemplate_4" />
     <panel name="KeyMenuTemplate" />
-    <widget source="Title" render="Label" position="865,310" size="380,52" backgroundColor="transpBA" transparent="0" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="un1f771f" />
+    <widget source="Title" render="Label" position="865,310" size="380,52" backgroundColor="transpBA" transparent="0" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="white" />
     <eLabel backgroundColor="uncccccc" position="150,190" size="600,1" zPosition="5" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="640,146" size="32,30" transparent="0" zPosition="8" alphatest="on" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="207,146" size="32,30" transparent="0" zPosition="8" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_next.png" position="713,149" size="35,25" transparent="0" zPosition="8" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_prev.png" position="150,149" size="35,25" transparent="0" zPosition="8" alphatest="on" />
     <widget source="Event" render="Label" position="406,149" size="80,24" transparent="1" font="Regular; 22" zPosition="5" backgroundColor="transpBA" foregroundColor="white">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -1244,15 +1244,15 @@
     <widget name="datetime" position="242,149" size="145,24" transparent="0" font="Regular;22" halign="right" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="duration" position="486,149" size="122,24" transparent="0" font="Regular;22" halign="center" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="epg_description" position="42,215" size="800,345" transparent="1" font="Regular;22" />
-    <widget source="session.Event_Now" render="Label" position="865,420" size="380,50" transparent="0" zPosition="1" foregroundColor="unffffff" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
+    <widget source="session.Event_Now" render="Label" position="865,413" size="380,50" transparent="0" zPosition="1" foregroundColor="grey" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="865,370" size="380,50" transparent="0" zPosition="1" foregroundColor="unffffff" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
+    <widget source="session.Event_Now" render="Label" position="865,363" size="380,50" transparent="0" zPosition="1" foregroundColor="grey" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
       <convert type="EventName">Rating</convert>
     </widget>
     <eLabel text="-" position="390,149" size="15,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="3" />
-    <eLabel name="" position="865,150" size="380,400" backgroundColor="blue" />
-    <widget source="session.Event_Next" render="Label" position="865,480" size="380,54" font="Regular; 24" halign="center" foregroundColor="un1f771f" transparent="0" zPosition="1" valign="center">
+    <eLabel name="" position="865,150" size="380,415" backgroundColor="blue" />
+    <widget source="session.Event_Next" render="Label" position="865,515" size="380,54" font="Regular; 24" halign="center" foregroundColor="grey2" transparent="0" zPosition="1" valign="center">
       <convert type="EventName">NameNext</convert>
     </widget>
     <widget source="Title" render="Picon" position="947,162" zPosition="1" size="220,132" transparent="1" alphatest="blend">
