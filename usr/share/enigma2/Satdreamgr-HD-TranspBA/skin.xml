@@ -1195,89 +1195,70 @@
   </screen>
   <!-- EPG Stuff LISTE -->
   <screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="DoubleTemplate" />
-  <panel name="ButtonTemplate_4" />
-  <panel name="KeyInfoTemplate" />
-<panel name="KeyMenuTemplate" />
-
-
-
-
-
-  <widget name="list" font="Regular; 22" position="40,155" size="800,400" transparent="1" scrollbarMode="showOnDemand" />
-  <widget source="Service" render="Label" position="50,80" size="787,50" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="Event" render="Label" position="865,150" size="375,52" foregroundColor="white" font="Regular; 22" transparent="0" halign="center" backgroundColor="blue" valign="center">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="Event" render="Label" position="865,245" size="373,320" transparent="0" font="Regular; 22" backgroundColor="blue" valign="top" halign="left">
-    <convert type="EventName">FullDescription</convert>
-  </widget>
-  <widget source="Event" render="Label" position="884,210" size="80,25" backgroundColor="transpBA" transparent="0" foregroundColor="white" font="Regular;22">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">ShortDate</convert>
-  </widget>
-  <widget source="Event" render="Label" position="995,210" size="80,25" backgroundColor="transpBA" transparent="0" foregroundColor="white" font="Regular;22" halign="right">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <widget source="Event" render="Label" position="1130,210" size="80,25" transparent="1" font="Regular; 22" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <eLabel text="----" font="Regular; 20" position="1076,210" size="50,25" halign="center" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" valign="center" zPosition="8" />
-</screen>
+    <panel name="DoubleTemplate" />
+    <panel name="ButtonTemplate_4" />
+    <panel name="KeyInfoTemplate" />
+    <panel name="KeyMenuTemplate" />
+    <widget name="list" font="Regular; 22" position="40,155" size="800,400" transparent="1" scrollbarMode="showOnDemand" />
+    <widget source="Service" render="Label" position="50,80" size="787,50" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="865,150" size="375,52" foregroundColor="white" font="Regular; 22" transparent="0" halign="center" backgroundColor="blue" valign="center">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="865,245" size="373,320" transparent="0" font="Regular; 22" backgroundColor="blue" valign="top" halign="left">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="Event" render="Label" position="884,210" size="80,25" backgroundColor="transpBA" transparent="0" foregroundColor="white" font="Regular;22">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">ShortDate</convert>
+    </widget>
+    <widget source="Event" render="Label" position="995,210" size="80,25" backgroundColor="transpBA" transparent="0" foregroundColor="white" font="Regular;22" halign="right">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1130,210" size="80,25" transparent="1" font="Regular; 22" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel text="----" font="Regular; 20" position="1076,210" size="50,25" halign="center" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" valign="center" zPosition="8" />
+  </screen>
   <!-- EPG Stuff LISTE -->
   <screen name="EventView" title="Eventview" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="DoubleTemplateA" />
-
+    <panel name="DoubleTemplateA" />
     <panel name="ButtonTemplate_4" />
     <panel name="KeyMenuTemplate" />
-
-    <widget source="Title" render="Label" position="865,215" size="380,52" backgroundColor="transpBA" transparent="0" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="un1f771f" />
-
-  <eLabel backgroundColor="uncccccc" position="150,190" size="600,1" zPosition="5" />
-
-
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="640,146" size="32,30" transparent="0" zPosition="8" alphatest="on" />
-  <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="207,146" size="32,30" transparent="0" zPosition="8" alphatest="on" />
-  
-  <widget source="session.CurrentService" render="Label" position="865,153" size="380,54" font="Regular; 26" foregroundColor="jeaune" backgroundColor="blue" transparent="0" halign="center" valign="center" zPosition="1">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="Event" render="Label" position="406,149" size="80,24" transparent="1" font="Regular; 22" zPosition="5" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <eLabel text="]" position="608,149" size="10,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="4" />
-  <eLabel text="[" position="477,149" size="10,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="4" />
-  <widget source="Service" render="Label" position="49,80" size="787,50" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget name="datetime" position="242,149" size="145,24" transparent="0" font="Regular;22" halign="right" backgroundColor="transpBA" foregroundColor="white" />
-  <widget name="duration" position="486,149" size="122,24" transparent="0" font="Regular;22" halign="center" backgroundColor="transpBA" foregroundColor="white" />
-  <widget name="epg_description" position="42,215" size="800,345" transparent="1" font="Regular;22" />
-  <widget source="session.Event_Now" render="Label" position="865,317" size="380,50" transparent="0" zPosition="1" foregroundColor="unffffff" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
-    <convert type="EventName">Genre</convert>
-  </widget>
-  <widget source="session.Event_Now" render="Label" position="865,267" size="380,50" transparent="0" zPosition="1" foregroundColor="unffffff" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
-    <convert type="EventName">Rating</convert>
-  </widget>
-  <eLabel text="-" position="390,149" size="15,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="3" />
-  <eLabel name="" position="865,145" size="380,410" backgroundColor="blue" />
-
-    <widget source="session.Event_Next" render="Label" position="865,375" size="380,173" font="Regular; 24" halign="center" foregroundColor="un1f771f" transparent="0" zPosition="1" valign="center">
+    <widget source="Title" render="Label" position="865,310" size="380,52" backgroundColor="transpBA" transparent="0" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="un1f771f" />
+    <eLabel backgroundColor="uncccccc" position="150,190" size="600,1" zPosition="5" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="640,146" size="32,30" transparent="0" zPosition="8" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="207,146" size="32,30" transparent="0" zPosition="8" alphatest="on" />
+    <widget source="Event" render="Label" position="406,149" size="80,24" transparent="1" font="Regular; 22" zPosition="5" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel text="]" position="608,149" size="10,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="4" />
+    <eLabel text="[" position="477,149" size="10,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="4" />
+    <widget source="Service" render="Label" position="49,80" size="787,50" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget name="datetime" position="242,149" size="145,24" transparent="0" font="Regular;22" halign="right" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="duration" position="486,149" size="122,24" transparent="0" font="Regular;22" halign="center" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="epg_description" position="42,215" size="800,345" transparent="1" font="Regular;22" />
+    <widget source="session.Event_Now" render="Label" position="865,420" size="380,50" transparent="0" zPosition="1" foregroundColor="unffffff" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="865,370" size="380,50" transparent="0" zPosition="1" foregroundColor="unffffff" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
+      <convert type="EventName">Rating</convert>
+    </widget>
+    <eLabel text="-" position="390,149" size="15,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="3" />
+    <eLabel name="" position="865,150" size="380,400" backgroundColor="blue" />
+    <widget source="session.Event_Next" render="Label" position="865,480" size="380,54" font="Regular; 24" halign="center" foregroundColor="un1f771f" transparent="0" zPosition="1" valign="center">
       <convert type="EventName">NameNext</convert>
     </widget>
-
-    
-
-    
-
-
-
-</screen>
+    <widget source="Title" render="Picon" position="947,162" zPosition="1" size="220,132" transparent="1" alphatest="blend">
+      <convert type="TranspBARefString">CurrentRef</convert>
+    </widget>
+  </screen>
   <!-- EPGSelectionMulti -->
   <screen flags="wfNoBorder" name="EPGSelectionMulti" position="0,0" size="1280,720" title="EPG Selection" backgroundColor="transparent">
     <panel name="DoubleTemplateA" />
@@ -2485,8 +2466,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     </widget>
     <widget name="freeDiskSpace" position="265,583" size="360,24" foregroundColor="unff0000" font="Regular;20" transparent="1" halign="center" backgroundColor="transpBA" />
     <widget source="Service" render="Label" position="863,150" size="380,54" zPosition="1" foregroundColor="jeaune" font="Regular; 26" halign="center" transparent="0" backgroundColor="transpBA" valign="center">
-  <convert type="MovieInfo">RecordServiceName</convert>
-</widget>
+      <convert type="MovieInfo">RecordServiceName</convert>
+    </widget>
     <widget name="movie_sort" pixmaps="Satdreamgr-HD-TranspBA/icons/az.png,Satdreamgr-HD-TranspBA/icons/newtop.png,Satdreamgr-HD-TranspBA/icons/shuffle.png,Satdreamgr-HD-TranspBA/icons/za.png,Satdreamgr-HD-TranspBA/icons/oldtop.png,Satdreamgr-HD-TranspBA/icons/faz.png,Satdreamgr-HD-TranspBA/icons/fza.png" position="414,499" zPosition="1" size="35,24" transparent="1" alphatest="on" backgroundColor="transpBA" />
     <widget name="movie_off" pixmaps="Satdreamgr-HD-TranspBA/icons/ask.png,Satdreamgr-HD-TranspBA/icons/movielist.png,Satdreamgr-HD-TranspBA/icons/quit.png,Satdreamgr-HD-TranspBA/icons/pause.png,Satdreamgr-HD-TranspBA/icons/playlist.png,Satdreamgr-HD-TranspBA/icons/playlistquit.png,Satdreamgr-HD-TranspBA/icons/loop.png" position="465,499" zPosition="1" size="35,24" transparent="1" alphatest="on" backgroundColor="transpBA" />
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
