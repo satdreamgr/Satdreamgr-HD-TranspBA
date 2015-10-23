@@ -125,7 +125,7 @@
   <screen name="ButtonRed" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="145,680" size="250,14" transparent="1" alphatest="blend" />
   </screen>
-  <screen name="ButtonGreen" position="0,0" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="ButtonGreen" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="420,680" size="250,14" transparent="1" alphatest="blend" />
   </screen>
   <screen name="ButtonYellow" flags="wfNoBorder">
@@ -1227,7 +1227,6 @@
   <screen name="EventView" title="Eventview" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="DoubleTemplateA" />
     <panel name="ButtonTemplate_4" />
-    <panel name="KeyMenuTemplate" />
     <widget source="Title" render="Label" position="865,310" size="380,52" backgroundColor="transpBA" transparent="0" zPosition="1" font="Regular;24" valign="center" halign="center" foregroundColor="white" />
     <eLabel backgroundColor="uncccccc" position="150,190" size="600,1" zPosition="5" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_next.png" position="713,149" size="35,25" transparent="0" zPosition="8" alphatest="on" />
@@ -3159,15 +3158,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!-- Choose upgrade source -->
   <screen name="IPKGMenu" title="Select IPKG source" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="GrandeTemplate" />
-    <panel name="ButtonTemplate_2S" />
+    <widget source="Title" render="Label" position="252,80" size="783,50" backgroundColor="transpBA" transparent="1" zPosition="0" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" noWrap="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="224,90" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1025,90" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <eLabel position="230,70" zPosition="-11" size="820,520" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <eLabel position="228,68" zPosition="-12" size="824,524" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="230,598" zPosition="-11" size="820,70" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <eLabel position="228,596" zPosition="-12" size="824,74" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel backgroundColor="uncccccc" position="center,570" size="600,1" zPosition="5" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/menu/double_ta.png" zPosition="10" position="228,128" size="824,15" alphatest="blend" transparent="1" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1000,95" size="24, 24" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="283,647" size="250,14" transparent="1" alphatest="blend" />
+    <widget source="key_red" render="Label" position="283,605" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;23" halign="center" valign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="752,647" size="250,14" transparent="1" alphatest="blend" />
+    <widget source="key_green" render="Label" position="752,605" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;23" halign="center" valign="center" />
     <widget name="filelist" position="250,155" size="780,360" font="Regular;22" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
   </screen>
   <!-- Edit upgrade source -->
-  <screen name="IPKGSource" title="IPKG source" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="GrandeTemplate" />
-    <panel name="ButtonTemplate_2S" />
-    <widget name="text" position="250,250" size="780,46" font="Regular;22" zPosition="3" transparent="1" backgroundColor="transpBA" foregroundColor="un11aaff" />
+  <screen name="IPKGSource" title="IPKG source" position="center,center" size="1100,110">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="194,90" size="250,14" transparent="1" alphatest="blend" />
+    <widget source="key_red" render="Label" position="193,55" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;23" halign="center" valign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="749,90" size="250,14" transparent="1" alphatest="blend" />
+    <widget source="key_green" render="Label" position="748,55" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;23" halign="center" valign="center" />
+    <widget name="text" position="7,9" size="1080,28" font="Regular;22" zPosition="3" transparent="1" backgroundColor="transpBA" foregroundColor="un11aaff" halign="center" />
   </screen>
   <!-- Softwaremanager -->
   <screen flags="wfNoBorder" name="SoftwareManagerSetup" position="0,0" size="1280,720" title="SoftwareManager setup" backgroundColor="transparent">
