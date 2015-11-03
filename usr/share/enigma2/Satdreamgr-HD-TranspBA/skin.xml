@@ -1069,7 +1069,7 @@
   <screen name="Volume" position="58,72" size="322,57" title="Volume" backgroundColor="transparent2" zPosition="99" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/volume.png" position="0,0" size="320,55" backgroundColor="transpBA" zPosition="100" transparent="0" borderWidth="1" borderColor="white" />
     <widget name="Volume" pixmap="Satdreamgr-HD-TranspBA/icons/volumeb.png" position="60,22" size="175,10" zPosition="101" transparent="0" backgroundColor="blue" foregroundColor="blue" />
-    <widget render="TranspBAvolumeText" source="global.CurrentTime" font="Regular; 30" position="249,0" size="73,55" backgroundColor="background90" halign="center" valign="center" foregroundColor="white" transparent="1" zPosition="101" />
+    <widget render="TranspBAvolumeText" source="global.CurrentTime" font="Regular; 30" position="249,0" size="73,55" backgroundColor="transpBA" halign="center" valign="center" foregroundColor="white" transparent="1" zPosition="101" />
   </screen>
   <screen name="Mute" title="Mute" position="48,232" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons//mute.png" position="0,0" size="64,64" zPosition="-5" alphatest="on" />
@@ -1342,9 +1342,8 @@
     <widget name="timeline3" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
     <widget name="timeline4" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
     <widget name="timeline5" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline.png" position="0,72" size="1,420" zPosition="1" />
-    <widget name="bouquetlist" position="7,135" size="1200,355" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
     <eLabel position="0,0" size="1280,720" zPosition="-19" backgroundColor="transpBA" />
-    <widget name="list" position="0,134" size="1610,355" itemHeight="60" backgroundColor="black" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
+    <widget name="list" position="30,130" size="1221,355" backgroundColor="black" scrollbarMode="showOnDemand" EntryBackgroundColor="secondBG" EntryBackgroundColorSelected="jeaune" EntryBorderColor="jeaune" transparent="1" />
     <widget source="Event" render="Label" position="728,504" size="80,24" backgroundColor="background" transparent="1" foregroundColor="unffffff" font="Regular;22" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
@@ -1362,8 +1361,8 @@
     <widget source="Event" render="Label" position="43,540" size="1200,74" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="40,82" size="1280,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
-    <widget name="timeline_now" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline-now.png" position="6,132" size="19,355" zPosition="21" alphatest="on" />
+    <widget name="timeline_text" position="40,80" size="1178,28" foregroundColor="un99dd" backgroundColor="black" transparent="1" />
+    <widget name="timeline_now" pixmap="Satdreamgr-HD-TranspBA/dvr/timeline-now.png" position="6,130" size="19,355" zPosition="21" alphatest="on" />
   </screen>
   <!-- GraphMultiEPG List -->
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transpBA">
