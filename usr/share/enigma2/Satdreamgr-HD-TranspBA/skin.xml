@@ -800,8 +800,6 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="[" zPosition="2" position="40,68" size="10,24" font="Regular; 20" halign="center" backgroundColor="background" transparent="1" valign="center" foregroundColor="blue" />
-    <eLabel text="]" zPosition="2" position="765,68" size="10,24" font="Regular; 20" halign="center" backgroundColor="background" transparent="1" valign="center" foregroundColor="blue" />
     <widget source="session.CurrentService" render="Picon" position="32,565" zPosition="4" size="220,132" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
