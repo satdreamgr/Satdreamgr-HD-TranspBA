@@ -1297,7 +1297,7 @@
     </widget>
     <eLabel text="]" position="942,150" size="10,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="2" />
     <eLabel text="[" position="805,150" size="15,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="2" />
-    <widget source="Service" render="Label" position="290,68" size="700,50" backgroundColor="secondBG" transparent="1" zPosition="2" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
+    <widget source="Service" render="Label" position="290,69" size="700,50" backgroundColor="secondBG" transparent="1" zPosition="2" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget name="datetime" position="565,150" size="145,24" transparent="0" font="Regular;22" halign="right" backgroundColor="transpBA" foregroundColor="white" zPosition="2" />
@@ -1488,7 +1488,7 @@
   <!-- Help -->
   <screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="help..." position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="help..." position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="list" position="330,150" size="790,405" scrollbarMode="showOnDemand" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="rc" position="144,124" size="154,474" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" backgroundColor="transpBA" />
     <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
@@ -1578,20 +1578,20 @@
   <screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <panel name="keybutton2" />
-    <eLabel text="About" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="About" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="AboutScrollLabel" font="Regular;22" position="330,150" size="790,405" zPosition="0" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <screen flags="wfNoBorder" name="AboutReleaseNotes" position="0,0" size="1280,720" title="Release Notes" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget source="Title" render="Label" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="0" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" noWrap="1" />
+    <widget source="Title" render="Label" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="0" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" noWrap="1" />
     <widget name="list" font="Regular;22" position="330,150" size="790,405" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
   </screen>
   <screen flags="wfNoBorder" name="TranslationInfo" position="0,0" size="1280,720" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Translation" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Translation" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="TranslatorName" render="Label" position="330,150" size="790,110" font="Regular;22" halign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
     <widget source="TranslationInfo" render="Label" position="330,280" size="790,281" font="Regular;22" halign="center" backgroundColor="transpBA" transparent="0" foregroundColor="white" zPosition="0" />
   </screen>
@@ -1599,7 +1599,7 @@
   <screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <panel name="button4" />
-    <eLabel text="Service info" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Service info" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="infolist" font="Regular; 22" position="330,150" size="790,405" selectionDisabled="1" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="355,560" size="710,26" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular; 22" valign="center" halign="center">
       <convert type="ServiceInfo">HasHBBTV</convert>
@@ -1672,7 +1672,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Network Configuration-->
   <screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Network Configuration" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel name="" position="308,530" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+    <eLabel text="Network Configuration" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/network.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <widget name="menulist" font="Regular; 22" position="330,150" size="790,300" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand" transparent="1" />
@@ -1684,27 +1685,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
+    <eLabel name="" position="308,415" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/network.png" zPosition="4" transparent="0" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_text.png" position="209,600" size="41,29" transparent="1" alphatest="off" zPosition="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_text.png" position="209,600" size="41,29" transparent="1" alphatest="blend" zPosition="1" />
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
-    <widget source="key_blue" render="Label" position="940,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="center" />
-    <eLabel text="Network setup" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget source="key_blue" render="Label" position="940,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <eLabel text="Network setup" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="330,150" size="790,220" itemHeight="32" scrollbarMode="showOnDemand" transparent="1" />
-    <widget source="introduction" foregroundColor="jeaune" transparent="1" render="Label" position="330,410" size="790,20" font="Regular; 20" halign="center" backgroundColor="transpBA" />
-    <widget source="IPtext" render="Label" position="330,444" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" halign="left" backgroundColor="transpBA" />
-    <widget source="IP" render="Label" position="485,444" size="200,20" zPosition="1" transparent="1" font="Regular; 20" backgroundColor="transpBA" />
-    <widget source="DNS1text" render="Label" position="688,444" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" valign="top" halign="left" backgroundColor="transpBA" />
-    <widget source="DNS1" render="Label" position="840,444" size="230,20" transparent="1" zPosition="1" font="Regular; 20" valign="center" halign="left" backgroundColor="transpBA" />
-    <widget source="Netmasktext" render="Label" position="330,473" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" halign="left" backgroundColor="transpBA" />
-    <widget source="Mask" render="Label" position="487,473" size="200,20" transparent="1" zPosition="1" font="Regular; 20" />
-    <widget source="DNS2text" render="Label" position="688,473" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" valign="top" halign="left" backgroundColor="transpBA" />
-    <widget source="DNS2" render="Label" position="840,473" size="230,20" transparent="1" zPosition="1" font="Regular; 20" valign="center" halign="left" backgroundColor="transpBA" />
-    <widget source="Gatewaytext" render="Label" position="330,500" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" halign="left" backgroundColor="transpBA" />
-    <widget source="Gateway" render="Label" position="482,500" size="200,20" transparent="1" zPosition="1" font="Regular; 20" />
-    <widget source="Adaptertext" render="Label" position="328,555" size="270,20" transparent="1" zPosition="10" foregroundColor="un1f771f" font="Regular; 20" halign="right" backgroundColor="transpBA" />
-    <widget source="Adapter" render="Label" position="602,555" size="400,20" transparent="1" zPosition="10" font="Regular;20" halign="left" backgroundColor="transpBA" />
-    <widget source="introduction2" foregroundColor="white" render="Label" position="330,379" size="790,20" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" backgroundColor="transpBA" />
-    <eLabel text="Virtual Keyboard" position="140,626" size="200,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
+    <widget source="introduction" foregroundColor="white" transparent="1" render="Label" position="330,430" size="790,22" font="Regular; 22" halign="left" backgroundColor="transpBA" />
+    <widget source="IPtext" render="Label" position="330,464" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" halign="left" backgroundColor="transpBA" />
+    <widget source="IP" render="Label" position="485,464" size="200,20" zPosition="1" transparent="1" font="Regular; 20" backgroundColor="transpBA" foregroundColor="white" />
+    <widget source="DNS1text" render="Label" position="688,464" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" valign="top" halign="left" backgroundColor="transpBA" />
+    <widget source="DNS1" render="Label" position="840,464" size="230,20" transparent="1" zPosition="1" font="Regular; 20" valign="center" halign="left" backgroundColor="transpBA" foregroundColor="white" />
+    <widget source="Netmasktext" render="Label" position="330,493" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" halign="left" backgroundColor="transpBA" />
+    <widget source="Mask" render="Label" position="485,493" size="200,20" transparent="1" zPosition="1" font="Regular; 20" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="DNS2text" render="Label" position="688,493" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" valign="top" halign="left" backgroundColor="transpBA" />
+    <widget source="DNS2" render="Label" position="840,493" size="230,20" transparent="1" zPosition="1" font="Regular; 20" valign="center" halign="left" backgroundColor="transpBA" foregroundColor="white" />
+    <widget source="Gatewaytext" render="Label" position="330,520" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" halign="left" backgroundColor="transpBA" />
+    <widget source="Gateway" render="Label" position="485,520" size="200,20" transparent="1" zPosition="1" font="Regular; 20" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="Adaptertext" render="Label" position="330,547" size="150,20" transparent="1" zPosition="1" foregroundColor="un1f771f" font="Regular; 20" halign="left" backgroundColor="transpBA" />
+    <widget source="Adapter" render="Label" position="485,547" size="400,20" transparent="1" zPosition="10" font="Regular;20" halign="left" backgroundColor="transpBA" foregroundColor="white" />
+    <widget source="introduction2" foregroundColor="white" render="Label" position="330,379" size="790,22" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="center" backgroundColor="transpBA" />
+    <eLabel text="Virtual Keyboard" position="140,626" size="180,26" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 18" halign="center" foregroundColor="white" />
     <widget name="HelpWindow" position="0,0" size="1,1" transparent="1" zPosition="1" alphatest="on" />
   </screen>
   <screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1713,7 +1715,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="center" />
-    <eLabel text="Nameserver setup" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Nameserver setup" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="330,150" size="790,350" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" />
     <widget source="introduction" render="Label" position="330,555" size="790,26" foregroundColor="white" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="center" backgroundColor="transpBA" />
   </screen>
@@ -1744,7 +1746,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/network.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
-    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="center" />
+    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 20" halign="center" valign="center" foregroundColor="yellow" />
     <widget name="Adaptertext" position="320,190" size="250,23" transparent="1" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="Adapter" position="570,190" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="AdapterInfo_OK" pixmap="skin_default/icons/lock_on.png" position="880,185" size="38,31" zPosition="2" alphatest="on" />
@@ -1770,8 +1772,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="DNSInfo_Check" position="880,345" size="38,31" transparent="1" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="DNSInfo_Text" position="920,350" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="DNSInfo" position="920,350" size="200,23" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
-    <widget name="EditSettingsButton" position="939,639" size="200,12" transparent="1" zPosition="2" pixmaps="Satdreamgr-HD-TranspBA/buttons/grey.png,Satdreamgr-HD-TranspBA/buttons/blue.png" alphatest="on" backgroundColor="NLPreBlack" foregroundColor="white" />
-    <widget name="EditSettings_Text" position="940,600" size="200,40" transparent="1" zPosition="1" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;19" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" />
+    <widget name="EditSettingsButton" position="0,0" size="0,0" transparent="1" zPosition="2" alphatest="on" backgroundColor="NLPreBlack" foregroundColor="white" />
+    <widget name="EditSettings_Text" position="940,600" size="200,50" transparent="1" zPosition="1" foregroundColors="#ffffff,#0077ff,#0077ff" font="Regular;22" backgroundColor="NLPreBlack" halign="center" valign="center" />
     <widget name="InfoText" position="330,555" size="790,22" zPosition="25" font="Regular; 22" transparent="0" foregroundColor="white" backgroundColor="transpBA" halign="center" />
     <widget name="InfoTextBorder" position="310,160" size="820,239" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
@@ -1837,7 +1839,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="center" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/mountm.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="MountView" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="MountView" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="legend1" render="Label" position="445,155" size="130,20" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="Left" backgroundColor="transpBA" />
     <widget source="legend2" render="Label" position="580,155" size="345,20" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" backgroundColor="transpBA" />
     <widget source="legend3" render="Label" position="930,155" size="130,20" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" backgroundColor="transpBA" />
@@ -1920,7 +1922,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Console -->
   <screen name="Console" title="Command execution" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <widget source="Title" render="Label" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="0" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" noWrap="1" />
+    <widget source="Title" render="Label" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="0" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" noWrap="1" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/script.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="text" position="330,150" size="790,405" transparent="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
@@ -2048,7 +2050,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Virtual Keyboard -->
   <screen name="VirtualKeyBoard" position="0,0" size="1280,720" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Virtual keyboard" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Virtual keyboard" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/keyboard.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel text="Delete" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="center" foregroundColor="white" valign="center" />
     <eLabel text="OK" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;24" halign="center" foregroundColor="white" valign="center" />
@@ -2063,14 +2065,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="STBTemplate" />
     <panel name="keybutton2l" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/recording.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Recording paths" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Recording paths" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="330,150" size="790,405" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
   </screen>
   <!-- Harddisk selection  -->
   <screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/hdd.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Select HDD" position="290,68" size="700,50" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" backgroundColor="NLPreBlack" />
+    <eLabel text="Select HDD" position="290,69" size="700,50" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" backgroundColor="NLPreBlack" />
     <widget name="hddlist" position="330,150" size="790,360" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- Harddisk setup -->
@@ -2085,14 +2087,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- ChannelContextMenu -->
   <screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Channellist menu" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Channellist menu" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/tvlist.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="menu" position="330,150" size="780,390" itemHeight="30" font="Regular;26" scrollbarMode="showOnDemand" transparent="1" />
   </screen>
   <!-- Nim selection Select a tuner-->
   <screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Select a tuner" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Select a tuner" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/tuner.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="nimlist" render="Listbox" position="330,150" size="790,405" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -2162,7 +2164,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!-- FastScan -->
   <screen name="FastScanScreen" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
+    <panel name="STBTemplate" />
+    <eLabel text="Fast Scan" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/scan.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="config" position="330,150" size="790,400" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" />
     <widget name="introduction" position="330,556" size="790,26" font="Regular; 22" foregroundColor="white" halign="center" />
@@ -2297,13 +2300,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/play.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Movielist menu" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Movielist menu" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="menu" position="330,150" size="790,390" itemHeight="30" font="Regular;24" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <screen name="MovieBrowserConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <panel name="keybutton2" />
-    <eLabel text="Movie list configuration" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Movie list configuration" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="330,150" size="790,360" itemHeight="24" font="Regular; 22" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/movielist.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
@@ -2359,52 +2362,81 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/eye.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <!-- Movie Player Infobar -->
-  <screen name="MoviePlayer" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent">
-    <widget source="session.CurrentService" render="Label" position="201,603" size="832,24" backgroundColor="transpBA" zPosition="1" foregroundColor="jeaune" font="Regular;24" valign="center" halign="center">
+  <screen name="MoviePlayer" title="InfoBar" position="-1,0" size="1280,720" backgroundColor="transparent">
+    <eLabel backgroundColor="transpBA" position="412,630" size="727,14" zPosition="0" />
+    <ePixmap name="" position="76,563" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/film5.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="session.CurrentService" render="Label" zPosition="1" position="286,564" size="90,40" font="Regular; 22" halign="left" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" zPosition="1" position="385,564" size="870,40" font="Regular; 26" valign="center" noWrap="1" backgroundColor="transpBA" transparent="1" foregroundColor="white">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <eLabel backgroundColor="white" position="806,24" size="406,65" zPosition="-12" />
-    <eLabel backgroundColor="transpBA" position="807,25" size="404,62" zPosition="-10" />
-    <eLabel backgroundColor="white" position="78,597" size="1129,102" zPosition="-11" />
-    <eLabel backgroundColor="transpBA" position="79,598" size="1127,100" zPosition="-10" />
-    <eLabel backgroundColor="transpBA" position="113,631" size="1040,18" zPosition="0" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/dvr/scale1024.png" position="116,639" size="1024,4" zPosition="1" />
-    <widget source="session.CurrentService" render="PositionGauge" position="114,634" size="1024,14" transparent="1" zPosition="4" pointer="Satdreamgr-HD-TranspBA/dvr/position_pointer1024.png:1012,0">
-      <convert type="ServicePosition">Gauge</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="115,602" size="90,25" backgroundColor="transpBA" zPosition="4" foregroundColor="foreground" font="Regular;22" valign="center" halign="left">
-      <convert type="ServicePosition">Position,ShowHours</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1020,602" size="117,25" backgroundColor="transpBA" zPosition="4" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
-      <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
-    </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/rec.png" position="1160,608" size="20,20" zPosition="3" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="114,656" size="145,21" zPosition="2" backgroundColor="transpBA" foregroundColor="foreground" font="Regular;20" borderWidth="2" valign="top" halign="left">
-      <convert type="TranspBAExtraInfo">ResolutionString</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="823,37" size="215,37" backgroundColor="transpBA" transparent="0" zPosition="2" font="Regular; 26" valign="center" halign="center" foregroundColor="jeaune">
-      <convert type="ClockToText">Format:%a %d-%m-%Y</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1047,25" size="124,60" backgroundColor="transpBA" transparent="0" zPosition="1" font="Regular; 35" halign="right" valign="center">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1171,36" zPosition="2" size="30,20" font="LCD; 20" halign="left" valign="top" transparent="0" backgroundColor="transpBA" foregroundColor="un11aaff">
+    <widget source="global.CurrentTime" render="Label" position="1189,498" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="transpBA" foregroundColor="jeaune">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_dolby_on.png" position="1029,649" size="33,21" zPosition="2" alphatest="on">
+    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="413,631" size="725,4" transparent="1" zPosition="5">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel name="new eLabel" position="0,488" zPosition="-1" size="1280,64" backgroundColor="transpBlack" transparent="0" />
+    <eLabel name="new eLabel" position="0,544" zPosition="0" size="1280,174" backgroundColor="transpBA" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="1025,490" size="165,54" font="Regular; 38" halign="right" backgroundColor="transpBlack" transparent="1" valign="center" zPosition="10" foregroundColor="white">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="53,491" size="177,30" font="Regular; 22" halign="center" backgroundColor="transpBlack" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="53,519" size="177,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="grey">
+      <convert type="ClockToText">Format:%d-%m-%Y</convert>
+    </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_off.png" position="290,674" size="41,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="290,674" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_off.png" position="535,674" size="56,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="535,674" size="56,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_hd.png" position="1070,649" size="40,21" zPosition="4" alphatest="on">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">800,2000</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="/Satdreamgr-HD-TranspBA/infobar/ico_format_16_9.png" position="1069,649" size="40,21" zPosition="3" alphatest="on">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_off.png" position="451,674" size="32,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="451,674" size="32,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_txt_off.png" position="499,674" size="23,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_txt_on.png" position="499,674" size="23,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_hbbtv_off.png" position="383,674" size="53,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="383,674" size="53,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hbbtv_on.png" alphatest="blend">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_sub_off.png" position="342,674" size="27,20" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_sub_on.png" position="342,674" size="27,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel name="new eLabel" position="0,546" size="1280,1" backgroundColor="grey" foregroundColor="grey" />
+    <eLabel name="new eLabel" position="286,665" size="994,1" backgroundColor="grey" foregroundColor="grey" />
+    <!-- Parameters -->
+    <!-- Parameters -->
+    <widget source="session.CurrentService" render="PositionGauge" position="413,631" size="725,12" transparent="1" zPosition="4" pointer="Satdreamgr-HD-TranspBA/dvr/position_pointer1024.png:1012,0">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="286,615" size="120,40" backgroundColor="transpBA" zPosition="4" foregroundColor="white" font="Regular; 22" valign="center" halign="left" transparent="1">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1148,615" size="110,40" backgroundColor="transpBA" zPosition="4" foregroundColor="white" font="Regular;22" valign="center" halign="left">
+      <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+    </widget>
+    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="655,675" size="23,23" zPosition="3" alphatest="blend">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="730,675" size="160,22" zPosition="2" backgroundColor="transpBA" foregroundColor="white" font="Regular; 20" borderWidth="2" valign="top" halign="left" transparent="1">
+      <convert type="TranspBAExtraInfo">ResolutionString</convert>
     </widget>
   </screen>
   <!-- Video Finetune -->
@@ -2492,7 +2524,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="session.CurrentService" render="Label" position="1039,37" size="117,25" backgroundColor="transpBA" zPosition="4" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/rec.png" position="1190,54" size="20,20" zPosition="3" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="1190,54" size="20,20" zPosition="3" alphatest="blend">
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
@@ -2510,7 +2542,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!-- CableScanScreen -->
   <screen name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
+    <panel name="STBTemplate" />
+    <eLabel text="Cable Scan" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" itemHeight="35" position="330,150" size="790,300" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="2" backgroundColor="transpBA" font="Regular; 22" />
     <widget name="introduction" position="330,555" size="790,25" font="Regular; 22" halign="center" valign="center" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/cable.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -2600,7 +2633,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen flags="wfNoBorder" name="VideoWizard" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0">
     <panel name="N2Template" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel font="Regular; 28" position="290,68" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
+    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
     <widget name="text" backgroundColor="transpBA" font="Regular; 22" position="330,150" size="785,150" halign="center" valign="center" transparent="1" zPosition="3" />
     <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="330,330" size="785,210" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -2617,7 +2650,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="LanguageWizard" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent" title="Welcome...">
     <panel name="N2Template" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel font="Regular; 28" position="290,68" size="700,50" halign="center" backgroundColor="NLPreBlack" foregroundColor="jeaune" text="Language Selection" transparent="1" zPosition="2" valign="center" />
+    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" backgroundColor="NLPreBlack" foregroundColor="jeaune" text="Language Selection" transparent="1" zPosition="2" valign="center" />
     <widget name="text" font="Regular; 22" position="500,600" size="557,50" halign="right" valign="center" transparent="1" zPosition="3" foregroundColor="white" backgroundColor="NLPreBlack" />
     <widget source="languages" render="Listbox" position="324,154" transparent="1" size="795,400" scrollbarMode="showOnDemand" zPosition="1">
       <convert type="TemplatedMultiContent">
@@ -2635,7 +2668,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="DefaultWizard" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <panel name="N2Template" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel font="Regular; 28" position="290,68" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
+    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
     <widget name="text" backgroundColor="transpBA" font="Regular; 22" position="330,150" size="785,150" halign="center" valign="center" transparent="1" zPosition="1" />
     <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="330,330" size="785,230" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -2689,7 +2722,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="N2Template" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel font="Regular; 28" position="290,68" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
+    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
     <widget name="text" position="330,150" size="785,150" font="Regular;22" backgroundColor="transpBA" transparent="1" foregroundColor="white" zPosition="1" />
     <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="330,330" size="785,210" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -2704,7 +2737,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="N2Template" />
-    <eLabel font="Regular; 28" position="290,68" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="1" valign="center" />
+    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="1" valign="center" />
     <widget name="rc" position="146,122" size="154,474" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
     <widget name="arrowdown" position="203,301" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
     <widget name="arrowdown2" position="203,301" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
@@ -2855,12 +2888,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="filelist" position="330,150" size="790,360" font="Regular;22" zPosition="3" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- Edit upgrade source -->
-  <screen name="IPKGSource" title="IPKG source" position="center,center" size="1100,110">
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/red.png" position="194,90" size="250,14" transparent="1" alphatest="blend" />
-    <widget source="key_red" render="Label" position="193,55" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;23" halign="center" valign="center" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/green.png" position="749,90" size="250,14" transparent="1" alphatest="blend" />
-    <widget source="key_green" render="Label" position="748,55" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;23" halign="center" valign="center" />
-    <widget name="text" position="7,9" size="1080,28" font="Regular;22" zPosition="3" transparent="1" backgroundColor="transpBA" foregroundColor="un11aaff" halign="center" />
+  <screen name="IPKGSource" title="IPKG source" position="90,300" size="1100,120" flags="wfBorder">
+    <widget source="key_red" render="Label" position="193,60" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="748,60" size="250,50" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="text" position="7,9" size="1080,28" font="Regular;22" zPosition="3" transparent="1" backgroundColor="transpBA" foregroundColor="white" halign="left" />
+    <eLabel name="" position="193,53" size="250,7" backgroundColor="red" foregroundColor="white" />
+    <eLabel name="" position="748,53" size="250,7" foregroundColor="white" backgroundColor="green" />
   </screen>
   <!-- Softwaremanager -->
   <screen name="SoftwareManagerSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="SoftwareManager setup" backgroundColor="transparent">
@@ -2928,7 +2961,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="arrowdown2" position="203,301" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
     <widget name="arrowup" position="203,301" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
     <widget name="arrowup2" position="203,301" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend" />
-    <eLabel text="Welcome..." position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Welcome..." position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="text" transparent="1" position="330,150" size="780,150" font="Regular;22" backgroundColor="transpBA" halign="left" foregroundColor="white" zPosition="1" />
     <widget source="list" render="Listbox" position="330,330" font="Regular;22" size="780,100" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="StringList" />
@@ -3084,7 +3117,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Osd3dsetup -->
   <screen name="OSD3DSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="OSD 3D setup" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="OSD 3D setup" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="ok" position="540,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
     <widget name="cancel" position="340,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/osd.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -3102,7 +3135,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="AC3LipSyncSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <panel name="keybutton2" />
-    <eLabel text="AC3 Lip Sync Setup" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="AC3 Lip Sync Setup" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/ac3setup.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="config" scrollbarMode="showOnDemand" position="330,150" size="790,360" font="Regular;22" transparent="1" />
     <widget name="PluginInfo" position="448,555" size="570,26" zPosition="4" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" halign="center" />
@@ -3267,7 +3300,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- GreekStream-->
   <screen name="GSMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="GreekStreamTV" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="GreekStreamTV" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="menu" itemHeight="35" font="Regular;22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
@@ -3275,14 +3308,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="GreekStreamTVList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="GreekStreamTV List (Livestreamer)" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="GreekStreamTV List (Livestreamer)" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="streamlist" itemHeight="35" font="Regular;22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- GreekStream-->
   <screen name="SelectQuality" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Select Quality" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Select Quality" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="menu" itemHeight="35" font="Regular;26" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- Hardware-->
@@ -3296,7 +3329,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="UpdateBouquet" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="GreekStreamTV in Bouquets" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="GreekStreamTV in Bouquets" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="menu" itemHeight="35" font="Regular;22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
   </screen>
   <!-- Remove Opkg-->
@@ -3309,7 +3342,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Settings-->
   <screen name="SDG_Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Settings Enigma2" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Enigma2" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel position="340,600" size="200,50" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="white" valign="center" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
@@ -3327,7 +3360,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Settings-->
   <screen name="SDG_Morpheus" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Settings Morpheus" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Morpheus" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel position="340,600" size="200,50" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="white" valign="center" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
@@ -3345,7 +3378,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Settings-->
   <screen name="SDG_Satdreamgr" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Settings Cyrus" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Cyrus" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel position="340,600" size="200,50" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="white" valign="center" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
@@ -3363,7 +3396,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Settings-->
   <screen name="SDG_Vhannibal" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
-    <eLabel text="Settings Vhannibal" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="Settings Vhannibal" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel position="340,600" size="200,50" font="Regular;22" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="white" valign="center" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
@@ -3389,7 +3422,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="STBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="menu" font="Regular; 22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
-    <eLabel text="SDGBackup Dreambox Enigma2" position="290,68" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel text="SDGBackup Dreambox Enigma2" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <eLabel text="Exit" position="340,600" size="200,50" font="Regular;22" transparent="1" zPosition="1" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" />
     <eLabel text="Ok" position="540,600" size="200,50" font="Regular;22" transparent="1" zPosition="2" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" />
   </screen>
