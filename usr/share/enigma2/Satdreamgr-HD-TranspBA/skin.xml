@@ -114,7 +114,7 @@
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="black" />
   </windowstyle>
-  <!-- Subtitle effects -->
+  <!-- Subtitle effects  -->
   <subtitles>
     <sub name="Subtitle_TTX" font="Regular;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
     <sub name="Subtitle_Regular" font="Regular;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
