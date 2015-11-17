@@ -347,8 +347,7 @@
   </screen>
   <!-- Screen PT Template-->
   <screen name="PTTemplate" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
-    <eLabel position="231,center" zPosition="0" size="146,310" backgroundColor="white" transparent="0" />
-    <eLabel position="231,205" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
+    <eLabel position="231,205" zPosition="-1" size="146,310" backgroundColor="transpBA" transparent="0" />
     <eLabel position="398,120" zPosition="-11" size="667,480" backgroundColor="transpBA" transparent="0" />
     <eLabel position="213,606" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
     <eLabel position="213,55" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
@@ -1164,7 +1163,7 @@
   </screen>
   <!-- Channel,EPG,EventInfo -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="Title" render="Label" position="45,19" size="890,60" transparent="1" zPosition="5" font="Regular; 26" valign="center" halign="left" backgroundColor="transpBA" foregroundColor="blue" />
+    <widget source="Title" render="Label" position="57,19" size="890,60" transparent="1" zPosition="5" font="Regular; 26" valign="center" halign="left" backgroundColor="transpBA" foregroundColor="blue" />
     <widget name="list" zPosition="2" font="Regular; 24" position="40,95" size="585,480" colorEventProgressbarBorderSelected="blue" colorEventProgressbarSelected="blue" colorEventProgressbar="transpBA" colorEventProgressbarBorder="transpBA" foregroundColorServiceNotAvail="grey2" serviceItemHeight="32" serviceNumberFont="Regular;19" serviceNameFont="Regular;24" serviceInfoFont="Regular;0" scrollbarMode="showOnDemand" transparent="1" />
     <eLabel name="new eLabel" position="2,82" zPosition="0" size="1280,568" backgroundColor="transpBA" transparent="0" foregroundColor="white" />
     <eLabel name="new eLabel" position="54,592" size="497,1" backgroundColor="grey" foregroundColor="grey" zPosition="1" />
@@ -1201,7 +1200,7 @@
     <widget source="ServiceEvent" render="Label" zPosition="1" position="634,612" size="649,34" halign="left" valign="center" transparent="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" noWrap="0">
       <convert type="TranspBANextEvents">Event2,noDuration</convert>
     </widget>
-    <widget position="50,600" size="500,45" source="ServiceEvent" render="Label" font="Regular; 20" halign="center" zPosition="1" transparent="1" foregroundColor="white" valign="center">
+    <widget position="50,600" size="500,45" source="ServiceEvent" render="Label" font="Regular; 20" halign="center" zPosition="1" transparent="1" foregroundColor="white" valign="center" backgroundColor="transpBA">
       <convert type="TranspBAServName">TpansponderInfo</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/menu.png" position="30,670" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
@@ -1376,7 +1375,7 @@
   <screen flags="wfNoBorder" name="PluginDownloadBrowser" position="0,0" size="1280,720" backgroundColor="transparent">
     <widget source="Title" render="Label" position="248,71" size="783,50" backgroundColor="transpBA" transparent="1" zPosition="0" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" noWrap="1" />
     <widget enableWrapAround="1" name="list" position="327,160" size="790,400" foregroundColorSelected="white" backgroundColor="transpBA" scrollbarMode="showOnDemand" transparent="0" zPosition="1" />
-    <widget font="Regular; 22" name="text" position="397,234" size="693,50" halign="center" valign="center" transparent="1" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget font="Regular; 22" name="text" position="374,236" size="693,50" halign="center" valign="center" transparent="1" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="310,129" zPosition="0" size="828,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
@@ -1936,48 +1935,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/input.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <!-- Messagebox -->
-  <screen name="MessageBox" position="340,175" size="600,10" title="Message">
-    <widget name="text" position="110,8" size="680,0" font="Regular;22" />
-    <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_error.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_question.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_info.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="list" position="20,95" size="760,300" font="Regular;22" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" />
-    <applet type="onLayoutFinish">
-# this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
- 
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self["text"].getSize()
- 
-# y size still must be fixed in font stuff...
-textsize = (textsize[0] + 80, textsize[1] + 80)
-offset = 20
-if self.type == self.TYPE_YESNO:
-	offset = 60
-wsizex = textsize[0] + 120
-wsizey = textsize[1] + offset
-if (600 &gt; wsizex):
-	wsizex = 600
-wsize = (wsizex, wsizey)
- 
- 
-# resize
-self.instance.resize(eSize(*wsize))
- 
-# resize label
-self["text"].instance.resize(eSize(*textsize))
- 
-# move list
-listsize = (wsizex - 20, 50)
-self["list"].instance.move(ePoint(10, textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
- 
-# center window
-newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
- 
-		</applet>
+  <screen name="MessageBox" position="0,0" size="1280,720" title="Message" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PTTemplate" />
+    <widget name="text" position="417,140" size="627,310" font="Regular;22" />
+    <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/iconssc/input_error.png" position="240,297" size="128,128" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/iconssc/input_question.png" position="240,297" size="128,128" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/iconssc/input_info.png" position="240,297" size="128,128" alphatest="blend" />
+    <widget name="list" position="416,471" size="627,120" font="Regular;22" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" />
+    <eLabel name="" position="398,457" size="667,6" backgroundColor="transparent" />
   </screen>
   <!-- TextBox -->
   <screen name="TextBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -2936,8 +2901,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/update.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="package" render="Label" position="400,235" size="600,28" backgroundColor="transpBA" transparent="1" font="Regular; 22" foregroundColor="white" />
     <widget source="status" render="Label" position="400,290" size="600,56" backgroundColor="transpBA" transparent="1" font="Regular; 22" foregroundColor="white" />
-    <widget name="slider" position="400,363" size="601,17" zPosition="2" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <widget name="activityslider" position="400,393" foregroundColor="white" size="601,17" transparent="1" borderWidth="1" />
+    <widget name="slider" position="400,363" size="601,17" zPosition="2" transparent="1" backgroundColor="transpBA" foregroundColor="blue" />
+    <widget name="activityslider" position="400,393" foregroundColor="blue" size="601,17" transparent="1" borderWidth="1" backgroundColor="transpBA" />
   </screen>
   <!-- Restore screen -->
   <screen name="RestoreScreen" title="Restore is running" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
