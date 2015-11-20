@@ -1008,42 +1008,42 @@
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner : A" font="Regular; 17" size="80,19" position="846,674" zPosition="2" alphatest="blend" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner : A" font="Regular; 17" size="80,19" position="846,674" zPosition="2" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : A" font="Regular; 17" size="80,19" position="846,674" zPosition="3" alphatest="blend" backgroundColor="transpBA">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : A" font="Regular; 17" size="80,19" position="846,674" zPosition="3" backgroundColor="transpBA">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner : B" font="Regular; 17" size="80,19" position="929,674" zPosition="2" alphatest="blend" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner : B" font="Regular; 17" size="80,19" position="929,674" zPosition="2" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : B" font="Regular; 17" size="80,19" position="929,674" zPosition="3" alphatest="blend" backgroundColor="transpBA">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : B" font="Regular; 17" size="80,19" position="929,674" zPosition="3" backgroundColor="transpBA">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner: C" font="Regular; 17" size="80,19" position="1009,674" zPosition="2" alphatest="blend" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner: C" font="Regular; 17" size="80,19" position="1009,674" zPosition="2" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : C" font="Regular; 17" size="80,19" position="1009,674" zPosition="3" alphatest="blend" backgroundColor="transpBA">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : C" font="Regular; 17" size="80,19" position="1009,674" zPosition="3" backgroundColor="transpBA">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner: D" font="Regular; 17" size="80,19" position="1079,674" zPosition="2" alphatest="blend" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner: D" font="Regular; 17" size="80,19" position="1079,674" zPosition="2" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : D" font="Regular; 17" size="80,19" position="1079,674" zPosition="3" alphatest="blend" backgroundColor="transpBA">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : D" font="Regular; 17" size="80,19" position="1079,674" zPosition="3" backgroundColor="transpBA">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
