@@ -3636,4 +3636,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
+  <!-- +++++++++++ -->
+  <screen name="BackupStart" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <panel name="TBTemplate" />
+    <panel name="keybutton4" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_help.png" position="245,612" size="40,30" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_info.png" position="176,612" size="40,30" alphatest="blend" transparent="1" zPosition="1" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/backup7.png" zPosition="4" transparent="0" alphatest="blend" />
+  </screen>
+  <screen name="WhatisNewInfo" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <panel name="TBTemplate" />
+    <widget name="AboutScrollLabel" font="Regular; 22" position="330,150" size="790,405" zPosition="2" halign="left" foregroundColor="white" backgroundColor="transpBA" valign="top" />
+    <widget name="key_red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/help28.png" zPosition="4" transparent="0" alphatest="blend" />
+  </screen>
+  <screen name="FlashImageConfig" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <panel name="TBTemplate" />
+    <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="curdir" render="Label" position="0,0" size="0,0" valign="top" halign="left" zPosition="4" font="Regular;0" transparent="1" noWrap="1" />
+    <widget name="filelist" position="330,150" size="790,405" scrollbarMode="showOnDemand" font="Regular; 22" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/flash12.png" zPosition="4" transparent="0" alphatest="blend" />
+  </screen>
+  <screen name="MPHelp" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <panel name="TBTemplate" />
+    <panel name="keybutton4l" />
+    <widget name="detailtext" position="330,150" size="790,405" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top" foregroundColor="white" backgroundColor="transpBA" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/help28.png" zPosition="4" transparent="0" alphatest="blend" />
+  </screen>
 </skin>
