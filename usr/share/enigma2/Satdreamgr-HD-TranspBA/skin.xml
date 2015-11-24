@@ -920,18 +920,18 @@
     <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agci.png" position="1048,43" size="120,12" zPosition="3" transparent="0" borderWidth="1" borderColor="grey" foregroundColor="blue" backgroundColor="transpBA">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snri.png" position="1046,79" size="120,12" zPosition="3" transparent="0" borderWidth="1" borderColor="grey" foregroundColor="green" backgroundColor="transpBA">
+    <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snri.png" position="1048,79" size="120,12" zPosition="3" transparent="0" borderWidth="1" borderColor="grey" foregroundColor="green" backgroundColor="transpBA">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel text="AGC :" font="Regular; 18" position="985,32" size="60,32" halign="right" transparent="1" valign="center" zPosition="5" />
-    <widget source="session.FrontendStatus" render="Label" position="1174,32" size="70,32" transparent="1" zPosition="5" font="Regular; 20" valign="center">
+    <eLabel text="AGC :" font="Regular; 18" position="985,32" size="60,32" halign="right" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="session.FrontendStatus" render="Label" position="1174,32" size="70,32" transparent="1" zPosition="5" font="Regular; 18" valign="center" foregroundColor="white" backgroundColor="transpBA" halign="left">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel text="SNR :" font="Regular; 18" position="985,68" size="60,32" halign="right" transparent="1" valign="center" zPosition="5" />
-    <widget source="session.FrontendStatus" render="Label" position="1174,68" zPosition="5" size="70,32" font="Regular; 20" halign="left" valign="center" transparent="1">
+    <eLabel text="SNR :" font="Regular; 18" position="985,68" size="60,32" halign="right" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="session.FrontendStatus" render="Label" position="1174,68" zPosition="5" size="70,32" font="Regular; 18" halign="left" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBA">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1048,100" size="120,28" transparent="1" zPosition="5" font="Regular; 20" valign="center" halign="center">
+    <widget source="session.FrontendStatus" render="Label" position="1048,95" size="120,28" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="center" foregroundColor="white" backgroundColor="transpBA">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
     <!-- Parameters -->
