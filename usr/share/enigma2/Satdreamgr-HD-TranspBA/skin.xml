@@ -2068,7 +2068,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Messagebox -->
   <screen name="MessageBox" position="0,0" size="1280,720" title="Message" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PTTemplate" />
-    <widget name="text" position="417,140" size="627,310" font="Regular;22" transparent="1" />
+    <widget name="text" position="417,140" size="627,310" font="Regular;22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
     <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/iconssc/input_error.png" position="240,297" size="128,128" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/iconssc/input_question.png" position="240,297" size="128,128" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/iconssc/input_info.png" position="240,297" size="128,128" alphatest="blend" />
