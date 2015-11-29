@@ -1260,7 +1260,7 @@
   <!-- Channel,EPG,EventInfo -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="115,25" size="1050,60" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" backgroundColor="transpBA" foregroundColor="jeaune" />
-    <widget name="list" colorServiceDescription="#000064c7" colorServiceDescriptionSelected="yellow" zPosition="0" position="300,100" size="925,355" serviceItemHeight="32" serviceNumberFont="Regular;20" serviceNameFont="Regular; 22" serviceInfoFont="Regular; 22" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
+    <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regular; 23" serviceInfoFont="Regula; 22" serviceNumberFont="Regular;20" colorServiceDescription="#000064c7" foregroundColorEventSelected="#ff9933" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="286,91" zPosition="-1" size="954,607" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
@@ -1283,12 +1283,12 @@
     <eLabel name="" position="60,482" size="200,4" zPosition="2" backgroundColor="yellow" />
     <eLabel name="" position="60,541" size="200,4" zPosition="2" backgroundColor="blue" />
     <eLabel name="" position="60,377" size="200,4" zPosition="2" backgroundColor="red" />
-    <widget source="ServiceEvent" render="Label" position="300,480" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue">
+    <widget source="ServiceEvent" render="Label" position="300,480" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="center">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="370,480" size="10,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" />
-    <widget source="ServiceEvent" render="Label" position="380,480" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue">
+    <eLabel text="-" position="370,480" size="10,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="left" />
+    <widget source="ServiceEvent" render="Label" position="380,480" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="left">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
