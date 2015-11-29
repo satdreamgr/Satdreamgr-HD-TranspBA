@@ -3,10 +3,6 @@
   <output id="0">
     <resolution bpp="32" xres="1280" yres="720" />
   </output>
-  <!-- Parameters -->
-  <parameters>
-    <parameter name="AboutHddSplit" value="1" />
-  </parameters>
   <!-- Colors -->
   <colors>
     <color name="background" value="#40000000" />
@@ -71,8 +67,35 @@
     <font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
     <font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
     <font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
-    <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regula" scale="100" />
+    <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regula" scale="95" />
   </fonts>
+  <fonts>
+    <alias name="FileList" font="Regular" size="22" height="30" />
+    <alias name="PlayList" font="Regular" size="22" height="30" />
+    <alias name="PluginBrowser0" font="Regula" size="26" height="50" />
+    <alias name="PluginBrowser1" font="Regula" size="18" />
+    <alias name="ChoiceList" font="Regula" size="24" height="30" />
+  </fonts>
+  <!-- Parameters -->
+  <parameters>
+    <parameter name="AboutHddSplit" value="1" />
+    <parameter name="FileListName" value="68,4,1000,34" />
+    <parameter name="FileListIcon" value="7,4,52,37" />
+    <parameter name="FileListMultiName" value="68,3,1000,32" />
+    <parameter name="FileListMultiIcon" value="45, 4, 30, 30" />
+    <parameter name="FileListMultiLock" value="2,0,36,36" />
+    <parameter name="PlayListName" value="38,2,1000,34" />
+    <parameter name="PlayListIcon" value="7,7,24,24" />
+    <parameter name="ChoicelistDash" value="0, 0, 800, 25" />
+    <parameter name="ChoicelistName" value="45, 0, 800, 25" />
+    <parameter name="ChoicelistIcon" value="5, 2, 35, 25" />
+    <parameter name="PluginBrowserName" value="120,0,25" />
+    <parameter name="PluginBrowserDescr" value="120,26,22" />
+    <parameter name="PluginBrowserIcon" value="10,5,100,40" />
+    <parameter name="PluginBrowserDownloadName" value="80,0,25" />
+    <parameter name="PluginBrowserDownloadDescr" value="80,26,25" />
+    <parameter name="PluginBrowserDownloadIcon" value="10,0,60,50" />
+  </parameters>
   <!-- Main screen colors (id=0 for Menu's, id=1 for LCD) -->
   <windowstyle type="skinned" id="0">
     <title offset="15,9" font="Regular;22" />
@@ -1300,11 +1323,11 @@
   </screen>
   <!-- Simple channelselection -->
   <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="TBTemplate" />
-  <panel name="keybutton4" />
-  <widget name="list" position="330,150" size="790,392" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" zPosition="3" serviceItemHeight="28" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorServiceDescription="#000064c7" colorServiceDescriptionSelected="yellow" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
-  <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/tv.png" zPosition="4" transparent="0" alphatest="blend" />
-</screen>
+    <panel name="TBTemplate" />
+    <panel name="keybutton4" />
+    <widget name="list" position="330,150" size="790,392" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" zPosition="3" serviceItemHeight="28" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorServiceDescription="#000064c7" colorServiceDescriptionSelected="yellow" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/tv.png" zPosition="4" transparent="0" alphatest="blend" />
+  </screen>
   <!-- EPG Stuff LISTE -->
   <screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GSTBTemplate" />
@@ -1416,7 +1439,7 @@
   <!--Pluginbrowser-->
   <screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel text="Plugin browser" position="251,67" size="777,55" backgroundColor="transpBA" transparent="1" zPosition="0" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
-    <widget name="list" enableWrapAround="1" position="330,154" size="790,400" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" itemHeight="50" />
+    <widget name="list" enableWrapAround="1" position="330,154" size="790,400" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="green" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <widget name="red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
@@ -1616,9 +1639,9 @@
     <eLabel name="" position="48,480" size="220,116" zPosition="-1" />
     <eLabel name="" position="48,233" size="220,132" zPosition="-1" />
     <eLabel position="296,95" size="929,26" zPosition="5" text="F i l e l i s t" foregroundColor="un11aaff" font="Regular;22" halign="center" transparent="1" backgroundColor="transpBA" />
-    <widget name="filelist" position="296,124" size="929,210" backgroundColor="transpBA" scrollbarMode="showOnDemand" transparent="1" itemHeights="32" font="Regular; 22" />
+    <widget name="filelist" position="296,124" size="929,210" backgroundColor="transpBA" scrollbarMode="showOnDemand" transparent="1" itemHeights="32" />
     <eLabel position="296,455" size="937,26" zPosition="5" text="P l a y l i s t" foregroundColor="un11aaff" font="Regular;22" halign="center" transparent="1" backgroundColor="transpBA" />
-    <widget name="playlist" font="Regular; 24" position="293,490" size="935,186" backgroundColor="transpBA" selectionDisabled="1" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="playlist" position="293,490" size="935,186" backgroundColor="transpBA" selectionDisabled="1" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="title" position="0,0" size="0,0" backgroundColor="noTransBG" transparent="1" font="Regular;26" valign="top" />
     <widget name="titletext" position="0,0" size="0,0" font="Regular;20" backgroundColor="transpBA" transparent="1" foregroundColor="un11aaff" valign="top" />
     <widget name="currenttext" position="0,0" size="0,0" font="Regular;20" backgroundColor="transpBA" transparent="1" foregroundColor="cbblue" valign="top" />
@@ -1797,7 +1820,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel text="Input" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <!-- Input ect. -->
     <widget name="text" position="415,135" size="636,66" zPosition="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" transparent="1" />
-    <widget name="list" position="415,218" size="636,353" zPosition="1" itemHeight="30" font="Regular;23" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" transparent="1" />
+    <widget name="list" position="415,218" size="636,360" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" transparent="1" />
     <eLabel name="" position="415,205" size="636,1" foregroundColor="grey" backgroundColor="grey" />
   </screen>
   <!-- Network Configuration-->
@@ -2371,7 +2394,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     </widget>
     <widget name="waitingtext" position="303,130" size="918,280" font="Regular;22" halign="center" valign="center" zPosition="4" transparent="1" />
     <widget name="chosenletter" position="303,130" size="918,270" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" backgroundColor="transpBA" />
-    <widget name="list" position="303,130" size="918,270" scrollbarMode="showOnDemand" transparent="1" itemHeights="75,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
+    <widget name="list" position="303,130" size="918,270" scrollbarMode="showOnDemand" transparent="1" itemHeights="75,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="22,18" fontSizesMinimal="22,20" />
     <widget source="Service" render="Label" position="303,500" size="918,122" font="Regular; 22" valign="top" halign="left" backgroundColor="transpBA" zPosition="1" foregroundColor="grey" transparent="1">
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
@@ -2874,12 +2897,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/updatee.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel name="" position="308,400" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
-    <widget source="menu" render="Listbox" position="330,140" size="790,255" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="330,140" size="790,255" transparent="1" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA">
       <convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (10, 2), size = (710, 24), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 						],
-					"fonts": [gFont("Regular", 22)],
+					"fonts": [gFont("Regular", 24)],
 					"itemHeight": 35
 					}
 				</convert>
@@ -3400,7 +3423,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="STBTemplate" />
     <eLabel text="GreekStreamTV" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="menu" itemHeight="35" font="Regular;22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="menu" itemHeight="30" font="Regular;24" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- GreekStream-->
   <screen name="GreekStreamTVList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -3421,7 +3444,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="TBTemplate" />
     <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/hardware.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="menu" itemHeight="35" font="Regular;22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="menu" itemHeight="30" font="Regular;24" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- greekstreamtv-in-bouquets-->
   <screen name="UpdateBouquet" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -3553,7 +3576,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="TBTemplate" />
     <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="entries" position="330,150" size="790,405" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="entries" position="330,150" size="790,405" font="Regular;24" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <screen name="SystemToolsInf" position="0,0" size="1280,720" title="System Tools Info Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -3592,35 +3615,35 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,137" size="515,20" transparent="1" zPosition="6">
       <convert type="PanelSpaceInfo">MemTotal</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,162" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,162" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
       <convert type="PanelSpaceInfo">MemTotal,Full</convert>
     </widget>
     <ePixmap position="416,237" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/swap.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,237" size="515,20" transparent="1" zPosition="6">
       <convert type="PanelSpaceInfo">SwapTotal</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,261" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,261" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
       <convert type="PanelSpaceInfo">SwapTotal,Full</convert>
     </widget>
     <ePixmap position="416,337" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/flash.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,335" size="515,20" transparent="1" zPosition="6">
       <convert type="PanelSpaceInfo">FleshInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,362" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,362" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
       <convert type="PanelSpaceInfo">Flesh,Full</convert>
     </widget>
     <ePixmap position="416,437" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/hdd.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,437" size="515,20" transparent="1" zPosition="6">
       <convert type="PanelSpaceInfo">HddInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,461" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,461" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
       <convert type="PanelSpaceInfo">HddInfo,Full</convert>
     </widget>
     <ePixmap position="416,537" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/usb.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,537" size="515,20" transparent="1" zPosition="6">
       <convert type="PanelSpaceInfo">UsbInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,562" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="478,562" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
       <convert type="PanelSpaceInfo">UsbInfo,Full</convert>
     </widget>
     <widget backgroundColor="un15" font="Regular; 23" foregroundColor="green" halign="center" position="866,627" render="Label" size="120,23" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
