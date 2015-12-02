@@ -70,12 +70,12 @@
     <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regula" scale="95" />
   </fonts>
   <fonts>
-  <alias name="FileList" font="Regular" size="22" height="30" />
-  <alias name="PlayList" font="Regular" size="22" height="30" />
-  <alias name="PluginBrowser0" font="Regula" size="25" height="50" />
-  <alias name="PluginBrowser1" font="Regula" size="18" />
-  <alias name="ChoiceList" font="Regula" size="24" height="30" />
-</fonts>
+    <alias name="FileList" font="Regular" size="22" height="30" />
+    <alias name="PlayList" font="Regular" size="22" height="30" />
+    <alias name="PluginBrowser0" font="Regula" size="25" height="50" />
+    <alias name="PluginBrowser1" font="Regula" size="18" />
+    <alias name="ChoiceList" font="Regula" size="24" height="30" />
+  </fonts>
   <!-- Parameters -->
   <parameters>
     <parameter name="AboutHddSplit" value="1" />
@@ -503,7 +503,7 @@
     <eLabel position="213,5" zPosition="0" size="850,16" backgroundColor="un11aaff" transparent="0" foregroundColor="transpBA" />
     <eLabel position="231,center" zPosition="0" size="146,310" backgroundColor="white" transparent="0" />
     <eLabel position="231,205" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <eLabel position="398,120" zPosition="-11" size="667,480" backgroundColor="transpBA" transparent="0" />
+    <eLabel position="399,120" zPosition="-11" size="667,480" backgroundColor="transpBA" transparent="0" />
     <eLabel position="213,606" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
     <eLabel position="213,55" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
     <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/clock.png" position="845,626" size="24,24" alphatest="blend" zPosition="10">
@@ -1334,9 +1334,8 @@
     <panel name="Gkeybutton4" />
     <panel name="GInfoTemplate" />
     <panel name="GMenuTemplate" />
-    <widget source="Title" render="Label" position="240,44" size="800,60" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
     <widget name="list" font="Regular; 22" position="451,133" size="770,452" transparent="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
-    <widget source="Service" render="Label" position="242,49" size="787,50" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
+    <widget source="Service" render="Label" position="242,49" size="787,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="55,225" size="366,347" transparent="0" font="Regular; 22" backgroundColor="transpBA" valign="top" halign="left" foregroundColor="white" zPosition="2">
