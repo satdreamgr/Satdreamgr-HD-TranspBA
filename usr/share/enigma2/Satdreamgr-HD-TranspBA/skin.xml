@@ -1313,7 +1313,7 @@
     <widget name="key_yellow" position="60,491" size="200,50" zPosition="1" transparent="0" font="Regular; 22" halign="center" valign="center" foregroundColor="yellow" backgroundColor="transpBA" />
     <widget name="key_red" position="60,379" size="200,50" zPosition="1" transparent="0" font="Regular; 22" halign="center" valign="center" foregroundColor="red" backgroundColor="transpBA" />
     <widget name="key_green" position="60,435" size="200,50" zPosition="1" transparent="0" font="Regular; 22" halign="center" valign="center" foregroundColor="un1f771f" backgroundColor="transpBA" />
-    <widget source="session.CurrentService" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+    <widget source="Service" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <eLabel name="" position="49,371" size="222,233" zPosition="-1" />
