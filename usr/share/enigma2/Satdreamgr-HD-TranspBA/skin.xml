@@ -2449,14 +2449,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!-- TimeDateInput -->
   <screen name="TimeDateInput" title="Time/Date Input" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="STBTemplate" />
-  <panel name="COTemplate" />
-  <eLabel text="Date/time input" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
-  <widget name="cancel" position="0,0" size="0,0" pixmap="~/buttons/key_red.png" transparent="1" alphatest="on" />
-  <widget name="ok" position="0,0" size="0,0" pixmap="~/buttons/key_green.png" transparent="1" alphatest="on" />
-  <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/calendar.png" zPosition="4" transparent="0" alphatest="blend" />
-  <widget name="config" scrollbarMode="showOnDemand" position="330,150" font="Regular;22" size="790,405" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-</screen>
+    <panel name="STBTemplate" />
+    <panel name="COTemplate" />
+    <eLabel text="Date/time input" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget name="cancel" position="0,0" size="0,0" pixmap="~/buttons/key_red.png" transparent="1" alphatest="on" />
+    <widget name="ok" position="0,0" size="0,0" pixmap="~/buttons/key_green.png" transparent="1" alphatest="on" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/calendar.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget name="config" scrollbarMode="showOnDemand" position="330,150" font="Regular;22" size="790,405" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+  </screen>
   <!-- JobView -->
   <screen name="JobView" title="Job View" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -2792,6 +2792,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     }
       </convert>
     </widget>
+    <widget name="wizard" position="0,0" size="0,0" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" />
+    <widget name="rc" position="0,0" size="0,0" zPosition="1" pixmaps="skin_default/rc0.png,skin_default/rc1.png,skin_default/rc2.png" alphatest="blend" />
+    <widget name="arrowdown" position="0,0" size="0,00" pixmap="skin_default/arrowdown.png" zPosition="2" alphatest="on" />
+    <widget name="arrowdown2" position="0,0" size="0,0" pixmap="skin_default/arrowdown.png" zPosition="2" alphatest="on" />
+    <widget name="arrowup" position="0,0" size="0,0" pixmap="skin_default/arrowup.png" zPosition="2" alphatest="on" />
+    <widget name="arrowup2" position="0,0" size="0,00" pixmap="skin_default/arrowup.png" zPosition="2" alphatest="on" />
   </screen>
   <!-- Default wizard -->
   <screen name="DefaultWizard" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
@@ -2863,6 +2869,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     </widget>
     <widget name="config" position="330,330" size="785,210" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" zPosition="2" backgroundColor="transpBA" font="Regular; 22" />
     <widget backgroundColor="NLPreBlack" foregroundColor="white" name="languagetext" font="Regular; 22" halign="center" valign="center" position="340,600" size="200,50" transparent="1" zPosition="12" />
+    <widget name="stepslider" position="654,616" zPosition="1" borderWidth="2" size="440,20" backgroundColor="NLPreBlack" foregroundColor="blue" />
+    <widget name="wizard" position="0,0" size="0,0" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" />
+    <widget name="rc" position="0,0" size="0,0" zPosition="1" pixmaps="skin_default/rc0.png,skin_default/rc1.png,skin_default/rc2.png" alphatest="blend" />
+    <widget name="arrowdown" position="0,0" size="0,00" pixmap="skin_default/arrowdown.png" zPosition="2" alphatest="on" />
+    <widget name="arrowdown2" position="0,0" size="0,0" pixmap="skin_default/arrowdown.png" zPosition="2" alphatest="on" />
+    <widget name="arrowup" position="0,0" size="0,0" pixmap="skin_default/arrowup.png" zPosition="2" alphatest="on" />
+    <widget name="arrowup2" position="0,0" size="0,00" pixmap="skin_default/arrowup.png" zPosition="2" alphatest="on" />
   </screen>
   <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="N2Template" />
@@ -2883,6 +2896,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     </widget>
     <widget name="config" position="330,330" size="785,230" itemHeight="32" zPosition="2" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" foregroundColor="white" backgroundColor="transpBA" />
     <widget backgroundColor="NLPreBlack" foregroundColor="white" name="languagetext" font="Regular; 22" halign="center" valign="center" position="340,600" size="200,50" transparent="1" zPosition="12" />
+    <eLabel name="" position="148,187" size="152,388" backgroundColor="blue" zPosition="5" />
   </screen>
   <screen name="QuitMainloopScreen" position="0,0" size="1280,720" backgroundColor="NLPreBlack" flags="wfNoBorder" transparent="0">
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1120,90" size="24, 24" alphatest="blend" />
@@ -3085,6 +3099,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- ImageWizard -->
   <screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="N2Template" />
+    <widget name="wizard" position="0,0" size="0,0" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" />
     <widget name="rc" position="146,122" size="154,474" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
     <widget name="arrowdown" position="203,301" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
     <widget name="arrowdown2" position="203,301" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
@@ -3714,9 +3729,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap name="" position="238,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/transcoding.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <screen name="ServiceInfoSimple" position="0, 0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
-  <panel name="STBTemplate" />
-  <eLabel text="Service info" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
-  <widget name="infolist" font="Regular; 22" position="330,150" size="790,385" foregroundColor="white" backgroundColor="transpBA" transparent="1" selectionDisabled="1" />
-  <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/service.png" zPosition="4" transparent="0" alphatest="blend" />
-</screen>
+    <panel name="STBTemplate" />
+    <eLabel text="Service info" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget name="infolist" font="Regular; 22" position="330,150" size="790,385" foregroundColor="white" backgroundColor="transpBA" transparent="1" selectionDisabled="1" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/service.png" zPosition="4" transparent="0" alphatest="blend" />
+  </screen>
 </skin>
