@@ -525,11 +525,11 @@
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1032,70" size="23,32" transparent="1" zPosition="5" alphatest="blend" />
-    <widget source="menu" render="Listbox" position="420,center" size="628,405" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="menu" render="Listbox" position="420,center" size="628,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
-        {"template": [ MultiContentEntryText(pos = (45,2),size = (600,30),flags = RT_HALIGN_LEFT,text = 0) ],
+        {"template": [ MultiContentEntryText(pos = (45,2),size = (600,32),flags = RT_HALIGN_LEFT,text = 0) ],
       "fonts": [gFont("Regular",28)],
-      "itemHeight": 45
+      "itemHeight": 42
       }
       </convert>
     </widget>
@@ -697,7 +697,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/display.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">lcd</convert>
+      <convert type="MenuEntryCompare">display_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/keyboard.png" zPosition="5" position="240,296" size="128,128">
@@ -730,6 +730,14 @@
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/video-tuning.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">video_finetune</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/osd.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">auto_3d_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/transcoding.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">transcoding_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
@@ -3426,9 +3434,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/archives.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="myliste" itemHeight="35" font="Regular;36" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="4" backgroundColor="transpBA" />
-    <widget name="key_red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
-    <widget name="key_green" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
-    <widget name="key_blue" position="940,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;23" halign="center" valign="center" />
+    <widget name="key_red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_green" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_blue" position="940,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
   <!-- Archive Explorer -->
   <screen name="TextExit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -3726,7 +3734,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="Pkeybutton2l" />
     <eLabel text="Transcoding Setup" position="292,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="config" position="411,137" font="Regular; 22" size="634,60" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
-    <ePixmap name="" position="238,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/transcoding.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap name="" position="240,296" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/transcoding.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <screen name="ServiceInfoSimple" position="0, 0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
     <panel name="STBTemplate" />
