@@ -580,6 +580,10 @@
   <screen name="menu_mainmenu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">panel_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>  
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -697,11 +701,11 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/display.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">display_setup</convert>
+      <convert type="MenuEntryCompare">lcd_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/keyboard.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">keyboard</convert>
+      <convert type="MenuEntryCompare">keyboard_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/recordings-paths.png" zPosition="5" position="240,296" size="128,128">
@@ -3336,6 +3340,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2" />
   </screen>
   <!-- Menus Panel+-->
+  <screen name="Panel" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
+
+		<widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1" >
+		<convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryPixmapAlphaBlend(pos = (12, 6), size = (32, 32), png = 0),
+				MultiContentEntryText(pos = (58, 6), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+						],
+						"fonts": [gFont("Regular", 28)],
+						"itemHeight": 46
+					}
+				</convert>
+			</widget>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend"/>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend"/>
+  </screen>  
   <!-- Softcam Setup -->
   <screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
