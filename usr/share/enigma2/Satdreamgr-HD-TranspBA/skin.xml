@@ -3576,8 +3576,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="myGreenBtn" position="540,600" size="200,50" backgroundColor="NLPreBlack" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular; 22" transparent="1" />
   </screen>
   <!-- openMultiboot-->
-
-     <screen name="OMBManagerInstall" title="openMultiboot Install" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="OMBManagerInstall" title="openMultiboot Install" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel text="Exit" position="340,600" size="200,50" font="Regular;22" transparent="1" zPosition="1" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" valign="center" />
@@ -3586,21 +3585,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="StringList" />
     </widget>
     <eLabel position="519,550" size="431,32" font="Regular;22" text="Please press OK to continue." transparent="1" zPosition="1" backgroundColor="transpBA" halign="center" foregroundColor="white" />
- <eLabel name="" position="308,530" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
- </screen>
-
-
-
+    <eLabel name="" position="308,530" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+  </screen>
   <screen name="OMBManagerAbout" title="openMultiboot About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel text="Exit" position="340,600" size="200,50" font="Regular;22" transparent="1" zPosition="1" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" valign="center" />
     <widget name="about" position="447,192" size="540,310" font="Regular; 22" zPosition="1" backgroundColor="transpBA" halign="center" foregroundColor="white" transparent="1" />
   </screen>
- 
- 
- 
- 
   <screen name="OMBManagerList" title="openMultiboot Manager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton4" />
@@ -3608,25 +3600,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="list" render="Listbox" position="330,150" zPosition="1" size="790,340" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="StringList" />
     </widget>
-  <widget name="label1" zPosition="2" position="440,512" size="540,30" font="Regular; 22" halign="center" valign="center" transparent="1" backgroundColor="transpBA" />
-  <widget name="label2" zPosition="2" position="440,549" size="540,30" font="Regular; 22" halign="center" valign="center" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-<eLabel name="" position="308,500" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+    <widget name="label1" zPosition="2" position="440,512" size="540,30" font="Regular; 22" halign="center" valign="center" transparent="1" backgroundColor="transpBA" />
+    <widget name="label2" zPosition="2" position="440,549" size="540,30" font="Regular; 22" halign="center" valign="center" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+    <eLabel name="" position="308,500" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
- 
   <screen name="OMBManagerPreferences" title="openMultiboot Manager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
-
-<widget name="config" position="331,157" size="780,280" scrollbarMode="showOnDemand" foregroundColor="white" font="Regular; 22" backgroundColor="transpBA" />
-<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="0,0" alphatest="on" />
-<widget name="key_red" position="340,600" zPosition="1" size="200,50" font="Regular;20" halign="center" valign="center" backgroundColor="NLPreBlack" transparent="1" foregroundColor="white" />
-
+    <widget name="config" position="331,157" size="780,280" scrollbarMode="showOnDemand" foregroundColor="white" font="Regular; 22" backgroundColor="transpBA" />
+    <ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="0,0" alphatest="on" />
+    <widget name="key_red" position="340,600" zPosition="1" size="200,50" font="Regular;20" halign="center" valign="center" backgroundColor="NLPreBlack" transparent="1" foregroundColor="white" />
   </screen>
-
-
-
-
-<screen name="SystemToolsSwap" position="0,0" size="1280,720" title="System Tools Swapfile Menu" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="SystemToolsSwap" position="0,0" size="1280,720" title="System Tools Swapfile Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
