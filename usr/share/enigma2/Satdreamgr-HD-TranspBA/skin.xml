@@ -540,55 +540,19 @@
   <!-- Screen Menus -->
   <screen name="Menu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/softcam.png" zPosition="5" position="240,center" size="128,128">
-      <convert type="MenuEntryCompare">softcam_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/hardware.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">harware_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/archives.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">archives_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/remove.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">removeopkg_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">sdgbackup_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">settings_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">swapmanager_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstreamtv.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">update_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">GreekStreamTV</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">ci_setup</convert>
       <convert type="ConditionalShowHide" />
-    </widget>    
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">ci_assign</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   </screen>
   <screen name="menu_mainmenu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">panel_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>  
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/media-player.png" zPosition="5" position="240,296" size="128,128">
@@ -637,10 +601,10 @@
       <convert type="MenuEntryCompare">service_searching_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
-    </widget>   
+    </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">ci_setup</convert>
       <convert type="ConditionalShowHide" />
@@ -1386,17 +1350,17 @@
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="240,471" backgroundColor="blue" zPosition="0" />
-    <eLabel position="151,198" zPosition="1" size="220,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <eLabel position="151,255" zPosition="1" size="220,205" backgroundColor="transpBA" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="140,200" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,131" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,165" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="176,531" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="176,500" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="290,538" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="290,508" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="2" backgroundColor="red" />
@@ -1425,7 +1389,7 @@
       <convert type="EventName">Rating</convert>
     </widget>
     <eLabel text="-" position="710,150" size="15,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="2" />
-    <widget source="Title" render="Picon" position="151,268" zPosition="2" size="220,132" transparent="1" alphatest="blend">
+    <widget source="Title" render="Picon" position="151,290" zPosition="2" size="220,132" transparent="1" alphatest="blend">
       <convert type="TranspBARefString">CurrentRef</convert>
     </widget>
     <widget name="channel" position="290,69" size="700,50" transparent="1" font="Regular;28" halign="center" foregroundColor="jeaune" backgroundColor="NLPreBlack" valign="center" noWrap="1" />
@@ -2617,14 +2581,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <screen name="CIselectMainMenu" position="0,0" size="1280,720" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/common.png" zPosition="4" transparent="0" alphatest="blend" />
+    <panel name="keybutton2l" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="CiList" position="330,150" size="790,360" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="transpBA" transparent="1" font="Regular; 22" foregroundColor="white" />
   </screen>
   <!--CI Config Menu -->
   <screen name="CIconfigMenu" title="CI Assignment" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <panel name="keybutton4" />
-    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/common.png" zPosition="4" transparent="0" alphatest="blend" />
+    <panel name="keybutton4l" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="CAidList_desc" render="Label" position="400,150" size="660,30" backgroundColor="transpBA" transparent="1" font="Regular;24" />
     <eLabel position="400,185" size="660,2" backgroundColor="black" />
     <eLabel position="400,187" size="660,2" backgroundColor="grey" />
@@ -3351,9 +3316,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="Panel" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
-
-		<widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1" >
-		<convert type="TemplatedMultiContent">
+    <widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
 		{"template": [
 		MultiContentEntryPixmapAlphaBlend(pos = (12, 6), size = (32, 32), png = 0),
 				MultiContentEntryText(pos = (58, 6), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
@@ -3362,10 +3326,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
 						"itemHeight": 46
 					}
 				</convert>
-			</widget>
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend"/>
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend"/>
-  </screen>  
+    </widget>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
+  </screen>
   <!-- Softcam Setup -->
   <screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -3612,22 +3576,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="myGreenBtn" position="540,600" size="200,50" backgroundColor="NLPreBlack" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular; 22" transparent="1" />
   </screen>
   <!-- openMultiboot-->
-  <screen name="OMBManagerInstall" title="openMultiboot Install" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+
+     <screen name="OMBManagerInstall" title="openMultiboot Install" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Exit" position="340,600" size="200,50" font="Regular;22" transparent="1" zPosition="1" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" />
+    <eLabel text="Exit" position="340,600" size="200,50" font="Regular;22" transparent="1" zPosition="1" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" valign="center" />
     <widget name="info" position="330,150" size="790,50" font="Regular; 22" zPosition="1" backgroundColor="transpBA" transparent="1" />
     <widget source="list" render="Listbox" position="330,223" zPosition="1" size="790,306" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="StringList" />
     </widget>
-    <eLabel position="526,555" size="431,32" font="Regular;22" text="Please press OK to continue." transparent="1" zPosition="1" backgroundColor="transpBA" halign="center" foregroundColor="white" />
-  </screen>
+    <eLabel position="519,550" size="431,32" font="Regular;22" text="Please press OK to continue." transparent="1" zPosition="1" backgroundColor="transpBA" halign="center" foregroundColor="white" />
+ <eLabel name="" position="308,530" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+ </screen>
+
+
+
   <screen name="OMBManagerAbout" title="openMultiboot About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Exit" position="340,600" size="200,50" font="Regular;22" transparent="1" zPosition="1" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" />
+    <eLabel text="Exit" position="340,600" size="200,50" font="Regular;22" transparent="1" zPosition="1" backgroundColor="NLPreBlack" halign="center" foregroundColor="white" valign="center" />
     <widget name="about" position="447,192" size="540,310" font="Regular; 22" zPosition="1" backgroundColor="transpBA" halign="center" foregroundColor="white" transparent="1" />
   </screen>
+ 
+ 
+ 
+ 
   <screen name="OMBManagerList" title="openMultiboot Manager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton4" />
@@ -3635,8 +3608,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="list" render="Listbox" position="330,150" zPosition="1" size="790,340" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="StringList" />
     </widget>
+  <widget name="label1" zPosition="2" position="440,512" size="540,30" font="Regular; 22" halign="center" valign="center" transparent="1" backgroundColor="transpBA" />
+  <widget name="label2" zPosition="2" position="440,549" size="540,30" font="Regular; 22" halign="center" valign="center" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+<eLabel name="" position="308,500" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
-  <screen name="SystemToolsSwap" position="0,0" size="1280,720" title="System Tools Swapfile Menu" flags="wfNoBorder" backgroundColor="transparent">
+ 
+  <screen name="OMBManagerPreferences" title="openMultiboot Manager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
+
+<widget name="config" position="331,157" size="780,280" scrollbarMode="showOnDemand" foregroundColor="white" font="Regular; 22" backgroundColor="transpBA" />
+<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="0,0" alphatest="on" />
+<widget name="key_red" position="340,600" zPosition="1" size="200,50" font="Regular;20" halign="center" valign="center" backgroundColor="NLPreBlack" transparent="1" foregroundColor="white" />
+
+  </screen>
+
+
+
+
+<screen name="SystemToolsSwap" position="0,0" size="1280,720" title="System Tools Swapfile Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
