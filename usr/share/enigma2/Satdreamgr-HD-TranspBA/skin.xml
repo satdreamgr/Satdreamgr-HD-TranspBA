@@ -229,7 +229,7 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,130" size="650,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,590" size="650,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <!-- Screen  TB STB Template -->
+  <!-- Screen TB STB Template -->
   <screen name="red" flags="wfNoBorder">
     <widget name="red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
