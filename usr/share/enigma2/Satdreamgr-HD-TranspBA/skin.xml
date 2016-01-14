@@ -1030,46 +1030,6 @@
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner : A" font="Regular; 20" size="90,22" position="810,676" zPosition="2" backgroundColor="transpBA" foregroundColor="blue">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">1</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : A" font="Regular; 20" size="90,22" position="810,676" zPosition="3" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="FrontendInfo">NUMBER</convert>
-      <convert type="ValueRange">0,0</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner : B" font="Regular; 20" size="90,22" position="910,676" zPosition="2" backgroundColor="transpBA" foregroundColor="blue">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">2</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : B" font="Regular; 20" size="90,22" position="910,676" zPosition="3" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="FrontendInfo">NUMBER</convert>
-      <convert type="ValueRange">1,1</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner: C" font="Regular; 20" size="90,22" position="1000,676" zPosition="2" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">4</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : C" font="Regular; 20" size="90,22" position="1000,676" zPosition="3" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="FrontendInfo">NUMBER</convert>
-      <convert type="ValueRange">2,2</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="Tuner: D" font="Regular; 20" size="90,22" position="1090,676" zPosition="2" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">8</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="Tuner : D" font="Regular; 20" size="90,22" position="1090,676" zPosition="3" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="FrontendInfo">NUMBER</convert>
-      <convert type="ValueRange">3,3</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_on.png" position="1183,674" size="24,24" zPosition="2" alphatest="blend">
       <convert type="TranspBAConnection">
       </convert>
@@ -1088,6 +1048,10 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/infobarb.png" position="295,610" size="915,3" zPosition="0" alphatest="blend" />
     <eLabel text="-" zPosition="3" position="100,100" size="10,20" font="Regular; 20" halign="center" backgroundColor="transpBA" transparent="1" valign="center" foregroundColor="white" />
     <eLabel name="" position="984,20" size="1,110" backgroundColor="grey2" zPosition="0" />
+    <eLabel text="Tuner:" font="Regular; 20" position="797,676" size="70,22" halign="center" transparent="1" valign="top" zPosition="5" foregroundColor="grey2" backgroundColor="transpBA" />
+    <widget source="session.FrontendInfo" render="Label" position="871,676" size="220,22" zPosition="3" backgroundColor="transpBA" transparent="1" halign="left" font="Regular; 20" foregroundColor="white">
+      <convert type="FrontendInfo">STRING</convert>
+    </widget>
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="754,222" size="489,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
@@ -2685,6 +2649,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     </widget>
     <widget source="session.CurrentService" render="Label" position="730,675" size="160,22" zPosition="2" backgroundColor="transpBA" foregroundColor="white" font="Regular; 20" borderWidth="2" valign="top" halign="left" transparent="1">
       <convert type="TranspBAExtraInfo">ResolutionString</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA//infobar/ico_format_4k.png" position="599,674" size="32,32" zPosition="4" alphatest="on">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <!-- Video Finetune -->
