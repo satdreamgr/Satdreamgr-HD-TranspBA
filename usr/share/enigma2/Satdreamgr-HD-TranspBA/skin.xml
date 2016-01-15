@@ -1048,8 +1048,8 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/infobarb.png" position="295,610" size="915,3" zPosition="0" alphatest="blend" />
     <eLabel text="-" zPosition="3" position="100,100" size="10,20" font="Regular; 20" halign="center" backgroundColor="transpBA" transparent="1" valign="center" foregroundColor="white" />
     <eLabel name="" position="984,20" size="1,110" backgroundColor="grey2" zPosition="0" />
-    <eLabel text="Tuner:" font="Regular; 20" position="797,676" size="70,22" halign="center" transparent="1" valign="top" zPosition="5" foregroundColor="grey2" backgroundColor="transpBA" />
-    <widget source="session.FrontendInfo" render="Label" position="871,676" size="220,22" zPosition="3" backgroundColor="transpBA" transparent="1" halign="left" font="Regular; 20" foregroundColor="white">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/tuner.png" position="893,676" size="85,20" zPosition="0" alphatest="blend" />
+    <widget source="session.FrontendInfo" render="Label" position="980,674" size="200,20" zPosition="3" backgroundColor="transpBA" transparent="1" halign="left" font="Regular; 20" foregroundColor="white" valign="top">
       <convert type="FrontendInfo">STRING</convert>
     </widget>
   </screen>
