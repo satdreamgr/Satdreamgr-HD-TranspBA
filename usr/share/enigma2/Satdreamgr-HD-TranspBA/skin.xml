@@ -772,7 +772,7 @@
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/off.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">deep_standby</convert>
-      <convert type="ConditionalShowHide" />
+      <convert type="ConditionalSREChowHide" />
     </widget>
   </screen>
   <screen name="menu_scan" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
@@ -900,7 +900,7 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="698,674" size="23,23" zPosition="2" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="740,674" size="23,23" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" zPosition="2" position="1069,567" size="75,26" font="Regular; 22" halign="right" backgroundColor="transpBA" transparent="1" valign="top">
@@ -1051,6 +1051,11 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/tuner.png" position="893,676" size="85,20" zPosition="0" alphatest="blend" />
     <widget source="session.FrontendInfo" render="Label" position="980,674" size="200,20" zPosition="3" backgroundColor="transpBA" transparent="1" halign="left" font="Regular; 20" foregroundColor="white" valign="top">
       <convert type="FrontendInfo">STRING</convert>
+    </widget>
+     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="690,674" size="41,20" zPosition="1" alphatest="blend" /> 
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="690,674" size="41,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">Is4K</convert>IPTV
+      <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
@@ -2649,8 +2654,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="session.CurrentService" render="Label" position="730,675" size="160,22" zPosition="2" backgroundColor="transpBA" foregroundColor="white" font="Regular; 20" borderWidth="2" valign="top" halign="left" transparent="1">
       <convert type="TranspBAExtraInfo">ResolutionString</convert>
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="599,674" size="32,20" zPosition="1" alphatest="blend" /> 
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="599,674" size="32,20" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="599,674" size="41,20" zPosition="1" alphatest="blend" /> 
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="599,674" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
