@@ -891,7 +891,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/iptv-off.png" position="641,674" size="41,20" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="641,676" size="41,20" alphatest="blend" zPosition="2">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="641,674" size="41,20" alphatest="blend" zPosition="2">
       <convert type="TranspBAServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -2634,7 +2634,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel name="new eLabel" position="0,546" size="1280,1" backgroundColor="grey" foregroundColor="grey" />
     <eLabel name="new eLabel" position="286,665" size="994,1" backgroundColor="grey" foregroundColor="grey" />
     <!-- Parameters -->
-    <!-- Parameters -->
     <widget source="session.CurrentService" render="PositionGauge" position="413,631" size="725,12" transparent="1" zPosition="4" pointer="Satdreamgr-HD-TranspBA/dvr/position_pointer1024.png:1012,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
@@ -2650,7 +2649,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="session.CurrentService" render="Label" position="730,675" size="160,22" zPosition="2" backgroundColor="transpBA" foregroundColor="white" font="Regular; 20" borderWidth="2" valign="top" halign="left" transparent="1">
       <convert type="TranspBAExtraInfo">ResolutionString</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA//infobar/ico_format_4k.png" position="599,674" size="32,32" zPosition="4" alphatest="on">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="599,674" size="32,20" zPosition="1" alphatest="blend" /> 
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="599,674" size="32,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
