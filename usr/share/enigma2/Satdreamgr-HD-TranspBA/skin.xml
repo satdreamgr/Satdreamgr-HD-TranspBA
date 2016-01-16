@@ -813,28 +813,28 @@
   <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel name="" position="266,20" size="1,110" backgroundColor="grey2" zPosition="0" />
     <widget source="session.CurrentService" render="Label" position="110,100" size="130,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">ResolutionString</convert>
+      <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="40,53" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">TransponderFrequency</convert>
+      <convert type="PliExtraInfo">TransponderFrequency</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="180,53" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">TransponderSymbolRate</convert>
+      <convert type="PliExtraInfo">TransponderSymbolRate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="40,73" size="20,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">TransponderPolarization</convert>
+      <convert type="PliExtraInfo">TransponderPolarization</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="60,73" size="40,20" transparent="1" zPosition="5" font="Regular; 18" halign="center" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">TransponderFEC</convert>
+      <convert type="PliExtraInfo">TransponderFEC</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="180,73" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">TransponderModulation</convert>
+      <convert type="PliExtraInfo">TransponderModulation</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="180,32" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">OrbitalPosition</convert>
+      <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="40,32" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">TunerSystem</convert>
+      <convert type="PliExtraInfo">TunerSystem</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="295,610" size="915,3" transparent="1" zPosition="5">
       <convert type="EventTime">Progress</convert>
@@ -1040,7 +1040,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="40,100" size="60,20" transparent="1" zPosition="5" font="Regular; 18" backgroundColor="transpBA" foregroundColor="white" halign="left">
-      <convert type="TranspBAExtraInfo">VideoCodec</convert>
+      <convert type="PliExtraInfo">VideoCodec</convert>
     </widget>
     <widget source="session.CurrentService" render="TranspBAPiconProv" path="Satdreamgr-HD-TranspBA/prov" position="275,100" size="140,30" zPosition="5" transparent="1" alphatest="blend">
       <convert type="ServiceName">Provider</convert>
@@ -1060,10 +1060,10 @@
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="754,222" size="489,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">CryptoInfo</convert>
+      <convert type="PliExtraInfo">CryptoInfo</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="484,610" size="310,20" transparent="1" zPosition="5" font="Regular; 18" halign="center" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="TranspBAExtraInfo">PIDInfo</convert>
+      <convert type="PliExtraInfo">PIDInfo</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" font="Regular; 22" position="40,334" size="600,198" halign="left" transparent="0" zPosition="6" backgroundColor="transpBA" valign="top" foregroundColor="white">
       <convert type="EventName">ExtendedDescription</convert>
@@ -2652,7 +2652,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Label" position="730,675" size="160,22" zPosition="2" backgroundColor="transpBA" foregroundColor="white" font="Regular; 20" borderWidth="2" valign="top" halign="left" transparent="1">
-      <convert type="TranspBAExtraInfo">ResolutionString</convert>
+      <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="599,674" size="41,20" zPosition="1" alphatest="blend" /> 
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="599,674" size="41,20" zPosition="2" alphatest="blend">
