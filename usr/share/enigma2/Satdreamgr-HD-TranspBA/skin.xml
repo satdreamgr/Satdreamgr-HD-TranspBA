@@ -1054,7 +1054,7 @@
     </widget>
      <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="690,674" size="41,20" zPosition="1" alphatest="blend" /> 
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="690,674" size="41,20" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">Is4K</convert>IPTV
+      <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
