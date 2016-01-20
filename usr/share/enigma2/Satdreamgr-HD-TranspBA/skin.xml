@@ -772,7 +772,7 @@
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/off.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">deep_standby</convert>
-      <convert type="ConditionalSREChowHide" />
+      <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="menu_scan" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
