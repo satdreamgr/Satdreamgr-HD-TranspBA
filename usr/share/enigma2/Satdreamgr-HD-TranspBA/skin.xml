@@ -63,6 +63,7 @@
   </colors>
   <fonts>
     <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regular" scale="104" />
+    <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regularr" scale="100" />
     <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Arial-Rounded-MT-Bold-Bold.ttf" name="Bold" scale="95" />
     <font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
     <font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
@@ -512,7 +513,6 @@
   </screen>
   <!-- Screen Menu Template -->
   <screen name="MenuTemplate" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
-    <eLabel position="213,5" zPosition="0" size="850,16" backgroundColor="un11aaff" transparent="0" foregroundColor="transpBA" />
     <eLabel position="231,center" zPosition="0" size="146,310" backgroundColor="white" transparent="0" />
     <eLabel position="231,205" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
     <eLabel position="399,120" zPosition="-11" size="667,480" backgroundColor="transpBA" transparent="0" />
@@ -1030,12 +1030,12 @@
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_on.png" position="1183,674" size="24,24" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_on.png" position="1200,674" size="24,24" zPosition="2" alphatest="blend">
       <convert type="TranspBAConnection">
       </convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_off.png" position="1183,674" size="24,24" alphatest="blend" zPosition="1">
+    <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_off.png" position="1200,674" size="24,24" alphatest="blend" zPosition="1">
       <convert type="TranspBAAlwaysTrue" />
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -1048,15 +1048,16 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/infobarb.png" position="295,610" size="915,3" zPosition="0" alphatest="blend" />
     <eLabel text="-" zPosition="3" position="100,100" size="10,20" font="Regular; 20" halign="center" backgroundColor="transpBA" transparent="1" valign="center" foregroundColor="white" />
     <eLabel name="" position="984,20" size="1,110" backgroundColor="grey2" zPosition="0" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/tuner.png" position="893,676" size="85,20" zPosition="0" alphatest="blend" />
-    <widget source="session.FrontendInfo" render="Label" position="980,674" size="200,20" zPosition="3" backgroundColor="transpBA" transparent="1" halign="left" font="Regular; 20" foregroundColor="white" valign="top">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/tuner.png" position="913,676" size="85,20" zPosition="0" alphatest="blend" />
+    <widget source="session.FrontendInfo" render="Label" position="1000,674" size="200,20" zPosition="3" backgroundColor="transpBA" transparent="1" halign="left" font="Regular; 20" foregroundColor="white" valign="top">
       <convert type="FrontendInfo">STRING</convert>
     </widget>
-     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="690,674" size="41,20" zPosition="1" alphatest="blend" /> 
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="690,674" size="41,20" zPosition="2" alphatest="blend">
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="690,674" size="41,20" zPosition="2" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="690,674" size="41,20" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="775,674" size="130,25" borderWidth="1" zPosition="1" transparent="1" font="Regular;20" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="754,222" size="489,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
@@ -1229,7 +1230,7 @@
   <!-- Channel,EPG,EventInfo -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="115,25" size="1050,60" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" backgroundColor="transpBA" foregroundColor="jeaune" />
-    <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regular; 23" serviceInfoFont="Regula; 22" serviceNumberFont="Regular;20" colorServiceDescription="#000064c7" foregroundColorEventSelected="#ff9933" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
+    <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regularr; 26" serviceInfoFont="Regularr; 24" serviceNumberFont="Regularr;20" colorServiceDescription="#000064c7" foregroundColorEventSelected="#ff9933" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="286,91" zPosition="-1" size="954,607" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
@@ -1785,11 +1786,11 @@
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
- 
+
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
- 
+
 # y size still must be fixed in font stuff...
 textsize = (textsize[0] + 80, textsize[1] + 80)
 offset = 20
@@ -1800,23 +1801,23 @@ wsizey = textsize[1] + offset
 if (600 &gt; wsizex):
 	wsizex = 600
 wsize = (wsizex, wsizey)
- 
- 
+
+
 # resize
 self.instance.resize(eSize(*wsize))
- 
+
 # resize label
 self["text"].instance.resize(eSize(*textsize))
- 
+
 # move list
 listsize = (wsizex - 20, 50)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
- 
+
 # center window
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
- 
+
 		</applet>
   </screen>
   <!-- Choice box -->
@@ -2654,7 +2655,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget source="session.CurrentService" render="Label" position="730,675" size="160,22" zPosition="2" backgroundColor="transpBA" foregroundColor="white" font="Regular; 20" borderWidth="2" valign="top" halign="left" transparent="1">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="599,674" size="41,20" zPosition="1" alphatest="blend" /> 
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="599,674" size="41,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="599,674" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
