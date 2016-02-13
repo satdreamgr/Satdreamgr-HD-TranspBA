@@ -20,7 +20,7 @@
     <color name="grisc" value="#00b2b4b5" />
     <color name="jeaune" value="#00f47d19" />
     <color name="listbox" value="#00214c73" />
-    <color name="NLPreBlack" value="#40000000" />
+    <color name="NLPreBlack" value="#50000000" />
     <color name="NLPreTrans" value="#ccffffff" />
     <color name="noTransBG" value="#00101214" />
     <color name="orange" value="#00ffc000" />
@@ -844,21 +844,21 @@
     <widget source="session.Event_Now" render="Label" position="286,580" size="820,42" transparent="1" zPosition="1" font="Regular; 26" halign="left" noWrap="1" foregroundColor="white" valign="center" backgroundColor="transpBA">
       <convert type="EventName">Name</convert>
     </widget>
-    <eLabel name="new eLabel" position="0,513" zPosition="0" size="1280,60" backgroundColor="transpBlack" transparent="0" />
-    <widget source="session.CurrentService" render="Label" position="138,514" size="1003,60" font="Regular; 52" zPosition="3" noWrap="1" transparent="0" valign="center" halign="center" backgroundColor="transpBlack" foregroundColor="blue">
+    <eLabel name="new eLabel" position="0,514" zPosition="0" size="1280,60" backgroundColor="NLPreBlack" transparent="0" />
+    <widget source="session.CurrentService" render="Label" position="138,514" size="1003,60" font="Regular; 52" zPosition="3" noWrap="1" transparent="0" valign="center" halign="center" backgroundColor="NLPreBlack" foregroundColor="blue">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="286,635" size="820,42" transparent="1" zPosition="1" noWrap="1" font="Regular; 26" halign="left" backgroundColor="transpBA" foregroundColor="grey" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <eLabel name="new eLabel" position="0,575" zPosition="0" size="1280,145" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="1148,514" size="132,60" font="Regular; 36" halign="center" backgroundColor="transpBlack" transparent="0" valign="center" zPosition="4" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="1148,514" size="132,60" font="Regular; 36" halign="center" backgroundColor="NLPreBlack" transparent="0" valign="center" zPosition="4" foregroundColor="white">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1130,479" size="40,30" font="Regular; 22" halign="center" backgroundColor="transpBlack" foregroundColor="grey" transparent="0" zPosition="3">
+    <widget source="global.CurrentTime" render="Label" position="1120,480" size="40,30" font="Regular; 22" halign="center" backgroundColor="NLPreBlack" foregroundColor="grey" transparent="0" zPosition="3" valign="center">
       <convert type="ClockToText">Format:%a</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1172,479" size="100,30" backgroundColor="transpBlack" transparent="0" font="Regular; 22" valign="center" halign="center" foregroundColor="grey" zPosition="3">
+    <widget source="global.CurrentTime" render="Label" position="1162,480" size="105,30" backgroundColor="NLPreBlack" transparent="0" font="Regular; 22" valign="center" halign="center" foregroundColor="grey" zPosition="3">
       <convert type="ClockToText">Format:%d-%m-%y</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_off.png" position="290,689" size="41,20" zPosition="1" alphatest="blend" />
@@ -910,7 +910,7 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel text="-" zPosition="2" position="1180,585" size="15,26" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" valign="top" />
-    <widget source="session.Event_Now" render="Label" zPosition="2" position="1197,585" size="75,26" font="Regular; 22" halign="left" backgroundColor="transpBA" transparent="1" valign="top">
+    <widget source="session.Event_Now" render="Label" zPosition="2" position="1202,585" size="75,26" font="Regular; 22" halign="left" backgroundColor="transpBA" transparent="1" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -921,23 +921,23 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel text="-" zPosition="2" position="1180,643" size="15,26" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" valign="top" />
-    <widget source="session.Event_Next" render="Label" position="1197,643" size="75,26" font="Regular; 22" halign="left" backgroundColor="transpBA" transparent="1" zPosition="2" valign="top">
+    <widget source="session.Event_Next" render="Label" position="1202,643" size="75,26" font="Regular; 22" halign="left" backgroundColor="transpBA" transparent="1" zPosition="2" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
     <widget source="session.CurrentService" render="Picon" position="32,580" zPosition="4" size="220,132" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.CurrentService" render="ChannelNumber" position="0,514" size="132,60" valign="center" halign="center" noWrap="1" transparent="0" zPosition="3" font="Regular;36" backgroundColor="transpBlack">
+    <widget source="session.CurrentService" render="ChannelNumber" position="0,514" size="132,60" valign="center" halign="center" noWrap="1" transparent="0" zPosition="3" font="Regular;36" backgroundColor="NLPreBlack">
     </widget>
     <!-- Parameters -->
-    <eLabel name="new eLabel" position="0,81" zPosition="-1" size="1280,30" backgroundColor="transpBlack" transparent="0" />
+    <eLabel name="new eLabel" position="0,81" zPosition="-1" size="1280,26" backgroundColor="NLPreBlack" transparent="0" />
     <eLabel name="new eLabel" position="0,5" size="1280,1" zPosition="0" backgroundColor="grey" foregroundColor="grey" />
     <eLabel name="new eLabel" position="0,80" size="1280,1" backgroundColor="grey" foregroundColor="grey" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" position="2,84" zPosition="3" size="396,20" font="Regular; 22" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="20,84" zPosition="3" size="300,20" font="Regular; 20" transparent="1" halign="center" backgroundColor="NLPreBlack" foregroundColor="blue">
       <convert type="TranspBACamd">Camd</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="398,84" size="867,20" transparent="1" zPosition="1" font="Regular; 20" halign="left" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="324,84" size="950,20" transparent="1" zPosition="3" font="Regular; 20" halign="left" backgroundColor="NLPreBlack" foregroundColor="white">
       <convert type="TranspBACaidInfo2">
       </convert>
     </widget>
@@ -949,11 +949,11 @@
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <eLabel text="AGC " font="Regular; 18" position="1015,15" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
-    <widget source="session.FrontendStatus" render="Label" position="1204,15" size="70,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" foregroundColor="white" backgroundColor="transpBA" halign="left">
+    <widget source="session.FrontendStatus" render="Label" position="1208,15" size="70,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" foregroundColor="white" backgroundColor="transpBA" halign="left">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <eLabel text="SNR " font="Regular; 18" position="1015,38" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
-    <widget source="session.FrontendStatus" render="Label" position="1204,38" zPosition="5" size="70,20" font="Regular; 18" halign="left" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBA">
+    <widget source="session.FrontendStatus" render="Label" position="1208,38" zPosition="5" size="70,20" font="Regular; 18" halign="left" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBA">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1078,58" size="120,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="center" foregroundColor="white" backgroundColor="transpBA">
@@ -2419,7 +2419,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
     <widget name="config" position="332,145" size="790,325" itemHeight="36" font="Regular;26" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
-    <widget name="introduction" position="330,479" size="790,22" font="Regular; 22" foregroundColor="grey" halign="center" valign="center" transparent="1" />
+    <widget name="introduction" position="330,479" size="790,22" font="Regular; 22" foregroundColor="white" halign="center" valign="center" transparent="1" backgroundColor="transpBA" />
     <eLabel text="Cancel" position="340,598" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
     <eLabel text="Scan" position="540,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular;24" halign="center" valign="center" foregroundColor="white" />
     <eLabel name="" position="308,472" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
