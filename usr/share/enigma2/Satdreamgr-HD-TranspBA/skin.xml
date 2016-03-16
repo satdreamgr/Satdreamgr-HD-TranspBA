@@ -823,9 +823,11 @@
     <eLabel name="" position="0,0" size="623,24" backgroundColor="transpBA" />
     <eLabel name="" position="0,54" size="1000,20" />
     <eLabel name="" position="0,27" size="1000,25" />
-    <eLabel name="" position="0,0" size="1000,24" />
-    <eLabel name="" position="0,24" size="1000,3" backgroundColor="blue" transparent="0" zPosition="10" />
-    <eLabel name="" position="0,52" size="1000,2" backgroundColor="blue" zPosition="10" />
+    <eLabel name="" position="0,0" size="1000,25" />
+    <eLabel name="" position="0,25" size="1000,1" backgroundColor="blue" transparent="0" zPosition="10" />
+    <eLabel name="" position="0,26" size="1000,1" backgroundColor="grey2" transparent="0" zPosition="10" />
+    <eLabel name="" position="0,52" size="1000,1" backgroundColor="blue" zPosition="10" />
+    <eLabel name="" position="0,53" size="1000,1" backgroundColor="grey2" zPosition="10" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/time1.png" position="1000,0" size="280,74" transparent="0" zPosition="0" alphatest="blend" />
     <widget source="session.CurrentService" render="TranspBAPiconProv" path="Satdreamgr-HD-TranspBA/prov" position="859,27" size="138,25" zPosition="3" alphatest="blend" backgroundColor="transpBA">
       <convert type="ServiceName">Provider</convert>
@@ -865,7 +867,7 @@
     <widget source="session.CurrentService" render="Label" position="10,27" zPosition="3" size="280,25" font="Regular; 20" transparent="0" halign="left" backgroundColor="NLPreBlack" foregroundColor="jeaune">
       <convert type="TranspBACamd">Camd</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="10,54" size="990,20" transparent="0" zPosition="3" font="Regular; 20" halign="left" backgroundColor="NLPreBlack" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="10,54" size="990,20" transparent="0" zPosition="3" font="Regularr; 20" halign="left" backgroundColor="NLPreBlack" foregroundColor="grey">
       <convert type="TranspBACaidInfo2">
       </convert>
     </widget>
