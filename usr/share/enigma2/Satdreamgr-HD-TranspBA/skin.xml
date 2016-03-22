@@ -963,6 +963,12 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- info bas -->
+    <!-- progress barre -->
+    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="295,627" size="915,3" transparent="1" zPosition="5">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+     <!-- , -->   
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/infobarb.png" position="295,627" size="915,3" transparent="1" zPosition="4" alphatest="blend" />    
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="123,528" size="32,32" transparent="0" zPosition="5" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1120,528" size="32,32" transparent="0" zPosition="5" alphatest="blend" />
     <eLabel name="new eLabel" position="0,515" zPosition="-10" size="1280,60" backgroundColor="NLPreBlack" transparent="0" />
@@ -1076,11 +1082,6 @@
       <convert type="TranspBAAlwaysTrue" />
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <!-- progress barre -->
-    <widget source="session.Event_Now" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" position="295,627" size="915,3" transparent="1" zPosition="5">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/infobarb.png" position="295,627" size="915,3" transparent="1" zPosition="4" alphatest="blend" />
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="754,222" size="489,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
