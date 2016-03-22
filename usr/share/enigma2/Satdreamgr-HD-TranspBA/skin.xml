@@ -820,6 +820,8 @@
   </screen>
   <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!-- info haut -->
+    <eLabel name="" position="0,74" size="1280,10" backgroundColor="NLPreBlack" zPosition="0" />
+    <eLabel name="" position="0,0" size="1280,74" backgroundColor="transpBA" zPosition="0" />    
     <eLabel name="" position="0,25" size="1000,1" backgroundColor="blue" transparent="0" zPosition="10" />
     <eLabel name="" position="0,26" size="1000,1" backgroundColor="grey2" transparent="0" zPosition="10" />
     <eLabel name="" position="0,52" size="1000,1" backgroundColor="blue" zPosition="10" />
@@ -1079,8 +1081,6 @@
       <convert type="EventTime">Progress</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/infobarb.png" position="295,627" size="915,3" transparent="1" zPosition="4" alphatest="blend" />
-    <eLabel name="" position="0,74" size="1280,10" backgroundColor="NLPreBlack" />
-    <eLabel name="" position="0,0" size="1280,74" backgroundColor="transpBA" />
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="754,222" size="489,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
