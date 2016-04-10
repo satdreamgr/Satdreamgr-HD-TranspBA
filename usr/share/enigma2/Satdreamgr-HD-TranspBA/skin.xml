@@ -962,7 +962,7 @@
     </widget>
     <!-- info bas -->
     <!-- progress barre -->
-    <widget source="session.Event_Now" render="Progress" position="295,627" size="915,5" zPosition="10" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" borderWidth="1" borderColor="blue" transparent="1" alphatest="blend" backgroundColor="transpBA" foregroundColor="blue">
+    <widget source="session.Event_Now" render="Progress" position="295,625" size="915,7" zPosition="10" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" borderWidth="1" borderColor="listbox" transparent="1" alphatest="blend" backgroundColor="transpBA" foregroundColor="blue">
       <convert type="EventTime">Progress</convert>
     </widget>
     <!-- , -->
@@ -3064,8 +3064,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <screen name="QuitMainloopScreen" position="0,0" size="1280,720" backgroundColor="NLPreBlack" flags="wfNoBorder" transparent="0">
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1120,90" size="24, 24" alphatest="blend" />
-    <eLabel position="center,center" zPosition="-12" size="1184,620" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-    <eLabel position="50,51" zPosition="-11" size="1180,616" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="center,center" zPosition="-12" size="1184,620" backgroundColor="listbox" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="50,52" zPosition="-11" size="1180,616" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/reboot.png" position="center,267" size="68,68" alphatest="on" />
     <eLabel text="SatDreamGr!" position="53,144" size="1168,62" font="Regular; 60" foregroundColor="un11aaff" backgroundColor="transpBA" halign="center" transparent="1" />
     <widget name="text" position="279,339" size="720,100" font="Regular; 24" halign="center" foregroundColor="jeaune" valign="center" transparent="1" />
@@ -4063,18 +4063,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <screen name="Blindscan" position="0,0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/blindscan.png" zPosition="4" transparent="0" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <eLabel name="" position="308,462" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
-    <widget name="rotorstatus" position="331,560" size="790,25" font="Regular;20" foregroundColor="white" backgroundColor="transpBA" zPosition="2" />
-    <widget name="config" position="330,150" size="790,310" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" zPosition="2" />
-    <widget name="description" position="330,470" size="790,86" font="Regular; 22" foregroundColor="white" halign="left" backgroundColor="transpBA" valign="center" zPosition="2" />
-    <widget name="red" position="340,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
-    <widget name="yellow" position="740,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
-    <widget name="green" position="540,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
-    <widget name="introduction" position="0,0" size="0,0" font="Regular;20" foregroundColor="white" halign="center" backgroundColor="transpBA" />
-  </screen>
+  <panel name="TBTemplate" />
+  <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/blindscan.png" zPosition="4" transparent="0" alphatest="blend" />
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  <eLabel name="" position="308,462" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+  <widget name="rotorstatus" position="144,615" size="192,25" font="Regular;20" foregroundColor="white" backgroundColor="NLPreBlack" zPosition="2" />
+  <widget name="config" position="330,150" size="790,310" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" zPosition="2" />
+  <widget name="description" position="330,475" size="790,110" font="Regular; 22" foregroundColor="white" halign="left" backgroundColor="transpBA" valign="center" zPosition="2" />
+  <widget name="red" position="340,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
+  <widget name="yellow" position="740,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
+  <widget name="green" position="540,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
+  <widget name="introduction" position="0,0" size="0,0" font="Regular;20" foregroundColor="white" halign="center" backgroundColor="transpBA" />
+</screen>
   <screen name="VFD_INISetup" position="0,0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
     <panel name="STBTemplate" />
     <eLabel text="LED Display Setup" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
