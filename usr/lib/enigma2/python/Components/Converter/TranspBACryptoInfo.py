@@ -18,15 +18,17 @@ class TranspBACryptoInfo(Poll, Converter, object):
     CRWCRYPT = 6
     NDSCRYPT = 7
     BISSCRYPT = 8  
-    IRDECM = 9
-    SECAECM = 10
-    NAGRAECM = 11
-    VIAECM = 12
-    CONAXECM = 13
-    BETAECM = 14
-    CRWECM = 15
-    NDSECM = 16
-    BISSECM = 17   
+    TANDBERGCRYPT = 9 
+    IRDECM = 10
+    SECAECM = 11
+    NAGRAECM = 12
+    VIAECM = 13
+    CONAXECM = 14
+    BETAECM = 15
+    CRWECM = 16
+    NDSECM = 17
+    BISSECM = 18
+    TANDBERGECM = 19
     
 
     def __init__(self, type):
@@ -51,7 +53,9 @@ class TranspBACryptoInfo(Poll, Converter, object):
         elif type == 'NdsCrypt':
             self.type = self.NDSCRYPT
         elif type == 'BissCrypt':
-            self.type = self.BISSCRYPT           
+            self.type = self.BISSCRYPT   
+        elif type == 'TandbergCrypt':
+            self.type = self.TANDBERGCRYPT             
         elif type == 'IrdEcm':
             self.type = self.IRDECM
         elif type == 'SecaEcm':
@@ -69,7 +73,9 @@ class TranspBACryptoInfo(Poll, Converter, object):
         elif type == 'NdsEcm':
             self.type = self.NDSECM
         elif type == 'BissEcm':
-            self.type = self.BISSECM           
+            self.type = self.BISSECM 
+        elif type == 'TandbergEcm':
+            self.type = self.TANDBERGECM                        
 
     @cached
     def getBoolean(self):
@@ -106,7 +112,11 @@ class TranspBACryptoInfo(Poll, Converter, object):
                 return caemm
             if self.type == self.BISSCRYPT:
                 caemm = self.getCrypt('26', searchcaids)
-                return caemm               
+                return caemm  
+            if self.type == self.TANDBERGCRYPT:
+                caemm = self.getCrypt('10', searchcaids)
+                return caemm                 
+                             
                 
             if self.type == self.IRDECM:
                 if currentcaid == '06':
@@ -134,7 +144,11 @@ class TranspBACryptoInfo(Poll, Converter, object):
                     return True
             elif self.type == self.BISSECM:
                 if currentcaid == '26':
-                    return True                    
+                    return True  
+            elif self.type == self.TANDBERGECM:
+                if currentcaid == '10':
+                    return True                      
+                                      
                     
         else:
             self.poll_enabled = False

@@ -958,6 +958,14 @@
       <convert type="TranspBACryptoInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/crypto/tandberg-J.png" render="Pixmap" position="380,42" size="40,23" alphatest="blend" zPosition="4" transparent="0">
+      <convert type="TranspBACryptoInfo">TandbergCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" pixmap="Satdreamgr-HD-TranspBA/crypto/tandberg.png" render="Pixmap" position="380,42" size="40,23" alphatest="blend" zPosition="5" transparent="0">
+      <convert type="TranspBACryptoInfo">TandbergEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <!-- info bas -->
     <!-- progress barre -->
     <widget source="session.Event_Now" position="295,611" size="915,7" transparent="1" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" borderWidth="1" borderColor="listbox" alphatest="blend" backgroundColor="transpBA" foregroundColor="blue">
