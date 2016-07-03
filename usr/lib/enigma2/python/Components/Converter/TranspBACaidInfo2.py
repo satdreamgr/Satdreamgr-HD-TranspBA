@@ -42,17 +42,19 @@ class TranspBACaidInfo2(Poll, Converter, object):
 	VIA_C = 24
 	BISS = 25
 	BISS_C = 26
-	EXS = 27
-	EXS_C = 28
-	HOST = 29
-	DELAY = 30
-	FORMAT = 31
-	CRYPT2 = 32
-	CRD = 33
-	CRDTXT = 34
-	SHORT = 35
-	IS_FTA = 36
-	IS_CRYPTED = 37
+	TANDBERG = 27
+	TANDBERG_C = 28
+	EXS = 29
+	EXS_C = 30
+	HOST = 31
+	DELAY = 32
+	FORMAT = 33
+	CRYPT2 = 34
+	CRD = 35
+	CRDTXT = 36
+	SHORT = 37
+	IS_FTA = 38
+	IS_CRYPTED = 39
 	my_interval = 1000
 
 
@@ -121,6 +123,10 @@ class TranspBACaidInfo2(Poll, Converter, object):
 			self.type = self.BISS
 		elif type == "BisEcm":
 			self.type = self.BISS_C
+		elif type == "TandbergCrypt":
+			self.type = self.TANDBERG
+		elif type == "TandbergEcm":
+			self.type = self.TANDBERG_C
 		elif type == "Crd":
 			self.type = self.CRD
 		elif type == "CrdTxt":
@@ -138,6 +144,7 @@ class TranspBACaidInfo2(Poll, Converter, object):
 			self.sfmt = type[:]
 
 		self.systemTxtCaids = {
+			"10" : "Tandberg",
 			"26" : "BiSS",
 			"01" : "Seca Mediaguard",
 			"06" : "Irdeto",
@@ -157,6 +164,7 @@ class TranspBACaidInfo2(Poll, Converter, object):
 			"A1" : "Rosscrypt"}
 
 		self.systemCaids = {
+			"10" : "TB",
 			"26" : "BiSS",
 			"01" : "SEC",
 			"06" : "IRD",
@@ -242,6 +250,12 @@ class TranspBACaidInfo2(Poll, Converter, object):
 					if ("%0.4X" % int(caid))[:2] == "26":
 						return True
 				return False
+			if self.type == self.TANDBERG:
+				for caid in caids:
+					if ("%0.4X" % int(caid))[:2] == "10":
+						return True
+				return False
+
 			self.poll_interval = self.my_interval
 			self.poll_enabled = True
 			ecm_info = self.ecmfile()
@@ -291,9 +305,13 @@ class TranspBACaidInfo2(Poll, Converter, object):
 					if caid == "26":
 						return True
 					return False
+				if self.type == self.TANDBERG_C:
+					if caid == "10":
+						return True
+					return False
 				#oscam
 				reader = ecm_info.get("reader", None)
-				#cccam	
+				#cccam
 				using = ecm_info.get("using", "")
 				#mgcamd
 				source = ecm_info.get("source", "")
@@ -307,7 +325,7 @@ class TranspBACaidInfo2(Poll, Converter, object):
 					return False
 				source = ecm_info.get("source", "")
 				if self.type == self.IS_EMU:
-					return using == "emu" or source == "emu" or source == "card" or reader == "emu" or source.find("card") > -1 or source.find("emu") > -1 or source.find("biss") > -1 or source.find("cache") > -1
+					return using == "emu" or source == "emu" or source == "card" or reader == "emu" or source.find("card") > -1 or source.find("emu") > -1 or source.find("biss") > -1 or source.find("tb") > -1 or source.find("cache") > -1
 				source = ecm_info.get("source", "")
 				if self.type == self.IS_NET:
 					if using == "CCcam-s2s":
@@ -315,8 +333,8 @@ class TranspBACaidInfo2(Poll, Converter, object):
 					else:
 						if source != "cache" and source == "net" and source.find("emu") == -1:
 							return True
-						#return  (source != None and source == "net") or (source != None and source != "sci") or (source != None and source != "emu") or (reader != None and reader != "emu") or (source != None and source != "card") 
-						
+						#return  (source != None and source == "net") or (source != None and source != "sci") or (source != None and source != "emu") or (reader != None and reader != "emu") or (source != None and source != "card")
+
 				else:
 					return False
 
@@ -382,7 +400,7 @@ class TranspBACaidInfo2(Poll, Converter, object):
 						protocol = ecm_info.get("protocol", "")
 						#port
 						port = ecm_info.get("port", "")
-						# source	
+						# source
 						source = ecm_info.get("source", "")
 						# server
 						server = ecm_info.get("server", "")
@@ -462,15 +480,15 @@ class TranspBACaidInfo2(Poll, Converter, object):
 							if source == "emu":
 								textvalue = "%s - %s (Prov: %s, Caid: %s)" % (source, self.systemTxtCaids.get(caid[:2]), prov, caid)
 							#new oscam ecm.info with port parametr
-							elif reader != "" and source == "net" and port != "": 
+							elif reader != "" and source == "net" and port != "":
 								textvalue = "%s - Prov: %s, Caid: %s, Reader: %s, %s (%s:%s) - %s" % (source, prov, caid, reader, protocol, server, port, ecm_time.replace('msec','ms'))
-							elif reader != "" and source == "net": 
+							elif reader != "" and source == "net":
 								textvalue = "%s - Prov: %s, Caid: %s, Reader: %s, %s (%s) - %s" % (source, prov, caid, reader, protocol, server, ecm_time.replace('msec','ms'))
-							elif reader != "" and source != "net": 
+							elif reader != "" and source != "net":
 								textvalue = "%s - Prov: %s, Caid: %s, Reader: %s, %s (local) - %s" % (source, prov, caid, reader, protocol, ecm_time.replace('msec','ms'))
-							elif server == "" and port == "" and protocol != "": 
+							elif server == "" and port == "" and protocol != "":
 								textvalue = "%s - Prov: %s, Caid: %s, %s - %s" % (source, prov, caid, protocol, ecm_time.replace('msec','ms'))
-							elif server == "" and port == "" and protocol == "": 
+							elif server == "" and port == "" and protocol == "":
 								textvalue = "%s - Prov: %s, Caid: %s - %s" % (source, prov, caid, ecm_time.replace('msec','ms'))
 							else:
 								try:
@@ -480,7 +498,7 @@ class TranspBACaidInfo2(Poll, Converter, object):
 						if self.type == self.SHORT:
 							if source == "emu":
 								textvalue = "%s - %s (Prov: %s, Caid: %s)" % (source, self.systemTxtCaids.get(caid[:2]), prov, caid)
-							elif server == "" and port == "": 
+							elif server == "" and port == "":
 								textvalue = "%s - Prov: %s, Caid: %s - %s" % (source, prov, caid, ecm_time.replace('msec','ms'))
 							else:
 								try:
@@ -550,7 +568,7 @@ class TranspBACaidInfo2(Poll, Converter, object):
 									item[0] = "source"
 									item[1] = "sci"
 								#y = it_tmp[-1].find('emu')
-								if it_tmp[-1].find('emu') >-1 or it_tmp[-1].find('cache') > -1 or it_tmp[-1].find('card') > -1 or it_tmp[-1].find('biss') > -1:
+								if it_tmp[-1].find('emu') >-1 or it_tmp[-1].find('cache') > -1 or it_tmp[-1].find('card') > -1 or it_tmp[-1].find('biss') > -1 or it_tmp[-1].find('tb') > -1:
 									item[0] = "source"
 									item[1] = "emu"
 							elif item[0] == "hops":
@@ -559,7 +577,7 @@ class TranspBACaidInfo2(Poll, Converter, object):
 								item[1] = item[1].strip("\n")
 							elif item[0] == "provider":
 								item[1] = item[1].strip("\n")
-							elif item[0][:2] == 'cw'or item[0] =='ChID' or item[0] == "Service": 
+							elif item[0][:2] == 'cw'or item[0] =='ChID' or item[0] == "Service":
 								pass
 							#mgcamd new_oscam block
 							elif item[0] == "source":
