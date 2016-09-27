@@ -1362,7 +1362,7 @@
   <!-- Channel,EPG,EventInfo -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" position="115,25" size="1050,60" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" backgroundColor="transpBA" foregroundColor="jeaune" />
-    <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regularr; 26" serviceInfoFont="Regularr; 24" serviceNumberFont="Regularr;20" colorServiceDescription="#000064c7" foregroundColorEventSelected="#ff9933" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
+    <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regular; 24" serviceInfoFont="Regular; 24" serviceNumberFont="Regular;20" colorServiceDescription="#000064c7" foregroundColorEventSelected="jeaune" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="286,91" zPosition="-1" size="954,607" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
@@ -2460,7 +2460,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Service Scan -->
-  <screen name="ServiceScan" position="0,0" size="1285,720" flags="wfNoBorder" backgroundColor="un353e575e">
+  <screen name="ServiceScan" position="0,0" size="1285,720" flags="wfNoBorder" backgroundColor="un254f7497">
     <panel name="TBTemplate" />
     <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/scan.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -2501,7 +2501,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel name="" position="310,540" size="828,6" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="FastScanStatus" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un353e575e">
+  <screen name="FastScanStatus" title="Fast Scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un254f7497">
     <panel name="STBTemplate" />
     <eLabel text="Fast Scan" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/scan.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -2512,7 +2512,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Satfinder -->
-  <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un254f7497">
     <panel name="TBTemplate" />
     <!--  -->
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/dish.png" position="159,257" size="130,180" zPosition="5" alphatest="blend" />
@@ -2552,7 +2552,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="config" position="332,145" size="790,325" itemHeight="36" font="Regular;26" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
     <widget name="introduction" position="330,479" size="790,22" font="Regular; 22" foregroundColor="white" halign="center" valign="center" transparent="1" backgroundColor="transpBA" />
     <eLabel text="Cancel" position="340,598" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
-    <eLabel text="Scan" position="540,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular;24" halign="center" valign="center" foregroundColor="white" />
+    <eLabel text="Scan" position="540,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <eLabel name="" position="308,472" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
   <!-- Menus timer -->
