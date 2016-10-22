@@ -298,7 +298,7 @@
     </widget>
     <!-- info bas -->
     <!-- progress barre -->
-    <widget source="session.Event_Now" render="Progress" position="347,625" size="835,8" zPosition="1" borderWidth="1" borderColor="listbox" transparent="1" alphatest="blend" foregroundColor="blue">
+    <widget source="session.Event_Now" render="Progress" position="347,625" size="835,8" zPosition="1" borderWidth="1" borderColor="listbox" transparent="1" foregroundColor="blue">
       <convert type="EventTime">Progress</convert>
     </widget>
     <!-- , -->
