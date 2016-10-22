@@ -4283,4 +4283,4 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="text3" position="4,36" size="132,14" font="Regular;10" />
     <widget name="text4" position="4,49" size="132,14" font="Regular;10" />
   </screen>
-</skin>
+</skin> 
