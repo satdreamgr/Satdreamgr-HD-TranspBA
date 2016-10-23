@@ -414,6 +414,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
+  <!-- FIN INFOBAR-->
   <!-- Screen PST PT Template-->
   <!-- Button K -->
   <screen name="Pkeybutton2" flags="wfNoBorder">
@@ -1005,7 +1006,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/iconssc/led-display.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">VFD_INI</convert>
+      <convert type="MenuEntryCompare">vfd_ini</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="240,296" size="128,128">
@@ -2514,46 +2515,47 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!-- Satfinder -->
   <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un254f7497">
     <panel name="TBTemplate" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,455" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <!--  -->
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/dish.png" position="159,257" size="130,180" zPosition="5" alphatest="blend" />
-    <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snr.png" position="403,536" size="220,20" borderWidth="2" borderColor="foreground" zPosition="0" transparent="1">
+    <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snr.png" position="403,502" size="220,16" borderWidth="2" borderColor="foreground" zPosition="0" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel text="SNR:" position="330,536" size="70,20" backgroundColor="transpBA" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" halign="right" />
-    <widget source="Frontend" render="Label" position="627,536" size="70,20" halign="center" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" backgroundColor="transpBA">
+    <eLabel text="SNR:" position="329,500" size="70,20" backgroundColor="transpBA" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" halign="right" />
+    <widget source="Frontend" render="Label" position="627,500" size="70,20" halign="center" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" backgroundColor="transpBA">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agc.png" position="403,565" size="220,20" transparent="1" borderWidth="2" borderColor="foreground">
+    <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agc.png" position="403,552" size="220,16" transparent="1" borderWidth="2" borderColor="foreground">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel text="AGC:" position="330,565" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" zPosition="1" halign="right" />
-    <widget source="Frontend" render="Label" position="627,565" size="70,20" halign="center" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
+    <eLabel text="AGC:" position="330,550" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" zPosition="1" halign="right" />
+    <widget source="Frontend" render="Label" position="627,550" size="70,20" halign="center" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="Frontend" render="Label" position="485,509" size="70,20" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1" zPosition="1" foregroundColor="white">
+    <widget source="Frontend" render="Label" position="917,500" size="70,20" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1" zPosition="1" foregroundColor="unff0000">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <eLabel text="BER:" position="748,565" size="70,20" backgroundColor="transpBA" transparent="1" zPosition="5" font="Regular; 20" halign="right" foregroundColor="white" valign="center" />
-    <widget source="Frontend" render="Label" position="1048,565" size="70,20" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center">
+    <eLabel text="BER:" position="748,550" size="70,20" backgroundColor="transpBA" transparent="1" zPosition="5" font="Regular; 20" halign="right" foregroundColor="white" valign="center" />
+    <widget source="Frontend" render="Label" position="1048,550" size="70,20" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agc.png" position="821,565" size="220,20" transparent="1" borderWidth="2" borderColor="foreground">
+    <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agc.png" position="821,552" size="220,16" transparent="1" borderWidth="2" borderColor="foreground">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel name="lock" text="Lock:" position="848,515" size="60,22" font="Regular;21" halign="right" backgroundColor="transpBA" />
-    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="915,512" zPosition="1" size="38,31" alphatest="on">
+    <eLabel name="lock" text="Lock:" position="840,500" size="60,22" font="Regular;21" halign="right" backgroundColor="transpBA" />
+    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="1013,498" zPosition="1" size="25,24" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="915,512" zPosition="1" size="38,31" alphatest="on">
+    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="1010,498" zPosition="1" size="25,24" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
-    <widget name="config" position="332,145" size="790,325" itemHeight="36" font="Regular;26" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
-    <widget name="introduction" position="330,479" size="790,22" font="Regular; 22" foregroundColor="white" halign="center" valign="center" transparent="1" backgroundColor="transpBA" />
+    <widget name="config" position="332,150" size="790,300" itemHeight="30" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
+    <widget name="introduction" position="330,464" size="780,26" font="Regular; 22" foregroundColor="white" halign="center" backgroundColor="blue" transparent="0" />
     <eLabel text="Cancel" position="340,598" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
     <eLabel text="Scan" position="540,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <eLabel name="" position="308,472" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
   <!-- Menus timer -->
   <screen name="TimerSelection" position="0,0" size="1280,720" title="Timer selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -2942,27 +2944,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <panel name="menu" />
     <panel name="info" />
     <!-- -->
+    <widget name="Symbolrate" position="329,524" size="150,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
+    <widget name="FEC" position="330,555" size="150,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" zPosition="1" />
+    <widget name="Frequency" position="330,495" size="150,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" zPosition="1" />
     <eLabel name="" position="308,445" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/satellites.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="list" position="330,150" size="780,255" transparent="1" font="Regular;22" backgroundColor="transpBA" foregroundColor="white" />
-    <eLabel text="Frequency:" position="330,465" size="150,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="left" />
-    <widget name="frequency_value" position="482,465" size="120,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <eLabel text="Polarisation" position="330,494" size="150,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="left" />
-    <widget name="polarisation" position="482,494" size="120,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <eLabel text="Symbol rate:" position="330,524" size="150,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="left" />
-    <widget name="symbolrate_value" position="482,524" size="120,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <eLabel text="FEC:" position="330,555" size="150,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="left" />
-    <widget name="fec_value" position="482,555" size="120,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <widget name="snr_db" position="826,465" size="200,25" backgroundColor="transpBA" foregroundColor="white" transparent="1" font="Regular;20" halign="center" />
-    <eLabel text="SNR:" position="741,494" size="80,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <widget name="snr_bar" position="826,494" size="200,25" backgroundColor="transpBA" transparent="1" borderWidth="1" />
-    <widget name="snr_percentage" position="1028,494" size="80,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <eLabel text="BER:" position="741,524" size="80,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <widget name="ber_bar" position="825,524" size="200,25" backgroundColor="transpBA" transparent="1" borderWidth="1" />
-    <widget name="ber_value" position="1028,524" size="80,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
-    <eLabel text="Lock:" position="741,555" size="80,25" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="left" />
-    <widget name="lock_state" position="825,555" size="200,25" backgroundColor="transpBA" transparent="1" font="Regular;20" halign="left" foregroundColor="white" />
-    <widget name="status_bar" position="330,410" size="780,26" font="Regular; 22" foregroundColor="grey" halign="center" backgroundColor="transpBA" transparent="1" />
+    <widget name="frequency_value" position="482,495" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
+    <widget name="symbolrate_value" position="481,524" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
+    <widget name="fec_value" position="482,555" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" />
+    <widget name="snr_db" position="845,465" size="70,20" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" font="Regular;20" halign="center" />
+    <widget name="lock_on" zPosition="2" position="960,463" size="25,24" pixmap="skin_default/icons/lock_on.png" alphatest="on" />
+    <widget name="lock_off" zPosition="1" position="960,463" size="25,24" pixmap="skin_default/icons/lock_off.png" alphatest="on" />
+    <widget name="SNR" position="740,494" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="right" />
+    <widget name="snr_bar" position="815,496" size="220,16" backgroundColor="transpBA" pixmap="Satdreamgr-HD-TranspBA/border/bar_snr.png" transparent="1" borderWidth="1" />
+    <widget name="snr_percentage" position="1040,494" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="center" />
+    <widget name="AGC" position="740,524" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" zPosition="1" halign="right" />
+    <widget name="agc_bar" position="815,525" size="220,16" backgroundColor="transpBA" pixmap="Satdreamgr-HD-TranspBA/border/bar_agc.png" transparent="1" borderWidth="1" />
+    <widget name="agc_percentage" position="1040,523" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="center" />
+    <widget name="BER" position="740,555" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" zPosition="1" halign="right" />
+    <widget name="ber_bar" position="815,557" size="220,16" pixmap="Satdreamgr-HD-TranspBA/border/bar_agc.png" backgroundColor="transpBA" transparent="1" borderWidth="1" />
+    <widget name="ber_value" position="1040,555" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" halign="center" />
+    <widget name="Lock" position="740,465" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular;20" foregroundColor="white" zPosition="1" halign="right" />
+    <widget name="lock_state" position="995,465" size="140,20" backgroundColor="transpBA" transparent="1" font="Regular;20" halign="left" foregroundColor="white" />
+    <widget name="status_bar" position="330,412" size="780,26" font="Regular; 22" foregroundColor="white" halign="center" backgroundColor="blue" transparent="0" />
+    <widget name="rotorstatus" position="330,465" size="270,20" font="Regular; 20" foregroundColor="white" halign="left" backgroundColor="transpBA" transparent="1" zPosition="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Positioner Setup Log -->
@@ -3096,13 +3102,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel name="" position="308,480" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
   <!-- Dish -->
-  <screen name="Dish" flags="wfNoBorder" position="1096,75" size="130,200" title="Dish" zPosition="0" backgroundColor="transpBA">
-    <widget name="Dishpixmap" position="0,1" size="130,160" zPosition="-1" pixmap="Satdreamgr-HD-TranspBA/icons/dish.png" transparent="1" alphatest="on" />
-    <widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+  <screen name="Dish" flags="wfNoBorder" position="1130,270" size="130,202" title="Dish" zPosition="0" backgroundColor="transpBA">
+    <widget name="Dishpixmap" position="0,0" size="130,160" zPosition="-1" pixmap="Satdreamgr-HD-TranspBA/icons/dish.png" transparent="1" alphatest="on" />
+    <widget name="turnTime" position="45,5" size="80,20" zPosition="1" font="Regular;18" halign="right" borderWidth="1" transparent="1" />
     <widget name="From" position="5,164" size="45,18" zPosition="1" font="Regular;16" halign="left" borderWidth="1" transparent="1" />
-    <widget name="posFrom" position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <widget name="posFrom" position="55,160" size="70,22" zPosition="1" font="Regular;20" halign="left" borderWidth="1" transparent="1" />
     <widget name="Goto" position="5,184" size="45,18" zPosition="1" font="Regular;16" halign="left" borderWidth="1" transparent="1" />
-    <widget name="posGoto" position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <widget name="posGoto" position="55,180" size="70,22" zPosition="1" font="Regular;20" halign="left" borderWidth="1" transparent="1" />
     <widget name="tunerName" position="5,144" size="100,14" zPosition="1" font="Regular;12" halign="left" borderWidth="1" transparent="1" />
     <widget name="turnSpeed" position="75,98" size="50,16" zPosition="1" font="Regular;14" halign="right" borderWidth="1" transparent="1" />
   </screen>
@@ -4190,7 +4196,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <eLabel name="" position="308,462" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <widget name="rotorstatus" position="144,615" size="192,25" font="Regular;20" foregroundColor="white" backgroundColor="NLPreBlack" zPosition="2" />
-    <widget name="config" position="330,150" size="790,310" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" zPosition="2" />
+    <widget name="config" position="330,150" size="790,300" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" zPosition="2" />
     <widget name="description" position="330,475" size="790,110" font="Regular; 22" foregroundColor="white" halign="left" backgroundColor="transpBA" valign="center" zPosition="2" />
     <widget name="red" position="340,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
     <widget name="yellow" position="740,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
