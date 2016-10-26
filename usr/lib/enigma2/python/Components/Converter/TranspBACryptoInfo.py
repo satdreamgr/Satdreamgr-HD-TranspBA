@@ -17,19 +17,22 @@ class TranspBACryptoInfo(Poll, Converter, object):
     BETACRYPT = 5
     CRWCRYPT = 6
     NDSCRYPT = 7
-    BISSCRYPT = 8  
-    TANDBERGCRYPT = 9 
-    IRDECM = 10
-    SECAECM = 11
-    NAGRAECM = 12
-    VIAECM = 13
-    CONAXECM = 14
-    BETAECM = 15
-    CRWECM = 16
-    NDSECM = 17
-    BISSECM = 18
-    TANDBERGECM = 19
-    
+    BISSCRYPT = 8
+    TANDBERGCRYPT = 9
+    BULCRYPT = 10
+    POWERVUCRYPT = 11
+    IRDECM = 12
+    SECAECM = 13
+    NAGRAECM = 14
+    VIAECM = 15
+    CONAXECM = 16
+    BETAECM = 17
+    CRWECM = 18
+    NDSECM = 19
+    BISSECM = 20
+    TANDBERGECM = 21
+    BULCRYPTECM = 22
+    POWERVUECM = 23
 
     def __init__(self, type):
         Converter.__init__(self, type)
@@ -53,9 +56,13 @@ class TranspBACryptoInfo(Poll, Converter, object):
         elif type == 'NdsCrypt':
             self.type = self.NDSCRYPT
         elif type == 'BissCrypt':
-            self.type = self.BISSCRYPT   
+            self.type = self.BISSCRYPT
         elif type == 'TandbergCrypt':
-            self.type = self.TANDBERGCRYPT             
+            self.type = self.TANDBERGCRYPT
+        elif type == 'BulCrypt':
+            self.type = self.BULCRYPT
+        elif type == 'PowerVUCrypt':
+            self.type = self.POWERVUCRYPT
         elif type == 'IrdEcm':
             self.type = self.IRDECM
         elif type == 'SecaEcm':
@@ -73,9 +80,13 @@ class TranspBACryptoInfo(Poll, Converter, object):
         elif type == 'NdsEcm':
             self.type = self.NDSECM
         elif type == 'BissEcm':
-            self.type = self.BISSECM 
+            self.type = self.BISSECM
         elif type == 'TandbergEcm':
-            self.type = self.TANDBERGECM                        
+            self.type = self.TANDBERGECM
+        elif type == 'BulCryptEcm':
+            self.type = self.BULCRYPTECM
+        elif type == 'PowerVUEcm':
+            self.type = self.POWERVUECM
 
     @cached
     def getBoolean(self):
@@ -112,12 +123,16 @@ class TranspBACryptoInfo(Poll, Converter, object):
                 return caemm
             if self.type == self.BISSCRYPT:
                 caemm = self.getCrypt('26', searchcaids)
-                return caemm  
+                return caemm
             if self.type == self.TANDBERGCRYPT:
                 caemm = self.getCrypt('10', searchcaids)
-                return caemm                 
-                             
-                
+                return caemm
+            if self.type == self.BULCRYPT:
+                caemm = self.getCrypt('4A', searchcaids)
+                return caemm
+            if self.type == self.POWERVUCRYPT:
+                caemm = self.getCrypt('0E', searchcaids)
+                return caemm
             if self.type == self.IRDECM:
                 if currentcaid == '06':
                     return True
@@ -144,12 +159,16 @@ class TranspBACryptoInfo(Poll, Converter, object):
                     return True
             elif self.type == self.BISSECM:
                 if currentcaid == '26':
-                    return True  
+                    return True
             elif self.type == self.TANDBERGECM:
                 if currentcaid == '10':
-                    return True                      
-                                      
-                    
+                    return True
+            elif self.type == self.BULCRYPTECM:
+                if currentcaid == '4A':
+                    return True
+            elif self.type == self.POWERVUECM:
+                if currentcaid == '0E':
+                    return True
         else:
             self.poll_enabled = False
         return False
