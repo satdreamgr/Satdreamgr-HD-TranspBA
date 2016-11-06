@@ -4209,8 +4209,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="config" zPosition="2" position="412,135" size="634,180" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" foregroundColor="white" backgroundColor="transpBA" />
     <eLabel text="Remote Control System Code Setting" position="292,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="238,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/remote.png" zPosition="4" transparent="0" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <screen name="TranscodingSetup" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
     <panel name="PSTTemplate" />
@@ -4327,5 +4325,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="text1" position="4,0" size="132,35" font="Regular;16" />
     <widget name="text3" position="4,36" size="132,14" font="Regular;10" />
     <widget name="text4" position="4,49" size="132,14" font="Regular;10" />
+  </screen>
+  <screen name="StreamingClientsInfo" position="center,center" flags="wfNoBorder" size="1280,720" title="Streaming Clients Info" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/streaming.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <widget name="ScrollLabel" font="Regular;22" position="330,150" size="790,360" zPosition="2" halign="left" />
   </screen>
 </skin>

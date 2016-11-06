@@ -4328,4 +4328,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="text3" position="4,36" size="132,14" font="Regular;10" />
     <widget name="text4" position="4,49" size="132,14" font="Regular;10" />
   </screen>
+  <screen name="StreamingClientsInfo" position="center,center" flags="wfNoBorder" size="1280,720" title="Streaming Clients Info" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/streaming.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <widget name="ScrollLabel" font="Regular;22" position="330,150" size="790,360" zPosition="2" halign="left" />
+  </screen>  
 </skin>
