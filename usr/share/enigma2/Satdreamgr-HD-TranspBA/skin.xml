@@ -2863,13 +2863,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!--CI Config Menu -->
   <screen name="CiSelection" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Common Interface" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <panel name="TBTemplate" />
     <widget name="entries" position="330,200" size="790,360" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="transpB" transparent="1" font="Regular; 22" foregroundColor="white" />
     <widget name="text" position="330,160" size="790,28" font="Regular; 22" backgroundColor="transpBA" transparent="1" foregroundColor="white" halign="left" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/common.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <screen name="MMIDialog" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="STBTemplate" />
+    <eLabel text="Common Interface" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <widget name="entries" position="330,190" size="790,360" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="transpB" transparent="1" itemHeight="45" font="Regular; 22" foregroundColor="white" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/common.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <widget name="bottom" position="424,551" size="600,25" halign="center" font="Regular;22" backgroundColor="NLPreBlack" foregroundColor="white" zPosition="1" />
+    <widget name="subtitle" position="330,150" size="600,30" font="Regular;22" backgroundColor="transpBA" foregroundColor="white" zPosition="1" />
   </screen>
   <screen name="CIselectMainMenu" position="0,0" size="1280,720" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -4332,5 +4341,107 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <widget name="ScrollLabel" font="Regular;22" position="330,150" size="790,360" zPosition="2" halign="left" />
+  </screen>
+  <screen name="YouTubeMain" position="center,center" flags="wfNoBorder" size="1280,720" title="Youtube" backgroundColor="transparent">
+    <widget source="Title" render="Label" position="44,184" size="250,60" backgroundColor="blue" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="65,60" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1124,57" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <eLabel position="300,110" zPosition="-1" size="935,498" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1180,61" size="24,24" alphatest="blend" zPosition="10" />
+    <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
+    <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
+    <eLabel name="" position="44,104" size="250,510" backgroundColor="blue" zPosition="-10" />
+    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+      <convert type="ClockToText">Format:%d-%m-%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+      <convert type="ClockToText">Format: :%S</convert>
+    </widget>
+    <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
+    <eLabel name="" position="44,614" size="392,6" zPosition="0" backgroundColor="white" />
+    <eLabel name="" position="636,614" size="200,6" zPosition="1" backgroundColor="green" />
+    <eLabel name="" position="836,614" size="200,6" zPosition="2" backgroundColor="yellow" />
+    <eLabel name="" position="1036,614" size="200,6" zPosition="2" backgroundColor="blue" />
+    <ePixmap name="" position="101,259" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget name="text" position="240,44" size="800,60" zPosition="2" font="Regular; 24" foregroundColor="white" valign="center" halign="center" backgroundColor="NLPreBlack" />
+    <widget source="list" render="Listbox" position="310,130" size="915,460" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+						{"template": [
+							MultiContentEntryPixmapAlphaTest(pos=(0,-25), \
+								size=(200,180), png=2), # Thumbnail
+							MultiContentEntryText(pos=(220,0), size=(575,22), \
+								font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+							MultiContentEntryText(pos=(220, 70), size=(200,22), \
+								font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+							MultiContentEntryText(pos=(420,70), size=(200,22), \
+								font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+							],
+						"fonts": [gFont("Regular",20), gFont("Regular",16)],
+						"itemHeight": 115}
+					</convert>
+    </widget>
+    <widget name="thumbnail" position="55,400" size="225,162" /> # Thumbnail size in list
+  <panel name="GMenuTemplate" /><panel name="GInfoTemplate" /><widget source="key_red" render="Label" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" /><widget source="key_green" render="Label" position="636,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" /></screen>
+  <screen name="YouTubeSearch" position="center,center" flags="wfNoBorder" size="1280,720" title="Youtube" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="160,289" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <widget name="config" position="327,159" size="790,30" zPosition="2" scrollbarMode="showNever" backgroundColor="transpBA" foregroundColor="white" />
+    <widget source="list" render="Listbox" position="324,205" size="790,273" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+						{"template": [MultiContentEntryText(pos=(10,1), size=(580,30), \
+							font=0, flags=RT_HALIGN_LEFT, text=0)],
+						"fonts": [gFont("Regular",20)],
+						"itemHeight": 30}
+					</convert>
+    </widget>
+    <widget name="HelpWindow" position="10,0" size="1,1" zPosition="5" pixmap="skin_default/vkey_icon.png" transparent="1" alphatest="on" />
+    <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;22" halign="center" valign="center" foregroundColor="white" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_menu.png" position="150,610" size="40,30" transparent="1" alphatest="blend" zPosition="1" />
+  </screen>
+  <screen name="YouTubeInfo" position="center,center" flags="wfNoBorder" size="1280,720" title="Youtube" backgroundColor="transparent">
+    <widget source="Title" render="Label" position="240,44" size="800,60" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="65,60" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1124,57" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <eLabel position="300,110" zPosition="-1" size="935,498" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1180,61" size="24,24" alphatest="blend" zPosition="10" />
+    <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
+    <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
+    <eLabel name="" position="44,104" size="250,510" backgroundColor="blue" zPosition="-10" />
+    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+      <convert type="ClockToText">Format:%d-%m-%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+      <convert type="ClockToText">Format: :%S</convert>
+    </widget>
+    <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
+    <eLabel name="" position="44,614" size="392,6" zPosition="0" backgroundColor="white" />
+    <eLabel name="" position="636,614" size="200,6" zPosition="1" backgroundColor="green" />
+    <eLabel name="" position="836,614" size="200,6" zPosition="2" backgroundColor="yellow" />
+    <eLabel name="" position="1036,614" size="200,6" zPosition="2" backgroundColor="blue" />
+    <ePixmap name="" position="104,297" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="key_red" render="Label" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="pic" position="315,130" size="320,180" transparent="1" alphatest="on" />
+    <widget name="description" position="650,130" size="560,460" font="Regular;16" />
+    <widget name="views" position="320,320" size="150,20" font="Regular;16" />
+    <widget name="duration" position="480,320" size="150,20" font="Regular;16" />
+    <widget name="likes" position="320,350" size="150,20" font="Regular;16" />
+    <widget name="dislikes" position="480,350" size="150,20" font="Regular;16" />
+    <widget name="published" position="325,380" size="300,20" font="Regular;16" />
   </screen>
 </skin>
