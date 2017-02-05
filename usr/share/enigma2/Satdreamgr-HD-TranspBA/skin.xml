@@ -2864,11 +2864,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <!--CI Config Menu -->
   <screen name="CiSelection" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <widget name="entries" position="330,200" size="790,360" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="transpB" transparent="1" font="Regular; 22" foregroundColor="white" />
-    <widget name="text" position="330,160" size="790,28" font="Regular; 22" backgroundColor="transpBA" transparent="1" foregroundColor="white" halign="left" />
+    <widget name="entries" position="330,210" size="790,360" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="transpB" transparent="1" font="Regular; 22" foregroundColor="white" />
+    <widget name="text" position="330,153" size="790,28" font="Regular; 22" backgroundColor="transpBA" transparent="1" foregroundColor="white" halign="center" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/common.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,190" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,198" size="828,6" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="MMIDialog" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
@@ -2889,7 +2891,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!--CI Config Menu -->
-  <screen name="CIconfigMenu" title="CI Assignment" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="CIconfigMenu" title="CI assignment" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton4l" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -2902,6 +2904,49 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <eLabel position="400,332" size="660,2" backgroundColor="grey" />
     <widget name="ServiceList" position="440,355" size="600,220" backgroundColor="transpBA" zPosition="1" transparent="1" scrollbarMode="showOnDemand" />
     <widget source="ServiceList_info" render="Label" position="400,355" size="600,220" backgroundColor="transpBA" zPosition="2" transparent="1" font="Regular;22" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <screen name="easyCIconfigMenu" title="CI assignment" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="ServiceList_desc" render="Label" position="330,160" size="790,28" font="Regular; 22" backgroundColor="transpBA" transparent="1" />
+    <widget name="ServiceList" position="330,200" size="790,360" zPosition="1" scrollbarMode="showOnDemand" font="Regular; 22" />
+    <widget source="ServiceList_info" render="Label" position="330,200" size="790,360" zPosition="2" font="Regular; 22" backgroundColor="transpBA" transparent="1" />
+    <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;22" halign="center" valign="center" foregroundColor="white" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <screen name="CAidSelect" title="select CAId's" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="list" position="330,150" size="790,370" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <widget source="introduction" render="Label" position="336,540" size="790,30" zPosition="10" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
+    <eLabel name="" position="310,525" size="828,6" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <screen name="myProviderSelection" title="Select provider to add..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <panel name="keybutton4l" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget name="list" position="330,150" size="790,370" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <widget source="introduction" render="Label" position="336,540" size="790,30" zPosition="10" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
+    <eLabel name="" position="310,525" size="828,6" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <screen name="myChannelSelection" title="Select service to add..." position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <panel name="keybutton4l" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget name="list" position="330,150" size="790,370" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <widget source="introduction" render="Label" position="336,540" size="790,30" zPosition="10" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
+    <eLabel name="" position="310,525" size="828,6" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
