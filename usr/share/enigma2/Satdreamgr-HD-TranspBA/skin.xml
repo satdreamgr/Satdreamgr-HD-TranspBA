@@ -841,6 +841,10 @@
   <!-- Screen Menus -->
   <screen name="Menu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/panel/softcam.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">softcam_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">ci_setup</convert>
       <convert type="ConditionalShowHide" />
