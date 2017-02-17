@@ -1798,16 +1798,39 @@
   </screen>
   <!-- Help -->
   <screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
+    <eLabel position="310,130" zPosition="-1" size="828,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24, 24" alphatest="blend" zPosition="10" />
+    <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
+    <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
+    <eLabel name="" position="140,124" size="165,530" backgroundColor="blue" zPosition="0" />
+    <widget source="global.CurrentTime" render="Label" position="354,628" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+      <convert type="ClockToText">Format:%d-%m-%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="354,603" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="963,606" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1075,610" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+      <convert type="ClockToText">Format: :%S</convert>
+    </widget>
+    <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
+    <eLabel name="" position="540,594" size="200,6" zPosition="1" backgroundColor="green" />
+    <eLabel name="" position="740,594" size="200,6" zPosition="2" backgroundColor="yellow" />
+    <eLabel name="" position="940,594" size="200,6" zPosition="2" backgroundColor="blue" />
+    <eLabel name="" position="310,594" size="30,6" zPosition="2" backgroundColor="white" />
+    <eLabel name="" position="308,538" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <eLabel text="help..." position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="list" position="330,150" size="790,420" scrollbarMode="showOnDemand" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
-    <widget name="rc" position="147,124" size="154,474" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" backgroundColor="transpBA" />
+    <widget name="list" position="330,150" size="790,380" scrollbarMode="showOnDemand" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="rc" position="147,128" size="154,520" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on" backgroundColor="transpBA" />
     <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-    <widget name="long_key" position="328,613" size="790,22" foregroundColor="white" font="Regular; 22" halign="center" transparent="1" backgroundColor="transpBA" />
-    <eLabel name="" position="147,126" size="154,470" backgroundColor="blue" zPosition="9" />
+    <widget name="long_key" position="331,550" size="790,26" foregroundColor="white" font="Regular; 22" halign="center" transparent="1" backgroundColor="transpBA" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
