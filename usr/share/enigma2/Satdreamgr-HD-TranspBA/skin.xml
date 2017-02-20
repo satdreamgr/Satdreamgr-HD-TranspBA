@@ -3848,6 +3848,44 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <screen name="System_Panel" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryPixmapAlphaBlend(pos = (12, 6), size = (32, 32), png = 0),
+				MultiContentEntryText(pos = (58, 6), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+						],
+						"fonts": [gFont("Regular", 28)],
+						"itemHeight": 46
+					}
+				</convert>
+    </widget>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>  
+  <screen name="Plugins_Panel" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryPixmapAlphaBlend(pos = (12, 6), size = (32, 32), png = 0),
+				MultiContentEntryText(pos = (58, 6), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+						],
+						"fonts": [gFont("Regular", 28)],
+						"itemHeight": 46
+					}
+				</convert>
+    </widget>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
   <!-- Softcam Setup -->
   <screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
