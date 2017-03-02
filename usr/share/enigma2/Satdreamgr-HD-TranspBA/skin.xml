@@ -149,11 +149,11 @@
   <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!-- info haut -->
     <eLabel name="lock" font="Regular; 18" size="78,20" zPosition="3" position="859,38" transparent="1" halign="center" foregroundColor="white" backgroundColor="transpBA" text="Lock:" />
-    <widget size="25,24" position="940,35" alphatest="on" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="3">
+    <widget size="25,24" position="940,35" alphatest="on" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="4">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget size="25,24" zPosition="4" position="940,35" pixmap="skin_default/icons/lock_off.png" source="session.FrontendStatus" render="Pixmap">
+    <widget size="25,24" zPosition="4" position="940,35" pixmap="skin_default/icons/lock_off.png" source="session.FrontendStatus" render="Pixmap" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
@@ -319,9 +319,6 @@
     </widget>
     <!-- info bas -->
     <!-- progress barre -->
-    <widget source="session.Event_Now" position="345,619" size="810,6" transparent="1" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress_bg.png" borderWidth="1" borderColor="listbox" alphatest="blend" backgroundColor="transpBA" foregroundColor="blue">
-      <convert type="EventTime">Progress</convert>
-    </widget>
     <!-- , -->
     <eLabel name="" position="0,0" size="1280,84" backgroundColor="transpBA" zPosition="0" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,520" size="32,32" transparent="0" zPosition="5" alphatest="blend" />
@@ -435,6 +432,10 @@
       <convert type="TranspBAAlwaysTrue" />
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
+    <widget source="session.Event_Now" position="345,619" size="810,6" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress.png" backgroundColor="transpBA" transparent="0" borderWidth="0">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <ePixmap name="" position="345,619" size="812,6" pixmap="Satdreamgr-HD-TranspBA/infobar/porogress-font.png" alphatest="blend" zPosition="11" />
   </screen>
   <!-- FIN INFOBAR-->
   <!-- Screen PST PT Template-->
@@ -1426,15 +1427,15 @@
       <convert type="FrontendInfo">STRING</convert>
     </widget>
     <eLabel name="lock" font="Regular; 18" size="78,20" zPosition="3" position="1065,176" transparent="1" halign="center" foregroundColor="red" backgroundColor="transpBA" text="Lock:" />
-    <widget size="38,31" position="1145,171" alphatest="on" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="1">
+    <widget size="25,24" position="1145,171" alphatest="on" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="4">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget size="38,31" zPosition="2" position="1145,171" pixmap="skin_default/icons/lock_off.png" source="session.FrontendStatus" render="Pixmap">
+    <widget size="25,24" zPosition="4" position="1145,171" pixmap="skin_default/icons/lock_off.png" source="session.FrontendStatus" render="Pixmap" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1184,176" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="1178,176" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
       <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
   </screen>
@@ -3950,7 +3951,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Satdreamgr-Panel/images/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>  
+  </screen>
   <screen name="Plugins_Panel" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -4566,7 +4567,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <screen name="StreamingClientsInfo" position="center,center" flags="wfNoBorder" size="1280,720" title="Streaming Clients Info" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />    
+    <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/streaming.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
