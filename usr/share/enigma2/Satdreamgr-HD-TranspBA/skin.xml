@@ -1149,9 +1149,6 @@
     <widget source="session.Event_Next" render="Label" font="Regular; 22" position="649,310" size="590,225" halign="left" transparent="0" zPosition="2" valign="top" backgroundColor="transpBA" foregroundColor="white">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" position="180,264" size="357,10" foregroundColor="jeaune" transparent="1" zPosition="5" borderWidth="1" borderColor="white">
-      <convert type="EventTime">Progress</convert>
-    </widget>
     <widget source="session.Event_Now" render="Label" position="40,280" size="600,30" transparent="0" zPosition="1" font="Regular; 24" halign="center" backgroundColor="blue" valign="center" foregroundColor="white">
       <convert type="EventName">Name</convert>
     </widget>
@@ -1248,7 +1245,6 @@
     </widget>
     <eLabel name="" position="278,118" size="967,1" backgroundColor="blue" zPosition="4" />
     <eLabel name="" position="278,205" size="967,1" backgroundColor="blue" zPosition="3" />
-    <eLabel name="" position="180,264" size="357,10" zPosition="3" backgroundColor="blue" foregroundColor="blue" />
     <eLabel text="NOW" zPosition="2" position="40,254" size="600,26" font="Regular; 24" halign="left" backgroundColor="transpBA" transparent="0" valign="center" foregroundColor="white" />
     <eLabel text="NEXT" zPosition="2" position="643,254" size="604,26" font="Regular; 24" halign="left" backgroundColor="transpBA" transparent="0" valign="center" foregroundColor="white" />
     <eLabel name="" position="40,595" size="1207,30" backgroundColor="transpBA" />
@@ -1438,6 +1434,10 @@
     <widget source="session.CurrentService" render="Label" position="1178,176" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
       <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
+    <widget source="session.Event_Now" position="180,264" size="360,8" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/second.png" backgroundColor="transpBA" transparent="0" borderWidth="0">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <ePixmap name="" position="180,264" size="360,8" pixmap="Satdreamgr-HD-TranspBA/infobar/second-font.png" alphatest="blend" zPosition="11" />
   </screen>
   <!-- Volume -->
   <screen name="Volume" position="58,72" size="322,57" title="Volume" backgroundColor="transparent2" zPosition="99" flags="wfNoBorder">
