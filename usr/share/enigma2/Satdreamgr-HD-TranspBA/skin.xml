@@ -2141,13 +2141,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   </screen>
   <!-- Choice box -->
   <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="PSTTemplate" />
-    <ePixmap name="" position="239,300" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/inputt.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Input" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <panel name="STBTemplate" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/inputt.png" zPosition="4" transparent="0" alphatest="blend" />
+    <eLabel text="Input" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <eLabel name="" position="308,210" size="829,6" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <!-- Input ect. -->
-    <widget name="text" position="415,138" size="636,66" zPosition="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" transparent="1" />
-    <widget name="list" position="415,218" size="636,360" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" transparent="1" />
-    <eLabel name="" position="415,210" size="636,1" foregroundColor="grey" backgroundColor="grey" />
+    <widget name="text" position="330,138" size="790,66" zPosition="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" transparent="1" />
+    <widget name="list" position="330,222" size="790,360" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" transparent="1" />
   </screen>
   <!-- Network Configuration-->
   <screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -3540,7 +3540,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="PluginDetails" position="0,0" size="1280,720" title="Plugin Details" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton2l" />
-    <widget name="statuspic" position="335,140" size=" 48,48" alphatest="on" foregroundColor="white" />
+    <widget name="statuspic" position="335,140" size=" 48,48" alphatest="on" foregroundColor="white" backgroundColor="transpBA" />
     <widget source="author" render="Label" position="400,150" size="570,30" zPosition="10" font="Regular; 22" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
     <widget name="detailtext" position="400,200" size="630,260" font="Regular; 22" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
     <widget name="screenshot" position="500,463" size="350,120" alphatest="on" halign="left" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
