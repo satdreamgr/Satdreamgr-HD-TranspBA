@@ -138,16 +138,6 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="900,679" size="110,20" borderWidth="1" zPosition="1" transparent="1" font="Regular;20" backgroundColor="transpBA" foregroundColor="white" />
-    <!-- info net -->
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_on.png" position="1210,679" size="24,24" zPosition="6" alphatest="blend">
-      <convert type="TranspBAConnection">
-      </convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_off.png" position="1210,679" size="24,24" alphatest="blend" zPosition="5">
-      <convert type="TranspBAAlwaysTrue" />
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
     <widget source="session.Event_Now" position="345,619" size="810,6" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress.png" backgroundColor="transpBA" transparent="0" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>

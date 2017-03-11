@@ -139,7 +139,6 @@
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="black" />
   </windowstyle>
-   <include filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/infobar_a.xml" /> 
   <!-- Subtitle effects  -->
   <subtitles>
     <sub name="Subtitle_TTX" font="Regular;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
@@ -1113,16 +1112,6 @@
     <eLabel text="=" font="Regular; 18" position="525,630" size="20,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
     <widget source="session.FrontendStatus" render="Label" position="546,630" size="70,20" transparent="1" zPosition="5" font="Regular; 16" valign="center" halign="center" backgroundColor="blue" foregroundColor="white">
       <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
-    <!-- info net -->
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_on.png" position="1221,658" size="24,24" zPosition="6" alphatest="blend">
-      <convert type="TranspBAConnection">
-      </convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="global.CurrentTime" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_off.png" position="1221,658" size="24,24" alphatest="blend" zPosition="5">
-      <convert type="TranspBAAlwaysTrue" />
-      <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <eLabel name="" position="40,655" size="1207,30" backgroundColor="transpBA" />
     <eLabel name="" position="40,592" size="1207,90" transparent="0" backgroundColor="blue" zPosition="-1" />
@@ -4103,15 +4092,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     </widget>
     <widget backgroundColor="un15" font="Regular; 23" foregroundColor="green" halign="center" position="866,627" render="Label" size="120,23" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
       <convert type="PanelCpuUsage">Total</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/net_on.png" position="1014,626" size="24,24" zPosition="2" alphatest="blend">
-      <convert type="PanelConnection">
-      </convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="global.CurrentTime" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/net_off.png" position="1014,626" size="24,24" alphatest="blend">
-      <convert type="PanelAlwaysTrue" />
-      <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
   <!-- +++++++++++ -->
