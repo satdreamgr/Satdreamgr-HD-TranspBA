@@ -138,7 +138,8 @@
     <color name="ListboxMarkedAndSelectedForeground" color="white" />
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="black" />
-  </windowstyle> 
+  </windowstyle>
+   <include filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/infobar_a.xml" /> 
   <!-- Subtitle effects  -->
   <subtitles>
     <sub name="Subtitle_TTX" font="Regular;35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
