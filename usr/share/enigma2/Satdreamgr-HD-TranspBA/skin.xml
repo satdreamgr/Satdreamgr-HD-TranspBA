@@ -4210,8 +4210,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <widget name="text" position="330,150" size="790,405" transparent="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <screen name="MyMenuSKIN" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Configuration" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <panel name="TBTemplate" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
     <eLabel text="Ok" position="0,0" size="0,0" valign="center" halign="center" zPosition="1" font="Regular; 0" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
@@ -4222,11 +4221,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <screen name="SatdreamgrTranspBA" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Edit settings" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <panel name="TBTemplate" />
     <eLabel text="Save" position="540,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
     <eLabel text="Exit" position="340,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
-    <eLabel text="Restart" position="740,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
     <eLabel text="Information" position="940,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/system/skin.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="config" position="330,150" size="790,360" transparent="1" font="Regular; 22" foregroundColor="white" />

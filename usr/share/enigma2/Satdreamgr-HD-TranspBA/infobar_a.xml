@@ -1,6 +1,6 @@
 <skin>
   <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/time1.png" position="985,15" size="280,64" transparent="0" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/time1.png" position="985,18" size="261,62" transparent="0" zPosition="1" alphatest="blend" />
     <!-- extrainfo -->
     <widget source="session.CurrentService" render="Label" position="689,679" size="60,20" transparent="1" zPosition="5" font="Regular; 18" backgroundColor="NLPreBlack" foregroundColor="white" halign="right">
       <convert type="PliExtraInfo">VideoCodec</convert>
@@ -8,29 +8,6 @@
     <widget source="session.CurrentService" render="Label" position="755,679" size="140,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="NLPreBlack" foregroundColor="white">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <!--<widget source="session.CurrentService" render="Label" position="20,15" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="PliExtraInfo">TunerSystem</convert>
-  </widget>
-   <widget source="session.CurrentService" render="Label" position="20,38" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="PliExtraInfo">TransponderFrequency</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="160,38" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="PliExtraInfo">TransponderSymbolRate</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="20,58" size="20,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="PliExtraInfo">TransponderPolarization</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="40,58" size="40,20" transparent="1" zPosition="5" font="Regular; 18" halign="center" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="PliExtraInfo">TransponderFEC</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="160,58" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="PliExtraInfo">TransponderModulation</convert>
-  </widget>-->
-    <!-- emuinfo -->
-    <!-- fontend -->
-    <!-- info bas -->
-    <!-- progress barre -->
-    <!-- , -->
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,520" size="32,32" transparent="0" zPosition="5" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1160,520" size="32,32" transparent="0" zPosition="5" alphatest="blend" />
     <eLabel name="new eLabel" position="0,510" zPosition="-10" size="1280,52" backgroundColor="NLPreBlack" transparent="0" />
@@ -44,20 +21,14 @@
     <widget source="session.CurrentService" render="Label" position="150,510" size="980,52" font="Regular; 48" zPosition="3" transparent="1" valign="center" halign="center" backgroundColor="NLPreBlack" foregroundColor="blue">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1100,15" size="155,60" font="Regularr; 40" halign="center" backgroundColor="transpBA" transparent="1" valign="center" zPosition="3" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="1106,18" size="140,62" font="Regularr; 38" halign="center" backgroundColor="transpBA" transparent="1" valign="center" zPosition="3" foregroundColor="white">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="988,17" size="55,30" font="Regularr; 20" halign="center" backgroundColor="transpBA" foregroundColor="white" transparent="1" zPosition="3" valign="center">
-      <convert type="ClockToText">Format:%a</convert>
+    <widget source="global.CurrentTime" render="Label" position="988,23" size="110,26" font="Regularr; 20" halign="center" backgroundColor="transpBA" foregroundColor="white" transparent="1" zPosition="3" valign="center">
+      <convert type="ClockToText">Format:%a - %d</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1043,17" size="55,30" backgroundColor="transpBA" transparent="1" font="Regularr; 20" valign="center" halign="center" foregroundColor="white" zPosition="3">
-      <convert type="ClockToText">Format:%d</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="988,45" size="55,30" backgroundColor="transpBA" transparent="1" font="Regularr; 20" valign="center" halign="center" foregroundColor="white" zPosition="3">
-      <convert type="ClockToText">Format:%h</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1043,45" size="55,30" backgroundColor="transpBA" transparent="1" font="Regularr; 20" valign="center" halign="center" foregroundColor="white" zPosition="3">
-      <convert type="ClockToText">Format:%y</convert>
+    <widget source="global.CurrentTime" render="Label" position="988,50" size="110,26" backgroundColor="transpBA" transparent="1" font="Regularr; 20" valign="center" halign="center" foregroundColor="white" zPosition="3">
+      <convert type="ClockToText">Format:%h - %y</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="265,629" size="75,42" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" zPosition="2" valign="center" foregroundColor="grisc">
       <convert type="EventTime">StartTime</convert>
@@ -142,6 +113,6 @@
       <convert type="EventTime">Progress</convert>
     </widget>
     <ePixmap name="" position="345,619" size="812,6" pixmap="Satdreamgr-HD-TranspBA/infobar/porogress-font.png" alphatest="blend" zPosition="11" />
-    <eLabel name="" position="985,15" size="280,64" backgroundColor="transpBA" />
+    <eLabel name="" position="985,18" size="261,62" backgroundColor="transpBA" />
   </screen>
 </skin>
