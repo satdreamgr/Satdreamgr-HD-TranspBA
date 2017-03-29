@@ -255,7 +255,7 @@
     <convert type="ServiceInfo">Is4K</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1140,525" size="90,20" borderWidth="1" zPosition="1" transparent="1" font="Regular;20" backgroundColor="transpBA" foregroundColor="white" />
+  <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1140,525" size="110,20" borderWidth="1" zPosition="1" transparent="1" font="Regular;20" backgroundColor="transpBA" foregroundColor="white" />
   <widget source="session.Event_Now" position="345,619" size="810,6" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/progress.png" backgroundColor="transpBA" transparent="0" borderWidth="0">
     <convert type="EventTime">Progress</convert>
   </widget>
