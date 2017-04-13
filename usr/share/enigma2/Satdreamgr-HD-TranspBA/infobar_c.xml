@@ -1,10 +1,11 @@
 <skin>
 <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
   <!-- bas a-b infobar -->
-  <widget source="session.CurrentService" render="Label" position="789,538" size="60,20" transparent="1" zPosition="5" font="Regular; 16" backgroundColor="transpBA" foregroundColor="white" halign="right" valign="center">
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/codec.png" position="788,538" size="202,20" zPosition="3" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="789,539" size="60,18" transparent="1" zPosition="5" font="Regular; 16" backgroundColor="transpBA" foregroundColor="white" halign="center" valign="center">
     <convert type="PliExtraInfo">VideoCodec</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="850,538" size="140,20" transparent="1" zPosition="5" font="Regular; 16" halign="left" backgroundColor="transpBA" foregroundColor="white" valign="center">
+  <widget source="session.CurrentService" render="Label" position="850,539" size="140,18" transparent="1" zPosition="5" font="Regular; 16" halign="center" backgroundColor="transpBA" foregroundColor="white" valign="center">
     <convert type="PliExtraInfo">ResolutionString</convert>
   </widget>
   <eLabel name="new eLabel" position="260,530" zPosition="-1" size="1020,190" backgroundColor="transpBA" transparent="0" />
@@ -146,22 +147,24 @@
     <convert type="TranspBACamd">Camd</convert>
   </widget>
   <!-- fontend -->
-  <eLabel text="AGC " font="Regular; 16" position="25,622" size="40,16" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
-  <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agci.png" position="65,626" size="120,8" zPosition="3" borderWidth="1" borderColor="grey">
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/agc-snr.png" position="189,652" size="62,23" zPosition="3" alphatest="blend" />
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/agc.png" position="25,620" size="40,23" zPosition="3" alphatest="blend" />
+  <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agci.png" position="67,628" size="120,8" zPosition="3" borderWidth="1" borderColor="grey">
     <convert type="FrontendInfo">AGC</convert>
   </widget>
-  <widget source="session.FrontendStatus" render="Label" position="185,622" size="60,16" transparent="1" zPosition="5" font="Regular; 16" valign="center" backgroundColor="transpBA" halign="center">
+  <widget source="session.FrontendStatus" render="Label" position="190,622" size="60,16" transparent="1" zPosition="5" font="Regular; 16" valign="center" backgroundColor="transpBA" halign="center" foregroundColor="undd11">
     <convert type="FrontendInfo">AGC</convert>
   </widget>
-  <eLabel text="SNR " font="Regular; 16" position="25,654" size="40,16" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
-  <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snri.png" position="65,658" size="120,8" zPosition="3" borderWidth="1" borderColor="grey">
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/agc-snr.png" position="189,620" size="62,23" zPosition="3" alphatest="blend" />
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/snr.png" position="25,654" size="40,23" zPosition="3" alphatest="blend" />
+  <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snri.png" position="67,660" size="120,8" zPosition="3" borderWidth="1" borderColor="grey">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <widget source="session.FrontendStatus" render="Label" position="185,654" zPosition="5" size="60,16" font="Regular; 16" halign="center" valign="center" transparent="1" backgroundColor="transpBA">
+  <widget source="session.FrontendStatus" render="Label" position="190,654" zPosition="5" size="60,16" font="Regular; 16" halign="center" valign="center" transparent="1" backgroundColor="transpBA" foregroundColor="undd11">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <eLabel text="=" font="Regular; 16" position="245,654" size="20,16" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="undd11" backgroundColor="transpBA" />
-  <widget source="session.FrontendStatus" render="Label" position="265,654" size="60,16" transparent="1" zPosition="5" font="Regular; 16" valign="center" halign="center" backgroundColor="transpBA">
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/agc-snr.png" position="254,652" size="62,23" zPosition="3" alphatest="blend" />
+  <widget source="session.FrontendStatus" render="Label" position="255,654" size="60,16" transparent="1" zPosition="5" font="Regular; 16" valign="center" halign="center" backgroundColor="transpBA" foregroundColor="undd11">
     <convert type="FrontendInfo">SNRdB</convert>
   </widget>
   <!-- crypt -->
@@ -280,5 +283,4 @@
   <eLabel name="" position="0,476" size="258,137" zPosition="-1" />
   <eLabel name="" position="260,476" size="1020,52" backgroundColor="NLPreBlack" zPosition="-1" />
 </screen>
-
 </skin>
