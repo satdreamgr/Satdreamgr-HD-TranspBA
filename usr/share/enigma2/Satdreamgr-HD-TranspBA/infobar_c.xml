@@ -279,8 +279,8 @@
   <eLabel name="" position="10,680" size="1260,1" transparent="0" backgroundColor="grey" foregroundColor="blue" zPosition="1" />
   <eLabel name="" position="10,646" size="1260,1" transparent="0" backgroundColor="grey" foregroundColor="transparent" zPosition="1" />
   <eLabel name="" position="266,565" size="1004,1" transparent="0" backgroundColor="grey" foregroundColor="transparent" zPosition="1" />
-  <eLabel name="" position="0,613" size="260,107" zPosition="-1" />
-  <eLabel name="" position="0,476" size="258,137" zPosition="-1" />
+  <eLabel name="" position="0,613" size="260,107" zPosition="-1" backgroundColor="transpBA" />
+  <eLabel name="" position="0,476" size="258,137" zPosition="-1" backgroundColor="transpBA" />
   <eLabel name="" position="260,476" size="1020,52" backgroundColor="NLPreBlack" zPosition="-1" />
 </screen>
 </skin>
