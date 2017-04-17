@@ -14,11 +14,11 @@
   <widget source="session.CurrentService" render="Label" position="370,473" size="884,52" font="Regular; 46" zPosition="3" transparent="1" valign="center" halign="left" backgroundColor="NLPreBlack" foregroundColor="blue">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="266,617" size="75,22" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" zPosition="2" valign="center" foregroundColor="grisc">
+  <widget source="session.Event_Next" render="Label" position="266,618" size="75,24" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" zPosition="2" valign="center" foregroundColor="grisc">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="351,618" size="75,22" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" zPosition="2" valign="center" foregroundColor="grisc">
+  <widget source="session.Event_Next" render="Label" position="351,618" size="75,24" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" zPosition="2" valign="center" foregroundColor="grisc">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
@@ -109,7 +109,7 @@
     <convert type="TranspBACPUinfo">CPUtemp</convert>
   </widget>
   <eLabel text="-" font="Regular; 18" position="341,574" size="10,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
-  <eLabel text="-" font="Regular; 18" position="341,617" size="10,22" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
+  <eLabel text="-" font="Regular; 18" position="341,618" size="10,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="transpBA" />
   <!-- haute a b infobar -->
   <eLabel name="" position="985,18" size="261,62" backgroundColor="transpBA" />
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/time1.png" position="985,18" size="261,62" transparent="0" zPosition="1" alphatest="blend" />
