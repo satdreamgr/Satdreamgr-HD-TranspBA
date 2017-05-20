@@ -4253,10 +4253,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
   <screen name="StreamingClientsInfo" position="center,center" flags="wfNoBorder" size="1280,720" title="Streaming Clients Info" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;22" halign="center" valign="center" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/streaming.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <widget name="ScrollLabel" font="Regular;22" position="330,150" size="790,360" zPosition="2" halign="left" />
+    <widget name="menu" position="330,150" size="790,360" zPosition="1" />
+    <widget name="info" position="330,150" size="790,25" font="Regular;22" halign="center" transparent="1" zPosition="2" foregroundColor="white" backgroundColor="transpBA" />
   </screen>
   <screen name="YouTubeMain" position="center,center" flags="wfNoBorder" size="1280,720" title="Youtube" backgroundColor="transparent">
     <widget source="Title" render="Label" position="44,184" size="250,60" backgroundColor="blue" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
