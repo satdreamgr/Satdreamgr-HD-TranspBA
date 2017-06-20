@@ -661,6 +661,60 @@
       <convert type="MenuEntryCompare">deviceManager</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/browser.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">video_selection</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/customize.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">usage_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/user-interface.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">user_interface</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/repair-expert.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">expert_selection</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <screen name="menu_video" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <panel name="MenuTemplate" />
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/hdmi.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">hdmi_cec_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/skin.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">skin_selector</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/osd.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">auto_3d_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/video-tuning.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">video_finetune</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">av_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/subtitles.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">subtitle_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/language.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">autolanguage_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">sd_position_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <screen name="menu_expert" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <panel name="MenuTemplate" />
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/customize.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">usage_setup</convert>
       <convert type="ConditionalShowHide" />
@@ -675,18 +729,6 @@
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/record.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">recording_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/subtitles.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">subtitle_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/language.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">autolanguage_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">av_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/harddisk.png" zPosition="5" position="240,296" size="128,128">
@@ -725,20 +767,8 @@
       <convert type="MenuEntryCompare">hotkey_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/hdmi.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">hdmi_cec_setup</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/skin.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">skin_selector</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/video-tuning.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">video_finetune</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/osd.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">auto_3d_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/transcoding.png" zPosition="5" position="240,296" size="128,128">
@@ -747,10 +777,6 @@
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/iconssc/led-display.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">vfd_ini</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="240,296" size="128,128">
-      <convert type="MenuEntryCompare">sd_position_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
