@@ -898,48 +898,39 @@
       <convert type="EventName">Name</convert>
     </widget>
     <eLabel name="new eLabel" position="40,77" zPosition="0" size="1206,174" backgroundColor="transpBA" transparent="0" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_off.png" position="286,222" size="41,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position="286,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_off.png" position="545,222" size="56,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="545,222" size="56,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_off.png" position="454,222" size="32,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="454,222" size="32,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_txt_off.png" position="503,222" size="23,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_txt_on.png" position="503,222" size="23,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_hbbtv_off.png" position="385,222" size="53,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position="385,222" size="53,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_crypt_off.png" position="617,222" size="22,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_crypt_on.png" position="617,222" size="22,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/iptv-off.png" position="654,222" size="41,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="654,222" size="41,20" alphatest="blend" zPosition="2">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k_off.png" position="710,222" size="41,20" zPosition="2" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="710,222" size="41,20" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/ico_sub_off.png" position="341,222" size="27,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_sub_on.png" position="341,222" size="27,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
@@ -1094,13 +1085,9 @@
     <eLabel name="" position="40,310" size="600,225" backgroundColor="transpBA" />
     <eLabel name="" position="643,310" size="604,225" />
     <eLabel name="" position="960,35" size="286,50" zPosition="1" backgroundColor="transpBA" transparent="0" />
-    <!-- provider -->
-    <!-- extrainfo -->
     <widget source="session.CurrentService" render="Label" position="625,630" size="600,20" transparent="0" zPosition="6" foregroundColor="white" font="Regularr; 16" valign="center" halign="center" backgroundColor="blue" noWrap="1">
       <convert type="PliExtraInfo">ServiceInfo</convert>
     </widget>
-    <!-- emuinfo -->
-    <!-- fontend -->
     <eLabel text="AGC " font="Regular; 16" position="45,630" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agci.png" position="105,638" size="120,8" zPosition="3" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">AGC</convert>
@@ -1127,13 +1114,9 @@
       <convert type="FrontendInfo">STRING</convert>
     </widget>
     <eLabel name="lock" font="Regular; 18" size="78,20" zPosition="3" position="1065,176" transparent="1" halign="center" foregroundColor="red" backgroundColor="transpBA" text="Lock:" />
-    <widget size="25,24" position="1145,171" alphatest="on" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="4">
+    <widget size="25,24" position="1145,171" alphatest="on" pixmap="Satdreamgr-HD-TranspBA/skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
-    </widget>
-    <widget size="25,24" zPosition="4" position="1145,171" pixmap="skin_default/icons/lock_off.png" source="session.FrontendStatus" render="Pixmap" alphatest="on">
-      <convert type="FrontendInfo">LOCK</convert>
-      <convert type="ConditionalShowHide">Invert</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1178,176" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
       <convert type="PliExtraInfo">OrbitalPosition</convert>
