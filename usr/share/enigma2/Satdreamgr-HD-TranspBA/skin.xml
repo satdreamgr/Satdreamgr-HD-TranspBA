@@ -523,7 +523,7 @@
       <convert type="TranspBAAlwaysTrue" />
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="2" font="Regular; 32" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <widget source="title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="2" font="Regular; 32" valign="center" halign="center" noWrap="1" foregroundColor="blue" />
     <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
@@ -533,7 +533,7 @@
     <widget source="global.CurrentTime" render="Label" position="213,550" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="342,560" size="50,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="transpBA" foregroundColor="jeaune">
+    <widget source="global.CurrentTime" render="Label" position="342,560" size="50,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="red">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
@@ -1155,7 +1155,7 @@
     <widget source="key_blue" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_blue.png" position="420,230" size="30,30" alphatest="on" zPosition="2">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="463,290" size="580,285" zPosition="1" transparent="1">
+    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="420,290" size="623,285" zPosition="1" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [
