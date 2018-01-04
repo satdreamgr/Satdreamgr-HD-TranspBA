@@ -140,7 +140,7 @@
     <convert type="ServiceName">Provider</convert>
   </widget>
   <!--weathermsninfobar-->
-  <ePixmap />   
+  <!--<eLabel />    
   <widget source="global.CurrentTime" render="Label" position="35,19" zPosition="5" size="212,22" font="Regularr; 18" halign="left" transparent="1" text="Locationovdrsh" foregroundColor="white" noWrap="1" backgroundColor="transpBA">
     <convert type="TranspBAMSNWeather2">Location</convert>
   </widget>
