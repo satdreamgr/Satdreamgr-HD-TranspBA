@@ -1155,27 +1155,27 @@
     <widget source="key_blue" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_blue.png" position="420,230" size="30,30" alphatest="on" zPosition="2">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="463,290" size="580,280" zPosition="1" transparent="1">
+    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="420,290" size="623,285" zPosition="1" transparent="1">
       <convert type="TemplatedMultiContent">
-				{"templates":
-					{"default": (25, [
-						MultiContentEntryText(pos = (0, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-						MultiContentEntryText(pos = (45, 0),  size = (10, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-						MultiContentEntryText(pos = (55, 0),  size = (220, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (280, 0), size = (270, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (550, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-					], True, "showNever"),
-					"notselected": (25, [
-						MultiContentEntryText(pos = (0, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-						MultiContentEntryText(pos = (45, 0),  size = (10, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-						MultiContentEntryText(pos = (55, 0),  size = (220, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (280, 0), size = (270, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (550, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-					], False, "showNever")
-					},
-				"fonts": [gFont("Regular", 22), gFont("Regular", 16)],
-				"itemHeight": 25
-				}
+                                {"templates":
+                                        {"default": (25, [
+                                                MultiContentEntryText(pos = (0, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
+                                                MultiContentEntryText(pos = (55, 0),  size = (10, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
+                                                MultiContentEntryText(pos = (65, 0),  size = (210, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+                                                MultiContentEntryText(pos = (280, 0), size = (270, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+                                                MultiContentEntryText(pos = (550, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+                                        ], True, "showNever"),
+                                        "notselected": (25, [
+                                                MultiContentEntryText(pos = (0, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
+                                                MultiContentEntryText(pos = (55, 0),  size = (10, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
+                                                MultiContentEntryText(pos = (65, 0),  size = (210, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+                                                MultiContentEntryText(pos = (280, 0), size = (270, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+                                                MultiContentEntryText(pos = (550, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+                                        ], False, "showNever")
+                                        },
+                                "fonts": [gFont("Regular", 22), gFont("Regular", 16)],
+                                "itemHeight": 25
+                                }
       </convert>
     </widget>
   </screen>
