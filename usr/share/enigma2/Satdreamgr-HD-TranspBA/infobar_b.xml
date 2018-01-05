@@ -9,7 +9,7 @@
   </widget>
   <eLabel text="AGC " font="Regularr; 18" position="32,23" size="60,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
   <eLabel text="SNR " font="Regularr; 18" position="33,54" size="60,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="black" />
-  <widget source="session.FrontendStatus" render="Label" position="188,53" size="60,24" transparent="1" zPosition="5" font="Regularr; 18" valign="center" halign="center" backgroundColor="black" foregroundColor="white">
+  <widget source="session.FrontendStatus" render="Label" position="188,53" size="70,24" transparent="1" zPosition="5" font="Regularr; 18" valign="center" halign="center" backgroundColor="black" foregroundColor="white">
     <convert type="FrontendInfo">SNRdB</convert>
   </widget>
   <widget size="25,24" position="454,23" alphatest="on" pixmap="Satdreamgr-HD-TranspBA/skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">

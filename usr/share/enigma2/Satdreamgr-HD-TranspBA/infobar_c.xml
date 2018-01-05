@@ -12,7 +12,7 @@
     <convert type="FrontendInfo">AGC</convert>
   </widget>
   <eLabel text="SNR " font="Regular; 18" position="1082,643" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="black" />
-  <widget source="session.FrontendStatus" render="Label" position="1188,643" size="60,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="center" backgroundColor="black" foregroundColor="white">
+  <widget source="session.FrontendStatus" render="Label" position="1180,643" size="70,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="center" backgroundColor="black" foregroundColor="white">
     <convert type="FrontendInfo">SNRdB</convert>
   </widget>
   <widget size="25,24" position="1161,670" alphatest="on" pixmap="Satdreamgr-HD-TranspBA/skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
