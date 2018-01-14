@@ -1,3 +1,3 @@
 Skin SatDreamGr-HD-TranspBA
 
-Skin Defaul SatDreamGr Images
+Skin Defaul SatDreamGr Images.
