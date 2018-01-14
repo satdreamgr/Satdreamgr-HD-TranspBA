@@ -22,7 +22,7 @@
   <widget source="session.CurrentService" render="Label" position="1188,673" size="60,20" transparent="1" zPosition="5" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white">
     <convert type="PliExtraInfo">OrbitalPosition</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regularr; 18" transparent="1" halign="center" backgroundColor="blue" foregroundColor="white">
+  <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="blue" foregroundColor="white">
     <convert type="TranspBACamd">Camd</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="30,643" size="220,20" transparent="1" zPosition="5" font="Regular; 18" halign="center" backgroundColor="transpBA">
@@ -49,25 +49,25 @@
   <widget source="session.CurrentService" render="Label" position="729,608" size="140,20" transparent="1" zPosition="3" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
     <convert type="PliExtraInfo">ResolutionString</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="254,637" size="60,31" font="Regularr; 18" halign="center" backgroundColor="transpBA" transparent="1" zPosition="3" valign="center" foregroundColor="white">
+  <widget source="session.Event_Next" render="Label" position="254,637" size="60,31" font="Regular; 18" halign="center" backgroundColor="transpBA" transparent="1" zPosition="3" valign="center" foregroundColor="white">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="326,637" size="60,31" font="Regularr; 18" halign="center" backgroundColor="blue" transparent="1" zPosition="3" valign="center" foregroundColor="white">
+  <widget source="session.Event_Next" render="Label" position="326,637" size="60,31" font="Regular; 18" halign="center" backgroundColor="blue" transparent="1" zPosition="3" valign="center" foregroundColor="white">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
   <widget source="session.Event_Now" render="Label" position="395,573" size="560,31" transparent="1" zPosition="3" font="Regular; 22" halign="left" foregroundColor="white" valign="center" backgroundColor="black">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="395,637" size="560,31" transparent="1" zPosition="4" font="Regularr; 22" halign="left" backgroundColor="blue" foregroundColor="white" valign="center">
+  <widget source="session.Event_Next" render="Label" position="395,637" size="560,31" transparent="1" zPosition="4" font="Regular; 22" halign="left" backgroundColor="blue" foregroundColor="white" valign="center">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" zPosition="3" position="254,573" size="60,31" font="Regularr; 18" halign="center" backgroundColor="black" transparent="1" valign="center" foregroundColor="white">
+  <widget source="session.Event_Now" render="Label" zPosition="3" position="254,573" size="60,31" font="Regular; 18" halign="center" backgroundColor="black" transparent="1" valign="center" foregroundColor="white">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" zPosition="3" position="326,573" size="60,31" font="Regularr; 18" halign="center" backgroundColor="blue" transparent="1" valign="center" foregroundColor="white">
+  <widget source="session.Event_Now" render="Label" zPosition="3" position="326,573" size="60,31" font="Regular; 18" halign="center" backgroundColor="blue" transparent="1" valign="center" foregroundColor="white">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
@@ -115,26 +115,26 @@
   <widget source="session.Event_Now" position="264,567" size="805,5" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/second-new.png" transparent="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" position="940,573" size="120,31" font="Regularr; 18" halign="right" backgroundColor="black" transparent="1" zPosition="3" foregroundColor="white" valign="center">
+  <widget source="session.Event_Now" render="Label" position="940,573" size="120,31" font="Regular; 18" halign="right" backgroundColor="black" transparent="1" zPosition="3" foregroundColor="white" valign="center">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="940,637" size="120,31" font="Regularr; 18" halign="right" backgroundColor="blue" transparent="1" zPosition="3" foregroundColor="white" valign="center">
+  <widget source="session.Event_Next" render="Label" position="940,637" size="120,31" font="Regular; 18" halign="right" backgroundColor="blue" transparent="1" zPosition="3" foregroundColor="white" valign="center">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-  <eLabel text="-" font="Regularr; 18" position="315,573" size="10,31" halign="center" transparent="1" valign="center" zPosition="3" foregroundColor="white" backgroundColor="black" />
-  <eLabel text="-" font="Regularr; 18" position="315,637" size="10,31" halign="center" transparent="1" valign="center" zPosition="3" foregroundColor="white" backgroundColor="transpBA" />
-  <widget source="global.CurrentTime" render="Label" position="1090,21" size="100,32" font="Regularr; 32" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black">
+  <eLabel text="-" font="Regular; 18" position="315,573" size="10,31" halign="center" transparent="1" valign="center" zPosition="3" foregroundColor="white" backgroundColor="black" />
+  <eLabel text="-" font="Regular; 18" position="315,637" size="10,31" halign="center" transparent="1" valign="center" zPosition="3" foregroundColor="white" backgroundColor="transpBA" />
+  <widget source="global.CurrentTime" render="Label" position="1090,21" size="100,32" font="Regular; 32" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black">
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="1091,58" size="80,22" font="Regularr; 18" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="3" valign="center">
+  <widget source="global.CurrentTime" render="Label" position="1091,58" size="80,22" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="3" valign="center">
     <convert type="ClockToText">Format:%a/%d</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="1170,58" size="80,22" backgroundColor="black" transparent="1" font="Regularr; 18" valign="center" halign="center" foregroundColor="white" zPosition="3">
+  <widget source="global.CurrentTime" render="Label" position="1170,58" size="80,22" backgroundColor="black" transparent="1" font="Regular; 18" valign="center" halign="center" foregroundColor="white" zPosition="3">
     <convert type="ClockToText">Format:%h/%y</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="1194,29" size="50,20" font="Regularr; 18" halign="left" valign="center" transparent="1" foregroundColor="white" zPosition="3" backgroundColor="black">
+  <widget source="global.CurrentTime" render="Label" position="1194,29" size="50,20" font="Regular; 18" halign="left" valign="center" transparent="1" foregroundColor="white" zPosition="3" backgroundColor="black">
     <convert type="ClockToText">Format: %S</convert>
   </widget>
   <widget source="session.CurrentService" render="TranspBAPiconProv" path="Satdreamgr-HD-TranspBA/prov" position="1085,531" size="138,25" zPosition="3" alphatest="blend" backgroundColor="transpBA" transparent="0">
@@ -142,13 +142,13 @@
   </widget>
   <!--weathermsninfobar-->
   <!--<eLabel />    
-  <widget source="global.CurrentTime" render="Label" position="35,19" zPosition="5" size="212,22" font="Regularr; 18" halign="left" transparent="1" text="Locationovdrsh" foregroundColor="white" noWrap="1" backgroundColor="transpBA">
+  <widget source="global.CurrentTime" render="Label" position="35,19" zPosition="5" size="212,22" font="Regular; 18" halign="left" transparent="1" text="Locationovdrsh" foregroundColor="white" noWrap="1" backgroundColor="transpBA">
     <convert type="TranspBAMSNWeather2">Location</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="297,45" zPosition="2" size="55,25" font="Regularr; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="transpBA" foregroundColor="green">
+  <widget source="global.CurrentTime" render="Label" position="297,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="transpBA" foregroundColor="green">
     <convert type="TranspBAMSNWeather2">Hightemp1</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="354,45" zPosition="5" size="55,25" font="Regularr; 18" halign="right" text="Low0" transparent="1" valign="center" foregroundColor="red" noWrap="1" backgroundColor="transpBA">
+  <widget source="global.CurrentTime" render="Label" position="354,45" zPosition="5" size="55,25" font="Regular; 18" halign="right" text="Low0" transparent="1" valign="center" foregroundColor="red" noWrap="1" backgroundColor="transpBA">
     <convert type="TranspBAMSNWeather2">Lowtemp1</convert>
   </widget>
   <widget source="session.CurrentService" render="TranspBAPiconWeather" path="Satdreamgr-HD-TranspBA/weather_icons" position="247,48" size="45,45" zPosition="4" alphatest="blend" transparent="0">
@@ -157,28 +157,28 @@
   <widget source="global.CurrentTime" render="Label" position="441,45" zPosition="5" size="70,25" font="Regular; 18" halign="center" transparent="1" text="Precip1" foregroundColor="white" noWrap="1" backgroundColor="transpBA" valign="center">
     <convert type="TranspBAMSNWeather2">Precip1</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="302,74" zPosition="1" size="215,22" font="Regularr; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="transpBA">
+  <widget source="global.CurrentTime" render="Label" position="302,74" zPosition="1" size="215,22" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="transpBA">
     <convert type="TranspBAMSNWeather2">Skytext1</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="79,45" zPosition="2" size="55,25" font="Regularr; 18" halign="center" text="Sday0" transparent="1" valign="center" noWrap="1" backgroundColor="black" foregroundColor="white">
+  <widget source="global.CurrentTime" render="Label" position="79,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="Sday0" transparent="1" valign="center" noWrap="1" backgroundColor="black" foregroundColor="white">
     <convert type="TranspBAMSNWeather2">Temp</convert>
   </widget>
   <widget source="session.CurrentService" render="TranspBAPiconWeather" path="Satdreamgr-HD-TranspBA/weather_icons" position="30,48" size="45,45" zPosition="10" alphatest="blend">
     <convert type="TranspBAMSNWeather2">Picon</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="163,45" zPosition="2" size="70,25" font="Regularr; 18" halign="center" text="Humi" transparent="1" valign="center" backgroundColor="black" foregroundColor="white" noWrap="1">
+  <widget source="global.CurrentTime" render="Label" position="163,45" zPosition="2" size="70,25" font="Regular; 18" halign="center" text="Humi" transparent="1" valign="center" backgroundColor="black" foregroundColor="white" noWrap="1">
     <convert type="TranspBAMSNWeather2">Humidity</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="84,74" zPosition="4" size="215,22" font="Regularr; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="background">
+  <widget source="global.CurrentTime" render="Label" position="84,74" zPosition="4" size="215,22" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="background">
     <convert type="TranspBAMSNWeather2">Skytext</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="570,74" zPosition="1" size="215,22" font="Regularr; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="transpBA">
+  <widget source="global.CurrentTime" render="Label" position="570,74" zPosition="1" size="215,22" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="transpBA">
     <convert type="TranspBAMSNWeather2">Skytext2</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="565,45" zPosition="2" size="55,25" font="Regularr; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="transpBA" foregroundColor="green">
+  <widget source="global.CurrentTime" render="Label" position="565,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="transpBA" foregroundColor="green">
     <convert type="TranspBAMSNWeather2">Hightemp2</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="623,45" zPosition="2" size="55,25" font="Regularr; 18" halign="center" text="Low0" transparent="1" valign="center" foregroundColor="red" noWrap="1" backgroundColor="transpBA">
+  <widget source="global.CurrentTime" render="Label" position="623,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="Low0" transparent="1" valign="center" foregroundColor="red" noWrap="1" backgroundColor="transpBA">
     <convert type="TranspBAMSNWeather2">Lowtemp2</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" position="710,45" zPosition="5" size="70,25" font="Regular; 18" halign="center" transparent="1" text="Precip1" foregroundColor="white" noWrap="1" backgroundColor="transpBA" valign="center">
@@ -190,7 +190,7 @@
   <widget source="global.CurrentTime" render="Label" position="570,19" zPosition="5" size="215,22" font="Regular; 18" halign="left" transparent="1" text="Date" foregroundColor="white" noWrap="1" backgroundColor="transpBA" valign="center">
     <convert type="TranspBAMSNWeather2">Date2</convert>
   </widget>
-  <eLabel text="Today" position="302,19" size="215,22" halign="left" font="Regularr; 18" foregroundColor="white" backgroundColor="transpBA" transparent="1" valign="center" zPosition="5" noWrap="1" />
+  <eLabel text="Today" position="302,19" size="215,22" halign="left" font="Regular; 18" foregroundColor="white" backgroundColor="transpBA" transparent="1" valign="center" zPosition="5" noWrap="1" />
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/precip.png" position="412,46" size="24,24" zPosition="3" alphatest="blend" />
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/precip.png" position="683,46" size="24,24" zPosition="3" alphatest="blend" />
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/humidity.png" position="136,45" size="24,24" zPosition="3" alphatest="blend" />

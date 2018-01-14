@@ -67,8 +67,7 @@
     <font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
     <font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
     <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regula" scale="95" />
-    <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regularr" scale="100" />
-    <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regular" scale="104" />
+    <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Franklin-Gothic-Medium-Regular.ttf" name="Regular" scale="100" />
     <font filename="/usr/share/enigma2/Satdreamgr-HD-TranspBA/fonts/Arial-Rounded-MT-Bold-Bold.ttf" name="Bold" scale="95" />
   </fonts>
   <fonts>
@@ -869,13 +868,13 @@
       <convert type="ServiceName">Provider</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/infobar/time1.png" position="963,35" size="280,64" transparent="0" zPosition="2" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1080,35" size="160,62" font="Regularr; 40" halign="center" backgroundColor="transpBA" transparent="1" valign="center" zPosition="3" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="1080,35" size="160,62" font="Regular; 40" halign="center" backgroundColor="transpBA" transparent="1" valign="center" zPosition="3" foregroundColor="white">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="967,39" size="110,24" font="Regularr; 22" halign="center" backgroundColor="listbox" foregroundColor="white" transparent="1" zPosition="3" valign="center">
+    <widget source="global.CurrentTime" render="Label" position="967,39" size="110,24" font="Regular; 22" halign="center" backgroundColor="listbox" foregroundColor="white" transparent="1" zPosition="3" valign="center">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="967,66" size="110,24" backgroundColor="listbox" transparent="1" font="Regularr; 22" valign="center" halign="center" foregroundColor="unffffff" zPosition="3">
+    <widget source="global.CurrentTime" render="Label" position="967,66" size="110,24" backgroundColor="listbox" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="unffffff" zPosition="3">
       <convert type="ClockToText">Format:%d-%m-%y</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" font="Regular; 22" position="45,310" size="590,225" halign="left" transparent="0" zPosition="6" backgroundColor="transpBA" valign="top" foregroundColor="white">
@@ -1074,7 +1073,7 @@
     <widget source="session.CurrentService" render="Label" position="42,660" zPosition="3" size="193,20" font="Regular; 20" transparent="1" halign="left" backgroundColor="transpBA" foregroundColor="jeaune">
       <convert type="TranspBACamd">Camd</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="237,660" size="980,20" transparent="1" zPosition="3" font="Regularr; 20" halign="left" backgroundColor="transpBA" foregroundColor="grey">
+    <widget source="session.CurrentService" render="Label" position="237,660" size="980,20" transparent="1" zPosition="3" font="Regular; 20" halign="left" backgroundColor="transpBA" foregroundColor="grey">
       <convert type="TranspBACaidInfo2">
       </convert>
     </widget>
@@ -1085,7 +1084,7 @@
     <eLabel name="" position="40,310" size="600,225" backgroundColor="transpBA" />
     <eLabel name="" position="643,310" size="604,225" />
     <eLabel name="" position="960,35" size="286,50" zPosition="1" backgroundColor="transpBA" transparent="0" />
-    <widget source="session.CurrentService" render="Label" position="625,630" size="600,20" transparent="0" zPosition="6" foregroundColor="white" font="Regularr; 16" valign="center" halign="center" backgroundColor="blue" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="625,630" size="600,20" transparent="0" zPosition="6" foregroundColor="white" font="Regular; 16" valign="center" halign="center" backgroundColor="blue" noWrap="1">
       <convert type="PliExtraInfo">ServiceInfo</convert>
     </widget>
     <eLabel text="AGC " font="Regular; 16" position="45,630" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
