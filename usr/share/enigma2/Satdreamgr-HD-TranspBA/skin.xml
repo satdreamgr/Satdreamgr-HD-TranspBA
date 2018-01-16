@@ -677,6 +677,10 @@
       <convert type="MenuEntryCompare">expert_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/time.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">system_time_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
   </screen>
   <screen name="menu_video" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
@@ -4417,5 +4421,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="likes" position="320,350" size="150,20" font="Regular; 16" />
     <widget name="dislikes" position="480,350" size="150,20" font="Regular; 16" />
     <widget name="published" position="325,380" size="300,20" font="Regular; 16" />
+  </screen>
+  <!-- System Time -->
+  <screen name="SystemTimeSetupScreen" position="0,0" size="1280,720" title="System time setup" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <panel name="keybutton4" />
+    <widget name="config" scrollbarMode="showOnDemand" enableWrapAround="1" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/system/time.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <screen name="SystemTimeConsole" position="0,0" size="1280,720" title="Command execution..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <widget name="text" scrollbarMode="showOnDemand" enableWrapAround="1" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/system/time.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
 </skin>
