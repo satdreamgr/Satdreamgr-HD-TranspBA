@@ -3031,7 +3031,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Hotkey Setup -->
-  <screen name="HotkeySetup" position="0,0" size="1280,720" title="HDMI-CEC Setup" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="HotkeySetup" position="0,0" size="1280,720" title="Hotkey Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <panel name="keybutton2" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/hotkey.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget name="list" position="330,140" size="790,327" font="Regular; 22" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="choosen" position="332,490" size="790,96" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="grey" zPosition="1" />
+    <eLabel name="" position="310,480" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+  </screen>
+  <screen name="HotkeySetupSelect" position="0,0" size="1280,720" title="Hotkey Setup" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/hotkey.png" zPosition="4" transparent="0" alphatest="blend" />
