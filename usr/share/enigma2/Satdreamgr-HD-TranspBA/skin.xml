@@ -175,16 +175,16 @@
     <eLabel position="213,606" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
     <eLabel position="213,55" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
     <widget source="Title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
-    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,127" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,127" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
+    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="blue" transparent="1" font="Regular; 38" halign="right" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune">
+    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
@@ -205,16 +205,16 @@
     <eLabel position="398,120" zPosition="-11" size="667,480" backgroundColor="transpBA" transparent="0" />
     <eLabel position="213,606" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
     <eLabel position="213,55" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="213,127" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
+    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="blue" transparent="1" font="Regular; 38" halign="right" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune">
+    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
@@ -287,16 +287,16 @@
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="0" />
     <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -317,16 +317,16 @@
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="0" />
     <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -379,16 +379,16 @@
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="386,516" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="430,614" size="206,6" zPosition="0" backgroundColor="red" />
@@ -404,16 +404,16 @@
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="386,516" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="430,614" size="206,6" zPosition="0" backgroundColor="red" />
@@ -441,16 +441,16 @@
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,613" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="60,429" size="200,4" zPosition="2" backgroundColor="green" />
@@ -468,16 +468,16 @@
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,613" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="60,429" size="200,4" zPosition="2" backgroundColor="green" />
@@ -523,16 +523,16 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="2" font="Regular; 32" valign="center" halign="center" noWrap="1" foregroundColor="blue" />
-    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,125" size="180,29" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,125" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,550" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
+    <widget source="global.CurrentTime" render="Label" position="213,550" size="130,50" backgroundColor="blue" transparent="1" font="Regular; 38" halign="right" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="342,560" size="50,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="red">
+    <widget source="global.CurrentTime" render="Label" position="342,560" size="50,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
@@ -1195,16 +1195,16 @@
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,615" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="60,429" size="200,4" zPosition="2" backgroundColor="green" />
@@ -1298,16 +1298,16 @@
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="240,471" backgroundColor="blue" zPosition="0" />
     <eLabel position="151,255" zPosition="1" size="220,205" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,200" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,200" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,165" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,165" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="176,500" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="176,500" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="290,508" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="290,508" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="2" backgroundColor="red" />
@@ -1352,16 +1352,16 @@
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="320,509" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="44,135" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,135" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="44,108" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,108" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="133,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="133,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="244,576" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="244,576" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
@@ -1406,16 +1406,16 @@
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="0" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" />
     <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/plugins.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -1441,16 +1441,16 @@
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="0" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" />
     <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -1588,16 +1588,16 @@
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="165,530" backgroundColor="blue" zPosition="0" />
-    <widget source="global.CurrentTime" render="Label" position="354,628" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="354,628" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="354,603" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="354,603" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="963,606" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="963,606" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1075,610" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="1075,610" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -1631,16 +1631,16 @@
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,613" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,166" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,166" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,130" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,130" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="82,410" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="82,410" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="191,415" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="191,415" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="48,480" size="220,116" zPosition="-1" />
@@ -4330,16 +4330,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="250,510" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
@@ -4395,16 +4395,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="250,510" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
