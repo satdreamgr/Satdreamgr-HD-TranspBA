@@ -149,52 +149,52 @@
   <!-- Screen PST PT Template -->
   <!-- Button K -->
   <screen name="Pkeybutton2" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
-    <widget name="key_red" position="213,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_green" position="425,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_green" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
   <screen name="Pkeybutton4" flags="wfNoBorder">
-    <widget name="key_red" position="213,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_green" position="425,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_yellow" position="637,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_blue" position="849,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_green" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_yellow" position="639,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="key_blue" position="852,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
   <!-- Button S -->
   <screen name="Pkeybutton2l" flags="wfNoBorder">
-    <widget source="key_red" render="Label" position="213,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_green" render="Label" position="425,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_red" render="Label" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
   <screen name="Pkeybutton4l" flags="wfNoBorder">
-    <widget source="key_red" render="Label" position="213,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_green" render="Label" position="425,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_yellow" render="Label" position="637,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_blue" render="Label" position="849,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_red" render="Label" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_yellow" render="Label" position="639,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget source="key_blue" render="Label" position="852,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
   <screen name="PTTemplate" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <eLabel position="231,205" zPosition="-1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <eLabel position="398,120" zPosition="-11" size="667,480" backgroundColor="transpBA" transparent="0" />
-    <eLabel position="213,606" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
-    <eLabel position="213,55" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
+    <eLabel position="399,120" zPosition="-11" size="666,480" backgroundColor="transpBA" transparent="0" />
+    <eLabel position="213,606" zPosition="-11" size="852,60" backgroundColor="NLPreBlack" transparent="0" />
+    <eLabel position="213,55" zPosition="-11" size="852,60" backgroundColor="NLPreBlack" transparent="0" />
     <widget source="Title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
-    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,127" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,127" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
+    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="blue" transparent="1" font="Regular; 38" halign="right" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune">
+    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1032,70" size="23,32" transparent="1" zPosition="5" alphatest="blend" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1006,74" size="24, 24" alphatest="blend" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1006,74" size="24,24" alphatest="blend" />
     <eLabel name="" position="213,115" size="180,491" backgroundColor="blue" zPosition="-3" />
-    <eLabel name="" position="213,606" size="212,6" zPosition="1" backgroundColor="red" />
-    <eLabel name="" position="425,606" size="212,6" zPosition="1" backgroundColor="green" />
-    <eLabel name="" position="637,606" size="212,6" backgroundColor="yellow" />
-    <eLabel name="" position="849,605" size="213,6" backgroundColor="blue" />
+    <eLabel name="" position="213,606" size="213,6" zPosition="1" backgroundColor="red" />
+    <eLabel name="" position="426,606" size="213,6" zPosition="1" backgroundColor="green" />
+    <eLabel name="" position="639,606" size="213,6" zPosition="1" backgroundColor="yellow" />
+    <eLabel name="" position="852,606" size="213,6" zPosition="1" backgroundColor="blue" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,211" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,508" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,130" size="650,1" scale="1" zPosition="10" alphatest="blend" />
@@ -202,29 +202,29 @@
   </screen>
   <screen name="PSTTemplate" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <eLabel position="231,205" zPosition="-1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <eLabel position="398,120" zPosition="-11" size="667,480" backgroundColor="transpBA" transparent="0" />
-    <eLabel position="213,606" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
-    <eLabel position="213,55" zPosition="-11" size="853,60" backgroundColor="NLPreBlack" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <eLabel position="399,120" zPosition="-11" size="666,480" backgroundColor="transpBA" transparent="0" />
+    <eLabel position="213,606" zPosition="-11" size="852,60" backgroundColor="NLPreBlack" transparent="0" />
+    <eLabel position="213,55" zPosition="-11" size="852,60" backgroundColor="NLPreBlack" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="213,127" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
+    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="blue" transparent="1" font="Regular; 38" halign="right" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune">
+    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1032,70" size="23,32" transparent="1" zPosition="5" alphatest="blend" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1006,74" size="24, 24" alphatest="blend" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1006,74" size="24,24" alphatest="blend" />
     <eLabel name="" position="213,115" size="180,491" backgroundColor="blue" zPosition="-3" />
-    <eLabel name="" position="213,606" size="212,6" zPosition="1" backgroundColor="red" />
-    <eLabel name="" position="425,606" size="212,6" zPosition="1" backgroundColor="green" />
-    <eLabel name="" position="637,606" size="212,6" backgroundColor="yellow" />
-    <eLabel name="" position="849,605" size="213,6" backgroundColor="blue" />
+    <eLabel name="" position="213,606" size="213,6" zPosition="1" backgroundColor="red" />
+    <eLabel name="" position="426,606" size="213,6" zPosition="1" backgroundColor="green" />
+    <eLabel name="" position="639,606" size="213,6" zPosition="1" backgroundColor="yellow" />
+    <eLabel name="" position="852,606" size="213,6" zPosition="1" backgroundColor="blue" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,211" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,508" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,130" size="650,1" scale="1" zPosition="10" alphatest="blend" />
@@ -282,21 +282,21 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="310,129" zPosition="-1" size="830,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24, 24" alphatest="blend" zPosition="10" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="0" />
-    <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <eLabel position="150,198" zPosition="1" size="145,310" backgroundColor="transpBA" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -312,21 +312,21 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1054,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="310,129" zPosition="-1" size="830,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1098,84" size="24, 24" alphatest="blend" zPosition="10" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1098,84" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="0" />
-    <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <eLabel position="150,198" zPosition="1" size="145,310" backgroundColor="transpBA" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -379,16 +379,16 @@
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="386,516" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="430,614" size="206,6" zPosition="0" backgroundColor="red" />
@@ -404,16 +404,16 @@
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="386,516" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,135" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="144,108" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="153,574" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="264,580" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="430,614" size="206,6" zPosition="0" backgroundColor="red" />
@@ -438,19 +438,19 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="286,91" zPosition="-1" size="954,541" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24,24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,613" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="60,429" size="200,4" zPosition="2" backgroundColor="green" />
@@ -465,19 +465,19 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="286,91" zPosition="-1" size="954,541" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24,24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,613" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="60,429" size="200,4" zPosition="2" backgroundColor="green" />
@@ -493,7 +493,7 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="310,129" zPosition="-1" size="830,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24, 24" alphatest="blend" zPosition="10" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-11" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="0" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" />
@@ -523,16 +523,16 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="2" font="Regular; 32" valign="center" halign="center" noWrap="1" foregroundColor="blue" />
-    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,125" size="180,29" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="213,125" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="213,550" size="130,50" backgroundColor="transpBA" transparent="1" font="Regular; 38" halign="right" valign="center">
+    <widget source="global.CurrentTime" render="Label" position="213,550" size="130,50" backgroundColor="blue" transparent="1" font="Regular; 38" halign="right" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="342,560" size="50,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="red">
+    <widget source="global.CurrentTime" render="Label" position="342,560" size="50,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
@@ -546,7 +546,7 @@
         }
       </convert>
     </widget>
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1006,74" size="24, 24" alphatest="blend" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1006,74" size="24,24" alphatest="blend" />
     <eLabel name="" position="213,115" size="180,491" backgroundColor="blue" zPosition="-3" />
     <eLabel text="SatDreamGr" zPosition="2" position="293,610" size="223,50" font="Bold; 32" halign="left" backgroundColor="background" transparent="1" valign="center" foregroundColor="blue" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,210" size="135,1" scale="1" zPosition="10" alphatest="blend" />
@@ -602,6 +602,10 @@
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/newmenu.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">newmenu</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/youtube.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">youtube_tv</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
@@ -1165,18 +1169,18 @@
           "templates":
             {
               "default": (25, [
-                MultiContentEntryText(pos = (0,0),   size = (50,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-                MultiContentEntryText(pos = (55,0),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-                MultiContentEntryText(pos = (65,0),  size = (210,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-                MultiContentEntryText(pos = (280,0), size = (270,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-                MultiContentEntryText(pos = (550,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+                MultiContentEntryText(pos = (0,0),   size = (50,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key
+                MultiContentEntryText(pos = (55,0),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number
+                MultiContentEntryText(pos = (65,0),  size = (210,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description
+                MultiContentEntryText(pos = (280,0), size = (270,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language
+                MultiContentEntryText(pos = (550,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection
               ], True, "showNever"),
               "notselected": (25, [
-                MultiContentEntryText(pos = (0,0),   size = (50,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key,
-                MultiContentEntryText(pos = (55,0),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number,
-                MultiContentEntryText(pos = (65,0),  size = (210,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-                MultiContentEntryText(pos = (280,0), size = (270,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-                MultiContentEntryText(pos = (550,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+                MultiContentEntryText(pos = (0,0),   size = (50,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key
+                MultiContentEntryText(pos = (55,0),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number
+                MultiContentEntryText(pos = (65,0),  size = (210,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description
+                MultiContentEntryText(pos = (280,0), size = (270,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language
+                MultiContentEntryText(pos = (550,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection
               ], False, "showNever")
             },
           "fonts": [ gFont("Regular", 22), gFont("Regular", 16) ],
@@ -1192,19 +1196,19 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="285,90" zPosition="-1" size="955,607" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24,24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,615" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="60,429" size="200,4" zPosition="2" backgroundColor="green" />
@@ -1293,21 +1297,21 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="386,130" zPosition="-1" size="753,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24, 24" alphatest="blend" zPosition="2" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24,24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="240,471" backgroundColor="blue" zPosition="0" />
     <eLabel position="151,255" zPosition="1" size="220,205" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,200" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,200" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,165" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,165" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="176,500" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="176,500" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="290,508" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="290,508" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="2" backgroundColor="red" />
@@ -1352,16 +1356,16 @@
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="320,509" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="44,135" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,135" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="44,108" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,108" size="320,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="133,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="133,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="244,576" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="244,576" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
@@ -1401,21 +1405,21 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="310,129" zPosition="0" size="828,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24, 24" alphatest="blend" zPosition="10" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-11" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="0" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" />
     <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/plugins.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -1436,21 +1440,21 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="310,129" zPosition="0" size="828,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24, 24" alphatest="blend" zPosition="10" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-11" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="0" />
     <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" />
     <eLabel position="151,198" zPosition="1" size="146,310" backgroundColor="transpBA" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,133" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="140,529" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,533" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -1584,20 +1588,20 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1108,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
     <eLabel position="310,129" zPosition="-1" size="830,460" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24, 24" alphatest="blend" zPosition="10" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
     <eLabel name="" position="140,124" size="165,530" backgroundColor="blue" zPosition="0" />
-    <widget source="global.CurrentTime" render="Label" position="354,628" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="354,628" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="354,603" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="354,603" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="963,606" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
+    <widget source="global.CurrentTime" render="Label" position="963,606" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1075,610" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="1075,610" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="340,594" size="200,6" zPosition="0" backgroundColor="red" />
@@ -1628,19 +1632,19 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
     <eLabel position="286,91" zPosition="-2" size="954,607" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24, 24" alphatest="blend" zPosition="2" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24,24" alphatest="blend" zPosition="2" />
     <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="40,85" size="240,613" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,166" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,166" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,130" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="40,130" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="82,410" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="82,410" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="191,415" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="191,415" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="48,480" size="220,116" zPosition="-1" />
@@ -1761,7 +1765,7 @@
   <screen flags="wfNoBorder" name="TranslationInfo" position="0,0" size="1280,720" backgroundColor="transparent">
     <panel name="PSTTemplate" />
     <ePixmap name="" position="242,291" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/translation.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="key_red" position="213,612" size="212,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
+    <widget name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <eLabel text="Translation" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="TranslatorName" render="Label" position="434,140" size="590,110" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center" />
     <widget source="TranslationInfo" render="Label" position="435,215" size="590,380" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center" />
@@ -1787,7 +1791,7 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="TimerEntry" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="TimerEntry" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <widget name="cancel" pixmap="Satdreamgr-HD-TranspBA/spinner/a0.png" position="0,0" size="0,0" alphatest="on" />
     <widget name="ok" pixmap="Satdreamgr-HD-TranspBA/spinner/a0.png" position="0,0" size="0,0" alphatest="on" />
@@ -3136,7 +3140,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <screen name="QuitMainloopScreen" position="0,0" size="1280,720" backgroundColor="NLPreBlack" flags="wfNoBorder" transparent="0">
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1120,90" size="24, 24" alphatest="blend" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1120,90" size="24,24" alphatest="blend" />
     <eLabel position="center,center" zPosition="-12" size="1184,620" backgroundColor="listbox" transparent="0" font="Regular; 0" foregroundColor="white" />
     <eLabel position="50,52" zPosition="-11" size="1180,616" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/reboot.png" position="center,267" size="68,68" alphatest="on" />
@@ -3641,7 +3645,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="file" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular; 22" halign="left" noWrap="1" foregroundColor="foreground" backgroundColor="black" transparent="1" borderWidth="2" />
   </screen>
   <!-- Panel+ Menus -->
-  <screen name="Panel" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="Panel" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1">
@@ -3661,7 +3665,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="System_Panel" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="System_Panel" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1">
@@ -3681,7 +3685,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="Plugins_Panel" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="Plugins_Panel" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="list" render="Listbox" position="320,155" size="800,415" scrollbarMode="showOnDemand" transparent="1">
@@ -4104,7 +4108,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="system_info" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="system_info" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="PTTemplate" />
     <ePixmap name="" position="240,291" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/hardwareinfo.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap position="416,137" zPosition="5" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/ram.png" alphatest="blend" />
@@ -4147,7 +4151,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     </widget>
   </screen>
   <!-- Additional Plugins -->
-  <screen name="BackupStart" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="BackupStart" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <panel name="keybutton4" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_help.png" position="245,612" size="40,30" transparent="1" alphatest="blend" />
@@ -4156,7 +4160,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="WhatisNewInfo" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="WhatisNewInfo" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <widget name="AboutScrollLabel" font="Regular; 22" position="330,150" size="790,405" zPosition="2" halign="left" foregroundColor="white" backgroundColor="transpBA" valign="top" transparent="1" />
     <widget name="key_red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
@@ -4164,7 +4168,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="FlashImageConfig" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="FlashImageConfig" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
@@ -4175,7 +4179,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="MPHelp" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="MPHelp" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="TBTemplate" />
     <panel name="keybutton4l" />
     <widget name="detailtext" position="330,150" size="790,405" zPosition="10" font="Regular; 22" transparent="1" halign="left" valign="top" foregroundColor="white" backgroundColor="transpBA" />
@@ -4183,7 +4187,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="RemoteControlCode" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="RemoteControlCode" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="PSTTemplate" />
     <panel name="Pkeybutton2l" />
     <widget name="config" zPosition="2" position="412,135" size="634,180" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" foregroundColor="white" backgroundColor="transpBA" />
@@ -4191,7 +4195,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap name="" position="238,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/remote.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <!-- Transcoding Setup -->
-  <screen name="TranscodingSetup" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+  <screen name="TranscodingSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="PSTTemplate" />
     <panel name="Pkeybutton2l" />
     <eLabel name="" position="398,457" size="667,6" backgroundColor="transparent" />
@@ -4200,7 +4204,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="config" position="411,150" font="Regular; 22" size="634,60" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
     <ePixmap name="" position="240,296" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/transcoding.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
-  <screen name="ServiceInfoSimple" position="0, 0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+  <screen name="ServiceInfoSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
     <panel name="STBTemplate" />
     <eLabel text="Service info" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="infolist" font="Regular; 22" position="330,150" size="790,385" foregroundColor="white" backgroundColor="transpBA" transparent="1" selectionDisabled="1" />
@@ -4209,7 +4213,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- BlindScan -->
-  <screen name="Blindscan" position="0,0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+  <screen name="Blindscan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/blindscan.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
@@ -4222,7 +4226,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="green" position="540,600" zPosition="2" size="200,50" font="Regular; 22" halign="center" valign="center" backgroundColor="NLPreBlack" foregroundColor="white" transparent="1" />
     <widget name="introduction" position="0,0" size="0,0" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="transpBA" />
   </screen>
-  <screen name="VFD_INISetup" position="0,0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+  <screen name="VFD_INISetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
     <panel name="STBTemplate" />
     <eLabel text="LED Display Setup" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/led-display.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -4234,7 +4238,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="key_red" position="340,600" size="200,50" font="Regular; 22" backgroundColor="NLPreBlack" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" foregroundColor="white" valign="center" halign="center" />
     <widget name="key_yellow" position="740,600" size="200,50" font="Regular; 22" backgroundColor="NLPreBlack" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" foregroundColor="white" valign="center" halign="center" />
   </screen>
-  <screen name="PanelTextexit" position="0,0" size="1280, 720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+  <screen name="PanelTextexit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/script.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
@@ -4330,16 +4334,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="250,510" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
@@ -4395,16 +4399,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <eLabel name="" position="44,44" size="1192,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="44,615" size="1192,60" backgroundColor="NLPreBlack" zPosition="-11" />
     <eLabel name="" position="44,104" size="250,510" backgroundColor="blue" zPosition="-10" />
-    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="transpBlack" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,145" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="transpBA" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="44,111" size="250,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="84,570" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="196,572" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
     <eLabel name="" position="436,614" size="200,6" zPosition="0" backgroundColor="red" />
@@ -4435,6 +4439,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <panel name="TBTemplate" />
     <widget name="text" scrollbarMode="showOnDemand" enableWrapAround="1" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/system/time.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <!-- YouTube TV -->
+  <!-- Note: the plugin also has a "YoutubeTVSettings" screen, but it doesn't seem to be used at all -->
+  <screen name="YoutubeTVWindow" position="0,0" size="1280,720" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <panel name="keybutton4l" />
+    <widget name="infomation" scrollbarMode="showOnDemand" enableWrapAround="1" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <widget name="startdesc" position="0,0" size="0,0" font="Regular; 0" /> <!-- dummy input -->
+    <widget name="helpdesc" position="0,0" size="0,0" font="Regular; 0" /> <!-- dummy input -->
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
