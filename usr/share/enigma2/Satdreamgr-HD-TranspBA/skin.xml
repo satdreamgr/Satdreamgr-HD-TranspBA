@@ -537,7 +537,7 @@
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1032,70" size="23,32" transparent="1" zPosition="5" alphatest="blend" />
-    <widget source="menu" render="Listbox" position="420,center" size="628,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="menu" render="Listbox" backgroundColorSelected="blue" backgroundPixmap="Satdreamgr-HD-TranspBA/menu/key_grey.png" selectionPixmap="Satdreamgr-HD-TranspBA/menu/sel_menu.png" enableWrapAround="1" position="420,center" size="628,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
         {
           "template": [ MultiContentEntryText(pos = (45,2), size = (600,32), flags = RT_HALIGN_LEFT,text = 0) ],
