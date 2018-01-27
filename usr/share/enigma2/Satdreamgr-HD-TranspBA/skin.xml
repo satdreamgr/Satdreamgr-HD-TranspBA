@@ -3894,8 +3894,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Settings -->
   <screen name="SDG_Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Settings Enigma2" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <eLabel position="0,0" size="0,0" font="Regular; 0" text="Exit" transparent="1" zPosition="2" backgroundColor="transpBA" halign="center" foregroundColor="white" valign="center" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
@@ -3917,9 +3916,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Settings -->
   <screen name="SDG_Morpheus" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+    <panel name="TBTemplate" />
     <panel name="keybutton4" />
-    <eLabel text="Settings Morpheus" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -3938,9 +3936,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Settings -->
   <screen name="SDG_Satdreamgr" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+    <panel name="TBTemplate" />
     <panel name="keybutton4" />
-    <eLabel text="Settings Cyrus" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -3959,9 +3956,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Settings -->
   <screen name="SDG_Satvenus" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+    <panel name="TBTemplate" />
     <panel name="keybutton4" />
-    <eLabel text="Settings Satvenus" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -3980,9 +3976,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Settings -->
   <screen name="SDG_Vhannibal" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+    <panel name="TBTemplate" />
     <panel name="keybutton4" />
-    <eLabel text="Settings Vhannibal" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
