@@ -4440,15 +4440,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- YouTube TV -->
-  <!-- Note: the plugin also has a "YoutubeTVSettings" screen, but it doesn't seem to be used at all -->
   <screen name="YoutubeTVWindow" position="0,0" size="1280,720" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton4l" />
-    <widget name="infomation" scrollbarMode="showOnDemand" enableWrapAround="1" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
-    <widget name="startdesc" position="0,0" size="0,0" font="Regular; 0" />
-    <!-- dummy input -->
-    <widget name="helpdesc" position="0,0" size="0,0" font="Regular; 0" />
-    <!-- dummy input -->
+    <widget name="infomation" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <widget name="startdesc" position="0,0" size="0,0" font="Regular; 0" /> <!-- dummy input -->
+    <widget name="helpdesc" position="0,0" size="0,0" font="Regular; 0" /> <!-- dummy input -->
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <screen name="YoutubeTVSettings" position="0,0" size="1280,720" title="YouTube TV Settings" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <panel name="keybutton2l" />
+    <widget name="config" scrollbarMode="showOnDemand" enableWrapAround="1" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
