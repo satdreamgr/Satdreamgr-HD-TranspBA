@@ -42,11 +42,11 @@
   <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="1227,530" size="23,23" zPosition="2" alphatest="blend">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="878,608" size="110,20" zPosition="1" transparent="1" font="Regular;18" halign="center" valign="center" foregroundColor="white" backgroundColor="blue" />
-  <widget source="session.CurrentService" render="Label" position="668,608" size="60,20" transparent="1" zPosition="3" font="Regular; 18" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
+  <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="954,608" size="110,20" zPosition="1" transparent="1" font="Regular;18" halign="center" valign="center" foregroundColor="white" backgroundColor="blue" />
+  <widget source="session.CurrentService" render="Label" position="678,608" size="60,20" transparent="1" zPosition="2" font="Regular; 18" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
     <convert type="PliExtraInfo">VideoCodec</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="729,608" size="140,20" transparent="1" zPosition="3" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
+  <widget source="session.CurrentService" render="Label" position="740,608" size="140,20" transparent="1" zPosition="2" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
     <convert type="PliExtraInfo">ResolutionString</convert>
   </widget>
   <widget source="session.Event_Next" render="Label" position="254,637" size="60,31" font="Regular; 18" halign="center" backgroundColor="transpBA" transparent="1" zPosition="3" valign="center" foregroundColor="white">
@@ -71,48 +71,47 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" position="264,608" size="41,20" zPosition="3" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
-    <convert type="ServiceInfo">VideoWidth</convert>
-    <convert type="ValueRange">721,1980</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="478,608" size="56,20" zPosition="3" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" position="264,608" size="41,20" zPosition="4" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">IsHD</convert>
+      <convert type="ConditionalShowHide" />
+</widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="372,608" size="56,20" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">IsMultichannel</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="406,608" size="32,20" zPosition="2" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="264,608" size="41,20" zPosition="3" alphatest="blend">
     <convert type="ServiceInfo">IsSDAndWidescreen</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_4_3.png" position="406,608" size="32,20" zPosition="2" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_4_3.png" position="264,608" size="41,20" zPosition="3" alphatest="blend">
     <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.Event_Now" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_pdc.png" position="1018,608" size="38,20" zPosition="2" alphatest="on">
+  <widget source="session.Event_Now" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_pdc.png" position="606,608" size="41,20" zPosition="2" alphatest="on">
     <convert type="EventName">Pdc</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/stream.png" position="991,608" size="21,20" zPosition="3" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/stream.png" position="652,608" size="21,20" zPosition="2" alphatest="on">
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_txt_on.png" position="447,608" size="23,20" zPosition="3" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_txt_on.png" position="490,608" size="23,20" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">HasTelext</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" position="347,608" size="53,20" zPosition="3" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hbbtv_on.png" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" position="311,608" size="53,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hbbtv_on.png" alphatest="blend">
     <convert type="ServiceInfo">HasHBBTV</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_crypt_on.png" position="543,608" size="22,20" zPosition="3" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_crypt_on.png" position="432,608" size="22,20" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">IsCrypted</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="571,608" size="41,20" alphatest="blend" zPosition="3">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="517,608" size="41,20" alphatest="blend" zPosition="2">
     <convert type="ServiceInfo">IsStream</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_sub_on.png" position="314,608" size="27,20" zPosition="3" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_sub_on.png" position="458,608" size="27,20" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
     <convert type="ConditionalShowHide" />
   </widget>
@@ -120,7 +119,7 @@
   <widget source="session.FrontendInfo" render="Label" position="1154,578" size="105,20" zPosition="3" backgroundColor="black" transparent="1" halign="center" font="Regular; 18" foregroundColor="white" valign="center">
     <convert type="FrontendInfo">STRING</convert>
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="617,608" size="41,20" zPosition="3" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="562,608" size="41,20" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">Is4K</convert>
     <convert type="ConditionalShowHide" />
   </widget>
