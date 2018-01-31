@@ -1802,19 +1802,6 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="TimerEntry" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
-    <panel name="TBTemplate" />
-    <widget name="cancel" pixmap="Satdreamgr-HD-TranspBA/spinner/a0.png" position="0,0" size="0,0" alphatest="on" />
-    <widget name="ok" pixmap="Satdreamgr-HD-TranspBA/spinner/a0.png" position="0,0" size="0,0" alphatest="on" />
-    <widget name="canceltext" position="341,600" size="200,50" zPosition="1" halign="center" transparent="1" font="Regular; 22" foregroundColor="white" valign="center" backgroundColor="transpBA" />
-    <widget name="oktext" position="540,600" size="200,50" zPosition="1" halign="center" transparent="1" font="Regular; 22" foregroundColor="white" valign="center" backgroundColor="transpBA" />
-    <widget name="key_yellow" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
-    <widget name="key_blue" position="940,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
-    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/timerr.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="config" position="330,150" size="790,380" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
   <!-- Message Box Simple -->
   <screen name="MessageBoxSimple" position="340,175" size="600,10" title="Message">
     <widget name="text" position="110,8" size="680,0" font="Regular; 22" />
@@ -2289,23 +2276,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Harddisk Selection -->
-  <screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+  <screen name="HarddiskSelection" title="Select hard disk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <widget name="key_red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/hdd.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Select HDD" position="290,69" size="700,50" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" backgroundColor="NLPreBlack" />
     <widget name="hddlist" position="330,150" size="790,360" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Harddisk Setup -->
-  <screen name="HarddiskSetup" title="Harddisk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Harddisk Setup" position="290,69" size="700,50" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" backgroundColor="NLPreBlack" />
+  <screen name="HarddiskSetup" title="Setup hard disk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/hdd.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="model" position="500,240" size="380,25" transparent="1" font="Regular; 24" backgroundColor="transpBA" foregroundColor="white" halign="center" />
     <widget name="capacity" position="500,270" size="380,25" transparent="1" font="Regular; 24" backgroundColor="transpBA" halign="center" foregroundColor="white" />
     <widget name="bus" position="500,300" size="380,25" transparent="1" font="Regular; 24" backgroundColor="transpBA" halign="center" foregroundColor="white" />
-    <widget name="initializetext" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
@@ -2479,7 +2465,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Overview" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <panel name="keybutton4" />
+    <panel name="keybutton4l" />
     <panel name="info" />
     <widget name="description" position="336,526" size="453,35" font="Regular; 22" transparent="1" backgroundColor="transpBA" />
     <widget name="timerlist" position="330,150" size="790,360" font="Regular; 26" scrollbarMode="showOnDemand" transparent="1" />
@@ -2487,9 +2473,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <screen name="TimerEntry" position="0,0" size="1280,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent" >
+    <panel name="TBTemplate" />
+    <panel name="keybutton4l" />
+    <widget name="config" position="330,150" size="790,380" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/timerr.png" zPosition="4" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
   <screen name="TimerLog" position="0,0" size="1280,720" title="Timer log" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <panel name="keybutton4" />
+    <panel name="keybutton4l" />
     <widget name="loglist" position="330,150" size="790,275" scrollbarMode="showOnDemand" font="Regular; 24" transparent="1" />
     <widget name="logentry" position="330,450" size="790,120" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" halign="left" valign="center" transparent="1" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/timer.png" zPosition="4" transparent="0" alphatest="blend" />
