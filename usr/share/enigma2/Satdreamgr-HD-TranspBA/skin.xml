@@ -4006,13 +4006,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Swap Manager -->
   <!-- SDG Backup -->
-  <screen name="SDGBackup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0" zPosition="-1">
-    <panel name="STBTemplate" />
+  <screen name="SDGBackup" title="SDGBackup Dreambox Enigma2" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0" zPosition="-1">
+    <panel name="TBTemplate" />
+    <panel name="keybutton2" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/backup.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="menu" font="Regular; 22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
-    <eLabel text="SDGBackup Dreambox Enigma2" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
-    <widget name="myRedBtn" position="340,600" size="200,50" backgroundColor="NLPreBlack" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular; 22" transparent="1" />
-    <widget name="myGreenBtn" position="540,600" size="200,50" backgroundColor="NLPreBlack" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular; 22" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
