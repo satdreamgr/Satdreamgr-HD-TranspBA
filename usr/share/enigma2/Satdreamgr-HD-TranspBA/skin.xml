@@ -2186,12 +2186,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI-CEC Setup" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton4l" />
-    <widget name="config" position="330,150" size="790,340" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
+    <widget name="config" position="330,145" size="790,327" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
     <widget source="current_address" render="Label" position="330,515" size="790,26" transparent="1" zPosition="10" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="white" />
     <widget source="fixed_address" render="Label" position="330,545" size="790,26" zPosition="10" transparent="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/hdmi1.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,480" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
   <!-- Input Device Configuration -->
   <screen name="InputDeviceSelection" title="Select input device" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
