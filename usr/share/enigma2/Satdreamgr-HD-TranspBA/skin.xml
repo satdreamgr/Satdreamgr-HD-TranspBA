@@ -1932,7 +1932,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/network.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="key_red" render="Label" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <widget source="key_green" render="Label" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
-    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 20" halign="center" valign="center" foregroundColor="yellow" />
+    <widget source="key_yellow" render="Label" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
+    <widget name="EditSettings_Text" position="940,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColors="#ffffff,#0077ff,#0077ff" />
+    <widget name="EditSettingsButton" position="0,0" size="0,0" /> <!-- hidden -->
     <widget name="Adaptertext" position="320,190" size="250,23" transparent="1" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular; 21" halign="left" backgroundColor="transpBA" />
     <widget name="Adapter" position="570,190" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular; 21" halign="center" backgroundColor="transpBA" />
     <widget name="AdapterInfo_OK" pixmap="skin_default/icons/lock_on.png" position="880,185" size="38,31" zPosition="2" alphatest="on" />
@@ -1958,8 +1960,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="DNSInfo_Check" position="880,345" size="38,31" transparent="1" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" backgroundColor="transpBA" />
     <widget name="DNSInfo_Text" position="920,350" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular; 21" backgroundColor="transpBA" />
     <widget name="DNSInfo" position="920,350" size="200,23" transparent="1" zPosition="2" backgroundColor="transpBA" />
-    <widget name="EditSettingsButton" position="0,0" size="0,0" transparent="1" zPosition="2" alphatest="on" backgroundColor="NLPreBlack" />
-    <widget name="EditSettings_Text" position="940,600" size="200,50" transparent="1" zPosition="1" foregroundColors="#ffffff,#0077ff,#0077ff" font="Regular; 22" backgroundColor="NLPreBlack" halign="center" valign="center" />
     <widget name="InfoText" position="330,540" size="790,22" zPosition="25" font="Regular; 22" transparent="1" backgroundColor="transpBA" halign="center" />
     <widget name="InfoTextBorder" position="310,160" size="820,239" backgroundColor="transpBA" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
