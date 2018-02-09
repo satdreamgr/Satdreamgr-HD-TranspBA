@@ -2458,7 +2458,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="TimerEntry" position="0,0" size="1280,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent" >
+  <screen name="TimerEntry" position="0,0" size="1280,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <panel name="keybutton4l" />
     <widget name="config" position="330,150" size="790,380" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
@@ -2599,53 +2599,49 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Movie Player InfoBar -->
   <screen name="MoviePlayer" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap name="" position="288,673" size="20,20" pixmap="Satdreamgr-HD-TranspBA/infobar/cpu.png" alphatest="blend" zPosition="11" />
+    <ePixmap name="" position="1086,609" size="20,20" pixmap="Satdreamgr-HD-TranspBA/infobar/cpu.png" alphatest="blend" zPosition="11" />
     <ePixmap name="" position="1090,20" size="160,65" pixmap="Satdreamgr-HD-TranspBA/infobar/clock.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,462" size="1280,174" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,636" size="1280,84" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarbas.png" alphatest="blend" zPosition="0" />
-    <widget backgroundColor="blue" position="317,673" size="50,20" font="Regular; 18" halign="left" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
+    <widget backgroundColor="blue" position="1190,609" size="50,20" font="Regular; 18" halign="left" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
       <convert type="TranspBACPUinfo">CPUtemp</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="388,518" size="680,46" font="Regular; 36" zPosition="2" transparent="1" valign="center" halign="left" backgroundColor="black" foregroundColor="blue">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="507,674" size="23,23" zPosition="2" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="1148,531" size="23,23" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="668,608" size="60,20" transparent="1" zPosition="3" font="Regular; 18" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
+    <widget source="session.CurrentService" render="Label" position="467,609" size="60,20" transparent="1" zPosition="3" font="Regular; 18" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
       <convert type="PliExtraInfo">VideoCodec</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="729,608" size="140,20" transparent="1" zPosition="3" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
+    <widget source="session.CurrentService" render="Label" position="529,609" size="140,20" transparent="1" zPosition="3" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="264,608" size="41,20" zPosition="3" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="264,609" size="41,20" zPosition="3" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="354,609" size="56,20" zPosition="3" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="312,609" size="56,20" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="313,609" size="32,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="264,609" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_4_3.png" position="313,609" size="32,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_4_3.png" position="264,609" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="417,610" size="41,20" alphatest="blend" zPosition="3">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="372,609" size="41,20" alphatest="blend" zPosition="3">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="468,609" size="41,20" zPosition="3" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="416,609" size="41,20" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="940,637" size="120,31" font="Regular; 18" halign="right" backgroundColor="blue" transparent="1" zPosition="3" foregroundColor="white" valign="center">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1093,21" size="100,32" font="Regular; 32" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black">
       <convert type="ClockToText">Default</convert>
@@ -2668,7 +2664,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="session.CurrentService" render="Label" position="949,573" size="120,31" backgroundColor="transpBA" zPosition="5" foregroundColor="white" font="Regular; 18" valign="center" halign="center" transparent="1">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <ePixmap name="" position="78,470" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/film5.png" zPosition="4" transparent="1" alphatest="blend" />
+    <ePixmap name="" position="78,473" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/film5.png" zPosition="4" transparent="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Label" zPosition="1" position="267,518" size="120,46" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white">
       <convert type="ServicePosition">Length</convert>
     </widget>
