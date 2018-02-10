@@ -117,8 +117,8 @@
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/tuner.png" position="1082,578" size="71,20" zPosition="3" alphatest="blend" />
     <widget source="session.FrontendInfo" render="Label" position="1144,578" size="105,20" zPosition="4" backgroundColor="black" transparent="1" halign="right" font="Regular; 18" foregroundColor="white" valign="center">
-  <convert type="FrontendInfo">STRING,8,5</convert>
-</widget>
+      <convert type="FrontendInfo">STRING,8,5</convert>
+    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="562,608" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
