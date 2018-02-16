@@ -1690,10 +1690,9 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,100" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,620" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen flags="wfNoBorder" name="TranslationInfo" position="0,0" size="1280,720" backgroundColor="transparent">
-    <panel name="PSTTemplate" />
+  <screen name="TranslationInfo" title="Translation" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
+    <panel name="PTTemplate" />
     <ePixmap name="" position="242,291" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/translation.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Translation" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="TranslatorName" render="Label" position="434,140" size="590,110" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center" />
     <widget source="TranslationInfo" render="Label" position="435,215" size="590,380" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center" />
   </screen>
@@ -1706,9 +1705,8 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Service Info -->
-  <screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Service info" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+  <screen name="ServiceInfo" title="Service info" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
     <widget name="infolist" font="Regular; 22" position="330,149" size="790,380" selectionDisabled="1" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="355,540" size="710,26" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular; 22" valign="center" halign="center">
       <convert type="ServiceInfo">HasHBBTV</convert>
