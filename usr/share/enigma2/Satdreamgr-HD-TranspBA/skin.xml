@@ -306,28 +306,16 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="155,205" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="155,500" size="135,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <!-- Screen GTBT GSTB Template -->
-  <!-- Button K -->
-  <screen name="Gkeybutton2" flags="wfNoBorder">
-    <widget name="key_red" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_green" position="636,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-  </screen>
-  <screen name="Gkeybutton4" flags="wfNoBorder">
-    <widget name="key_red" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_green" position="636,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_yellow" position="836,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_blue" position="1036,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-  </screen>
-  <!-- Button S -->
-  <screen name="Gkeybutton2l" flags="wfNoBorder">
-    <widget source="key_red" render="Label" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_green" render="Label" position="636,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-  </screen>
-  <screen name="Gkeybutton4l" flags="wfNoBorder">
-    <widget source="key_red" render="Label" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_green" render="Label" position="636,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_yellow" render="Label" position="836,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_blue" render="Label" position="1036,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+  <!-- Screen GTB GSTB Template -->
+  <screen name="GTBGSTBButtons" flags="wfNoBorder">
+    <widget objectTypes="key_red,Button,Label" name="key_red" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_green,Button,Label" name="key_green" position="636,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="836,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="1036,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="436,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="636,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="836,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1036,620" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
   <screen name="GMenuTemplate" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_menu.png" position="110,633" size="40,30" transparent="1" alphatest="blend" zPosition="2" />
@@ -364,6 +352,7 @@
     <eLabel name="" position="636,614" size="200,6" zPosition="1" backgroundColor="green" />
     <eLabel name="" position="836,614" size="200,6" zPosition="2" backgroundColor="yellow" />
     <eLabel name="" position="1036,614" size="200,6" zPosition="2" backgroundColor="blue" />
+    <panel name="GTBGSTBButtons" />
   </screen>
   <screen name="GSTBTemplate" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="65,60" size="32,32" transparent="0" zPosition="8" alphatest="on" />
@@ -389,6 +378,7 @@
     <eLabel name="" position="636,614" size="200,6" zPosition="1" backgroundColor="green" />
     <eLabel name="" position="836,614" size="200,6" zPosition="2" backgroundColor="yellow" />
     <eLabel name="" position="1036,614" size="200,6" zPosition="2" backgroundColor="blue" />
+    <panel name="GTBGSTBButtons" />
   </screen>
   <!-- Screen TTG Template -->
   <!-- Button K -->
@@ -1244,7 +1234,6 @@
   <!-- EPG Stuff List -->
   <screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="GSTBTemplate" />
-    <panel name="Gkeybutton4" />
     <panel name="GInfoTemplate" />
     <panel name="GMenuTemplate" />
     <widget name="list" font="Regular; 22" position="451,133" size="770,452" transparent="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
@@ -1351,7 +1340,7 @@
     <eLabel name="" position="636,614" size="200,6" zPosition="1" backgroundColor="green" />
     <eLabel name="" position="836,614" size="200,6" zPosition="2" backgroundColor="yellow" />
     <eLabel name="" position="1036,614" size="200,6" zPosition="2" backgroundColor="blue" />
-    <panel name="Gkeybutton4" />
+    <panel name="GTBGSTBButtons" />
     <panel name="GInfoTemplate" />
     <panel name="GMenuTemplate" />
     <eLabel text="EPG selection" position="246,48" size="783,50" backgroundColor="transpBA" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
