@@ -1653,9 +1653,8 @@
   </screen>
   <screen name="SubtitleDisplay" zPosition="-1" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" />
   <!-- Skin Selector -->
-  <screen name="SkinSelector" position="0,0" size="1280,720" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="GSTBTemplate" />
-    <eLabel text="Enigma2 skin selector" position="290,44" size="700,60" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+  <screen name="SkinSelector" position="0,0" size="1280,720" title="Select your skin" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="GTBTemplate" />
     <widget name="Preview" position="96,257" size="281,215" alphatest="on" transparent="1" backgroundColor="transpBA" zPosition="2" />
     <widget name="SkinList" position="455,130" size="760,390" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" />
     <widget source="introduction" render="Label" position="536,575" size="600,27" backgroundColor="transpBA" shadowColor="black" shadowOffset="-2,-2" zPosition="4" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" />
