@@ -1710,13 +1710,12 @@
     <widget name="slide" position="640,100" size="18,520" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
     <widget name="info" position="720,475" size="420,150" font="Regular; 20" zPosition="3" halign="left" backgroundColor="secondBG" transparent="1" />
   </screen>
-  <screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STGTTemplate" />
+  <screen name="CommitInfo" title="Latest Commits" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TGTTemplate" />
     <ePixmap name="" position="98,183" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/information2.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="key_red" position="60,379" size="200,50" zPosition="1" transparent="0" font="Regular; 22" halign="center" valign="center" foregroundColor="red" backgroundColor="transpBA" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_prev.png" position="500,655" size="35,25" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_next.png" position="970,655" size="35,25" alphatest="on" />
-    <eLabel text="Latest Commits" position="115,25" size="1050,60" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="AboutScrollLabel" font="Regular; 22" position="307,105" size="920,500" zPosition="2" halign="left" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,100" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,620" size="750,1" scale="1" zPosition="10" alphatest="blend" />
