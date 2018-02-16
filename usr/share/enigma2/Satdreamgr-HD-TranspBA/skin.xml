@@ -420,33 +420,6 @@
     <eLabel name="" position="51,180" size="220,132" zPosition="-1" />
     <eLabel name="" position="286,638" size="954,60" zPosition="-1" />
   </screen>
-  <screen name="STGTTemplate" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="56,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1171,40" size="32,32" transparent="0" zPosition="2" alphatest="on" />
-    <eLabel position="286,91" zPosition="-1" size="954,541" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1206,43" size="24,24" alphatest="blend" zPosition="2" />
-    <eLabel name="" position="40,25" size="1200,60" zPosition="-1" backgroundColor="NLPreBlack" />
-    <eLabel name="" position="40,85" size="240,613" backgroundColor="blue" zPosition="-2" />
-    <widget source="global.CurrentTime" render="Label" position="40,136" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
-      <convert type="ClockToText">Format:%d-%m-%Y</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="40,100" size="240,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="71,322" size="110,40" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" foregroundColor="white" zPosition="2">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="184,329" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune" zPosition="2">
-      <convert type="ClockToText">Format: :%S</convert>
-    </widget>
-    <eLabel name="" position="60,429" size="200,4" zPosition="2" backgroundColor="green" />
-    <eLabel name="" position="60,482" size="200,4" zPosition="2" backgroundColor="yellow" />
-    <eLabel name="" position="60,541" size="200,4" zPosition="2" backgroundColor="blue" />
-    <eLabel name="" position="60,377" size="200,4" zPosition="2" backgroundColor="red" />
-    <eLabel name="" position="49,371" size="222,233" zPosition="-1" />
-    <eLabel name="" position="51,180" size="220,132" zPosition="-1" />
-    <eLabel name="" position="286,638" size="954,60" zPosition="-1" />
-  </screen>
   <!-- Screen N2 Wizard -->
   <screen name="N2Template" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="145,81" size="32,32" transparent="0" zPosition="8" alphatest="on" />
