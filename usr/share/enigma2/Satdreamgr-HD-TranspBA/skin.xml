@@ -1655,13 +1655,10 @@
     <eLabel name="" position="297,697" size="929,1" backgroundColor="grey" zPosition="0" />
     <eLabel name="" position="98,504" size="130,25" foregroundColor="white" backgroundColor="blue" />
   </screen>
-  <screen name="MediaPlayerSettings" position="0,0" size="1280,720" title="Edit Settings" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <widget source="Title" render="Label" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+  <screen name="MediaPlayerSettings" position="0,0" size="1280,720" title="Edit settings" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/setting.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="config" position="330,150" size="790,405" zPosition="3" scrollbarMode="showNever" font="Regular; 22" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
-    <eLabel text="Cancel" position="340,600" size="200,50" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
-    <eLabel text="Save" position="540,600" size="200,50" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
@@ -2177,13 +2174,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="help2" position="1218,36" size="30,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" />
   </screen>
   <!-- Virtual Keyboard -->
-  <screen name="VirtualKeyBoard" position="0,0" size="1280,720" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Virtual keyboard" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+  <screen name="VirtualKeyBoard" title="Virtual keyboard" position="0,0" size="1280,720" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/keyboard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Delete" position="340,600" size="200,50" backgroundColor="NLPreBlack" zPosition="2" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
-    <eLabel text="OK" position="540,600" size="200,50" backgroundColor="NLPreBlack" zPosition="2" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
-    <widget source="country" render="Label" position="740,600" size="200,50" backgroundColor="NLPreBlack" zPosition="2" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
     <ePixmap pixmap="skin_default/vkey_text.png" position="439,210" size="542,52" zPosition="0" alphatest="blend" />
     <widget name="header" position="439,163" size="500,26" transparent="1" noWrap="1" font="Regular; 22" valign="top" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="text" position="443,219" size="536,34" transparent="1" noWrap="1" font="Regular; 26" valign="center" backgroundColor="transpBA" foregroundColor="white" />
@@ -2259,8 +2252,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="config" position="330,150" size="790,405" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" foregroundColor="white" backgroundColor="transpBA" />
     <widget name="header" position="0,0" size="0,0" transparent="1" />
     <widget name="introduction" position="0,0" size="0,0" />
-    <eLabel text="Cancel" position="340,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
-    <eLabel text="Scan" position="540,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
@@ -2271,8 +2262,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="config" position="330,150" size="790,405" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
     <widget name="footer" position="0,0" size="0,0" />
     <widget name="header" position="0,0" size="0,0" transparent="1" />
-    <eLabel text="Cancel" position="340,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
-    <eLabel text="Scan" position="540,600" size="200,50" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" valign="center" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
@@ -2365,7 +2354,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     </widget>
     <widget name="config" position="332,150" size="790,300" itemHeight="30" font="Regular; 22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBA" />
     <widget name="introduction" position="330,464" size="780,26" font="Regular; 22" foregroundColor="white" halign="center" backgroundColor="blue" transparent="0" />
-    <widget name="header" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget name="header" position="0,0" size="0,0" /> <!-- hidden -->
   </screen>
   <!-- Timer Menus -->
   <screen name="TimerSelection" position="0,0" size="1280,720" title="Timer selection" flags="wfNoBorder" backgroundColor="transparent">
