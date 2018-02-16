@@ -146,28 +146,16 @@
     <sub name="Subtitle_Bold" font="Replacement; 35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
     <sub name="Subtitle_Italic" font="Regular; 35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
   </subtitles>
-  <!-- Screen PST PT Template -->
-  <!-- Button K -->
-  <screen name="Pkeybutton2" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
-    <widget name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_green" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-  </screen>
-  <screen name="Pkeybutton4" flags="wfNoBorder">
-    <widget name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_green" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_yellow" position="639,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget name="key_blue" position="852,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-  </screen>
-  <!-- Button S -->
-  <screen name="Pkeybutton2l" flags="wfNoBorder">
-    <widget source="key_red" render="Label" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_green" render="Label" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-  </screen>
-  <screen name="Pkeybutton4l" flags="wfNoBorder">
-    <widget source="key_red" render="Label" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_green" render="Label" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_yellow" render="Label" position="639,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget source="key_blue" render="Label" position="852,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+  <!-- Screen PT PST Template -->
+  <screen name="PTPSTButtons" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
+    <widget objectTypes="key_red,Button,Label" name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_green,Button,Label" name="key_green" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="639,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="852,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="639,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="852,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
   </screen>
   <screen name="PTTemplate" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <eLabel position="231,205" zPosition="-1" size="146,310" backgroundColor="transpBA" transparent="0" />
@@ -195,6 +183,7 @@
     <eLabel name="" position="426,606" size="213,6" zPosition="1" backgroundColor="green" />
     <eLabel name="" position="639,606" size="213,6" zPosition="1" backgroundColor="yellow" />
     <eLabel name="" position="852,606" size="213,6" zPosition="1" backgroundColor="blue" />
+    <panel name="PTPSTButtons" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,211" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,508" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,130" size="650,1" scale="1" zPosition="10" alphatest="blend" />
@@ -225,6 +214,7 @@
     <eLabel name="" position="426,606" size="213,6" zPosition="1" backgroundColor="green" />
     <eLabel name="" position="639,606" size="213,6" zPosition="1" backgroundColor="yellow" />
     <eLabel name="" position="852,606" size="213,6" zPosition="1" backgroundColor="blue" />
+    <panel name="PTPSTButtons" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,211" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,508" size="135,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,130" size="650,1" scale="1" zPosition="10" alphatest="blend" />
@@ -1775,7 +1765,6 @@
   <screen flags="wfNoBorder" name="TranslationInfo" position="0,0" size="1280,720" backgroundColor="transparent">
     <panel name="PSTTemplate" />
     <ePixmap name="" position="242,291" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/translation.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" />
     <eLabel text="Translation" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="TranslatorName" render="Label" position="434,140" size="590,110" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center" />
     <widget source="TranslationInfo" render="Label" position="435,215" size="590,380" font="Regular; 22" halign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white" valign="center" />
@@ -4163,7 +4152,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <screen name="RemoteControlCode" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="PSTTemplate" />
-    <panel name="Pkeybutton2l" />
     <widget name="config" zPosition="2" position="412,135" size="634,180" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" foregroundColor="white" backgroundColor="transpBA" />
     <eLabel text="Remote Control System Code Setting" position="292,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap name="" position="238,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/remote.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -4171,7 +4159,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <!-- Transcoding Setup -->
   <screen name="TranscodingSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="PSTTemplate" />
-    <panel name="Pkeybutton2l" />
     <eLabel name="" position="398,457" size="667,6" backgroundColor="transparent" />
     <eLabel text="Transcoding Setup" position="292,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="content" position="411,538" size="500,22" font="Regular; 22" backgroundColor="transpBA" />
