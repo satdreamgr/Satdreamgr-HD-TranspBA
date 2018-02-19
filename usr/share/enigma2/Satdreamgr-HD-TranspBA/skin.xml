@@ -1931,10 +1931,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+  <screen name="AutoMountView" title="Mount view" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/mountm.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="MountView" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget source="legend1" render="Label" position="445,155" size="130,20" transparent="1" zPosition="1" font="Regular; 18" valign="center" halign="Left" backgroundColor="transpBA" />
     <widget source="legend2" render="Label" position="580,155" size="345,20" transparent="1" zPosition="1" font="Regular; 18" valign="center" halign="center" backgroundColor="transpBA" />
     <widget source="legend3" render="Label" position="930,155" size="130,20" transparent="1" zPosition="1" font="Regular; 18" valign="center" halign="center" backgroundColor="transpBA" />
@@ -2424,10 +2423,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="recName" position="930,2" size="250,18" zPosition="1" font="Regular; 18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="transparent" borderColor="black" borderWidth="3" />
   </screen>
   <!-- Time Date Input -->
-  <screen name="TimeDateInput" title="Time/Date Input" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+  <screen name="TimeDateInput" title="Date/time input" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
     <panel name="COTemplate" />
-    <eLabel text="Date/time input" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="cancel" position="0,0" size="0,0" pixmap="~/buttons/key_red.png" transparent="1" alphatest="on" />
     <widget name="ok" position="0,0" size="0,0" pixmap="~/buttons/key_green.png" transparent="1" alphatest="on" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/calendar.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -2683,8 +2681,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Bouquet Selector -->
   <screen name="BouquetSelector" position="0,0" size="1280,720" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="Select a bouquet" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+    <panel name="TBTemplate" />
     <widget name="menu" position="330,150" size="790,395" itemHeight="30" font="Regular; 24" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/select.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
@@ -3950,17 +3947,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap name="" position="238,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/remote.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <!-- Transcoding Setup -->
-  <screen name="TranscodingSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
-    <panel name="PSTTemplate" />
+  <screen name="TranscodingSetup" title="Transcoding Setup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="PTTemplate" />
     <eLabel name="" position="398,457" size="667,6" backgroundColor="transparent" />
-    <eLabel text="Transcoding Setup" position="292,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="content" position="411,538" size="500,22" font="Regular; 22" backgroundColor="transpBA" />
     <widget name="config" position="411,150" font="Regular; 22" size="634,60" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
     <ePixmap name="" position="240,296" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/transcoding.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
-  <screen name="ServiceInfoSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
-    <panel name="STBTemplate" />
-    <eLabel text="Service info" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 28" valign="center" halign="center" foregroundColor="jeaune" />
+  <screen name="ServiceInfoSimple" title="Service info" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+    <panel name="TBTemplate" />
     <widget name="infolist" font="Regular; 22" position="330,150" size="790,385" foregroundColor="white" backgroundColor="transpBA" transparent="1" selectionDisabled="1" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/service.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
@@ -4005,7 +4000,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- TranspBA Skin Configuration -->
-  <screen name="SatdreamgrTranspBA" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="SatdreamgrTranspBA" title="Edit color" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <eLabel text="Save" position="540,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
     <eLabel text="Exit" position="340,600" size="200,50" valign="center" halign="center" zPosition="1" font="Regular; 22" transparent="1" backgroundColor="NLPreBlack" foregroundColor="white" />
