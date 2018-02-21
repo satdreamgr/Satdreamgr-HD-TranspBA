@@ -123,7 +123,7 @@
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.Event_Now" position="264,567" size="805,5" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/second-new.png" transparent="1">
+    <widget source="session.Event_Now" position="264,568" size="805,4" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/second-new.png" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="940,573" size="120,31" font="Regular; 18" halign="right" backgroundColor="black" transparent="1" zPosition="3" foregroundColor="white" valign="center">
