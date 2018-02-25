@@ -4188,10 +4188,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="YoutubeTVWindow" position="0,0" size="1280,720" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <widget name="infomation" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
-    <widget name="startdesc" position="0,0" size="0,0" font="Regular; 0" />
-    <!-- dummy input -->
-    <widget name="helpdesc" position="0,0" size="0,0" font="Regular; 0" />
-    <!-- dummy input -->
+    <widget name="startdesc" position="0,0" size="0,0" /> <!-- hidden -->
+    <widget name="helpdesc" position="0,0" size="0,0" /> <!-- hidden -->
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
