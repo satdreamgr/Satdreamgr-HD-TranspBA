@@ -2734,7 +2734,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="frequency_value" position="482,495" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
     <widget name="symbolrate_value" position="481,524" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
     <widget name="fec_value" position="482,555" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
-    <widget name="snr_db" position="845,465" size="70,20" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" font="Regular; 20" halign="center" />
+    <widget name="snr_db" position="840,465" size="90,20" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" font="Regular; 20" halign="center" />
     <widget name="lock_on" zPosition="2" position="960,463" size="25,24" pixmap="skin_default/icons/lock_on.png" alphatest="on" />
     <widget name="lock_off" zPosition="1" position="960,463" size="25,24" pixmap="skin_default/icons/lock_off.png" alphatest="on" />
     <widget name="SNR" position="740,494" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" halign="right" />
