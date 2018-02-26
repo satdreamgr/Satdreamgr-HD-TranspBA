@@ -3012,7 +3012,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
         }
       </convert>
     </widget>
-    <widget source="status" render="Label" position="800,530" zPosition="10" size="320,50" halign="center" valign="center" font="Regular; 18" transparent="1" shadowColor="black" shadowOffset="-1,-1" foregroundColor="white" backgroundColor="blue" />
+    <widget source="status" render="Label" position="800,530" zPosition="10" size="320,50" halign="center" valign="center" font="Regular; 18" transparent="1" foregroundColor="white" backgroundColor="blue" />
     <eLabel name="" position="800,530" size="320,50" foregroundColor="blue" backgroundColor="blue" />
   </screen>
   <!-- Extension Manager -->
