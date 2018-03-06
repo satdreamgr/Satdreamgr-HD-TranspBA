@@ -222,10 +222,6 @@
   </screen>
   <!-- Screen TB STB Template -->
   <screen name="TBSTBButtons" flags="wfNoBorder">
-    <widget objectTypes="red,Button,Label" name="red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget objectTypes="green,Button,Label" name="green" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget objectTypes="yellow,Button,Label" name="yellow" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
-    <widget objectTypes="blue,Button,Label" name="blue" position="940,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <widget objectTypes="key_red,Button,Label" name="key_red" position="340,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <widget objectTypes="key_green,Button,Label" name="key_green" position="540,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="740,600" size="200,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
@@ -2734,7 +2730,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="frequency_value" position="482,495" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
     <widget name="symbolrate_value" position="481,524" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
     <widget name="fec_value" position="482,555" size="120,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
-    <widget name="snr_db" position="845,465" size="70,20" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" font="Regular; 20" halign="center" />
+    <widget name="snr_db" position="840,465" size="90,20" backgroundColor="transpBA" foregroundColor="unff0000" transparent="1" font="Regular; 20" halign="center" />
     <widget name="lock_on" zPosition="2" position="960,463" size="25,24" pixmap="skin_default/icons/lock_on.png" alphatest="on" />
     <widget name="lock_off" zPosition="1" position="960,463" size="25,24" pixmap="skin_default/icons/lock_off.png" alphatest="on" />
     <widget name="SNR" position="740,494" size="70,20" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" halign="right" />
@@ -3012,7 +3008,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
         }
       </convert>
     </widget>
-    <widget source="status" render="Label" position="800,530" zPosition="10" size="320,50" halign="center" valign="center" font="Regular; 18" transparent="1" shadowColor="black" shadowOffset="-1,-1" foregroundColor="white" backgroundColor="blue" />
+    <widget source="status" render="Label" position="800,530" zPosition="10" size="320,50" halign="center" valign="center" font="Regular; 18" transparent="1" foregroundColor="white" backgroundColor="blue" />
     <eLabel name="" position="800,530" size="320,50" foregroundColor="blue" backgroundColor="blue" />
   </screen>
   <!-- Extension Manager -->
@@ -4188,10 +4184,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="YoutubeTVWindow" position="0,0" size="1280,720" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <widget name="infomation" position="330,150" size="790,375" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
-    <widget name="startdesc" position="0,0" size="0,0" font="Regular; 0" />
-    <!-- dummy input -->
-    <widget name="helpdesc" position="0,0" size="0,0" font="Regular; 0" />
-    <!-- dummy input -->
+    <widget name="startdesc" position="0,0" size="0,0" /> <!-- hidden -->
+    <widget name="helpdesc" position="0,0" size="0,0" /> <!-- hidden -->
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/youtube.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
