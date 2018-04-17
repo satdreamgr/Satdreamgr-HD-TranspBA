@@ -415,7 +415,7 @@
       <convert type="TranspBAAlwaysTrue" />
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="2" font="Regular; 32" valign="center" halign="center" noWrap="1" foregroundColor="blue" />
+    <widget source="title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="2" font="Regular; 32" valign="center" halign="center" noWrap="1" foregroundColor="white" />
     <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
@@ -570,12 +570,39 @@
       <convert type="MenuEntryCompare">user_interface</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/repair-expert.png" zPosition="5" position="240,296" size="128,128">
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/information/about.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">gui_settings</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/user-interface.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">expert_selection</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/time.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">system_time_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <screen name="menu_gui" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <panel name="MenuTemplate" />
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/language.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">language_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/timezone.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">timezone_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/epg-settings.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">epg_settings</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/user-interface.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">user_interface</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/skin.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">skin_selector</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
@@ -616,6 +643,10 @@
   </screen>
   <screen name="menu_expert" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">accesslevel_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/customize.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">usage_setup</convert>
       <convert type="ConditionalShowHide" />
@@ -755,6 +786,10 @@
     </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/cable.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">cablescan</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/menu-scan/fallback.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">fallbacktuner_settings</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
