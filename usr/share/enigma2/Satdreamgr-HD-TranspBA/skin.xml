@@ -80,22 +80,22 @@
   <!-- Parameters -->
   <parameters>
     <parameter name="AboutHddSplit" value="1" />
-    <parameter name="FileListName" value="68, 4, 1000, 34" />
-    <parameter name="FileListIcon" value="7, 4, 52, 37" />
-    <parameter name="FileListMultiName" value="68, 3, 1000, 32" />
-    <parameter name="FileListMultiIcon" value="45, 4, 30, 30" />
-    <parameter name="FileListMultiLock" value="2, 0, 36, 36" />
-    <parameter name="PlayListName" value="38, 2, 1000, 34" />
-    <parameter name="PlayListIcon" value="7, 7, 24, 24" />
-    <parameter name="ChoicelistDash" value="0, 0, 800, 25" />
-    <parameter name="ChoicelistName" value="45, 0, 800, 25" />
-    <parameter name="ChoicelistIcon" value="5, 2, 35, 25" />
-    <parameter name="PluginBrowserName" value="120, 0, 25" />
-    <parameter name="PluginBrowserDescr" value="120, 26, 22" />
-    <parameter name="PluginBrowserIcon" value="10, 5, 100, 40" />
-    <parameter name="PluginBrowserDownloadName" value="80, 0, 25" />
-    <parameter name="PluginBrowserDownloadDescr" value="80, 26, 25" />
-    <parameter name="PluginBrowserDownloadIcon" value="10, 0, 60, 50" />
+    <parameter name="FileListName" value="68,4,1000,34" />
+    <parameter name="FileListIcon" value="7,4,52,37" />
+    <parameter name="FileListMultiName" value="68,3,1000,32" />
+    <parameter name="FileListMultiIcon" value="45,4,30,30" />
+    <parameter name="FileListMultiLock" value="2,0,36,36" />
+    <parameter name="PlayListName" value="38,2,1000,34" />
+    <parameter name="PlayListIcon" value="7,7,24,24" />
+    <parameter name="ChoicelistDash" value="0,0,800,25" />
+    <parameter name="ChoicelistName" value="45,0,800,25" />
+    <parameter name="ChoicelistIcon" value="5,2,35,25" />
+    <parameter name="PluginBrowserName" value="120,0,25" />
+    <parameter name="PluginBrowserDescr" value="120,26,22" />
+    <parameter name="PluginBrowserIcon" value="10,5,100,40" />
+    <parameter name="PluginBrowserDownloadName" value="80,0,25" />
+    <parameter name="PluginBrowserDownloadDescr" value="80,26,25" />
+    <parameter name="PluginBrowserDownloadIcon" value="10,0,60,50" />
   </parameters>
   <!-- Main screen colors (id=0 for Menu's, id=1 for LCD) -->
   <windowstyle type="skinned" id="0">
