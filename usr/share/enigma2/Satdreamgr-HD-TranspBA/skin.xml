@@ -653,11 +653,11 @@
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/iconssc/led-display.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">vfd_ini</convert>
       <convert type="ConditionalShowHide" />
-    </widget>    
+    </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">av_setup</convert>
       <convert type="ConditionalShowHide" />
-    </widget>    
+    </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/subtitles.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">subtitle_setup</convert>
       <convert type="ConditionalShowHide" />
@@ -677,7 +677,7 @@
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/video-tuning.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">video_finetune</convert>
       <convert type="ConditionalShowHide" />
-    </widget>    
+    </widget>
   </screen>
   <screen name="menu_gui" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
@@ -1723,53 +1723,46 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Message Box Simple -->
-  <screen name="MessageBoxSimple" position="center,center" size="640,10" title="Message" zPosition="10" flags="wfNoBorder" backgroundColor="transpBA">
-    <widget source="Title" render="Label" position="2,2" size="200,20" backgroundColor="transpBA" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
-    <widget name="text" position="65,8" size="520,0" font="Regular;22" />
+  <screen name="MessageBoxSimple" position="340,175" size="600,10" title="Message">
+    <widget name="text" position="110,8" size="680,0" font="Regular; 22" />
     <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_error.png" position="30,30" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_question.png" position="30,30" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_info.png" position="30,30" size="53,53" alphatest="blend" />
-    <widget name="list" position="100,100" size="480,375" />
+    <widget name="list" position="20,95" size="760,300" scrollbarMode="showOnDemand" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" />
     <applet type="onLayoutFinish">
+# this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
-if self.timerRunning:
-	titleheight = 20
-else:
-	titleheight = 0
-	self.setTitle("")
+
 orgwidth = self.instance.size().width()
-orgheight = self.instance.size().height()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
-textsize = (textsize[0] + 50, textsize[1] + 20)
-wsizex = textsize[0] + 60
-wsizey = textsize[1]
-lenlist = len(self.list)*25
-if (lenlist &gt; 125):
-	lenlist = 125
-if (64 &gt; wsizey):
-	wsizey = 64
+
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 80, textsize[1] + 80)
+offset = 20
 if self.type == self.TYPE_YESNO:
-	wsizey += lenlist + 10
-if (280 &gt; wsizex):
-	wsizex = 280
-wsize = (wsizex, wsizey + titleheight)
+    offset = 100
+wsizex = textsize[0] + 120
+wsizey = textsize[1] + offset
+if (600 &gt; wsizex):
+    wsizex = 600
+wsize = (wsizex, wsizey)
+
+# resize
 self.instance.resize(eSize(*wsize))
-self["text"].instance.move(ePoint(65, 8 + titleheight))
+
+# resize label
 self["text"].instance.resize(eSize(*textsize))
-self["ErrorPixmap"].instance.move(ePoint(5, 5 + titleheight))
-self["ErrorPixmap"].instance.resize(eSize(53,53))
-self["QuestionPixmap"].instance.move(ePoint(5, 5 + titleheight))
-self["QuestionPixmap"].instance.resize(eSize(53,53))
-self["InfoPixmap"].instance.move(ePoint(5, 5 + titleheight))
-self["InfoPixmap"].instance.resize(eSize(53,53))
-if self.type == self.TYPE_YESNO:
-	listsize = (wsizex-4, lenlist)
-	self["list"].instance.move(ePoint(2, wsizey - lenlist + titleheight - 2))
-	self["list"].instance.resize(eSize(*listsize))
+
+# move list
+listsize = (wsizex - 20, 100)
+self["list"].instance.move(ePoint(10, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+
+# center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
-	</applet>
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey) / 2))
+    </applet>
   </screen>
   <!-- Choice Box -->
   <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder" backgroundColor="transparent">
@@ -2495,9 +2488,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="session.CurrentService" render="Label" position="529,609" size="140,20" transparent="1" zPosition="3" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="264,609" size="41,20" zPosition="3" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">721,1980</convert>
+    <widget source="session.CurrentService" render="Pixmap" position="264,609" size="41,20" zPosition="4" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="312,609" size="56,20" zPosition="3" alphatest="blend">
