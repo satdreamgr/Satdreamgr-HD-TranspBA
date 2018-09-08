@@ -2119,21 +2119,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Numerical Text Input Help Dialog -->
-  <screen name="NumericalTextInputHelpDialog" position="0,0" size="1280,71" flags="wfNoBorder" backgroundColor="transparent" zPosition="10">
-    <eLabel position="28,29" zPosition="-12" size="1224,40" backgroundColor="white" transparent="0" font="Regular; 0" foregroundColor="white" />
-    <eLabel position="30,31" zPosition="-11" size="1220,36" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="transparent" />
-    <widget name="key1" position="34,36" size="100,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" transparent="0" foregroundColor="un1f771f" />
-    <widget name="key2" position="138,36" size="100,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" foregroundColor="un11aaff" />
-    <widget name="key3" position="241,36" size="100,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" zPosition="0" foregroundColor="un1f771f" />
-    <widget name="key4" position="344,36" size="100,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
-    <widget name="key5" position="446,36" size="100,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
-    <widget name="key6" position="548,36" size="100,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un1f771f" />
-    <widget name="key7" position="650,36" size="120,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
-    <widget name="key8" position="771,36" size="100,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un1f771f" />
-    <widget name="key9" position="871,36" size="150,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un11aaff" />
-    <widget name="help1" position="1185,36" size="30,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" />
-    <widget name="key0" position="1023,36" size="160,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" foregroundColor="un1f771f" />
-    <widget name="help2" position="1218,36" size="30,24" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" />
+  <screen name="NumericalTextInputHelpDialog" position="center,450" size="514,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
+    <eLabel position="0,0" size="514,164" backgroundColor="transpBA" zPosition="-1" />
+    <widget name="key1" position="2,2" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key2" position="172,2" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key3" position="342,2" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key4" position="2,42" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key5" position="172,42" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key6" position="342,42" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key7" position="2,82" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key8" position="172,82" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key9" position="342,82" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="help1" position="2,122" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="key0" position="172,122" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <widget name="help2" position="342,122" size="170,40" font="Regular;20" valign="center" halign="center" />
+    <eLabel name="" position="-1,-1" size="517,167" backgroundColor="white" zPosition="-1" />
   </screen>
   <!-- Virtual Keyboard -->
   <screen name="VirtualKeyBoard" title="Virtual keyboard" position="0,0" size="1280,720" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
@@ -3960,8 +3960,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="TranscodingSetup" title="Transcoding Setup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="PTTemplate" />
     <eLabel name="" position="398,457" size="667,6" backgroundColor="transparent" />
-    <widget name="content" position="411,538" size="500,22" font="Regular; 22" backgroundColor="transpBA" />
-    <widget name="config" position="411,150" font="Regular; 22" size="634,60" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
+    <widget name="content" position="411,472" size="634,26" font="Regular; 22" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
+    <widget name="config" position="411,150" font="Regular; 22" size="634,100" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
     <ePixmap name="" position="240,296" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/transcoding.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
   <!-- BlindScan -->
