@@ -1080,7 +1080,7 @@
   <screen name="Volume" position="58,72" size="322,57" title="Volume" backgroundColor="transparent2" zPosition="99" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/volume.png" position="0,0" size="320,55" backgroundColor="transpBA"  transparent="0" borderWidth="1" borderColor="white" />
     <widget name="Volume" pixmap="Satdreamgr-HD-TranspBA/icons/volumeb.png" position="60,22" size="175,10" transparent="0" zPosition="1" backgroundColor="blue" foregroundColor="blue" />
-    <widget name="VolumeText" font="Regular;33" transparent="1" foregroundColor="white" borderWidth="3" halign="center" position="240,7" size="75,36" zPosition="2"/>    
+    <widget name="VolumeText" font="Regular;33" transparent="1" foregroundColor="white" backgroundColor="black" halign="center" position="240,7" size="75,36" zPosition="2"/>    
   </screen>
   <screen name="Mute" title="Mute" position="48,232" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons//mute.png" position="0,0" size="64,64" zPosition="-5" alphatest="on" />
