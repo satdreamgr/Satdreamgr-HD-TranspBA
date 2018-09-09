@@ -2047,7 +2047,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="list" position="439,281" size="540,225" selectionDisabled="1" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="prompt" position="437,171" size="548,25" font="Regular; 22" noWrap="1" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" halign="left" valign="center" />
     <widget name="locale" position="438,540" size="467,25" font="Regular;20" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
-    <widget name="mode" position="917,540" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" zPosition="2" backgroundColor="transpBA" render="Label" foregroundColor="white" />
+    <widget name="mode" position="917,540" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
