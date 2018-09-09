@@ -1067,20 +1067,20 @@
     <ePixmap name="" position="651,556" size="20,20" pixmap="Satdreamgr-HD-TranspBA/infobar/cpu.png" alphatest="blend" zPosition="11" />
     <widget backgroundColor="NLPreBlack" position="680,556" size="50,20" font="Regular; 18" halign="left" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
       <convert type="TranspBACPUinfo">CPUtemp</convert>
-    </widget>  
+    </widget>
     <widget source="session.CurrentService" render="Label" position="42,660" zPosition="3" size="193,20" font="Regular; 20" transparent="1" halign="left" backgroundColor="transpBA" foregroundColor="jeaune">
       <convert type="TranspBACamd">Camd</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="237,660" size="980,20" transparent="1" zPosition="3" font="Regular; 20" halign="left" backgroundColor="transpBA" foregroundColor="grey">
       <convert type="TranspBACaidInfo2">
       </convert>
-    </widget>    
+    </widget>
   </screen>
   <!-- Volume -->
   <screen name="Volume" position="58,72" size="322,57" title="Volume" backgroundColor="transparent2" zPosition="99" flags="wfNoBorder">
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/volume.png" position="0,0" size="320,55" backgroundColor="transpBA"  transparent="0" borderWidth="1" borderColor="white" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons/volume.png" position="0,0" size="320,55" backgroundColor="transpBA" transparent="0" borderWidth="1" borderColor="white" />
     <widget name="Volume" pixmap="Satdreamgr-HD-TranspBA/icons/volumeb.png" position="60,22" size="175,10" transparent="0" zPosition="1" backgroundColor="blue" foregroundColor="blue" />
-    <widget name="VolumeText" font="Regular;33" transparent="1" foregroundColor="white" backgroundColor="black" halign="center" position="240,7" size="75,36" zPosition="2"/>    
+    <widget name="VolumeText" font="Regular;33" transparent="1" foregroundColor="white" backgroundColor="black" halign="center" position="240,7" size="75,36" zPosition="2" />
   </screen>
   <screen name="Mute" title="Mute" position="48,232" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons//mute.png" position="0,0" size="64,64" zPosition="-5" alphatest="on" />
@@ -2042,10 +2042,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="VirtualKeyBoard" title="Virtual keyboard" position="0,0" size="1280,720" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/keyboard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <ePixmap pixmap="skin_default/vkey_text.png" position="439,210" size="542,52" zPosition="0" alphatest="blend" />
-    <widget name="header" position="439,163" size="500,26" transparent="1" noWrap="1" font="Regular; 22" valign="top" backgroundColor="transpBA" foregroundColor="white" />
+    <ePixmap pixmap="skin_default/vkey_text.png" position="435,209" size="550,52" zPosition="0" alphatest="blend" />
     <widget name="text" position="443,219" size="536,34" transparent="1" noWrap="1" font="Regular; 26" valign="center" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="list" position="439,281" size="540,225" selectionDisabled="1" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="prompt" position="437,171" size="548,25" font="Regular; 22" noWrap="1" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" halign="left" valign="center" />
+    <widget name="locale" position="438,540" size="467,25" font="Regular;20" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="mode" position="917,540" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" zPosition="2" backgroundColor="transpBA" render="Label" foregroundColor="white" />
+    <widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
