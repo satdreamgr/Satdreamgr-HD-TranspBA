@@ -1216,6 +1216,8 @@
     <widget source="Title" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
       <convert type="TranspBARefString">CurrentRef</convert>
     </widget>
+    <widget name="epg_eventname" position="0,0" size="0,0" transparent="1" font="Regular;22" halign="left" foregroundColor="grey" />
+    <widget name="channel" position="300,470" size="918,24" zPosition="4" transparent="1" font="Regular;22" halign="center" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- EPG Selection Multi -->
   <screen name="EPGSelectionMulti" flags="wfNoBorder" position="0,0" size="1280,720" title="EPG Selection" backgroundColor="transparent">
@@ -1560,7 +1562,7 @@
   <!-- About Screen -->
   <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <widget name="AboutScrollLabel" font="Regular; 22" position="330,150" size="790,405" zPosition="0" transparent="1" split="1" dividechar=":" colposition="0" foregroundColor="white" backgroundColor="transpBA" />
+    <widget name="AboutScrollLabel" font="Regular; 22" position="330,150" size="790,405" zPosition="0" transparent="1" foregroundColor="white" backgroundColor="transpBA" split="1" dividechar=":" colposition="0" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
@@ -1583,6 +1585,7 @@
     <widget name="pused" position="565,489" size="70,20" font="Regular; 14" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
     <widget name="slide" position="640,100" size="18,520" render="Progress" zPosition="1" borderWidth="1" orientation="orBottomToTop" />
     <widget name="info" position="720,475" size="420,150" font="Regular; 20" zPosition="3" halign="left" backgroundColor="secondBG" transparent="1" />
+    <widget name="params" position="300,654" size="918,24" font="Regular; 22" zPosition="3" halign="left" backgroundColor="transpBA" transparent="1" foregroundColor="white" />
   </screen>
   <screen name="CommitInfo" title="Latest Commits" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TGTTemplate" />
@@ -1631,6 +1634,7 @@
     <widget name="ErrorPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_error.png" position="30,30" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_question.png" position="30,30" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/input_info.png" position="30,30" size="53,53" alphatest="blend" />
+    <widget name="WarningPixmap" pixmap="Satdreamgr-HD-TranspBA/icons/warning.png" position="30,30" size="53,53" alphatest="blend" />
     <widget name="list" position="20,95" size="760,300" scrollbarMode="showOnDemand" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
@@ -1982,6 +1986,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="config" position="330,145" size="790,327" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" backgroundColor="transpBA" />
     <eLabel name="" position="310,480" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,138" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,50" zPosition="4" size="0,0" transparent="1" alphatest="blend" />
   </screen>
   <!-- HDMI-CEC Setup -->
   <screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI-CEC Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -3960,7 +3965,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="MediaPlayerLCDScreen" position="0,0" size="132,64" id="1">
+  <screen name="MediaPlayerLCDScreen" position="0,0" size="132,64">
     <widget name="text1" position="4,0" size="132,35" font="Regular; 16" />
     <widget name="text3" position="4,36" size="132,14" font="Regular; 10" />
     <widget name="text4" position="4,49" size="132,14" font="Regular; 10" />
