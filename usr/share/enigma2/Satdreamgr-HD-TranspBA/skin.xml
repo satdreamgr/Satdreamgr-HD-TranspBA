@@ -1971,9 +1971,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <!-- Text Box -->
   <screen name="TextBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA\buttons/key_exit.png" position="331,614" size="40,30" zPosition="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_exit.png" position="150,610" size="40,30" zPosition="1" alphatest="blend" />
     <widget name="text" position="330,150" size="790,405" transparent="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" />
-    <eLabel text="'Exit' = Leave message" backgroundColor="transpBA" font="Regular; 22" halign="left" position="376,616" size="160,26" transparent="1" zPosition="1" foregroundColor="white" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/text.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
