@@ -2711,7 +2711,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen flags="wfNoBorder" name="VideoWizard" position="0,0" size="1280,720" backgroundColor="transparent" transparent="0">
     <panel name="N2Template" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
+    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Select video output" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="2" valign="center" />
     <widget name="text" backgroundColor="transpBA" font="Regular; 22" position="330,150" size="785,150" halign="center" valign="center" transparent="1" zPosition="3" />
     <widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="330,330" size="785,210" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TemplatedMultiContent">
@@ -2729,10 +2729,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- Language Wizard -->
-  <screen name="LanguageWizard" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent" title="Welcome...">
+  <screen name="LanguageWizard" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent" title="Language selection">
     <panel name="N2Template" />
     <ePixmap name="" position="161,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/icons/wizard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" backgroundColor="NLPreBlack" foregroundColor="jeaune" text="Language Selection" transparent="1" zPosition="2" valign="center" />
     <widget name="text" font="Regular; 22" position="500,600" size="557,50" halign="right" valign="center" transparent="1" zPosition="3" foregroundColor="white" backgroundColor="NLPreBlack" />
     <widget source="languages" render="Listbox" position="324,154" transparent="1" size="795,400" scrollbarMode="showOnDemand" zPosition="1">
       <convert type="TemplatedMultiContent">
@@ -2847,9 +2846,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="NetworkWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="N2Template" />
-    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Default settings" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="1" valign="center" />
+    <eLabel font="Regular; 28" position="290,69" size="700,50" halign="center" text="Network setup" backgroundColor="NLPreBlack" foregroundColor="jeaune" transparent="1" zPosition="1" valign="center" />
     <widget name="rc" position="146,122" size="154,474" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend" />
     <widget name="arrowdown" position="203,301" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
     <widget name="arrowdown2" position="203,301" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend" />
