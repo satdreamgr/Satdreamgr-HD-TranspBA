@@ -1095,7 +1095,35 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/icons//mute.png" position="0,0" size="64,64" zPosition="-5" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" title="Audio" backgroundColor="transparent">
-    <panel name="PTTemplate" />
+    <eLabel position="231,205" zPosition="-1" size="146,310" backgroundColor="transpBA" transparent="0" />
+    <eLabel position="399,120" zPosition="-11" size="666,480" backgroundColor="transpBA" transparent="0" />
+    <eLabel position="213,606" zPosition="-11" size="852,60" backgroundColor="NLPreBlack" transparent="0" />
+    <eLabel position="213,55" zPosition="-11" size="852,60" backgroundColor="NLPreBlack" transparent="0" />
+    <widget source="Title" render="Label" position="290,60" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <widget source="global.CurrentTime" render="Label" position="213,165" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
+      <convert type="ClockToText">Format:%d-%m-%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="213,127" size="180,29" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="213,538" size="130,50" backgroundColor="blue" transparent="1" font="Regular; 38" halign="right" valign="center" foregroundColor="white">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="338,546" size="45,20" backgroundColor="blue" transparent="1" font="Regular; 20" halign="left" valign="center" foregroundColor="jeaune">
+      <convert type="ClockToText">Format: :%S</convert>
+    </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="219,70" size="24,32" transparent="1" zPosition="5" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="1032,70" size="23,32" transparent="1" zPosition="5" alphatest="blend" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1006,74" size="24,24" alphatest="blend" />
+    <eLabel name="" position="213,115" size="180,491" backgroundColor="blue" zPosition="-3" />
+    <eLabel name="" position="213,606" size="213,6" zPosition="1" backgroundColor="red" />
+    <eLabel name="" position="426,606" size="213,6" zPosition="1" backgroundColor="green" />
+    <eLabel name="" position="639,606" size="213,6" zPosition="1" backgroundColor="yellow" />
+    <eLabel name="" position="852,606" size="213,6" zPosition="1" backgroundColor="blue" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,211" size="135,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line1.png" position="235,508" size="135,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,130" size="650,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="410,590" size="650,1" scale="1" zPosition="10" alphatest="blend" />
     <widget name="config" position="463,140" size="580,120" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" zPosition="1" />
     <ePixmap name="" position="239,290" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/audio.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="key_red" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_red.png" position="420,140" size="30,30" alphatest="on" zPosition="2">
