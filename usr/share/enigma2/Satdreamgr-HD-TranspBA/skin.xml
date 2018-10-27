@@ -531,6 +531,10 @@
       <convert type="MenuEntryCompare">cam_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/autobackup.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">autobackup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>    
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">ci_setup</convert>
       <convert type="ConditionalShowHide" />
