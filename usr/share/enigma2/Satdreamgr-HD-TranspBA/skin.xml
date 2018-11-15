@@ -534,7 +534,7 @@
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/autobackup.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">autobackup</convert>
       <convert type="ConditionalShowHide" />
-    </widget>    
+    </widget>
     <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/common-interface.png" zPosition="5" position="240,296" size="128,128">
       <convert type="MenuEntryCompare">ci_setup</convert>
       <convert type="ConditionalShowHide" />
@@ -896,7 +896,7 @@
   <screen name="MenuSort" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="TBTemplate" />
     <widget source="menu" render="Listbox" enableWrapAround="1" position="330,150" size="790,400" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="StringList"/>
+      <convert type="StringList" />
     </widget>
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/checklist.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
@@ -3635,6 +3635,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <screen name="SDG_Likra" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/settings.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="list" render="Listbox" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="TemplatedMultiContent">
+        {
+          "template": [
+            MultiContentEntryText(pos = (10,5),  size = (450,38), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+            MultiContentEntryText(pos = (680,5), size = (120,38), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+          ],
+          "fonts": [ gFont("Regular", 22) ],
+          "itemHeight": 35
+        }
+      </convert>
+    </widget>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
   <!-- Settings -->
   <screen name="SDG_ActionBox" position="center,center" size="560,70" title=" ">
     <widget alphatest="on" name="logo" position="10,10" size="48,48" transparent="1" zPosition="2" backgroundColor="background" />
@@ -4067,18 +4085,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <screen name="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" transparent="0">
-	<eLabel text="Tuners in Use:" position="50,50" size="400,100" font="Regular;50"/>
-	<widget source="session.FrontendInfo" render="Label" position="450,50" size="1000,100" halign="left" font="Regular;50">
-		<convert type="FrontendInfo">STRING,24,0</convert>
-	</widget>
-	<eLabel text="Current Time:" position="50,150" size="400,100" font="Regular;50"/>
-	<widget source="global.CurrentTime" render="Label" position="450,150" size="512,100" font="Regular;50" halign="left">
-	  <convert type="ClockToText">Format:%F %H:%M</convert>
-	</widget>
-	<eLabel text="Streaming Info:" position="50,250" size="400,100" font="Regular;50"/>
-	<widget source="session.CurrentService" render="Label" position="450,250" size="1620,800" font="Regular;50" halign="left" valign="top" noWrap="1">
-	  <convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
-	</widget>
-	</screen>    
+  <screen name="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transpBA" transparent="0">
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1120,90" size="24,24" alphatest="blend" />
+    <eLabel position="center,center" zPosition="-12" size="1184,620" backgroundColor="listbox" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel position="50,52" zPosition="-10" size="1180,616" backgroundColor="transpBA" transparent="0" font="Regular; 0" foregroundColor="white" />
+    <eLabel text="SatDreamGr!" position="56,96" size="1168,62" font="Regular; 60" foregroundColor="un11aaff" backgroundColor="transpBA" halign="center" transparent="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="265,300" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="265,446" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="265,590" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="265,165" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel text="Tuners in Use:" position="266,262" size="300,32" font="Regular; 24" />
+    <widget source="session.FrontendInfo" render="Label" position="707,262" size="300,32" halign="right" font="Regular; 24">
+      <convert type="FrontendInfo">STRING,24,0</convert>
+    </widget>
+    <eLabel text="Current Time:" position="266,405" size="300,32" font="Regular; 24" />
+    <widget source="global.CurrentTime" render="Label" position="712,405" size="300,32" font="Regular; 24" halign="right">
+      <convert type="ClockToText">Format:%F %H:%M</convert>
+    </widget>
+    <eLabel text="Streaming Info:" position="266,550" size="300,32" font="Regular; 24" backgroundColor="transpBA" />
+    <widget source="session.CurrentService" render="Label" position="569,550" size="600,32" font="Regular; 24" halign="center" valign="center" noWrap="1" transparent="1">
+      <convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
+    </widget>
+  </screen>
 </skin>
