@@ -146,9 +146,9 @@
     <sub name="Subtitle_Bold" font="Replacement; 35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
     <sub name="Subtitle_Italic" font="Regular; 35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
   </subtitles>
-  <!-- Screen PT PST Template -->
+  <!-- Screen Simple Template -->  
   <screen name="Simple" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
-    <eLabel name="" position="20,120" size="680,480" />
+    <eLabel name="" position="20,120" size="680,479" />
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="669,72" size="24,24" alphatest="blend" zPosition="10" />
     <widget objectTypes="key_red,Button,Label" name="key_red" position="20,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
     <widget objectTypes="key_green,Button,Label" name="key_green" position="190,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
@@ -158,16 +158,17 @@
     <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="190,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
     <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="360,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
     <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="530,610" size="170,54" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,124" size="680,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,596" size="680,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,123" size="680,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,595" size="680,1" scale="1" zPosition="10" alphatest="blend" />
     <widget source="Title" render="Label" position="20,60" size="680,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 26" valign="center" halign="center" noWrap="1" foregroundColor="white" />
-    <eLabel name="" position="20,55" size="680,60" />
+    <eLabel name="" position="20,55" size="680,60" backgroundColor="NLPreBlack" />
     <eLabel name="" position="20,604" size="680,60" backgroundColor="NLPreBlack" />
     <eLabel name="" position="360,604" size="170,6" backgroundColor="orange" zPosition="2" />
     <eLabel name="" position="530,604" size="170,6" backgroundColor="blue" zPosition="2" />
     <eLabel name="" position="190,604" size="170,6" backgroundColor="green" zPosition="2" />
     <eLabel name="" position="20,604" size="170,6" backgroundColor="red" zPosition="2" />
   </screen>  
+  <!-- Screen PT PST Template -->
   <screen name="PTPSTButtons" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
     <widget objectTypes="key_red,Button,Label" name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <widget objectTypes="key_green,Button,Label" name="key_green" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
@@ -4099,6 +4100,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <!-- Select Image -->  
   <screen name="SelectImage" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
     <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/select.png" zPosition="4" transparent="0" alphatest="blend" />
@@ -4106,6 +4108,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <!-- Standby -->  
   <screen name="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transpBA" transparent="0">
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1120,90" size="24,24" alphatest="blend" />
     <eLabel position="center,center" zPosition="-12" size="1184,620" backgroundColor="listbox" transparent="0" font="Regular; 0" foregroundColor="white" />
@@ -4128,6 +4131,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
       <convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
     </widget>
   </screen>
+  <!-- Oscam Statuts -->  
   <screen name="OscamStatus" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="Simple" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_menu.png" position="38,620" size="40,30" transparent="1" alphatest="blend" zPosition="3" />
@@ -4289,6 +4293,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget render="Label" source="ButtonRedtext" position="20,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
     <widget render="Label" source="ButtonGreentext" position="190,610" size="170,55" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
   </screen>
+  <!-- EPG Refresh -->  
   <screen name="EPGRefreshConfiguration" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="Simple" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_info.png" position="22,563" size="40,30" alphatest="blend" transparent="1" zPosition="6" />
@@ -4308,4 +4313,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <panel name="Simple" />
     <widget name="config" position="30,133" size="660,450" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
   </screen>
+  <!-- Bitrate Viewer -->  
+  <screen name="BitrateViewerSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget name="config" position="30,133" size="660,255" zPosition="1" font="Regular; 18" foregroundColor="white" backgroundColor="transpBA" />
+  </screen>  
 </skin>
