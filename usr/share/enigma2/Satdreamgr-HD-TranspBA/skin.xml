@@ -147,6 +147,27 @@
     <sub name="Subtitle_Italic" font="Regular; 35" foregroundColor="unffffff" shadowColor="#40101010" shadowOffset="3,3" />
   </subtitles>
   <!-- Screen PT PST Template -->
+  <screen name="Simple" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <eLabel name="" position="20,120" size="680,480" />
+    <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="669,72" size="24,24" alphatest="blend" zPosition="10" />
+    <widget objectTypes="key_red,Button,Label" name="key_red" position="20,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <widget objectTypes="key_green,Button,Label" name="key_green" position="190,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="360,610" size="170,54" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <widget objectTypes="key_blue,Button,Label" name="key_blue" position="530,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="20,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="190,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="360,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="530,610" size="170,54" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,124" size="680,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,596" size="680,1" scale="1" zPosition="10" alphatest="blend" />
+    <widget source="Title" render="Label" position="20,60" size="680,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 26" valign="center" halign="center" noWrap="1" foregroundColor="white" />
+    <eLabel name="" position="20,55" size="680,60" />
+    <eLabel name="" position="20,604" size="680,60" backgroundColor="NLPreBlack" />
+    <eLabel name="" position="360,604" size="170,6" backgroundColor="orange" zPosition="2" />
+    <eLabel name="" position="530,604" size="170,6" backgroundColor="blue" zPosition="2" />
+    <eLabel name="" position="190,604" size="170,6" backgroundColor="green" zPosition="2" />
+    <eLabel name="" position="20,604" size="170,6" backgroundColor="red" zPosition="2" />
+  </screen>  
   <screen name="PTPSTButtons" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
     <widget objectTypes="key_red,Button,Label" name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
     <widget objectTypes="key_green,Button,Label" name="key_green" position="426,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
@@ -4106,5 +4127,185 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="session.CurrentService" render="Label" position="569,550" size="600,32" font="Regular; 24" halign="center" valign="center" noWrap="1" transparent="1">
       <convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
     </widget>
+  </screen>
+  <screen name="OscamStatus" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_menu.png" position="38,620" size="40,30" transparent="1" alphatest="blend" zPosition="3" />
+    <widget render="Label" source="title" position="20,60" size="680,50" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 28" backgroundColor="NLPreBlack" halign="center" />
+    <widget render="Label" source="KeyMenuText" position="71,551" size="560,34" valign="center" halign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular;22" backgroundColor="transpBA" />
+    <widget source="menu" render="Listbox" position="30,124" size="660,370" scrollbarMode="showOnDemand" zPosition="1">
+      <convert type="TemplatedMultiContent">
+						{"template": [
+							MultiContentEntryPixmapAlphaTest(pos = (5, 4), size = (32, 32), png = 0),
+							MultiContentEntryText(pos = (50, 0), size = (640, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+						],
+						"fonts": [gFont("Regular", 22)],
+						"itemHeight": 40
+						}
+					</convert>
+    </widget>
+  </screen>
+  <screen name="StatusDataScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,60" size="680,50" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget render="Label" source="label0" position=" 20,130" size="160,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label1" position="180,130" size="150,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label2" position="326,130" size=" 34,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label3" position="360,130" size=" 90,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label4" position="450,130" size="250,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;17" />
+    <widget source="data" render="Listbox" position="20,153" size="680,288" zPosition="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+						{"template": [
+							MultiContentEntryText(pos = (  2, 2), size = (154, 24), font=0, flags = RT_HALIGN_LEFT, text = 0),
+							MultiContentEntryText(pos = (160, 2), size = (158, 24), font=0, flags = RT_HALIGN_LEFT, text = 1),
+							MultiContentEntryPixmapAlphaTest(pos = (310, 4), size = (16, 16), png = 2),
+							MultiContentEntryText(pos = (340, 2), size = ( 88, 24), font=0, flags = RT_HALIGN_LEFT, text = 3),
+							MultiContentEntryText(pos = (430, 2), size = (250, 24), font=0, flags = RT_HALIGN_LEFT, text = 4),
+						],
+						"fonts": [gFont("Regular", 20)],
+						"itemHeight": 24
+						}
+					</convert>
+    </widget>
+    <eLabel text="" position="20,450" size="680,2" transparent="0" backgroundColor="unffffff" />
+    <widget name="ButtonYellowtext" position="359,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" noWrap="1" backgroundColor="NLPreBlack" />
+    <widget name="ButtonBluetext" position="530,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" noWrap="1" backgroundColor="NLPreBlack" />
+  </screen>
+  <screen name="UserstatsScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,60" size="680,50" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget render="Label" source="label0" position="20,130" size="175,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label1" position="195,130" size="145,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label2" position="340,130" size="155,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label3" position="495,130" size="203,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget source="data" render="Listbox" position="20,153" size="680,288" scrollbarMode="showOnDemand" zPosition="1">
+      <convert type="TemplatedMultiContent">
+						{"template": [
+							MultiContentEntryPixmapAlphaTest(pos = (5, 4), size = (16, 16), png = 0),
+							MultiContentEntryText(pos = ( 30, 2), size = (140, 24), font=0, flags = RT_HALIGN_LEFT, text = 1),
+							MultiContentEntryText(pos = (175, 2), size = (140, 24), font=0, flags = RT_HALIGN_LEFT, text = 2),
+							MultiContentEntryText(pos = (320, 2), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 3),
+							MultiContentEntryText(pos = (475, 2), size = (205, 24), font=0, flags = RT_HALIGN_LEFT, text = 4),
+						],
+						"fonts": [gFont("Regular", 20)],
+						"itemHeight": 24
+						}
+					</convert>
+    </widget>
+    <eLabel text="" position="20,450" size="680,2" transparent="0" backgroundColor="unffffff" zPosition="1" />
+    <widget name="ButtonRedtext" position="20,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+    <widget name="ButtonGreentext" position="190,610" size="170,54" valign="center" halign="center" zPosition="3" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+  </screen>
+  <screen name="ReaderstatsScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,62" size="680,50" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget render="Label" source="lEMMerror" position="  0,130" size="175,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget render="Label" source="lEMMwritten" position="175,130" size="175,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget render="Label" source="lEMMskipped" position="350,130" size="175,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget render="Label" source="lEMMblocked" position="525,130" size="175,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget name="EMMerror" position="  0,170" size="175,20" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget name="EMMwritten" position="175,170" size="175,20" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget name="EMMskipped" position="350,170" size="175,20" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget name="EMMblocked" position="525,170" size="175,20" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18" backgroundColor="transpBA" />
+    <widget render="Label" source="label0" position=" 20,203" size=" 60,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label1" position=" 80,203" size="225,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label2" position="305,203" size="110,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label3" position="415,203" size="100,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label4" position="515,203" size=" 95,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label5" position="610,203" size=" 90,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget source="data" render="Listbox" position="20,225" size="680,288" scrollbarMode="showOnDemand" zPosition="1">
+      <convert type="TemplatedMultiContent">
+						{"template": [
+							MultiContentEntryText(pos = (  5, 2), size = ( 50, 24), font=0, flags = RT_HALIGN_RIGHT, text = 0),
+							MultiContentEntryText(pos = ( 65, 2), size = (215, 24), font=0, flags = RT_HALIGN_LEFT, text = 1),
+							MultiContentEntryText(pos = (285, 2), size = (105, 24), font=0, flags = RT_HALIGN_LEFT, text = 2),
+							MultiContentEntryText(pos = (400, 2), size = ( 95, 24), font=0, flags = RT_HALIGN_LEFT, text = 3),
+							MultiContentEntryText(pos = (500, 2), size = ( 90, 24), font=0, flags = RT_HALIGN_LEFT, text = 4),
+							MultiContentEntryText(pos = (590, 2), size = ( 90, 24), font=0, flags = RT_HALIGN_LEFT, text = 5),
+						],
+						"fonts": [gFont("Regular", 20)],
+						"itemHeight": 24
+						}
+					</convert>
+    </widget>
+  </screen>
+  <screen name="ReaderlistScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,60" size="680,50" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget render="Label" source="label0" position="20,130" size="210,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label1" position="230,130" size="130,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget render="Label" source="label2" position="360,130" size=" 60,20" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular;18" />
+    <widget source="data" render="Listbox" position="20,153" size="400,288" scrollbarMode="showOnDemand" zPosition="1">
+      <convert type="TemplatedMultiContent">
+						{"template": [
+							MultiContentEntryPixmapAlphaTest(pos = (5, 4), size = (16, 16), png = 0),
+							MultiContentEntryText(pos = ( 30, 2), size = (175, 24), font=0, flags = RT_HALIGN_LEFT, text = 1),
+							MultiContentEntryText(pos = (215, 2), size = (135, 24), font=0, flags = RT_HALIGN_LEFT, text = 2),
+							MultiContentEntryText(pos = (355, 2), size = ( 15, 24), font=0, flags = RT_HALIGN_LEFT, text = 3),
+						],
+						"fonts": [gFont("Regular", 20)],
+						"itemHeight": 24
+						}
+					</convert>
+    </widget>
+    <widget name="ButtonRedtext" position="20,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+    <widget name="ButtonGreentext" position="190,610" size="170,54" valign="center" halign="center" zPosition="3" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+  </screen>
+  <screen name="OscamRestartScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,60" size="680,50" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget render="Label" source="lversion" position="50,130" size="90,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="version" position="145,129" size="360,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="lrevision" position="50,149" size="90,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="revision" position="145,150" size="360,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="lstarttime" position="50,170" size="90,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="starttime" position="145,170" size="360,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="luptime" position="50,189" size="90,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="uptime" position="145,190" size="360,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="lreadonly" position="50,210" size="90,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="readonly" position="145,210" size="360,20" font="Regular;18" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget name="ButtonYellowtext" position="360,610" size="170,56" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+    <widget name="ButtonBluetext" position="530,610" size="170,56" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" noWrap="1" backgroundColor="NLPreBlack" />
+  </screen>
+  <screen name="OscamServerEntriesListConfigScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,60" size="680,50" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget name="list" position="30,130" size="660,288" scrollbarMode="showOnDemand" zPosition="1" />
+    <widget render="Label" source="ButtonGreentext" position="190,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+    <widget render="Label" source="ButtonYellowtext" position="360,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+    <widget render="Label" source="ButtonBluetext" position="529,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+  </screen>
+  <screen name="OscamServerEntryConfigScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,60" size="680,56" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget name="config" position="30,130" size="660,200" scrollbarMode="showOnDemand" zPosition="1" />
+    <widget render="Label" source="ButtonRedtext" position="20,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+    <widget render="Label" source="ButtonGreentext" position="190,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+  </screen>
+  <screen name="globalsConfigScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget render="Label" source="title" position="20,60" size="680,54" valign="center" zPosition="5" transparent="0" foregroundColor="white" font="Regular; 26" backgroundColor="NLPreBlack" halign="center" />
+    <widget name="config" position="30,130" size="660,200" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget render="Label" source="ButtonRedtext" position="20,610" size="170,54" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+    <widget render="Label" source="ButtonGreentext" position="190,610" size="170,55" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular; 22" backgroundColor="NLPreBlack" noWrap="1" />
+  </screen>
+  <screen name="EPGRefreshConfiguration" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_info.png" position="22,563" size="40,30" alphatest="blend" transparent="1" zPosition="6" />
+    <widget name="config" position="30,132" size="660,350" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="white" backgroundColor="transpBA" noWrap="1" />
+    <ePixmap pixmap="skin_default/div-h.png" position="20,483" zPosition="1" size="680,2" />
+    <widget source="help" render="Label" position="30,489" size="660,90" font="Regular;21" zPosition="1" />
+  </screen>
+  <screen name="EPGSaveLoadConfiguration" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget source="epgcachelocation" render="Label" position="30,452" size="660,50" zPosition="1" font="Regular;21" halign="left" valign="center" />
+    <widget name="config" position="30,130" size="660,315" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
+    <ePixmap pixmap="skin_default/div-h.png" position="20,448" zPosition="5" size="680,2" />
+    <ePixmap pixmap="skin_default/div-h.png" position="20,505" zPosition="5" size="680,2" />
+    <widget source="help" render="Label" position="30,510" size="660,83" font="Regular;21" zPosition="1" />
+  </screen>
+  <screen name="EPGRefreshServiceEditor" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget name="config" position="30,133" size="660,450" scrollbarMode="showOnDemand" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
   </screen>
 </skin>
