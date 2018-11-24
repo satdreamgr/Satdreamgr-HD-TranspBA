@@ -148,7 +148,7 @@
   </subtitles>
   <!-- Screen Simple Template -->  
   <screen name="Simple" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
-    <eLabel name="" position="20,120" size="680,479" />
+    <eLabel name="" position="20,120" size="680,479" zPosition="-10" />
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="669,72" size="24,24" alphatest="blend" zPosition="10" />
     <widget objectTypes="key_red,Button,Label" name="key_red" position="20,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
     <widget objectTypes="key_green,Button,Label" name="key_green" position="190,610" size="170,54" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
@@ -160,14 +160,14 @@
     <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="530,610" size="170,54" backgroundColor="NLPreBlack" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" noWrap="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,123" size="680,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line.png" position="20,595" size="680,1" scale="1" zPosition="10" alphatest="blend" />
-    <widget source="Title" render="Label" position="20,60" size="680,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 26" valign="center" halign="center" noWrap="1" foregroundColor="white" />
+    <widget source="Title" render="Label" position="30,55" size="640,60" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 26" valign="center" halign="center" foregroundColor="white" />
     <eLabel name="" position="20,55" size="680,60" backgroundColor="NLPreBlack" />
     <eLabel name="" position="20,604" size="680,60" backgroundColor="NLPreBlack" />
     <eLabel name="" position="360,604" size="170,6" backgroundColor="orange" zPosition="2" />
     <eLabel name="" position="530,604" size="170,6" backgroundColor="blue" zPosition="2" />
     <eLabel name="" position="190,604" size="170,6" backgroundColor="green" zPosition="2" />
     <eLabel name="" position="20,604" size="170,6" backgroundColor="red" zPosition="2" />
-  </screen>  
+  </screen>
   <!-- Screen PT PST Template -->
   <screen name="PTPSTButtons" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
     <widget objectTypes="key_red,Button,Label" name="key_red" position="213,612" size="213,50" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" />
@@ -484,6 +484,10 @@
       <convert type="MenuEntryCompare">ci_assign</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/setup/assign.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">auto_cam_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>    
   </screen>
   <screen name="menu_mainmenu" position="0,0" size="1280,720" transparent="0" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
@@ -762,6 +766,10 @@
       <convert type="MenuEntryCompare">sd_position_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/av-setup.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">autores_setup</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>    
   </screen>
   <screen name="menu_expert" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
@@ -4317,5 +4325,59 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="BitrateViewerSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
     <panel name="Simple" />
     <widget name="config" position="30,133" size="660,255" zPosition="1" font="Regular; 18" foregroundColor="white" backgroundColor="transpBA" />
+  </screen>  
+  <!-- Autocam Setup -->   
+  <screen name="CamsetupSelection" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_menu.png" position="582,620" size="40,30" transparent="1" alphatest="blend" zPosition="6" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_info.png" position="651,620" size="40,30" transparent="1" alphatest="blend" zPosition="6" />
+    <widget name="cam" zPosition="2" position="30,133" size="330,20" font="Regular; 18" halign="left" foregroundColor="cbblue" />
+    <widget name="server" zPosition="2" position="364,133" size="335,20" font="Regular; 18" halign="left" foregroundColor="cbblue" />
+    <widget name="entries" position="30,166" size="660,200" zPosition="1" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/AutoCamSetup/images/div-h.png" position="20,158" zPosition="2" size="680,2" />
+    <widget name="ecm" position="30,374" size="345,220" zPosition="5" font="Regular; 16" foregroundColor="white" backgroundColor="transpBA" transparent="0" />
+    <widget name="ecm1" position="377,374" size="320,220" zPosition="5" font="Regular; 18" foregroundColor="white" backgroundColor="transpBA" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/AutoCamSetup/images/div-h.png" position="20,369" zPosition="2" size="680,2" />
+    <widget name="key_red" position="20,610" zPosition="5" size="170,54" valign="center" halign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="key_green" position="190,610" zPosition="5" size="170,54" valign="center" halign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+  </screen>
+  <screen name="CamSetupScreen" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget name="red" position="20,610" zPosition="5" size="170,54" valign="center" halign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget name="green" position="190,610" zPosition="5" size="170,54" valign="center" halign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="config" position="30,133" size="660,160" font="Regular;20" foregroundColor="white" backgroundColor="transpBA" />
+  </screen>
+  <screen name="AdditionalAutoCamSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget name="red" position="20,610" zPosition="5" size="170,54" valign="center" halign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget name="green" position="190,610" zPosition="5" size="170,54" valign="center" halign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="config" position="30,133" size="660,160" font="Regular;20" foregroundColor="white" backgroundColor="transpBA" />
+  </screen>
+  <screen name="AutoCamListSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget name="key_red" position="20,610" zPosition="1" size="170,54" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="key_green" position="190,610" zPosition="1" size="170,54" font="Regular; 22" halign="center" valign="center" transparent="1" render="Label" backgroundColor="NLPreBlack" foregroundColor="white" />
+    <widget name="key_yellow" position="360,610" zPosition="1" size="170,54" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="key_blue" position="530,610" zPosition="1" size="170,54" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget source="list" render="Listbox" position="30,133" size="660,310" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 5), size = (420, 25), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+						MultiContentEntryText(pos = (50, 30), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
+						MultiContentEntryText(pos = (430, 13), size = (140, 24), font = 0, flags = RT_HALIGN_LEFT, text = 2),
+					],
+				 "fonts": [gFont("Regular", 21), gFont("Regular", 16)],
+				 "itemHeight": 50
+				}
+			</convert>
+    </widget>
+  </screen>
+  <screen name="AutoCamServiceSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280,720">
+    <panel name="Simple" />
+    <widget name="key_red" position="20,610" zPosition="1" size="170,54" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="key_green" position="190,610" zPosition="1" size="170,54" font="Regular; 22" halign="center" valign="center" transparent="1" render="Label" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="key_yellow" position="360,610" zPosition="1" size="170,54" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="key_blue" position="530,610" zPosition="1" size="170,54" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="NLPreBlack" />
+    <widget name="list" position="30,133" size="660,364" scrollbarMode="showOnDemand" />
   </screen>  
 </skin>
