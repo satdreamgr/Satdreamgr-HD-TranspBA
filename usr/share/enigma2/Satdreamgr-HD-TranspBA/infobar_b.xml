@@ -97,9 +97,7 @@
     <widget source="session.CurrentService" render="Label" position="1003,643" size="60,20" transparent="1" zPosition="2" font="Regular; 18" backgroundColor="black" foregroundColor="undd11" halign="center" valign="center">
       <convert type="PliExtraInfo">VideoCodec</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="862,643" size="140,20" transparent="1" zPosition="2" font="Regular; 18" halign="right" backgroundColor="black" foregroundColor="white" valign="center">
-      <convert type="PliExtraInfo">ResolutionString</convert>
-    </widget>
+    <widget render="VideoSize" source="session.CurrentService" position="862,643" size="140,20" transparent="1" zPosition="2" font="Regular; 18" halign="right" backgroundColor="black" foregroundColor="white" valign="center" />
     <widget source="session.Event_Next" render="Label" position="254,605" size="60,31" font="Regular; 20" halign="center" backgroundColor="transpBA" transparent="1" zPosition="3" valign="center" foregroundColor="grisc">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -206,19 +204,19 @@
       </convert>
     </widget>
     <!--infobar -->
-    <widget source="session.CurrentService" render="Pixmap" position="819,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="800,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="819,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="800,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="819,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="800,643" size="60,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="819,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hlg.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="800,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hlg.png" alphatest="blend">
       <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>

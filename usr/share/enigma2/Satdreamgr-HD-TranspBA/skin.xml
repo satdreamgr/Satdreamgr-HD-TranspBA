@@ -1013,7 +1013,7 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="758,222" size="23,23" zPosition="5" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="1092,149" size="23,23" zPosition="5" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="session.Event_Now" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_pdc.png" position="631,222" size="41,20" zPosition="2" alphatest="on">
@@ -1123,7 +1123,7 @@
       <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="710,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="710,222" size="60,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -2380,9 +2380,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="session.CurrentService" render="Label" position="467,609" size="60,20" transparent="1" zPosition="3" font="Regular; 18" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
       <convert type="PliExtraInfo">VideoCodec</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="529,609" size="140,20" transparent="1" zPosition="3" font="Regular; 18" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
-      <convert type="PliExtraInfo">ResolutionString</convert>
-    </widget>
+    <widget render="VideoSize" source="session.CurrentService" position="531,610" size="140,20" transparent="1" zPosition="2" font="Regular; 18" halign="right" backgroundColor="black" foregroundColor="white" valign="center" />
     <widget source="session.CurrentService" render="Pixmap" position="264,609" size="41,20" zPosition="4" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
@@ -2440,7 +2438,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
       <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="672,609" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="672,609" size="60,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
