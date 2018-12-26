@@ -2377,31 +2377,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="session.RecordState" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_rec_on.png" position="1148,531" size="23,23" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="467,609" size="60,20" transparent="1" zPosition="3" font="Regular; 18" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
+    <widget source="session.CurrentService" render="Label" position="467,610" size="60,20" transparent="1" zPosition="3" font="Regular; 18" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
       <convert type="PliExtraInfo">VideoCodec</convert>
     </widget>
-    <widget render="VideoSize" source="session.CurrentService" position="531,610" size="140,20" transparent="1" zPosition="2" font="Regular; 18" halign="right" backgroundColor="black" foregroundColor="white" valign="center" />
-    <widget source="session.CurrentService" render="Pixmap" position="264,609" size="41,20" zPosition="4" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
+    <widget render="VideoSize" source="session.CurrentService" position="531,610" size="140,20" transparent="1" zPosition="2" font="Regular; 18" valign="center" halign="center" backgroundColor="black" foregroundColor="white" />
+    <widget source="session.CurrentService" render="Pixmap" position="264,610" size="41,20" zPosition="4" pixmap="Satdreamgr-HD-TranspBA/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="312,609" size="56,20" zPosition="3" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_dolby_on.png" position="312,610" size="56,20" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="264,609" size="41,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_on.png" position="264,610" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_4_3.png" position="264,609" size="41,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/ico_format_4_3.png" position="264,610" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="372,609" size="41,20" alphatest="blend" zPosition="3">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/iptv-on.png" position="372,610" size="41,20" alphatest="blend" zPosition="3">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="416,609" size="41,20" zPosition="3" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/infobar/ico_format_4k.png" position="416,610" size="41,20" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -2430,19 +2430,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="session.CurrentService" render="Label" zPosition="1" position="267,518" size="120,46" font="Regular; 20" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="672,609" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="675,610" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="672,609" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="675,610" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="672,609" size="60,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="675,610" size="60,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="672,609" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hlg.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="675,610" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hlg.png" alphatest="blend">
       <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
