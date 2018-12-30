@@ -220,6 +220,10 @@
       <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/audiotrack.png" position="728,643" size="25,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">AudioTracksAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <!--weathermsninfobar-->
     <!--<eLabel /> 
   <widget source="global.CurrentTime" render="Label" position="856,54" zPosition="2" size="55,24" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="black" foregroundColor="green">

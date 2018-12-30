@@ -1020,7 +1020,7 @@
       <convert type="EventName">Pdc</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/stream.png" position="679,222" size="21,20" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/stream.png" position="675,221" size="21,20" zPosition="2" alphatest="on">
       <convert type="ClientsStreaming" />
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1115,20 +1115,24 @@
       <convert type="TranspBACaidInfo2">
       </convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="710,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="700,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="710,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="700,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="710,222" size="60,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="700,221" size="60,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hdr10.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="710,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hlg.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="700,222" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/hlg.png" alphatest="blend">
       <convert type="ServiceInfo">IsHLG</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/audiotrack.png" position="762,221" size="25,20" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">AudioTracksAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
