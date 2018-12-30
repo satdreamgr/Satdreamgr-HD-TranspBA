@@ -933,7 +933,7 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" position="789,222" size="450,20" transparent="1" zPosition="1" font="Regular; 18" halign="right" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="851,222" size="388,20" transparent="1" zPosition="1" font="Regular; 18" halign="right" backgroundColor="transpBA" foregroundColor="white">
       <convert type="PliExtraInfo">CryptoInfo</convert>
     </widget>
     <eLabel text="PIDs Info :" zPosition="2" position="48,600" size="105,20" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1" valign="center" foregroundColor="blue" />
@@ -1131,9 +1131,12 @@
       <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/audiotrack.png" position="762,221" size="25,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/audiotrack.png" position="822,222" size="25,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">AudioTracksAvailable</convert>
       <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="760,222" size="60,20" font="Regular; 18" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3">
+      <convert type="TranspBAAudioTrack">atype</convert>
     </widget>
   </screen>
   <!-- Volume -->
