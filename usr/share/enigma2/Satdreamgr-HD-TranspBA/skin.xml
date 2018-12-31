@@ -1135,7 +1135,7 @@
       <convert type="ServiceInfo">AudioTracksAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="760,222" size="60,20" font="Regular; 18" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3">
+    <widget source="session.CurrentService" render="Label" position="760,222" size="60,20" font="Regular; 18" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" valign="center" halign="center">
       <convert type="TranspBAAudioTrack">atype</convert>
     </widget>
   </screen>
