@@ -1212,7 +1212,7 @@
       <convert type="ServiceInfo">AudioTracksAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="602,643" size="60,20" font="Regular; 18" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3">
+    <widget source="session.CurrentService" render="Label" position="602,643" size="60,20" font="Regular; 18" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" valign="center" halign="center">
       <convert type="TranspBAAudioTrack">atype</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/wide.png" position="1026,643" size="40,20" zPosition="2" alphatest="blend" transparent="1">
@@ -1431,6 +1431,11 @@
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/plugins.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="1,670" size="1280,50" backgroundColor="transpBA" />
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="382,672" size="515,20" halign="left" valign="center" font="Regular; 18" transparent="1" foregroundColor="white" backgroundColor="transpBA">
+      <convert type="PanelSpaceInfo">Flesh,Full</convert>
+    </widget>
+    <eLabel name="" position="0,669" size="1280,1" backgroundColor="white" />
   </screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1439,6 +1444,11 @@
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/plugins.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="1,670" size="1280,50" backgroundColor="transpBA" />
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="382,672" size="515,20" halign="left" valign="center" font="Regular; 18" transparent="1" foregroundColor="white" backgroundColor="transpBA">
+      <convert type="PanelSpaceInfo">Flesh,Full</convert>
+    </widget>
+    <eLabel name="" position="0,669" size="1280,1" backgroundColor="white" />
   </screen>
   <!-- GraphMultiEPG -->
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
