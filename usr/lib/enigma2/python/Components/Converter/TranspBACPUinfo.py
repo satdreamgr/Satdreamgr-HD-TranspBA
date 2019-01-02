@@ -2,6 +2,7 @@
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 import os
+import re
 
 class TranspBACPUinfo(Converter, object):
 
@@ -24,26 +25,11 @@ class TranspBACPUinfo(Converter, object):
                         temp = open('/proc/stb/fp/temp_sensor_avs').read().strip()
                 if os.path.exists('/sys/devices/virtual/thermal/thermal_zone0/temp'):
                         temp = open('/sys/devices/virtual/thermal/thermal_zone0/temp').read()[:2]
+                if os.path.isfile("/proc/hisi/msp/pm_cpu"):
+                        temp = re.search('temperature = (\d+) degree', open("/proc/hisi/msp/pm_cpu").read()).group(1)
                 if temp:
                         return _("%s°C") % temp
                 return ""
 
         text = property(getText)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
