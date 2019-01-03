@@ -1,5 +1,6 @@
 from Poll import Poll
 from Components.Converter.Converter import Converter
+from Components.Converter.PliExtraInfo import codec_data
 from enigma import iServiceInformation, iPlayableService, iAudioTrackInfo
 from Components.config import config
 from Components.Element import cached
@@ -12,34 +13,36 @@ class TranspBAAudioTrack(Poll, Converter, object):
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		Poll.__init__(self)
-		if  type == "atype":
+		if type == "atype":
 			self.type = self.atype
-		elif  type == "vtype":
+		elif type == "vtype":
 			self.type = self.vtype
-		elif  type == "avtype":
+		elif type == "avtype":
 			self.type = self.avtype
 
 	@cached
 	def getText(self):
-		self.stream = { 'atype':"", 'vtype':"", 'avtype':"",}
-		streaminfo = ""
 		service = self.source.service
 		info = service and service.info()
 		if not info:
 			return ""
+
+		atype = ""
 		audio = service.audioTracks()
-		if audio:
-			if audio.getCurrentTrack() > -1:
-				self.stream['atype'] = str(audio.getTrackInfo(audio.getCurrentTrack()).getDescription()).replace(",","")
-		self.stream['vtype'] = ("MPEG2", "MPEG4", "MPEG1", "MPEG4-II", "VC1", "VC1-SM", "HEVC", "H265", "AVS", "N/A")[info.getInfo(iServiceInformation.sVideoType)]
-		self.stream['avtype'] = ("MPEG2", "MPEG4", "MPEG1", "MPEG4-II", "VC1", "VC1-SM", "HEVC", "H265", "AVS", "N/A")[info.getInfo(iServiceInformation.sVideoType)] + "\c00?25=41" + " / " + "\c0078:0=7" + self.stream['atype']
+		if audio and audio.getCurrentTrack() > -1:
+			atype = str(audio.getTrackInfo(audio.getCurrentTrack()).getDescription()).replace(",","")
 
 		if self.type == self.atype:
-			streaminfo = self.stream['atype']
-		elif self.type == self.vtype:
-			streaminfo = self.stream['vtype']
-		elif self.type == self.avtype:
-			streaminfo = self.stream['avtype']
-		return streaminfo
+			return atype
+
+		vtype = codec_data.get(info.getInfo(iServiceInformation.sVideoType), "N/A")
+
+		if self.type == self.vtype:
+			return vtype
+
+		if self.type == self.avtype:
+			return vtype + "\c00?25=41" + " / " + "\c0078:0=7" + atype
+
+		return ""
 
 	text = property(getText)
