@@ -937,7 +937,7 @@
     <widget source="session.Event_Now" render="Label" font="Regula; 20" position="30,123" size="612,305" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" font="Regula; 20" position="647,125" size="612,305" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.Event_Next" render="Label" font="Regula; 20" position="651,125" size="612,305" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="30,93" size="610,30" transparent="0" zPosition="3" font="Regula; 20" halign="center" backgroundColor="blue" valign="center" foregroundColor="white" noWrap="1">
