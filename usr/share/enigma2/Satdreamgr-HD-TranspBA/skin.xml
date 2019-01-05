@@ -934,55 +934,54 @@
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!--Second-->
-    <widget source="session.Event_Now" render="Label" font="Regula; 20" position="30,123" size="612,305" halign="left" transparent="0" zPosition="0" backgroundColor="transpBA" valign="top" foregroundColor="white">
+    <widget source="session.Event_Now" render="Label" font="Regula; 20" position="30,123" size="612,305" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" font="Regula; 20" position="651,123" size="612,305" halign="left" transparent="0" zPosition="0" valign="top" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.Event_Next" render="Label" font="Regula; 20" position="647,125" size="612,305" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="136,93" size="506,30" transparent="0" zPosition="3" font="Regula; 20" halign="center" backgroundColor="white" valign="center" foregroundColor="black" noWrap="1">
+    <widget source="session.Event_Now" render="Label" position="30,93" size="610,30" transparent="0" zPosition="3" font="Regula; 20" halign="center" backgroundColor="blue" valign="center" foregroundColor="white" noWrap="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="757,93" size="506,30" transparent="0" zPosition="3" font="Regula; 20" halign="center" backgroundColor="white" foregroundColor="black" valign="center" noWrap="1">
+    <widget source="session.Event_Next" render="Label" position="651,93" size="610,30" transparent="0" zPosition="3" font="Regula; 20" halign="center" backgroundColor="blue" foregroundColor="white" valign="center" noWrap="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" zPosition="2" position="30,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" valign="center" foregroundColor="black">
+    <widget source="session.Event_Now" render="Label" zPosition="2" position="160,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" valign="center" foregroundColor="white">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" zPosition="2" position="105,428" size="15,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" valign="center" foregroundColor="black" />
-    <widget source="session.Event_Now" render="Label" zPosition="2" position="121,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" valign="center" foregroundColor="black">
+    <eLabel text="-" zPosition="2" position="237,428" size="15,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" valign="center" foregroundColor="white" />
+    <widget source="session.Event_Now" render="Label" zPosition="2" position="253,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" valign="center" foregroundColor="white">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" zPosition="2" valign="center" foregroundColor="black">
+    <widget source="session.Event_Next" render="Label" position="786,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" zPosition="2" valign="center" foregroundColor="white">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" zPosition="2" position="726,428" size="15,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" valign="center" foregroundColor="black" />
-    <widget source="session.Event_Next" render="Label" position="742,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" zPosition="2" valign="center" foregroundColor="black">
+    <eLabel text="-" zPosition="2" position="861,428" size="15,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" valign="center" foregroundColor="white" />
+    <widget source="session.Event_Next" render="Label" position="878,428" size="75,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" zPosition="2" valign="center" foregroundColor="white">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel name="" position="40,538" size="600,55" backgroundColor="transpBA" />
     <eLabel name="" position="643,538" size="604,55" backgroundColor="transpBA" />
-    <widget source="session.Event_Now" render="Label" position="520,428" size="120,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" zPosition="3" foregroundColor="black" valign="center">
+    <widget source="session.Event_Now" render="Label" position="520,428" size="120,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" zPosition="3" foregroundColor="white" valign="center">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1143,428" size="120,30" font="Regular; 20" halign="center" backgroundColor="white" transparent="1" zPosition="3" foregroundColor="black" valign="center">
+    <widget source="session.Event_Next" render="Label" position="1143,428" size="120,30" font="Regular; 20" halign="center" backgroundColor="blue" transparent="1" zPosition="3" foregroundColor="white" valign="center">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <eLabel text="NOW" zPosition="0" position="33,93" size="609,30" font="Regula; 20" halign="left" backgroundColor="white" transparent="0" valign="center" foregroundColor="undd11" />
-    <eLabel text="NEXT" zPosition="2" position="653,93" size="609,30" font="Regula; 20" halign="left" backgroundColor="white" transparent="0" valign="center" foregroundColor="undd11" />
+    <eLabel text="NOW" zPosition="3" position="33,428" size="120,30" font="Regula; 20" halign="left" backgroundColor="blue" transparent="0" valign="center" foregroundColor="undd11" />
+    <eLabel text="NEXT" zPosition="2" position="656,428" size="120,30" font="Regula; 20" halign="left" backgroundColor="blue" transparent="0" valign="center" foregroundColor="undd11" />
     <eLabel name="" position="40,595" size="1207,30" backgroundColor="transpBA" />
-    <widget source="session.Event_Now" position="201,440" size="300,8" zPosition="10" render="Progress" pixmap="Satdreamgr-HD-TranspBA/infobar/second.png" backgroundColor="transpBA">
+    <widget source="session.Event_Now" position="333,438" size="183,10" zPosition="10" render="Progress" backgroundColor="black" foregroundColor="white">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <ePixmap name="" position="202,440" size="300,8" pixmap="Satdreamgr-HD-TranspBA/infobar/second-font.png" alphatest="blend" zPosition="11" />
-    <eLabel name="" position="27,428" size="612,30" backgroundColor="white" zPosition="1" />
-    <eLabel name="" position="651,428" size="612,30" backgroundColor="white" zPosition="1" />
+    <eLabel name="" position="27,428" size="612,30" backgroundColor="blue" zPosition="1" />
+    <eLabel name="" position="651,428" size="612,30" backgroundColor="blue" zPosition="1" />
     <eLabel name="" position="27,90" size="618,371" zPosition="-10" />
     <eLabel name="" position="648,90" size="618,371" zPosition="-10" />
     <!--infobar b-->
