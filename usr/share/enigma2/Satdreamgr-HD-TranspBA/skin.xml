@@ -708,6 +708,10 @@
       <convert type="MenuEntryCompare">video_finetune</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/system/iplayer.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">iptv_config</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>    
   </screen>
   <screen name="menu_gui" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
@@ -883,6 +887,10 @@
       <convert type="MenuEntryCompare">deep_standby</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="menu" render="Pixmap" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/menu/standby/multiboot.png" zPosition="5" position="240,296" size="128,128">
+      <convert type="MenuEntryCompare">multiboot</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>    
   </screen>
   <screen name="menu_scan" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="MenuTemplate" />
