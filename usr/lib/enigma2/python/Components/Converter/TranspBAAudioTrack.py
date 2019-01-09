@@ -1,3 +1,7 @@
+# -*- coding: UTF-8 -*-
+#
+# Converter - TranspBAAudioTrack
+# Developer - SatDreamGr
 from Poll import Poll
 from Components.Converter.Converter import Converter
 from Components.Converter.PliExtraInfo import codec_data
