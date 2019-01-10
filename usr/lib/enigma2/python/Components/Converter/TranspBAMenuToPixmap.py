@@ -32,7 +32,7 @@ MENUS = {
         'service_searching_selection': 'menu/setup/searching.png',         
         'cam_setup': 'menu/setup/common-interface.png',
         'autobackup': 'menu/setup/autobackup.png',
-        'ci_setup': 'setup/common-interface.png',        
+        'ci_setup': 'menu/setup/common-interface.png',        
         'ci_assign': 'menu/setup/assign.png',         
         'parental_setup': 'menu/setup/parental.png',
         'factory_reset': 'menu/setup/factory.png',
@@ -118,7 +118,7 @@ MENUS = {
         'positioner_setup': 'menu/menu-scan/positionner.png',         
         'fastscan': 'menu/menu-scan/fast.png',
         'cablescan': 'menu/menu-scan/cable.png',
-        'fallbacktuner_settings': 'menu-scan/fallback.png',        
+        'fallbacktuner_settings': 'menu/menu-scan/fallback.png',        
          # menu_shutdown
         'sleep': 'menu/standby/timer.png',
         'standby': 'menu/standby/standby.png',
