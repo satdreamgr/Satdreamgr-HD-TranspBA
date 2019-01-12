@@ -593,6 +593,16 @@
     <eLabel name="" position="30,428" size="610,30" backgroundColor="blue" zPosition="1" />
     <eLabel name="" position="640,428" size="610,30" backgroundColor="blue" zPosition="1" />
     <eLabel name="" position="30,90" size="1220,371" zPosition="-10" />
+    <eLabel text="PIDs Info :" zPosition="2" position="274,466" size="105,20" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1" valign="center" foregroundColor="blue" />
+    <widget source="session.CurrentService" render="Label" position="380,467" size="340,20" transparent="1" zPosition="5" font="Regular; 18" halign="left" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="PliExtraInfo">PIDInfo</convert>
+    </widget>
+    <eLabel text="Service reference" zPosition="3" position="721,466" size="186,20" font="Regular; 20" halign="left" backgroundColor="transpBA" transparent="1" valign="center" foregroundColor="blue" />
+    <widget source="session.CurrentService" render="Label" position="909,467" zPosition="3" size="340,20" font="Regular; 18" transparent="1" halign="left" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="TranspBAServName">Reference</convert>
+    </widget>
+    <eLabel name="" position="638,90" size="4,371" zPosition="10" backgroundColor="transparent" />
+    <eLabel name="" position="274,465" size="975,24" backgroundColor="transpBA" />
     <!--infobar b-->
     <!--infobar haute-->
     <ePixmap name="" position="0,0" size="1280,82" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarhaute.png" alphatest="blend" zPosition="0" />
@@ -860,7 +870,6 @@
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/meteo.png" position="531,26" size="50,50" zPosition="9" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/meteo.png" position="800,26" size="50,50" zPosition="3" alphatest="blend" />
     <!-- end -->
-    <eLabel name="" position="638,90" size="4,371" zPosition="10" backgroundColor="transparent" />
   </screen>
   <!-- Volume -->
   <screen name="Volume" position="58,72" size="322,57" title="Volume" backgroundColor="transparent2" zPosition="99" flags="wfNoBorder">
