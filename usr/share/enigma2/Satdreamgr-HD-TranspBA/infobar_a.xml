@@ -1,39 +1,11 @@
 <skin>
-  <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap name="" position="1090,20" size="160,65" pixmap="Satdreamgr-HD-TranspBA/infobar/clock.png" alphatest="blend" zPosition="0" />
-    <widget source="global.CurrentTime" render="Label" position="1093,21" size="100,32" font="Regular; 32" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1091,58" size="80,22" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="3" valign="center">
-      <convert type="ClockToText">Format:%a/%d</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1170,58" size="80,22" backgroundColor="black" transparent="1" font="Regular; 18" valign="center" halign="center" foregroundColor="white" zPosition="3">
-      <convert type="ClockToText">Format:%h/%y</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1197,29" size="50,20" font="Regular; 18" halign="left" valign="center" transparent="1" foregroundColor="white" zPosition="3" backgroundColor="black">
-      <convert type="ClockToText">Format: %S</convert>
-    </widget>
-    <!--infobar bas-->
+<screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <!--infobar bas a b c-->
     <ePixmap name="" position="170,675" size="20,20" pixmap="Satdreamgr-HD-TranspBA/infobar/cpu.png" alphatest="blend" zPosition="11" />
     <ePixmap name="" position="0,462" size="1280,174" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,636" size="1280,84" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarbas.png" alphatest="blend" zPosition="0" />
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
       <convert type="TranspBACPUinfo">CPUtemp</convert>
-    </widget>
-    <eLabel text="AGC " font="Regular; 18" position="1082,608" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
-    <widget source="session.FrontendStatus" render="Label" position="1188,608" size="60,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" backgroundColor="blue" halign="center" foregroundColor="white">
-      <convert type="FrontendInfo">AGC</convert>
-    </widget>
-    <eLabel text="SNR " font="Regular; 18" position="1082,643" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="black" />
-    <widget source="session.FrontendStatus" render="Label" position="1145,643" size="98,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="right" backgroundColor="black" foregroundColor="white">
-      <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
-    <widget size="25,24" position="1100,671" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
-      <convert type="FrontendInfo">LOCK</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1128,673" size="114,20" transparent="1" zPosition="5" font="Regular; 18" halign="right" backgroundColor="blue" foregroundColor="white">
-      <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TranspBACamd">Camd</convert>
@@ -159,7 +131,6 @@
     <widget source="session.CurrentService" render="Label" position="1150,488" size="117,25" backgroundColor="transparent" zPosition="4" foregroundColor="white" font="Regular; 20" valign="center" halign="left">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <!--infobar -->
     <widget source="session.CurrentService" render="Pixmap" position="758,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
@@ -186,6 +157,35 @@
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/wide.png" position="1026,643" size="40,20" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
+    </widget>
+    <!--infobar a-c -->
+    <ePixmap name="" position="1090,20" size="160,65" pixmap="Satdreamgr-HD-TranspBA/infobar/clock.png" alphatest="blend" zPosition="0" />
+    <widget source="global.CurrentTime" render="Label" position="1093,21" size="100,32" font="Regular; 32" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1091,58" size="80,22" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="3" valign="center">
+      <convert type="ClockToText">Format:%a/%d</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1170,58" size="80,22" backgroundColor="black" transparent="1" font="Regular; 18" valign="center" halign="center" foregroundColor="white" zPosition="3">
+      <convert type="ClockToText">Format:%h/%y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1197,29" size="50,20" font="Regular; 18" halign="left" valign="center" transparent="1" foregroundColor="white" zPosition="3" backgroundColor="black">
+      <convert type="ClockToText">Format: %S</convert>
+    </widget>
+    <eLabel text="AGC " font="Regular; 18" position="1082,608" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
+    <widget source="session.FrontendStatus" render="Label" position="1188,608" size="60,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" backgroundColor="blue" halign="center" foregroundColor="white">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <eLabel text="SNR " font="Regular; 18" position="1082,643" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="black" />
+    <widget source="session.FrontendStatus" render="Label" position="1145,643" size="98,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="right" backgroundColor="black" foregroundColor="white">
+      <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <widget size="25,24" position="1100,671" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1128,673" size="114,20" transparent="1" zPosition="5" font="Regular; 18" halign="right" backgroundColor="blue" foregroundColor="white">
+      <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
     <!--weathermsninfobar-->
     <!--<eLabel /> 

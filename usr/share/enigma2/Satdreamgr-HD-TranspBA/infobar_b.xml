@@ -1,5 +1,5 @@
 <skin>
-  <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+<screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!--infobar haute-->
     <ePixmap name="" position="0,0" size="1280,82" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarhaute.png" alphatest="blend" zPosition="0" />
     <eLabel text="AGC " font="Regular; 18" position="32,23" size="60,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
@@ -54,27 +54,12 @@
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/dvr/scale1024.png" position="0,0" size="0,0" zPosition="1" />
-    <!--infobar bas-->
+    <!--infobar bas a b c-->
     <ePixmap name="" position="170,675" size="20,20" pixmap="Satdreamgr-HD-TranspBA/infobar/cpu.png" alphatest="blend" zPosition="11" />
     <ePixmap name="" position="0,462" size="1280,174" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,636" size="1280,84" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarbas.png" alphatest="blend" zPosition="0" />
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
       <convert type="TranspBACPUinfo">CPUtemp</convert>
-    </widget>
-    <eLabel text="AGC " font="Regular; 18" position="1082,608" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
-    <widget source="session.FrontendStatus" render="Label" position="1188,608" size="60,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" backgroundColor="blue" halign="center" foregroundColor="white">
-      <convert type="FrontendInfo">AGC</convert>
-    </widget>
-    <eLabel text="SNR " font="Regular; 18" position="1082,643" size="60,20" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="black" />
-    <widget source="session.FrontendStatus" render="Label" position="1145,643" size="98,20" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="right" backgroundColor="black" foregroundColor="white">
-      <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
-    <widget size="25,24" position="1100,671" alphatest="blend" pixmap="Satdreamgr-HD-TranspBA/skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
-      <convert type="FrontendInfo">LOCK</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1128,673" size="114,20" transparent="1" zPosition="5" font="Regular; 18" halign="right" backgroundColor="blue" foregroundColor="white">
-      <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TranspBACamd">Camd</convert>
@@ -200,12 +185,6 @@
     <widget source="session.CurrentService" render="Label" position="1150,488" size="117,25" backgroundColor="transparent" zPosition="4" foregroundColor="white" font="Regular; 20" valign="center" halign="left">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <!--infobar b-c -->
-    <widget source="session.CurrentService" render="Label" position="264,674" size="800,20" transparent="1" zPosition="3" font="Regular; 18" halign="left" backgroundColor="blue" foregroundColor="white">
-      <convert type="TranspBACaidInfo2">
-      </convert>
-    </widget>
-    <!--infobar -->
     <widget source="session.CurrentService" render="Pixmap" position="758,643" size="41,20" zPosition="2" pixmap="Satdreamgr-HD-TranspBA/icons/sdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
@@ -233,8 +212,27 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!--weathermsninfobar-->
-    <!--<eLabel /> 
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_on.png" position="1084,641" size="24,24" zPosition="3" alphatest="blend" transparent="1">
+      <convert type="TranspBAAlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,672" size="160,26" halign="left" valign="center" font="Regular; 18" transparent="0" backgroundColor="blue" foregroundColor="white">
+      <convert type="PanelSpaceInfo">MemTotal,Short</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,607" size="160,26" halign="left" valign="center" font="Regular; 18" transparent="0" backgroundColor="blue" foregroundColor="white">
+      <convert type="PanelSpaceInfo">Flash,Short</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 18" foregroundColor="white" halign="center" position="1127,640" render="Label" size="120,26" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
+      <convert type="PanelCpuUsage">Total</convert>
+    </widget>
+    <!--infobar b-c -->
+    <widget source="session.CurrentService" render="Label" position="264,674" size="800,20" transparent="1" zPosition="3" font="Regular; 18" halign="left" backgroundColor="blue" foregroundColor="white">
+      <convert type="TranspBACaidInfo2">
+      </convert>
+    </widget>
+  <!--weathermsninfobar-->
+  <!--<eLabel /> 
   <widget source="global.CurrentTime" render="Label" position="856,54" zPosition="2" size="55,24" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="black" foregroundColor="green">
     <convert type="TranspBAMSNWeather2">Hightemp1</convert>
   </widget>
@@ -266,6 +264,6 @@
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/humidity.png" position="699,54" size="24,24" zPosition="3" alphatest="blend" />
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/meteo.png" position="531,26" size="50,50" zPosition="9" alphatest="blend" />
   <ePixmap pixmap="Satdreamgr-HD-TranspBA/weather_icons/meteo.png" position="800,26" size="50,50" zPosition="3" alphatest="blend" />-->
-    <!-- end -->
-  </screen>
+  <!-- end -->
+</screen>
 </skin>
