@@ -212,18 +212,14 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/net_on.png" position="1084,641" size="24,24" zPosition="3" alphatest="blend" transparent="1">
-      <convert type="TranspBAAlwaysTrue">
-      </convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,672" size="160,26" halign="left" valign="center" font="Regular; 18" transparent="0" backgroundColor="blue" foregroundColor="white">
+    <ePixmap name="" position="1084,641" size="24,24" pixmap="Satdreamgr-HD-TranspBA/infobar/cpu-s.png" alphatest="blend" zPosition="2" />
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,672" size="165,24" halign="left" valign="center" noWrap="1" font="Regular; 16" transparent="1" backgroundColor="blue" foregroundColor="white">
       <convert type="PanelSpaceInfo">MemTotal,Short</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,607" size="160,26" halign="left" valign="center" font="Regular; 18" transparent="0" backgroundColor="blue" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,606" size="165,24" halign="left" valign="center" font="Regular; 16" noWrap="1" transparent="1" backgroundColor="blue" foregroundColor="white">
       <convert type="PanelSpaceInfo">Flash,Short</convert>
     </widget>
-    <widget backgroundColor="black" font="Regular; 18" foregroundColor="white" halign="center" position="1127,640" render="Label" size="120,26" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
+    <widget backgroundColor="black" font="Regular; 16" foregroundColor="white" halign="center" position="1127,640" render="Label" size="120,26" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
       <convert type="PanelCpuUsage">Total</convert>
     </widget>
     <!--infobar b-c -->
