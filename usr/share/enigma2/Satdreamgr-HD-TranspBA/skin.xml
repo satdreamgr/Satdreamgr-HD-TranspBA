@@ -547,11 +547,11 @@
   </screen>
   <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!--Second base-->
-    <widget source="session.Event_Now" render="Label" font="Regula; 20" position="35,123" size="600,305" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="EventName">ExtendedDescription</convert>
+    <widget source="session.Event_Now" render="Label" font="Regula; 20" position="35,123" size="600,305" halign="block" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" font="Regula; 20" position="645,123" size="600,305" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="EventName">ExtendedDescription</convert>
+    <widget source="session.Event_Next" render="Label" font="Regula; 20" position="645,123" size="600,305" halign="block" transparent="0" zPosition="0" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="30,93" size="610,30" transparent="0" zPosition="3" font="Regula; 20" halign="center" backgroundColor="blue" valign="center" foregroundColor="white" noWrap="1">
       <convert type="EventName">Name</convert>
@@ -816,13 +816,13 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap name="" position="1084,641" size="24,24" pixmap="Satdreamgr-HD-TranspBA/infobar/cpu-s.png" alphatest="blend" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,672" size="165,24" halign="left" valign="center" noWrap="1" font="Regular; 16" transparent="1" backgroundColor="blue" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,672" size="165,24" halign="left" valign="center" noWrap="1" font="Regular; 18" transparent="1" backgroundColor="blue" foregroundColor="white">
       <convert type="PanelSpaceInfo">MemTotal,Short</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,606" size="165,24" halign="left" valign="center" font="Regular; 16" noWrap="1" transparent="1" backgroundColor="blue" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,606" size="165,24" halign="left" valign="center" font="Regular; 18" noWrap="1" transparent="1" backgroundColor="blue" foregroundColor="white">
       <convert type="PanelSpaceInfo">Flash,Short</convert>
     </widget>
-    <widget backgroundColor="black" font="Regular; 16" foregroundColor="white" halign="center" position="1127,640" render="Label" size="120,26" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
+    <widget backgroundColor="black" font="Regular; 18" foregroundColor="white" halign="center" position="1127,640" render="Label" size="120,26" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
       <convert type="PanelCpuUsage">Total</convert>
     </widget>
     <!--infobar b-c -->
@@ -930,8 +930,8 @@
     <widget source="ServiceEvent" render="Label" zPosition="1" position="468,470" size="754,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="jeaune">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" font="Regula; 20" position="300,500" size="922,134" halign="left" transparent="1" zPosition="1" backgroundColor="transpBA" valign="top" foregroundColor="white">
-      <convert type="EventName">ExtendedDescription</convert>
+    <widget source="ServiceEvent" render="Label" font="Regula; 20" position="300,500" size="922,134" halign="block" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" zPosition="1" position="300,640" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
       <convert type="TranspBANextEvents">Event1,noDuration</convert>
@@ -962,7 +962,7 @@
     <panel name="N3Template" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/picon_default.png" position="51,180" size="220,132" transparent="1" alphatest="blend" zPosition="1" />
     <widget name="list" font="Regular; 22" position="300,100" size="925,352" transparent="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
-    <widget source="Event" render="Label" position="300,500" size="922,180" transparent="1" font="Regular; 22" backgroundColor="transpBA" valign="top" halign="left" foregroundColor="white" zPosition="2">
+    <widget source="Event" render="Label" position="300,500" size="922,180" halign="block" transparent="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" zPosition="2">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="311,470" size="80,24" backgroundColor="blue" transparent="0" foregroundColor="white" font="Regular; 22" zPosition="2" halign="center">
@@ -995,7 +995,7 @@
     <eLabel text="[" position="805,100" size="15,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="2" />
     <widget name="datetime" position="565,100" size="145,24" transparent="1" font="Regular; 22" halign="right" backgroundColor="transpBA" foregroundColor="white" zPosition="2" />
     <widget name="duration" position="820,100" size="122,24" transparent="1" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="white" zPosition="2" />
-    <widget name="epg_description" position="300,145" size="925,300" transparent="1" font="Regular; 22" zPosition="2" foregroundColor="white" backgroundColor="transpBA" />
+    <widget name="epg_description" position="300,145" size="925,300" transparent="1" font="Regular; 22" halign="block" zPosition="2" foregroundColor="white" backgroundColor="transpBA" />
     <widget name="FullDescription" position="0,0" size="0,0" />
     <widget source="session.Event_Now" render="Label" position="398,530" size="725,24" transparent="1" zPosition="2" foregroundColor="grey" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
       <convert type="EventName">Genre</convert>
@@ -1018,7 +1018,7 @@
       <convert type="EventName">Name</convert>
     </widget>
     <widget name="list" position="300,150" scrollbarMode="showOnDemand" size="925,300" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <widget source="Event" render="Label" position="300,500" size="922,180" font="Regular; 20" foregroundColor="foreground" backgroundColor="transpBA" transparent="1" valign="top" zPosition="4">
+    <widget source="Event" render="Label" position="300,500" size="922,180" font="Regular; 20" halign="block" foregroundColor="foreground" backgroundColor="transpBA" transparent="1" zPosition="4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="next_button" pixmap="Satdreamgr-HD-TranspBA/buttons/blackbutton.png" position="637,100" zPosition="2" size="180,40" alphatest="blend" />
