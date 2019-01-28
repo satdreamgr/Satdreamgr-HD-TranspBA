@@ -1419,7 +1419,7 @@
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/information/service.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
+    <eLabel name="" position="310,515" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
     <widget source="session.CurrentService" render="Label" position="329,528" size="790,50" font="Regular; 22" foregroundColor="white" backgroundColor="transpBA" transparent="1" zPosition="6" valign="center" halign="left">
       <convert type="TranspBARef">ServiceRef</convert>
     </widget>
@@ -1480,13 +1480,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="AdapterSetupConfiguration" title="Network configuration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <eLabel name="" position="310,530" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+    <eLabel name="" position="310,455" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/network.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="menulist" font="Regular; 22" position="330,150" size="790,300" itemHeight="28" zPosition="10" scrollbarMode="showOnDemand" transparent="1" />
-    <widget source="description" render="Label" position="330,460" size="790,55" foregroundColor="white" transparent="1" font="Regular; 22" valign="center" halign="center" backgroundColor="transpBA" />
-    <widget source="IFtext" render="Label" position="653,555" size="165,25" transparent="1" zPosition="10" font="Regular; 22" halign="right" />
-    <widget source="IF" render="Label" position="822,555" size="250,25" transparent="1" zPosition="10" font="Regular; 22" halign="left" />
-    <widget source="Statustext" render="Label" position="407,553" size="200,25" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="right" />
-    <widget name="statuspic" position="612,555" size="35,25" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on" />
+    <widget source="description" render="Label" position="330,465" size="790,55" foregroundColor="white" transparent="1" font="Regular; 22" valign="center" halign="center" backgroundColor="transpBA" />
+    <widget source="IFtext" render="Label" position="615,553" size="165,25" transparent="1" zPosition="10" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="IF" render="Label" position="789,553" size="250,25" transparent="1" zPosition="10" font="Regular; 22" halign="left" backgroundColor="transpBA" />
+    <widget source="Statustext" render="Label" position="330,553" size="200,25" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="right" foregroundColor="white" backgroundColor="transpBA" />
+    <widget name="statuspic" position="535,553" size="35,25" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,585" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
@@ -1522,6 +1523,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="introduction" render="Label" position="330,540" size="790,26" foregroundColor="white" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="center" backgroundColor="transpBA" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="NetworkAdapterSelection" title="Select a network adapter" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1543,6 +1545,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="introduction" render="Label" position="330,540" size="790,26" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="center" foregroundColor="white" backgroundColor="transpBA" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="NetworkAdapterTest" title="Network test" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1579,6 +1582,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="InfoTextBorder" position="310,160" size="820,239" backgroundColor="transpBA" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="NetworkBrowser" title="Network Neighbourhood" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1602,6 +1606,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="infotext" render="Label" position="330,540" size="790,26" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="center" foregroundColor="white" backgroundColor="transpBA" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="AutoMountManager" title="MountManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1622,6 +1627,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="introduction" render="Label" position="330,540" size="790,26" backgroundColor="transpBA" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="UserManager" title="UserManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1641,6 +1647,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="introduction" render="Label" position="330,540" size="780,26" backgroundColor="background" transparent="1" font="Regular; 22" halign="center" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="AutoMountView" title="Mount view" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1648,7 +1655,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="legend1" render="Label" position="445,155" size="130,20" transparent="1" zPosition="1" font="Regular; 18" valign="center" halign="Left" backgroundColor="transpBA" />
     <widget source="legend2" render="Label" position="580,155" size="345,20" transparent="1" zPosition="1" font="Regular; 18" valign="center" halign="center" backgroundColor="transpBA" />
     <widget source="legend3" render="Label" position="930,155" size="130,20" transparent="1" zPosition="1" font="Regular; 18" valign="center" halign="center" backgroundColor="transpBA" />
-    <widget source="config" render="Listbox" position="330,180" size="790,320" scrollbarMode="showOnDemand" transparent="1">
+    <widget source="config" render="Listbox" position="330,190" size="790,320" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
         {
           "template": [
@@ -1667,6 +1674,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="introduction" render="Label" position="330,540" size="790,26" transparent="1" zPosition="10" font="Regular; 22" valign="center" halign="center" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,525" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="AutoMountEdit" title="MountEdit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1677,6 +1685,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="introduction" render="Label" position="330,540" size="780,26" backgroundColor="transpBA" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="UserDialog" position="0,0" size="1280,720" title="UserDialog" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1687,6 +1696,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="HelpWindow" position="0,0" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="ScanIP" position="0,0" size="1280,720" title="Scan IP" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -1813,6 +1823,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="introduction" render="Label" position="330,540" size="780,26" backgroundColor="transpBA" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular; 22" halign="center" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,525" size="830,5" transparent="0" foregroundColor="transparent" backgroundColor="transparent" zPosition="5" />
   </screen>
   <screen name="InputDeviceSetup" title="Input device setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -2356,7 +2367,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <!-- DVDPlayer -->  
+  <!-- DVDPlayer -->
   <screen name="DVDPlayer" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap name="" position="1090,20" size="160,65" pixmap="Satdreamgr-HD-TranspBA/infobar/clock.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,462" size="1280,174" pixmap="Satdreamgr-HD-TranspBA/infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
@@ -2427,7 +2438,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="subtitleLabel" position="400,672" size="435,26" font="Regular; 18" halign="left" valign="center" noWrap="1" backgroundColor="blue" zPosition="3" foregroundColor="white" />
     <widget name="anglePix" position="709,641" size="39,24" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on" />
     <widget name="angleLabel" position="765,640" size="300,26" font="Regular; 18" backgroundColor="black" zPosition="3" transparent="1" foregroundColor="white" halign="left" valign="center" />
-  </screen>  
+  </screen>
   <!-- NumberZap -->
   <screen name="NumberZap" title="Channel" position="100,45" size="434,109" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="channel" position="0,0" size="120,60" backgroundColor="transparent" transparent="1" font="Regular; 26" valign="center" halign="left" />
@@ -4302,5 +4313,51 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/weather.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="menu" position="330,150" size="790,300" scrollbarMode="showOnDemand" transparent="1" />
+  </screen>
+  <!-- WirelessLan -->
+  <screen name="WlanStatus" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+    <panel name="TBTemplate" />
+    <widget source="LabelBSSID" render="Label" position="330,150" size="200,25" valign="left" font="Regular; 22" transparent="1" foregroundColor="white" zPosition="6" backgroundColor="transpBA" />
+    <widget source="LabelESSID" render="Label" position="330,190" size="200,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" zPosition="1" backgroundColor="transpBA" />
+    <widget source="LabelQuality" render="Label" position="330,230" size="200,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="LabelSignal" render="Label" position="330,270" size="200,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="LabelBitrate" render="Label" position="330,310" size="200,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="LabelEnc" render="Label" position="331,350" size="200,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="BSSID" render="Label" position="630,150" size="330,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" zPosition="6" backgroundColor="transpBA" />
+    <widget source="ESSID" render="Label" position="630,190" size="330,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" zPosition="6" backgroundColor="transpBA" />
+    <widget source="quality" render="Label" position="630,230" size="330,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="signal" render="Label" position="630,270" size="330,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="bitrate" render="Label" position="630,310" size="330,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="enc" render="Label" position="630,350" size="330,25" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="IFtext" render="Label" position="613,544" size="165,25" zPosition="10" font="Regular; 22" halign="right" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget source="IF" render="Label" position="796,544" size="250,25" zPosition="10" font="Regular; 22" halign="left" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget source="Statustext" render="Label" position="330,545" size="200,25" zPosition="10" font="Regular; 22" halign="right" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="536,550" zPosition="10" size="15,16" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,530" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/system/wifi-logo.png" zPosition="4" transparent="0" alphatest="blend" />
+  </screen>
+  <screen name="WlanScan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+    <panel name="TBTemplate" />
+    <widget source="list" render="Listbox" position="330,150" size="790,350" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+				MultiContentEntryText(pos = (10,2), size = (550,25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
+				MultiContentEntryText(pos = (10,26), size = (175,20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
+				MultiContentEntryText(pos = (200,26), size = (175,20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the encryption
+				MultiContentEntryText(pos = (400,2), size = (235,20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the signal
+				MultiContentEntryText(pos = (400,26), size = (235,20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the maxrate
+			],
+		"fonts": [gFont("Regular",22),gFont("Regular",18)],
+		"itemHeight": 50
+		}
+	</convert>
+    </widget>
+    <widget source="info" render="Label" position="330,536" size="790,25" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBA" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,520" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
+    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/system/wlan.png" zPosition="4" transparent="0" alphatest="blend" />
   </screen>
 </skin>
