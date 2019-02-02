@@ -26,10 +26,10 @@
     </widget>
     <widget source="session.CurrentService" render="CiModuleControl" allVisible="1" position="36,675" size="110,20" zPosition="1" transparent="1" font="Regular;18" halign="center" valign="center" backgroundColor="blue" />
     <ePixmap name="" position="938,643" size="24,20" pixmap="Satdreamgr-HD-TranspBA/icons/select.png" alphatest="blend" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" position="964,643" size="60,20" transparent="1" zPosition="2" font="Regula; 20" backgroundColor="black" foregroundColor="white" halign="center" valign="center">
+    <widget source="session.CurrentService" render="Label" position="964,643" size="60,20" transparent="1" zPosition="2" font="Regula; 20" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
       <convert type="PliExtraInfo">VideoCodec</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="807,643" size="130,20" transparent="1" zPosition="2" font="Regula; 20" halign="center" backgroundColor="black" foregroundColor="white" valign="center">
+    <widget source="session.CurrentService" render="Label" position="807,643" size="130,20" transparent="1" zPosition="2" font="Regula; 20" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
       <convert type="TranspBAResolution">ResolutionString</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="254,605" size="60,31" font="Regular; 20" halign="center" backgroundColor="transpBA" transparent="1" zPosition="3" valign="center" foregroundColor="grisc">
@@ -153,7 +153,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap name="" position="383,643" size="20,20" pixmap="Satdreamgr-HD-TranspBA/icons/audio.png" alphatest="blend" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" position="408,643" size="100,20" font="Regula; 20" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="408,643" size="100,20" font="Regula; 20" foregroundColor="white" backgroundColor="blue" transparent="1" zPosition="3" valign="center" halign="center">
       <convert type="TranspBAAudioTrack">atype</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/icons/wide.png" position="1026,643" size="40,20" zPosition="2" alphatest="blend" transparent="1">
@@ -161,7 +161,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <!--infobar b-c -->
-    <widget source="session.CurrentService" render="Label" position="264,674" size="800,20" transparent="1" zPosition="3" font="Regular; 18" halign="left" backgroundColor="blue" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="264,674" size="800,20" transparent="1" zPosition="3" font="Regular; 18" halign="left" backgroundColor="black" foregroundColor="white">
       <convert type="TranspBACaidInfo2">
       </convert>
     </widget>
