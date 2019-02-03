@@ -1042,18 +1042,18 @@
     <widget name="duration" position="820,100" size="122,24" transparent="1" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="white" zPosition="2" />
     <widget name="epg_description" position="300,145" size="925,300" transparent="1" font="Regular; 22" halign="block" zPosition="2" foregroundColor="white" backgroundColor="transpBA" />
     <widget name="FullDescription" position="0,0" size="0,0" />
-    <widget source="session.Event_Now" render="Label" position="398,550" size="725,24" transparent="1" zPosition="2" foregroundColor="grey" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
+    <widget source="session.Event_Now" render="Label" position="398,550" size="725,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="398,590" size="725,24" transparent="1" zPosition="2" foregroundColor="grey" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
+    <widget source="session.Event_Now" render="Label" position="398,590" size="725,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 22" halign="center" backgroundColor="transpBA" valign="center">
       <convert type="EventName">Rating</convert>
     </widget>
     <eLabel text="-" position="710,100" size="15,24" font="Regular; 22" halign="center" backgroundColor="transpBA" foregroundColor="grey" transparent="1" zPosition="2" />
     <widget source="Title" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
       <convert type="TranspBARefString">CurrentRef</convert>
     </widget>
-    <widget name="epg_eventname" position="0,0" size="0,0" transparent="1" font="Regular;22" halign="left" foregroundColor="grey" />
-    <widget name="channel" position="300,470" size="918,24" zPosition="4" transparent="1" font="Regular;22" halign="center" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="epg_eventname" position="0,0" size="0,0" transparent="1" font="Regular;22" halign="left" backgroundColor="blue" foregroundColor="white" />
+    <widget name="channel" position="300,470" size="918,24" zPosition="4" transparent="1" font="Regular;22" halign="center" backgroundColor="blue" foregroundColor="white" />
     <ePixmap name="" position="1082,501" size="24,20" pixmap="Satdreamgr-HD-TranspBA/icons/select.png" alphatest="blend" zPosition="2" />
     <widget source="session.CurrentService" render="Label" position="1112,501" size="60,20" transparent="1" zPosition="2" font="Regula; 20" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
       <convert type="PliExtraInfo">VideoCodec</convert>
