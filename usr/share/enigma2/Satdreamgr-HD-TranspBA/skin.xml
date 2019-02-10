@@ -101,6 +101,10 @@
     <parameter name="ServiceInfoLeft" value="0, 0, 400, 25" />
     <parameter name="ServiceInfoRight" value="400, 0, 600, 25" />
   </parameters>
+  <switchpixmap>
+    <pixmap name="menu_on" filename="Satdreamgr-HD-TranspBA/icons/menu_on.png" />
+    <pixmap name="menu_off" filename="Satdreamgr-HD-TranspBA/icons/menu_off.png" />
+  </switchpixmap>  
   <!-- Main screen colors (id=0 for Menu's, id=1 for LCD) -->
   <windowstyle type="skinned" id="0">
     <title offset="15,9" font="Regular; 22" />
