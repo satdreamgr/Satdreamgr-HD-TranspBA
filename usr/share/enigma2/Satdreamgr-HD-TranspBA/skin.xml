@@ -966,37 +966,41 @@
   </screen>
   <!-- Channel, EPG, EventInfo -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="N3Template" />
-    <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regular; 22" serviceInfoFont="Regular; 22" serviceNumberFont="Regular; 20" colorServiceDescription="#000064c7" foregroundColorEventSelected="jeaune" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
-    <widget source="ServiceEvent" render="Label" position="300,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="center">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="380,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="left">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" zPosition="1" position="468,470" size="754,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" font="Regula; 20" position="300,500" size="922,134" halign="block" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" zPosition="1" position="300,640" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
-      <convert type="TranspBANextEvents">Event1,noDuration</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
-    <widget position="40,660" size="240,40" source="ServiceEvent" render="Label" font="Regular; 18" halign="center" zPosition="4" transparent="0" foregroundColor="white" valign="center" backgroundColor="transpBA" noWrap="1">
-      <convert type="TranspBAServName">TpansponderInfo</convert>
-    </widget>
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/menu.png" position="70,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/info.png" position="162,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
-    <widget source="ServiceEvent" render="Label" zPosition="1" position="300,670" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
-      <convert type="TranspBANextEvents">Event2,noDuration</convert>
-    </widget>
-  </screen>
+  <panel name="N3Template" />
+  <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regular; 22" serviceInfoFont="Regular; 22" serviceNumberFont="Regular; 20" colorServiceDescription="#000064c7" foregroundColorEventSelected="jeaune" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
+  <widget source="ServiceEvent" render="Label" position="300,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="center">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="380,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="left">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" zPosition="1" position="468,470" size="754,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" font="Regula; 20" position="300,500" size="922,134" halign="block" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" zPosition="1" position="300,640" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
+    <convert type="TranspBANextEvents">Event1,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget position="40,660" size="240,40" source="ServiceEvent" render="Label" font="Regular; 18" halign="center" zPosition="4" transparent="0" foregroundColor="white" valign="center" backgroundColor="transpBA" noWrap="1">
+    <convert type="TranspBAServName">TpansponderInfo</convert>
+  </widget>
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/menu.png" position="70,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/info.png" position="162,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
+  <widget source="ServiceEvent" render="Label" zPosition="1" position="300,670" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
+    <convert type="TranspBANextEvents">Event2,noDuration</convert>
+  </widget>
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,95" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,455" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+
+
+</screen>
   <!-- Simple Channel Selection -->
   <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="N3Template" />
@@ -1513,8 +1517,8 @@
   <screen name="CommitInfo" title="Latest Commits" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TGTTemplate" />
     <ePixmap name="" position="98,183" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/information2.png" zPosition="4" transparent="0" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_prev.png" position="500,655" size="35,25" alphatest="on" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_next.png" position="970,655" size="35,25" alphatest="on" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_prev.png" position="500,655" size="35,25" alphatest="blend" zPosition="1" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/skin_default/buttons/key_next.png" position="970,655" size="35,25" alphatest="blend" zPosition="1" />
     <widget name="AboutScrollLabel" font="Regular; 22" position="307,105" size="920,500" zPosition="2" halign="left" foregroundColor="white" backgroundColor="transpBA" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,100" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="410,620" size="750,1" scale="1" zPosition="10" alphatest="blend" />
