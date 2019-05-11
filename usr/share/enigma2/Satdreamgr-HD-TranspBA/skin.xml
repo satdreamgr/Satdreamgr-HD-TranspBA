@@ -1989,11 +1989,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="VirtualKeyBoard" title="Virtual keyboard" position="0,0" size="1280,720" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/keyboard.png" zPosition="4" transparent="0" alphatest="blend" />
-    <ePixmap pixmap="skin_default/vkey_text.png" position="435,209" size="550,52" zPosition="0" alphatest="blend" />
-    <widget name="text" position="443,219" size="536,34" transparent="1" noWrap="1" font="Regular; 26" valign="center" backgroundColor="transpBA" foregroundColor="white" />
-    <widget name="list" position="439,281" size="540,225" selectionDisabled="1" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <widget name="prompt" position="437,171" size="548,25" font="Regular; 22" noWrap="1" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" halign="left" valign="center" />
-    <widget name="locale" position="438,540" size="467,25" font="Regular;20" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="prompt" position="430,150" size="630,50" font="Regular; 22" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
+    <ePixmap pixmap="skin_default/vkey_text.png" position="430,209" size="640,50" zPosition="0" alphatest="blend" />
+    <widget name="text" position="430,220" size="630,30" transparent="1" noWrap="1" font="Regular; 26" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="list" position="430,281" size="630,225" selectionDisabled="1" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="locale" position="430,540" size="570,25" font="Regular;20" transparent="1" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="mode" position="917,540" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" zPosition="2" backgroundColor="transpBA" foregroundColor="white" />
     <widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
