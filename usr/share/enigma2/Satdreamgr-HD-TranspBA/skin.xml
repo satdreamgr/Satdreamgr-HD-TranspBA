@@ -2137,7 +2137,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_snr.png" position="403,502" size="220,16" borderWidth="1" borderColor="blue" zPosition="0" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel text="SNR:" position="329,500" size="70,20" backgroundColor="transpBA" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" halign="right" foregroundColor="white" />
+    <eLabel text="SNR:" position="330,500" size="70,20" backgroundColor="transpBA" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" halign="right" foregroundColor="white" />
     <widget source="Frontend" render="Label" position="627,500" size="70,20" halign="center" borderWidth="1" transparent="1" font="Regular; 20" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
@@ -2158,12 +2158,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget source="Frontend" render="Progress" pixmap="Satdreamgr-HD-TranspBA/border/bar_agc.png" position="821,553" size="220,16" transparent="1" borderWidth="1" borderColor="blue">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel name="lock" text="Lock:" position="840,500" size="60,22" font="Regular; 21" halign="right" backgroundColor="transpBA" foregroundColor="white" />
-    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="1013,498" zPosition="1" size="25,24" alphatest="on">
+    <eLabel text="LOCK:" position="759,500" size="70,20" font="Regular; 20" halign="right" backgroundColor="transpBA" foregroundColor="white" />
+    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="833,502" zPosition="1" size="25,24" alphatest="blend">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="1010,498" zPosition="1" size="25,24" alphatest="on">
+    <widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="833,502" zPosition="1" size="25,24" alphatest="blend">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
