@@ -924,38 +924,38 @@
   </screen>
   <screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" title="Audio" backgroundColor="transparent">
     <panel name="PTTemplate" />
-    <widget name="config" position="463,140" size="580,120" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" zPosition="1" />
+    <widget name="config" position="440,140" size="620,120" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" zPosition="1" />
     <ePixmap name="" position="239,290" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/audio.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget source="key_red" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_red.png" position="420,140" size="30,30" alphatest="on" zPosition="2">
+    <widget source="key_red" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_red.png" position="418,143" size="30,30" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="key_green" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_green.png" position="420,170" size="30,30" alphatest="on" zPosition="2">
+    <widget source="key_green" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_green.png" position="418,173" size="30,30" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="key_yellow" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_yellow.png" position="420,200" size="30,30" alphatest="on" zPosition="2">
+    <widget source="key_yellow" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_yellow.png" position="418,203" size="30,30" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="key_blue" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_blue.png" position="420,230" size="30,30" alphatest="on" zPosition="2">
+    <widget source="key_blue" render="Pixmap" pixmap="Satdreamgr-HD-TranspBA/buttons/key_blue.png" position="418,233" size="30,30" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="420,290" size="623,285" zPosition="1" transparent="1">
+    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="420,290" size="625,283" zPosition="1" transparent="1">
       <convert type="TemplatedMultiContent">
         {
           "templates":
             {
               "default": (25, [
-                MultiContentEntryText(pos = (0,0),   size = (50,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key
+                MultiContentEntryText(pos = (5,0),   size = (40,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key
                 MultiContentEntryText(pos = (55,0),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number
                 MultiContentEntryText(pos = (65,0),  size = (210,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description
                 MultiContentEntryText(pos = (280,0), size = (270,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language
-                MultiContentEntryText(pos = (550,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection
+                MultiContentEntryText(pos = (600,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection
               ], True, "showNever"),
               "notselected": (25, [
-                MultiContentEntryText(pos = (0,0),   size = (50,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key
+                MultiContentEntryText(pos = (5,0),   size = (40,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # key
                 MultiContentEntryText(pos = (55,0),  size = (10,25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # number
                 MultiContentEntryText(pos = (65,0),  size = (210,25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description
                 MultiContentEntryText(pos = (280,0), size = (270,25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language
-                MultiContentEntryText(pos = (550,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection
+                MultiContentEntryText(pos = (600,4), size = (15,25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection
               ], False, "showNever")
             },
           "fonts": [ gFont("Regular", 22), gFont("Regular", 16) ],
