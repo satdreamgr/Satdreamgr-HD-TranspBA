@@ -3588,14 +3588,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <!-- Archive Explorer -->
-  <screen name="AboutScreen" position="0,0" size="1280,720" title="About Explorer" backgroundColor="transparent" flags="wfNoBorder">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/archives.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="text" position="331,150" size="790,395" font="Regular; 22" transparent="1" halign="center" noWrap="1" backgroundColor="transpBA" zPosition="1" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
   <!-- GreekStream -->
   <screen name="GSMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
@@ -3727,7 +3719,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget alphatest="on" name="logo" position="10,10" size="48,48" transparent="1" zPosition="2" backgroundColor="background" />
     <widget font="Regular; 20" halign="center" name="message" position="10,10" size="538,48" valign="center" foregroundColor="foreground" backgroundColor="background" />
   </screen>
-  <!-- Swap Manager -->
   <!-- SDG Backup -->
   <screen name="SDGBackup" title="SDGBackup Dreambox Enigma2" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0" zPosition="-1">
     <panel name="TBTemplate" />
@@ -3776,45 +3767,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <!-- Swap Manager -->
   <screen name="SystemToolsSwap" position="0,0" size="1280,720" title="System Tools Swapfile Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="entries" position="330,150" size="790,405" font="Regular; 24" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
-  <screen name="SystemToolsInf" position="0,0" size="1280,720" title="System Tools Info Menu" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="entries" position="330,150" size="790,395" font="Regular; 24" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
-  <screen name="SystemToolsSc" position="0,0" size="1280,720" title="System Tools Main Menu" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="entries" position="330,150" size="790,395" font="Regular; 24" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
-  <screen name="SystemToolsConfig" position="0,0" size="1280,720" title="System Tools Config Screen" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="config" position="330,150" size="790,395" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
-  <screen name="SystemToolsTextBox" position="0,0" size="1280,720" title="System Tools Text Box" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="text" position="330,150" size="790,395" font="Console; 19" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
-  <screen name="SystemToolsConsole" position="0,0" size="1280,720" title="System Tools Console" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/memory.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="text" position="330,150" size="790,395" font="Console; 19" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
@@ -3936,14 +3893,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <eLabel name="" position="310,462" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <widget name="config" position="330,150" size="790,300" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" />
-  </screen>
-  <!-- PanelTextexit -->
-  <screen name="PanelTextexit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/script.png" zPosition="4" transparent="0" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <widget name="text" position="330,150" size="790,405" transparent="1" font="Regular; 22" backgroundColor="transpBA" foregroundColor="white" />
   </screen>
   <!-- MyMenuSKIN -->
   <screen name="MyMenuSKIN" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
