@@ -69,7 +69,8 @@ MENUS = {
         'auto_3d_setup': 'menu/system/osd.png', 
         'hdmi_cec_setup': 'menu/system/hdmi.png',
         'video_finetune': 'menu/system/video-tuning.png',
-        'iptv_config': 'menu/system/iplayer.png',       
+        'iptv_config': 'menu/system/iplayer.png',
+        'AutomaticCleanup': 'menu/system/broom.png',               
          # menu_gui         
         'language_setup': 'menu/system/language.png',         
         'timezone_setup': 'menu/system/timezone.png',
