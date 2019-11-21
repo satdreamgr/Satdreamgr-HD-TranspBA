@@ -229,8 +229,8 @@
       <convert type="TranspBACaidInfo2">
       </convert>
     </widget>
-  <!--weathermsninfobar-->
-  <!--<eLabel />
+    <!--weathermsninfobar-->
+    <!--<eLabel /> 
   <widget source="global.CurrentTime" render="Label" position="856,54" zPosition="2" size="55,24" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="black" foregroundColor="green">
     <convert type="TranspBAMSNWeather2">Hightemp1</convert>
   </widget>
