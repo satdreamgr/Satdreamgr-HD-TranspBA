@@ -3588,33 +3588,34 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <!-- GreekNetRadio -->
+  <screen name="GreekNetRadio" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/radio.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget name="menu" itemHeight="35" font="Regular; 24" position="330,150" size="790,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
   <!-- GreekStream -->
   <screen name="GSMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
-    <eLabel text="GreekStreamTV" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 26" valign="center" halign="center" foregroundColor="jeaune" />
+    <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="menu" itemHeight="30" font="Regular; 24" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- GreekStream -->
   <screen name="GreekStreamTVList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+    <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="GreekStreamTV List (Livestreamer)" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="1" font="Regular; 26" valign="center" halign="center" foregroundColor="jeaune" />
     <widget name="streamlist" itemHeight="35" font="Regular; 22" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend" />
-    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
   <!-- GreekStream -->
   <screen name="SelectQuality" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="STBTemplate" />
+    <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/panel/greekstream.png" zPosition="4" transparent="0" alphatest="blend" />
-    <eLabel text="Select Quality" position="290,69" size="700,50" backgroundColor="NLPreBlack" transparent="1" zPosition="5" font="Regular; 26" valign="center" halign="center" foregroundColor="jeaune" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_exit.png" position="180,612" size="40,32" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
     <widget name="menu" itemHeight="35" font="Regular; 26" position="330,150" size="790,385" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
@@ -4443,9 +4444,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <panel name="TBTemplate" />
     <widget name="config" scrollbarMode="showOnDemand" enableWrapAround="1" position="330,150" size="790,310" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
     <widget source="help" render="Label" position="332,490" size="790,94" backgroundColor="transpBA" transparent="1" font="Regular; 20" zPosition="1" foregroundColor="white" />
-	<ePixmap pixmap="div-h.png" position="0,0" zPosition="1" size="0,0" />     
+	<ePixmap pixmap="div-h.png" position="0,0" zPosition="1" size="0,0" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/menu/system/broom.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <eLabel name="" position="310,480" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
-  </screen> 
+  </screen>
 </skin>
