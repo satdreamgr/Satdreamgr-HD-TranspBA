@@ -3260,7 +3260,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="config" position="330,540" scrollbarMode="showOnDemand" size="520,30" backgroundColor="transpBA" font="Regular; 20" foregroundColor="white" />
   </screen>
   <!-- Devices Manager -->
-  <screen name="HddFastRemove" position="0,0" size="1280,720" flags="wfNoBorder" transparent="1" backgroundColor="transparent">
+  <screen name="HddFastRemove" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <eLabel name="" position="310,520" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="Satdreamgr-HD-TranspBA/iconssc/storage.png" zPosition="4" transparent="0" alphatest="blend" />
