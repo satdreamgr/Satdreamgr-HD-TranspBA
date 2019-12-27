@@ -278,8 +278,8 @@
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1080,85" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
-    <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="0" />
-    <eLabel position="150,198" zPosition="1" size="145,310" backgroundColor="transpBA" transparent="0" />
+    <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="-10" />
+    <eLabel position="150,198" size="145,310" backgroundColor="transpBA" zPosition="-5" />
     <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
@@ -309,8 +309,8 @@
     <ePixmap name="" pixmap="Satdreamgr-HD-TranspBA/icons/logo.png" position="1098,84" size="24,24" alphatest="blend" zPosition="10" />
     <eLabel name="" position="140,64" size="1000,60" zPosition="-1" backgroundColor="NLPreBlack" />
     <eLabel name="" position="140,594" size="1000,60" backgroundColor="NLPreBlack" zPosition="-1" />
-    <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="0" />
-    <eLabel position="150,198" zPosition="1" size="145,310" backgroundColor="transpBA" transparent="0" />
+    <eLabel name="" position="140,124" size="165,471" backgroundColor="blue" zPosition="-10" />
+    <eLabel position="150,198" size="145,310" backgroundColor="transpBA" zPosition="-5" />
     <widget source="global.CurrentTime" render="Label" position="140,166" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" halign="center" valign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
@@ -3587,6 +3587,40 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="260,612" size="40,32" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
+  <!-- SDGRadio -->
+  <screen name="SDGRadioScreen" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <eLabel name="Select" text="Select" position="150,210" size="145,24" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" halign="center" />
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/key_ok.png" position="203,277" size="40,32" alphatest="blend"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheg.png" position="153,277" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/fleched.png" position="263,277" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheh.png" position="208,235" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/border/flecheb.png" position="208,315" size="40,30" alphatest="blend"/>
+    <widget name="mem_0" pixmaps="buttons/SDGRadio/mem_0_empty.png,buttons/SDGRadio/mem_0_stored.png,buttons/SDGRadio/mem_0_selected.png" position="178,355" size="40,30" alphatest="blend"/>
+    <widget name="mem_1" pixmaps="buttons/SDGRadio/mem_1_empty.png,buttons/SDGRadio/mem_1_stored.png,buttons/SDGRadio/mem_1_selected.png" position="228,355" size="40,30" alphatest="blend"/>
+    <widget name="mem_2" pixmaps="buttons/SDGRadio/mem_2_empty.png,buttons/SDGRadio/mem_2_stored.png,buttons/SDGRadio/mem_2_selected.png" position="155,390" size="40,30" alphatest="blend"/>
+    <widget name="mem_3" pixmaps="buttons/SDGRadio/mem_3_empty.png,buttons/SDGRadio/mem_3_stored.png,buttons/SDGRadio/mem_3_selected.png" position="203,390" size="40,30" alphatest="blend"/>
+    <widget name="mem_4" pixmaps="buttons/SDGRadio/mem_4_empty.png,buttons/SDGRadio/mem_4_stored.png,buttons/SDGRadio/mem_4_selected.png" position="252,390" size="40,30" alphatest="blend"/>
+    <widget name="mem_5" pixmaps="buttons/SDGRadio/mem_5_empty.png,buttons/SDGRadio/mem_5_stored.png,buttons/SDGRadio/mem_5_selected.png" position="155,425" size="40,30" alphatest="blend"/>
+    <widget name="mem_6" pixmaps="buttons/SDGRadio/mem_6_empty.png,buttons/SDGRadio/mem_6_stored.png,buttons/SDGRadio/mem_6_selected.png" position="203,425" size="40,30" alphatest="blend"/>
+    <widget name="mem_7" pixmaps="buttons/SDGRadio/mem_7_empty.png,buttons/SDGRadio/mem_7_stored.png,buttons/SDGRadio/mem_7_selected.png" position="250,425" size="40,30" alphatest="blend"/>
+    <widget name="mem_8" pixmaps="buttons/SDGRadio/mem_8_empty.png,buttons/SDGRadio/mem_8_stored.png,buttons/SDGRadio/mem_8_selected.png" position="178,463" size="40,30" alphatest="blend"/>
+    <widget name="mem_9" pixmaps="buttons/SDGRadio/mem_9_empty.png,buttons/SDGRadio/mem_9_stored.png,buttons/SDGRadio/mem_9_selected.png" position="228,463" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="buttons/SDGRadio/radio-frequency.png" position="310,129" size="830,460" scale="1"/>
+    <widget name="pi" position="320,150" size="150,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="traffic" position="500,150" size="100,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="af" position="600,150" size="50,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="eon" position="650,150" size="70,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="ct" position="720,150" size="50,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="rt+" position="770,150" size="50,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="freq" position="320,200" size="790,90" valign="center" halign="center" font="Digital;100" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="prog_type" position="650,370" size="300,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="radiotext" position="330,490" size="580,80" valign="center" halign="center" font="Regular;24" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <widget name="pic" position="925,435" size="200,150" alphatest="on" backgroundColor="#20000000" zPosition="20"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/SDGRadio/key_info.png" position="175,610" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/SDGRadio/key_menu.png" position="225,610" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="Satdreamgr-HD-TranspBA/buttons/SDGRadio/key_pvr.png" position="275,610" size="40,30" alphatest="blend"/>
   </screen>
   <!-- GreekNetRadio -->
   <screen name="GreekNetRadio" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
