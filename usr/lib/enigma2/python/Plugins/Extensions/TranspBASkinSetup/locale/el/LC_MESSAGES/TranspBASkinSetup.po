@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TranspBASkinSetup\n"
+"POT-Creation-Date: 2020-01-12 01:25+0200\n"
+"PO-Revision-Date: 2020-01-12 01:26+0200\n"
+"Last-Translator: \n"
+"Language-Team: SatDreamGr\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugin.py:21
+msgid "default"
+msgstr "προεπιλογή"
+
+#: plugin.py:22
+msgid "black"
+msgstr "μαύρο"
+
+#: plugin.py:23
+msgid "ultra transparent"
+msgstr "διαφανές"
+
+#: plugin.py:24
+msgid "blue"
+msgstr "μπλε"
+
+#: plugin.py:25
+msgid "green"
+msgstr "πράσινο"
+
+#: plugin.py:26
+msgid "navy blue"
+msgstr "μπλε μαρέν"
+
+#: plugin.py:27
+msgid "grey"
+msgstr "γκρι"
+
+#: plugin.py:30
+msgid "simple"
+msgstr "απλή"
+
+#: plugin.py:31
+msgid "full"
+msgstr "πλήρης (πάνω-κάτω)"
+
+#: plugin.py:32
+msgid "full bottom"
+msgstr "πλήρης (μόνο κάτω)"
+
+#: plugin.py:41 plugin.py:168 plugin.py:174
+msgid "TranspBA skin setup"
+msgstr "Ρύθμιση θέματος TranspBA"
+
+#: plugin.py:44
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: plugin.py:45
+msgid "OK"
+msgstr "ΟΚ"
+
+#: plugin.py:58
+msgid "Skin color"
+msgstr "Χρώμα θέματος"
+
+#: plugin.py:60
+msgid "Choose the background color of the skin."
+msgstr "Επιλέξτε το χρώμα παρασκηνίου."
+
+#: plugin.py:62
+msgid "Infobar style"
+msgstr "Μπάρα πληροφοριών"
+
+#: plugin.py:64
+msgid "Select the type of the infobar."
+msgstr "Επιλέξτε το στυλ της μπάρας πληροφοριών."
+
+#: plugin.py:66
+msgid "Weather on infobar"
+msgstr "Καιρός στην μπάρα πληροφοριών"
+
+#: plugin.py:68
+msgid "Show weather information on infobar (the MSN Weather plugin must be installed in your receiver)."
+msgstr "Εμφάνιση καιρού στην μπάρα πληροφοριών (το πρόσθετο MSN Weather πρέπει να είναι εγκατεστημένο στον δέκτη)."
+
+#: plugin.py:74
+msgid "Your receiver will be restarted in order to apply the new skin settings. Do you want to proceed?"
+msgstr "Θα γίνει επανεκκίνηση του δέκτη σας για να εφαρμοστούν οι νέες ρυθμίσεις του θέματος. Είστε σίγουροι ότι θέλετε να συνεχίσετε;"
+
+#: plugin.py:122
+msgid "Error applying color settings!"
+msgstr "Σφάλμα κατά τη εφαρμογή των ρυθμίσεων χρώματος του θέματος!"
+
+#: plugin.py:175
+msgid "Setup tool for Satdreamgr-HD-TranspBA skin"
+msgstr "Εργαλείο διαμόρφωσης για το θέμα Satdreamgr-HD-TranspBA"
