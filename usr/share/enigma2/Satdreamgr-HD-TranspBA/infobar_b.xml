@@ -56,20 +56,20 @@
     <ePixmap pixmap="dvr/scale1024.png" position="0,0" size="0,0" zPosition="1" />
     <ePixmap name="" position="1084,641" size="24,24" pixmap="infobar/cpu-s.png" alphatest="blend" zPosition="2" />
     <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,672" size="165,24" halign="left" valign="center" noWrap="1" font="Regula; 18" transparent="1" backgroundColor="blue" foregroundColor="white">
-      <convert type="PanelSpaceInfo">MemTotal,Short</convert>
+      <convert type="TranspBASpaceInfo">MemTotal,Short</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,606" size="165,24" halign="left" valign="center" font="Regula; 18" noWrap="1" transparent="1" backgroundColor="blue" foregroundColor="white">
-      <convert type="PanelSpaceInfo">Flash,Short</convert>
+      <convert type="TranspBASpaceInfo">Flash,Short</convert>
     </widget>
     <widget backgroundColor="black" font="Regula; 18" foregroundColor="white" halign="center" position="1127,640" render="Label" size="120,26" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
-      <convert type="PanelCpuUsage">Total</convert>
+      <convert type="TranspBACpuUsage">Total</convert>
     </widget>
     <!--infobar bas a b c-->
     <ePixmap name="" position="170,675" size="20,20" pixmap="infobar/cpu.png" alphatest="blend" zPosition="11" />
     <ePixmap name="" position="0,462" size="1280,174" pixmap="infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,636" size="1280,84" pixmap="infobar/infobarbas.png" alphatest="blend" zPosition="0" />
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
-      <convert type="TranspBACPUinfo">CPUtemp</convert>
+      <convert type="TranspBACpuInfo">CPUtemp</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TranspBACamd">Camd</convert>

@@ -4,7 +4,7 @@ from Components.Element import cached
 import os
 import re
 
-class TranspBACPUinfo(Converter, object):
+class TranspBACpuInfo(Converter):
 
 	def __init__(self, type):
 		Converter.__init__(self, type)
@@ -28,7 +28,7 @@ class TranspBACPUinfo(Converter, object):
 		if os.path.isfile("/proc/hisi/msp/pm_cpu"):
 			temp = re.search('temperature = (\d+) degree', open("/proc/hisi/msp/pm_cpu").read()).group(1)
 		if temp:
-			return _("%s°C") % temp
+			return "%s°C" % temp
 		return ""
 
 	text = property(getText)

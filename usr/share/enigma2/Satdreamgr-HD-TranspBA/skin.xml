@@ -699,20 +699,20 @@
     <ePixmap pixmap="dvr/scale1024.png" position="0,0" size="0,0" zPosition="1" />
     <ePixmap name="" position="1084,641" size="24,24" pixmap="infobar/cpu-s.png" alphatest="blend" zPosition="2" />
     <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,672" size="165,24" halign="left" valign="center" noWrap="1" font="Regula; 18" transparent="1" backgroundColor="blue" foregroundColor="white">
-      <convert type="PanelSpaceInfo">MemTotal,Short</convert>
+      <convert type="TranspBASpaceInfo">MemTotal,Short</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="6" position="1085,606" size="165,24" halign="left" valign="center" font="Regula; 18" noWrap="1" transparent="1" backgroundColor="blue" foregroundColor="white">
-      <convert type="PanelSpaceInfo">Flash,Short</convert>
+      <convert type="TranspBASpaceInfo">Flash,Short</convert>
     </widget>
     <widget backgroundColor="black" font="Regula; 18" foregroundColor="white" halign="center" position="1127,640" render="Label" size="120,26" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
-      <convert type="PanelCpuUsage">Total</convert>
+      <convert type="TranspBACpuUsage">Total</convert>
     </widget>
     <!--infobar bas a b c-->
     <ePixmap name="" position="170,675" size="20,20" pixmap="infobar/cpu.png" alphatest="blend" zPosition="11" />
     <ePixmap name="" position="0,462" size="1280,174" pixmap="infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,636" size="1280,84" pixmap="infobar/infobarbas.png" alphatest="blend" zPosition="0" />
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
-      <convert type="TranspBACPUinfo">CPUtemp</convert>
+      <convert type="TranspBACpuInfo">CPUtemp</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TranspBACamd">Camd</convert>
@@ -1210,7 +1210,7 @@
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <widget source="session.CurrentService" render="Label" zPosition="6" position="382,673" size="515,20" halign="center" valign="center" font="Regular; 18" transparent="1" foregroundColor="white" backgroundColor="blue">
-      <convert type="PanelSpaceInfo">Flash,Full</convert>
+      <convert type="TranspBASpaceInfo">Flash,Full</convert>
     </widget>
     <ePixmap name="" position="140,671" size="1000,24" pixmap="border/bar_info.png" zPosition="0" alphatest="blend" />
     <ePixmap name="" position="252,612" size="40,30" pixmap="buttons/key_right.png" zPosition="5" alphatest="blend" />
@@ -1225,7 +1225,7 @@
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <widget source="session.CurrentService" render="Label" zPosition="6" position="382,673" size="515,20" halign="center" valign="center" font="Regular; 18" transparent="1" foregroundColor="white" backgroundColor="blue">
-      <convert type="PanelSpaceInfo">Flesh,Full</convert>
+      <convert type="TranspBASpaceInfo">Flesh,Full</convert>
     </widget>
     <ePixmap name="" position="140,671" size="1000,24" pixmap="border/bar_info.png" zPosition="0" alphatest="blend" />
   </screen>
@@ -2320,7 +2320,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap name="" position="0,462" size="1280,174" pixmap="infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,636" size="1280,84" pixmap="infobar/infobarbas.png" alphatest="blend" zPosition="0" />
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
-      <convert type="TranspBACPUinfo">CPUtemp</convert>
+      <convert type="TranspBACpuInfo">CPUtemp</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="388,521" size="860,40" font="Regular; 26" zPosition="2" transparent="1" valign="center" halign="left" backgroundColor="black" foregroundColor="blue" noWrap="1">
       <convert type="ServiceName">Name</convert>
@@ -3796,41 +3796,41 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <ePixmap name="" position="240,291" size="128,128" pixmap="iconssc/hardwareinfo.png" zPosition="4" transparent="0" alphatest="blend" />
     <ePixmap position="416,137" zPosition="5" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/ram.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,137" size="515,20" transparent="1" zPosition="6">
-      <convert type="PanelSpaceInfo">MemTotal</convert>
+      <convert type="TranspBASpaceInfo">MemTotal</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="6" position="478,162" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
-      <convert type="PanelSpaceInfo">MemTotal,Full</convert>
+      <convert type="TranspBASpaceInfo">MemTotal,Full</convert>
     </widget>
     <ePixmap position="416,237" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/swap.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,237" size="515,20" transparent="1" zPosition="6">
-      <convert type="PanelSpaceInfo">SwapTotal</convert>
+      <convert type="TranspBASpaceInfo">SwapTotal</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="6" position="478,261" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
-      <convert type="PanelSpaceInfo">SwapTotal,Full</convert>
+      <convert type="TranspBASpaceInfo">SwapTotal,Full</convert>
     </widget>
     <ePixmap position="416,337" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/flash.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,335" size="515,20" transparent="1" zPosition="6">
-      <convert type="PanelSpaceInfo">FleshInfo</convert>
+      <convert type="TranspBASpaceInfo">FleshInfo</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="6" position="478,362" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
-      <convert type="PanelSpaceInfo">Flesh,Full</convert>
+      <convert type="TranspBASpaceInfo">Flesh,Full</convert>
     </widget>
     <ePixmap position="416,437" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/hdd.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,437" size="515,20" transparent="1" zPosition="6">
-      <convert type="PanelSpaceInfo">HddInfo</convert>
+      <convert type="TranspBASpaceInfo">HddInfo</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="6" position="478,461" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
-      <convert type="PanelSpaceInfo">HddInfo,Full</convert>
+      <convert type="TranspBASpaceInfo">HddInfo,Full</convert>
     </widget>
     <ePixmap position="416,537" zPosition="1" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/usb.png" alphatest="blend" />
     <widget source="session.Event_Now" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Satdreamgr/Hardware/icons/bar.png" position="478,537" size="515,20" transparent="1" zPosition="6">
-      <convert type="PanelSpaceInfo">UsbInfo</convert>
+      <convert type="TranspBASpaceInfo">UsbInfo</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" zPosition="6" position="478,562" size="515,26" halign="left" valign="center" font="Regular; 22" transparent="1" foregroundColor="white" backgroundColor="transpBA">
-      <convert type="PanelSpaceInfo">UsbInfo,Full</convert>
+      <convert type="TranspBASpaceInfo">UsbInfo,Full</convert>
     </widget>
     <widget backgroundColor="un15" font="Regular; 23" foregroundColor="green" halign="center" position="866,627" render="Label" size="120,23" source="session.CurrentService" transparent="1" zPosition="1" valign="center">
-      <convert type="PanelCpuUsage">Total</convert>
+      <convert type="TranspBACpuUsage">Total</convert>
     </widget>
   </screen>
   <!-- Additional Plugins -->
@@ -3910,21 +3910,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <eLabel name="" position="310,462" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <widget name="config" position="330,150" size="790,300" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" />
   </screen>
-  <!-- MyMenuSKIN -->
-  <screen name="MyMenuSKIN" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/skin.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="menu" position="330,150" size="790,360" transparent="1" font="Regular; 22" foregroundColor="white" />
-    <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
-  <!-- TranspBA Skin Configuration -->
-  <screen name="SatdreamgrTranspBA" title="Edit color" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- TranspBA Skin Setup -->
+  <screen name="TranspBASkinSetup" title="TranspBA skin setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/skin.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="config" position="330,150" size="790,360" transparent="1" font="Regular; 22" foregroundColor="white" />
+    <widget name="description" position="332,490" size="790,94" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,480" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
   <screen name="SatdreamgrTranspBASD" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
