@@ -5,7 +5,7 @@
     <ePixmap name="" position="0,462" size="1280,174" pixmap="infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
     <ePixmap name="" position="0,636" size="1280,84" pixmap="infobar/infobarbas.png" alphatest="blend" zPosition="0" />
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
-      <convert type="TranspBACPUinfo">CPUtemp</convert>
+      <convert type="TranspBACpuInfo">CPUtemp</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="white">
       <convert type="TranspBACamd">Camd</convert>
