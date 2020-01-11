@@ -1,0 +1,546 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TranspBASkinSetup\n"
+"POT-Creation-Date: 2020-01-11 22:18+0200\n"
+"PO-Revision-Date: 2020-01-11 22:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: SatDreamGr\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugin.py:21
+msgid "default"
+msgstr "προεπιλογή"
+
+#: plugin.py:22
+msgid "black"
+msgstr "μαύρο"
+
+#: plugin.py:23
+msgid "ultra transparent"
+msgstr "διαφανές"
+
+#: plugin.py:24
+msgid "blue"
+msgstr "μπλε"
+
+#: plugin.py:25
+msgid "green"
+msgstr "πράσινο"
+
+#: plugin.py:26
+msgid "navy blue"
+msgstr "μπλε μαρέν"
+
+#: plugin.py:27
+msgid "grey"
+msgstr "γκρι"
+
+#: plugin.py:30
+msgid "simple"
+msgstr "απλή"
+
+#: plugin.py:31
+msgid "full"
+msgstr "πλήρης (πάνω-κάτω)"
+
+#: plugin.py:32
+msgid "full bottom"
+msgstr "πλήρης (μόνο κάτω)"
+
+#: plugin.py:41 plugin.py:168 plugin.py:174
+msgid "TranspBA skin setup"
+msgstr "Ρύθμιση θέματος TranspBA"
+
+#: plugin.py:44
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: plugin.py:45
+msgid "OK"
+msgstr "ΟΚ"
+
+#: plugin.py:58
+msgid "Skin color"
+msgstr "Χρώμα θέματος"
+
+#: plugin.py:60
+msgid "Choose the background color of the skin."
+msgstr "Επιλέξτε το χρώμα παρασκηνίου."
+
+#: plugin.py:62
+msgid "Infobar style"
+msgstr "Μπάρα πληροφοριών"
+
+#: plugin.py:64
+msgid "Select the type of the infobar."
+msgstr "Επιλέξτε το στυλ της μπάρας πληροφοριών."
+
+#: plugin.py:66
+msgid "Weather on infobar"
+msgstr "Καιρός στην μπάρα πληροφοριών"
+
+#: plugin.py:68
+msgid "Show weather information on infobar (the MSN Weather plugin must be installed in your receiver)."
+msgstr "Εμφάνιση καιρού στην μπάρα πληροφοριών (το πρόσθετο MSN Weather πρέπει να είναι εγκατεστημένο στον δέκτη)."
+
+#: plugin.py:74
+msgid "Your receiver will be restarted in order to apply the new skin settings. Do you want to proceed?"
+msgstr "Θα γίνει επανεκκίνηση του δέκτη σας για να εφαρμοστούν οι νέες ρυθμίσεις του θέματος. Είστε σίγουροι ότι θέλετε να συνεχίσετε;"
+
+#: plugin.py:122
+msgid "Error applying color settings!"
+msgstr "Σφάλμα κατά τη εφαρμογή των ρυθμίσεων χρώματος του θέματος!"
+
+#: plugin.py:175
+msgid "Setup tool for Satdreamgr-HD-TranspBA skin"
+msgstr "Εργαλείο διαμόρφωσης για το θέμα Satdreamgr-HD-TranspBA"
+
+#~ msgid "Show weather information on infobar."
+#~ msgstr "Εμφάνιση πληροφοριών καιρού στην μπάρα πληροφοριών."
+
+#~ msgid "TranspBA skin configuration"
+#~ msgstr "Ρύθμιση θέματος TranspBA"
+
+#~ msgid "System information"
+#~ msgstr "Πληροφορίες συστήματος"
+
+#~ msgid "Hardware info"
+#~ msgstr "Πληροφορίες υλικού"
+
+#~ msgid "DVB modules"
+#~ msgstr "Δομοστοιχεία DVB"
+
+#~ msgid "Netstat"
+#~ msgstr "Πληροφορίες δικτύου"
+
+#~ msgid "Ifconfig"
+#~ msgstr "Κατάσταση δικτύου"
+
+#~ msgid "Internet connectivity test"
+#~ msgstr "Έλεγχος σύνδεσης ίντερνετ"
+
+#~ msgid "Second stage loader version"
+#~ msgstr "Έκδοση second stage loader"
+
+#~ msgid "Show installed packages"
+#~ msgstr "Εμφάνιση εγκατεστημένων πακέτων"
+
+#~ msgid "Show devices"
+#~ msgstr "Εμφάνιση συσκευών"
+
+#~ msgid "Show mounts"
+#~ msgstr "Εμφάνιση προσαρτήσεων"
+
+#~ msgid "Delete crash logs"
+#~ msgstr "Διαγραφή αρχείων καταγραφής"
+
+#~ msgid "Create debug log"
+#~ msgstr "Δημιουργία αρχείου καταγραφής"
+
+#~ msgid "Exit"
+#~ msgstr "Έξοδος"
+
+#~ msgid "Select"
+#~ msgstr "Επιλογή"
+
+#~ msgid "Second stage loader installed version"
+#~ msgstr "Εγκατεστημένη έκδοση second stage loader"
+
+#~ msgid "Device info"
+#~ msgstr "Πληροφορίες συσκευών"
+
+#~ msgid "Mounts info"
+#~ msgstr "Πληροφορίες προσαρτήσεων"
+
+#~ msgid "Do you really want to delete all existing crash logs?"
+#~ msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε τα υπάρχοντα αρχεία καταγραφής;"
+
+#~ msgid "Do you really want to create a new debug log?"
+#~ msgstr "Είστε βέβαιοι ότι θέλετε να δημιουργήσετε ένα νέο αρχείο καταγραφής;"
+
+#~ msgid "Execution finished!"
+#~ msgstr "Η εκτέλεση ολοκληρώθηκε!"
+
+#~ msgid "Archives explorer"
+#~ msgstr "Εξερεύνηση αρχείων"
+
+#~ msgid "Install ipk or tar.gz files..."
+#~ msgstr "Εγκατάσταση αρχείων ipk, tar.gz..."
+
+#~ msgid "Delete"
+#~ msgstr "Διαγραφή"
+
+#~ msgid "Info"
+#~ msgstr "Πληροφορίες"
+
+#~ msgid ""
+#~ "Information\n"
+#~ "\n"
+#~ "\n"
+#~ "Delete files\n"
+#~ "Install extensions (tar.gz, tar.bz2, ipk)\n"
+#~ "View images (png, jpg, jpeg)\n"
+#~ "View and execute shell scripts (sh)\n"
+#~ "Set 755 permissions to your scripts\n"
+#~ "Install bootlogo (bootlogo.tar.gz)\n"
+#~ " ---------------------------\n"
+#~ "By SatDreamGR\n"
+#~ "\n"
+#~ "http://www.satdreamgr.com\n"
+#~ "---------------------------"
+#~ msgstr ""
+#~ "Πληροφορίες \n"
+#~ "\n"
+#~ "\n"
+#~ "Διαγραφή αρχείων\n"
+#~ "Εγκατάσταση επεκτάσεων (tar.gz, tar.bz2, ipk)\n"
+#~ "Εμφάνιση εικόνων (png, jpg, jpeg)\n"
+#~ "Εμφάνιση και εκτέλεση αρχείων shell (sh)\n"
+#~ "Ορισμός δικαιωμάτων 755 για τα εκτελέσιμα αρχεία\n"
+#~ "Εγκατάσταση λογοτύπου εκκίνησης (bootlogo.tar.gz)\n"
+#~ " ---------------------------\n"
+#~ "By SatDreamGR\n"
+#~ "\n"
+#~ "http://www.satdreamgr.com\n"
+#~ "---------------------------"
+
+#~ msgid "About archives explorer"
+#~ msgstr "Σχετικά με την εξερεύνηση αρχείων"
+
+#~ msgid "Install new bootlogo..."
+#~ msgstr "Εγκατάσταση νέου λογοτύπου εκκίνησης..."
+
+#~ msgid "Bootlogo-package:\\n"
+#~ msgstr "Πακέτο λογοτύπου εκκίνησης:\\n"
+
+#~ msgid "Install this package"
+#~ msgstr "Εγκατάσταση αυτού του πακέτου"
+
+#~ msgid "GZ-package:\\n"
+#~ msgstr "Πακέτο GZ:\\n"
+
+#~ msgid "BZ2-package:\\n"
+#~ msgstr "Πακέτο BZ2:\\n"
+
+#~ msgid "View this shell-script"
+#~ msgstr "Προβολή εκτελέσιμου αρχείου shell"
+
+#~ msgid "Start execution"
+#~ msgstr "Έναρξη εκτέλεσης"
+
+#~ msgid "Set chmod to 755 for this file"
+#~ msgstr "Αλλαγή δικαιωμάτων σε 755 για αυτό το αρχείο"
+
+#~ msgid "Do you want to execute?\\n"
+#~ msgstr "Είστε βέβαιοι ότι θέλετε να εκτελέσετε;\\n"
+
+#~ msgid "View this file"
+#~ msgstr "Προβολή αρχείου"
+
+#~ msgid "[Media files] "
+#~ msgstr "[Αρχεία πολυμέσων] "
+
+#~ msgid "[All files] "
+#~ msgstr "[Όλα τα αρχεία] "
+
+#~ msgid ""
+#~ "Do you realy want to delete the following file?\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Είστε βέβαιοι ότι θέλετε να διαγράψετε το παρακάτω αρχείο;\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Delete file..."
+#~ msgstr "Διαγραφή αρχείου..."
+
+#~ msgid ""
+#~ "Do you realy want to delete the following directory and its content?\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Είστε βέβαιοι ότι θέλετε να διαγράψετε τον παρακάτω φάκελο και τα περιεχόμενά του;\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "Proceed at your own risk!"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Προχωρήστε με δική σας ευθύνη!"
+
+#~ msgid "Delete directory..."
+#~ msgstr "Διαγραφή φακέλου..."
+
+#, python-format
+#~ msgid ""
+#~ "%s\n"
+#~ "FAILED!"
+#~ msgstr ""
+#~ "%s\n"
+#~ "ΑΠΕΤΥΧΕ!"
+
+#~ msgid "Manipulate files"
+#~ msgstr "Διαχείριση αρχείων"
+
+#~ msgid "loading... "
+#~ msgstr "φόρτωση… "
+
+#~ msgid "ready..."
+#~ msgstr "έτοιμο..."
+
+#~ msgid "wait..."
+#~ msgstr "αναμείνατε..."
+
+#~ msgid "No more picture files."
+#~ msgstr "Δεν υπάρχουν άλλα αρχεία φωτογραφιών."
+
+#~ msgid "Picture camera"
+#~ msgstr "Picture camera"
+
+#~ msgid "Refresh list"
+#~ msgstr "Ανανέωση λίστας"
+
+#~ msgid "Internet connection error! Please check your internet connection!"
+#~ msgstr "Πρόβλημα στη σύνδεση με ίντερνετ! Ελέγξτε τη σύνδεση ίντερνετ!"
+
+#~ msgid "Download completed!"
+#~ msgstr "Η λήψη ολοκληρώθηκε!"
+
+#~ msgid "For information or questions please refer to the www.satdreamgr.com forum."
+#~ msgstr "Για πληροφορίες ή ερωτήσεις ανατρέξτε στο www.satdreamgr.com."
+
+#~ msgid "Picture camera is free."
+#~ msgstr "Το Picture camera είναι δωρεάν."
+
+#~ msgid "Remove packages"
+#~ msgstr "Απεγκατάσταση πακέτων"
+
+#~ msgid "Remove"
+#~ msgstr "Απεγκατάσταση"
+
+#~ msgid "Do you realy want to remove the following package?\n"
+#~ msgstr "Είστε βέβαιοι ότι θέλετε να επεγκαταστήσετε το παρακάτω πακέτο;\n"
+
+#~ msgid "Delete package..."
+#~ msgstr "Διαγραφή πακέτου..."
+
+#~ msgid "Panel +"
+#~ msgstr "Panel +"
+
+#~ msgid "Panel + SatDreamGr"
+#~ msgstr "Panel + SatDreamGr"
+
+#~ msgid "Softcam setup"
+#~ msgstr "Ρύθμιση softcam"
+
+#~ msgid "System panel"
+#~ msgstr "Panel συστήματος"
+
+#~ msgid "Plugins panel"
+#~ msgstr "Panel προσθέτων"
+
+#~ msgid "Sorry, plugin is not installed!"
+#~ msgstr "Λυπούμαστε, το πρόσθετο δεν είναι εγκατεστημένο!"
+
+#~ msgid "Enigma2 settings"
+#~ msgstr "Λίστες καναλιών"
+
+#~ msgid "Swap manager"
+#~ msgstr "Διαχείριση swap"
+
+#~ msgid "Hotkey"
+#~ msgstr "Hotkey"
+
+#~ msgid "SDG radio"
+#~ msgstr "SDG radio"
+
+#~ msgid "Internet radio"
+#~ msgstr "Διαδικτυακό ραδιόφωνο"
+
+#~ msgid "GreekStreamTV"
+#~ msgstr "GreekStreamTV"
+
+#~ msgid "GreekStreamTV in bouquets"
+#~ msgstr "GreekStreamTV στα μπουκέτα"
+
+#, python-format
+#~ msgid "Cannot download %s settings list"
+#~ msgstr "Δεν είναι δυνατή η λήψη της λίστας %s"
+
+#, python-format
+#~ msgid "Updating %s settings list"
+#~ msgstr "Ενημέρωση λιστών %s"
+
+#~ msgid "Downloading..."
+#~ msgstr "Γίνεται λήψη..."
+
+#, python-format
+#~ msgid "List of available %s settings"
+#~ msgstr "Διαθέσιμες λίστες %s"
+
+#~ msgid "Download"
+#~ msgstr "Λήψη"
+
+#, python-format
+#~ msgid "Cannot download settings (%s)"
+#~ msgstr "Δεν είναι δυνατή η λήψη της λίστας (%s)"
+
+#~ msgid "Settings list installed successfully"
+#~ msgstr "Η λίστα καναλιών εγκαταστάθηκε με επιτυχία"
+
+#~ msgid "Updating settings list"
+#~ msgstr "Ενημέρωση λιστών"
+
+#~ msgid "1-Original"
+#~ msgstr "1-Πρωτότυπο"
+
+#~ msgid "4-Blue"
+#~ msgstr "4-Μπλε"
+
+#~ msgid "7-Grey"
+#~ msgstr "7-Γκρι"
+
+#~ msgid "Satdreamgr-HD-TranspBA"
+#~ msgstr "Satdreamgr-HD-TranspBA"
+
+#~ msgid "Change color"
+#~ msgstr "Αλλαγή χρώματος"
+
+#~ msgid "Select main skin color"
+#~ msgstr "Επιλέξτε το κυρίως χρώμα του θέματος"
+
+#~ msgid "Change infobar"
+#~ msgstr "Επιλογή μπάρας πληροφοριών"
+
+#~ msgid "Simple infobar"
+#~ msgstr "Απλή μπάρα πληροφοριών"
+
+#~ msgid "Full infobar"
+#~ msgstr "Πλήρης μπάρα πληροφοριών"
+
+#~ msgid "Weather on"
+#~ msgstr "Εμφάνιση καιρού"
+
+#~ msgid "Weather off"
+#~ msgstr "Μη εμφάνιση καιρού"
+
+#~ msgid "Confirm your selection?"
+#~ msgstr "Επιβεβαίωση επιλογής;"
+
+#~ msgid "Save"
+#~ msgstr "Αποθήκευση"
+
+#~ msgid "Restart GUI"
+#~ msgstr "Επανεκκίνηση GUI"
+
+#~ msgid "Swap info"
+#~ msgstr "Πληροφορίες swap"
+
+#~ msgid "Deactivate swap"
+#~ msgstr "Απενεργοποίηση swap"
+
+#~ msgid "Create swap file on HDD"
+#~ msgstr "Δημιουργία αρχείου swap στον σκληρό δίσκο"
+
+#~ msgid "Activate swap on HDD"
+#~ msgstr "Ενεργοποίηση swap στον σκληρό δίσκο"
+
+#~ msgid "Create swap file on USB"
+#~ msgstr "Δημιουργία αρχείου swap στη συσκευή USB"
+
+#~ msgid "Activate swap on USB"
+#~ msgstr "Ενεργοποίηση swap στη συσκευή USB"
+
+#~ msgid "Create swap file on CF"
+#~ msgstr "Δημιουργία αρχείου swap στη μνήμη CF"
+
+#~ msgid "Activate swap on CF"
+#~ msgstr "Ενεργοποίηση swap στη μνήμη CF"
+
+#~ msgid "Please wait: Creating swap file on HDD."
+#~ msgstr "Παρακαλώ περιμένετε: Το αρχείο swap δημιουργείται στον σκληρό δίσκο."
+
+#~ msgid "Please wait: Creating swap file on CF."
+#~ msgstr "Παρακαλώ περιμένετε: Το αρχείο swap δημιουργείται στη μνήμη CF."
+
+#~ msgid "Please wait: Creating swap file on USB."
+#~ msgstr "Παρακαλώ περιμένετε: Το αρχείο swap δημιουργείται στη συσκευή USB."
+
+#~ msgid "Swap is deactivated."
+#~ msgstr "Το swap απενεργοποιήθηκε."
+
+#~ msgid "Swap file is not activated!"
+#~ msgstr "Το αρχείο swap δεν είναι ενεργοποιημένο!"
+
+#~ msgid "Swap file exists! You can activate it on CF if you haven't already."
+#~ msgstr "Το αρχείο swap υπάρχει! Μπορείτε να το ενεργοποιήσετε στη μνήμη CF, αν δεν το έχετε ήδη κάνει."
+
+#~ msgid "Done! You can now activate the swap on CF."
+#~ msgstr "Ολοκληρώθηκε! Μπορείτε τώρα να ενεργοποιήσετε το swap στη μνήμη CF."
+
+#~ msgid "No compact flash mounted on /media/cf."
+#~ msgstr "Δεν βρέθηκε μνήμη compact flash προσαρτημένη στο /media/cf."
+
+#~ msgid "Swap file exists! You can activate it on HDD if you haven't already."
+#~ msgstr "Το αρχείο swap υπάρχει! Μπορείτε να το ενεργοποιήσετε στον σκληρό δίσκο, αν δεν το έχετε ήδη κάνει."
+
+#~ msgid "Done! You can now activate the swap on HDD."
+#~ msgstr "Ολοκληρώθηκε! Μπορείτε τώρα να ενεργοποιήσετε το swap στον σκληρό δίσκο."
+
+#~ msgid "No hard drive mounted on /media/hdd."
+#~ msgstr "Δεν βρέθηκε σκληρός δίσκος προσαρτημένος στο /media/hdd."
+
+#~ msgid "Swap file exists! You can activate it on USB if you haven't already."
+#~ msgstr "Το αρχείο swap υπάρχει! Μπορείτε να το ενεργοποιήσετε στη συσκευή USB, αν δεν το έχετε ήδη κάνει."
+
+#~ msgid "Done! You can now activate the swap on USB."
+#~ msgstr "Ολοκληρώθηκε! Μπορείτε τώρα να ενεργοποιήσετε το swap στη συσκευή USB."
+
+#~ msgid "No usb stick mounted on /media/usb."
+#~ msgstr "Δεν βρέθηκε συσκευή USB προσαρτημένη στο /media/USB."
+
+#~ msgid "Swap is activated on HDD."
+#~ msgstr "Το swap ενεργοποιήθηκε στον σκληρό δίσκο."
+
+#~ msgid "No swap file found on HDD. You have to create one first."
+#~ msgstr "Δεν βρέθηκε αρχείο swap στον σκληρό δίσκο. Πρέπει να δημιουργήσετε ένα πρώτα."
+
+#~ msgid "Swap is activated on CF."
+#~ msgstr "Το swap ενεργοποιήθηκε στη μνήμη CF."
+
+#~ msgid "No swap file found on CF. You have to create one first."
+#~ msgstr "Δεν βρέθηκε αρχείο swap στη μνήμη CF. Πρέπει να δημιουργήσετε ένα πρώτα."
+
+#~ msgid "Swap is activated on USB."
+#~ msgstr "Το swap ενεργοποιήθηκε στη συσκευή USB."
+
+#~ msgid "No swap file found on USB. You have to create one first."
+#~ msgstr "Δεν βρέθηκε αρχείο swap στη συσκευή USB. Πρέπει να δημιουργήσετε ένα πρώτα."
+
+#~ msgid "Update bouquet list"
+#~ msgstr "Ενημέρωση λίστας μπουκέτων"
+
+#~ msgid "Create bouquets list"
+#~ msgstr "Δημιουργία λίστας στα μπουκέτα"
+
+#~ msgid "Download & update bouquets list"
+#~ msgstr "Λήψη & ενημέρωση λίστας μπουκέτων"
+
+#~ msgid "GreekStreamTV bouquet updated successfully..."
+#~ msgstr "Το μπουκέτο GreekStreamTV ενημερώθηκε με επιτυχία..."
+
+#~ msgid "GreekStreamTV bouquet update failed..."
+#~ msgstr "Η ενημέρωση του μπουκέτου GreekStreamTV απέτυχε..."
+
+#~ msgid "GreekStreamTV is free."
+#~ msgstr "Το GreekStreamTV είναι δωρεάν."

@@ -3910,21 +3910,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <eLabel name="" position="310,462" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <widget name="config" position="330,150" size="790,300" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" />
   </screen>
-  <!-- MyMenuSKIN -->
-  <screen name="MyMenuSKIN" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TBTemplate" />
-    <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/skin.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="menu" position="330,150" size="790,360" transparent="1" font="Regular; 22" foregroundColor="white" />
-    <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>
-  <!-- TranspBA Skin Configuration -->
-  <screen name="SatdreamgrTranspBA" title="Edit color" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- TranspBA Skin Setup -->
+  <screen name="TranspBASkinSetup" title="TranspBA skin setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/skin.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="config" position="330,150" size="790,360" transparent="1" font="Regular; 22" foregroundColor="white" />
+    <widget name="description" position="332,490" size="790,94" backgroundColor="transpBA" transparent="1" font="Regular; 20" foregroundColor="white" />
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <eLabel name="" position="310,480" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
   </screen>
   <screen name="SatdreamgrTranspBASD" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="STBTemplate" />
