@@ -3,7 +3,7 @@ from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 import gettext
 
 LOCALES_DOMAIN = "TranspBASkinSetup"
-LOCALES_RELPATH = "Satdreamgr/TranspBASkinSetup/locale"
+LOCALES_RELPATH = "Extensions/TranspBASkinSetup/locale"
 
 def _locale_init():
 	gettext.bindtextdomain(
