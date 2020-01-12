@@ -51,7 +51,6 @@ MENUS = {
 	'timezone_setup': 'menu/system/timezone.png',
 	'user_interface': 'menu/system/user-interface.png',
 	'skin_selector': 'menu/system/skin.png',
-	'transpba_skin_setup': 'menu/system/skin.png',
 	# menu_video
 	'hdmi_cec_setup': 'menu/system/hdmi.png',
 	'auto_3d_setup': 'menu/system/osd.png',
