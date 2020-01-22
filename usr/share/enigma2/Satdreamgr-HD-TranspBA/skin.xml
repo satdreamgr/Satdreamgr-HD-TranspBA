@@ -3221,11 +3221,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
       <convert type="TemplatedMultiContent">
         {
           "template": [
-            MultiContentEntryPixmapAlphaBlend(pos = (5,0), size = (48,48), png = 0),
-            MultiContentEntryText(pos = (65,10), size = (425,38), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1)
+            MultiContentEntryPixmapAlphaBlend(pos = (6,6), size = (48,48), png = 0),
+            MultiContentEntryText(pos = (65,0), size = (700,60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1)
           ],
           "fonts": [ gFont("Regular", 22) ],
-          "itemHeight": 48
+          "itemHeight": 60
         }
       </convert>
     </widget>
@@ -3258,12 +3258,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
       <convert type="TemplatedMultiContent">
         {
           "template": [
-            MultiContentEntryPixmapAlphaBlend(pos = (5,0), size = (48,48), png = 0),
-            MultiContentEntryText(pos = (65,3),   size = (190,38), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-            MultiContentEntryText(pos = (165,27), size = (290,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+            MultiContentEntryPixmapAlphaBlend(pos = (6,6), size = (48,48), png = 0),
+            MultiContentEntryText(pos = (65,0),  size = (700,32), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+            MultiContentEntryText(pos = (65,32), size = (700,28), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
           ],
           "fonts": [ gFont("Regular", 22), gFont("Regular", 18) ],
-          "itemHeight": 50
+          "itemHeight": 60
         }
       </convert>
     </widget>
