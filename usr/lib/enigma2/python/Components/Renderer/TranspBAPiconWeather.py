@@ -1,11 +1,10 @@
-#(c) 2boom mod 2012 
+#(c) 2boom mod 2012
 # 26.09.2012 added search mountpoints
-from Renderer import Renderer 
-from enigma import ePixmap, eTimer 
-from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename 
-from Tools.LoadPixmap import LoadPixmap 
-from Components.Pixmap import Pixmap 
-from Components.config import * 
+from Renderer import Renderer
+from enigma import ePixmap, eTimer
+from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
+from Tools.LoadPixmap import LoadPixmap
+
 
 class TranspBAPiconWeather(Renderer):
 	__module__ = __name__
@@ -30,26 +29,26 @@ class TranspBAPiconWeather(Renderer):
 	def changed(self, what):
 		if self.instance:
 			pngname = ''
-			if (what[0] != self.CHANGED_CLEAR):
+			if what[0] != self.CHANGED_CLEAR:
 				sname = self.source.text
 				sname = sname.upper()
 				pngname = self.nameCache.get(sname, '')
-				if (pngname == ''):
+				if pngname == '':
 					pngname = self.findPicon(sname)
-					if (pngname != ''):
+					if pngname != '':
 						self.nameCache[sname] = pngname
-			if (pngname == ''):
+			if pngname == '':
 				pngname = self.nameCache.get('default', '')
-				if (pngname == ''):
+				if pngname == '':
 					pngname = self.findPicon('na')
-					if (pngname == ''):
+					if pngname == '':
 						tmp = resolveFilename(SCOPE_CURRENT_SKIN, 'na.png')
 						if fileExists(tmp):
 							pngname = tmp
 						else:
 							pngname = resolveFilename(SCOPE_SKIN_IMAGE, 'weather_icons/na.png')
 					self.nameCache['default'] = pngname
-			if (self.pngname != pngname):
+			if self.pngname != pngname:
 				self.pngname = pngname
 				self.rTimer()
 				self.instance.setPixmapFromFile(self.pngname)
@@ -60,9 +59,9 @@ class TranspBAPiconWeather(Renderer):
 			for line in open("/proc/mounts"):
 				if line.find("/dev/sd") > -1:
 					searchPaths.append(line.split()[1].replace('\\040', ' ') + "/%s/")
-		searchPaths.append("/usr/share/enigma2/%s/")
+		searchPaths.append(resolveFilename(SCOPE_CURRENT_SKIN, "/%s/"))
 		for path in searchPaths:
-			pngname = (((path % self.path) + serviceName) + '.png')
+			pngname = (path % self.path) + serviceName + '.png'
 			if fileExists(pngname):
 				return pngname
 		return ''
@@ -76,7 +75,7 @@ class TranspBAPiconWeather(Renderer):
 		self.timer.start(1, True)
 
 	def timerEvent(self):
-		if (self.slide != 0):
+		if self.slide != 0:
 			self.timer.stop()
 			self.instance.setPixmap(self.pics[(self.slide - 1)])
 			self.slide = (self.slide - 1)
@@ -84,7 +83,3 @@ class TranspBAPiconWeather(Renderer):
 		else:
 			self.timer.stop()
 			self.instance.setPixmapFromFile(self.pngname)
-
-
-
-
