@@ -59,7 +59,7 @@ class TranspBAPiconWeather(Renderer):
 			for line in open("/proc/mounts"):
 				if line.find("/dev/sd") > -1:
 					searchPaths.append(line.split()[1].replace('\\040', ' ') + "/%s/")
-		searchPaths.append(resolveFilename(SCOPE_CURRENT_SKIN, "/%s/"))
+		searchPaths.append(resolveFilename(SCOPE_CURRENT_SKIN) + "%s/")
 		for path in searchPaths:
 			pngname = (path % self.path) + serviceName + '.png'
 			if fileExists(pngname):
