@@ -1,4 +1,5 @@
 <skin>
+  <include filename="weather_off.xml" />
   <include filename="infobar_a.xml" />
   <!-- Colors -->
   <colors>

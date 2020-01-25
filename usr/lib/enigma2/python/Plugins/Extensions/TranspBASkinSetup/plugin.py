@@ -1,6 +1,6 @@
 from . import _
 from Components.ActionMap import ActionMap
-from Components.config import config, configfile, ConfigSubsection, ConfigSelection, ConfigYesNo, getConfigListEntry
+from Components.config import config, ConfigSubsection, ConfigSelection, ConfigYesNo, getConfigListEntry
 from Components.ConfigList import ConfigListScreen
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
@@ -8,12 +8,12 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Screens.Standby import TryQuitMainloop
-from Tools.Directories import SCOPE_CURRENT_SKIN, SCOPE_CONFIG, fileExists, resolveFilename
+from Tools.Directories import fileExists, resolveFilename, SCOPE_CONFIG
 from shutil import move
 import os
 
 
-SKIN_NAME = "Satdreamgr-HD-TranspBA"
+SKIN_NAME = resolveFilename(SCOPE_CONFIG, "skin_user_Satdreamgr-HD-TranspBA.xml")
 
 
 config.plugins.SatdreamgrTranspBA = ConfigSubsection()
@@ -63,6 +63,11 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			config.plugins.SatdreamgrTranspBA.infobarStyle,
 			_("Select the type of the infobar.")))
 
+		with open(SKIN_NAME, "r") as f:
+			if "weather" not in f.read():
+				config.plugins.SatdreamgrTranspBA.weather.value = False # for compatibility with existing configs
+				config.plugins.SatdreamgrTranspBA.weather.save()
+
 		configlist.append(getConfigListEntry(_("Weather on infobar"),
 			config.plugins.SatdreamgrTranspBA.weather,
 			_("Show weather information on infobar (the MSN Weather plugin must be installed in your receiver).")))
@@ -85,8 +90,6 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			self.session.open(TryQuitMainloop, 3)
 
 	def applyColor(self):
-		filename = resolveFilename(SCOPE_CONFIG, "skin_user_%s.xml" % SKIN_NAME)
-
 		skinSearchAndReplace = []
 		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#20000000":
 			skinSearchAndReplace.append(["#20000000", config.plugins.SatdreamgrTranspBA.SkinColor.value])
@@ -102,19 +105,16 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			skinSearchAndReplace.append(["#00080022", config.plugins.SatdreamgrTranspBA.SkinColor.value])
 		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#00333333":
 			skinSearchAndReplace.append(["#00333333", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-
 		try:
-			f = open(filename, "r")
+			f = open(SKIN_NAME, "r")
 			lines = f.readlines()
 			f.close()
-
 			pimpedLines = []
 			for line in lines:
 				for item in skinSearchAndReplace:
 					line = line.replace(item[0], item[1])
 				pimpedLines.append(line)
-
-			f = open(filename, "w")
+			f = open(SKIN_NAME, "w")
 			for line in pimpedLines:
 				f.writelines(line)
 			f.close()
@@ -122,8 +122,7 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			self.session.open(MessageBox, _("Error applying color settings!"), MessageBox.TYPE_ERROR)
 
 	def applyInfobarStyle(self):
-		filename = resolveFilename(SCOPE_CONFIG, "skin_user_%s.xml" % SKIN_NAME)
-		f = open(filename, "r")
+		f = open(SKIN_NAME, "r")
 		chaine = f.read()
 		f.close()
 		infobarStyle = config.plugins.SatdreamgrTranspBA.infobarStyle.value
@@ -133,28 +132,33 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			result = chaine.replace("infobar_a.xml", "infobar_b.xml").replace("infobar_c.xml", "infobar_b.xml")
 		elif infobarStyle == "full_bottom":
 			result = chaine.replace("infobar_a.xml", "infobar_c.xml").replace("infobar_b.xml", "infobar_c.xml")
-		f = open(filename, "w")
+		f = open(SKIN_NAME, "w")
 		f.write(result)
 		f.close()
 
 	def applyWeather(self):
-		weather = config.plugins.SatdreamgrTranspBA.weather.value
-		for i in ("a", "b", "c"): # infobar names
-			if weather is True:
-				self.writeWeather(True, i)
-			else:
-				self.writeWeather(False, i)
-
-	def writeWeather(self, enable, infobar): # Weather settings are lost between skin updates - We should refactor the skin code
-		filename = resolveFilename(SCOPE_CURRENT_SKIN, "infobar_%s.xml" % infobar)
-		f = open(filename, "r")
+		f = open(SKIN_NAME, "r")
 		chaine = f.read()
 		f.close()
-		if enable is True:
-			result = chaine.replace("<!--<eLabel />", "<ePixmap />")
+		weather = config.plugins.SatdreamgrTranspBA.weather.value
+		infobarStyle = config.plugins.SatdreamgrTranspBA.infobarStyle.value
+		if "weather" in chaine:
+			if weather is True:
+				if infobarStyle == "simple" or infobarStyle == "full_bottom":
+					result = chaine.replace("weather_off.xml", "weather_ac.xml").replace("weather_b.xml", "weather_ac.xml")
+				elif infobarStyle == "full":
+					result = chaine.replace("weather_off.xml", "weather_b.xml").replace("weather_ac.xml", "weather_b.xml")
+			else:
+				result = chaine.replace("weather_ac.xml", "weather_off.xml").replace("weather_b.xml", "weather_off.xml")
 		else:
-			result = chaine.replace("<ePixmap />", "<!--<eLabel />")
-		f = open(filename, "w")
+			if weather is True:
+				if infobarStyle == "simple" or infobarStyle == "full_bottom":
+					result = chaine.replace('<skin>\n', '<skin>\n  <include filename="weather_ac.xml" />\n')
+				elif infobarStyle == "full":
+					result = chaine.replace('<skin>\n', '<skin>\n  <include filename="weather_b.xml" />\n')
+			else:
+				result = chaine.replace('<skin>\n', '<skin>\n  <include filename="weather_off.xml" />\n')
+		f = open(SKIN_NAME, "w")
 		f.write(result)
 		f.close()
 
@@ -164,7 +168,7 @@ def main(session, **kwargs):
 
 
 def menu(menuid, **kwargs):
-	if menuid == "gui" and config.skin.primary_skin.value == "%s/skin.xml" % SKIN_NAME:
+	if menuid == "gui" and config.skin.primary_skin.value == "Satdreamgr-HD-TranspBA/skin.xml":
 		return [(_("TranspBA skin setup"), main, "transpba_skin_setup", None)]
 	return []
 

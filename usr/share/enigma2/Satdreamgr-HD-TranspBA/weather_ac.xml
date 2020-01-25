@@ -1,0 +1,68 @@
+<skin>
+  <screen name="weathermsn" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="global.CurrentTime" render="Label" position="35,19" zPosition="5" size="212,22" font="Regular; 18" halign="left" transparent="1" text="Locationovdrsh" foregroundColor="white" noWrap="1" backgroundColor="transpBA">
+      <convert type="TranspBAMSNWeather2">Location</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="297,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="transpBA" foregroundColor="green">
+      <convert type="TranspBAMSNWeather2">Hightemp1</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="354,45" zPosition="5" size="55,25" font="Regular; 18" halign="right" text="Low0" transparent="1" valign="center" foregroundColor="red" noWrap="1" backgroundColor="transpBA">
+      <convert type="TranspBAMSNWeather2">Lowtemp1</convert>
+    </widget>
+    <widget source="session.CurrentService" render="TranspBAPiconWeather" path="weather_icons" position="247,48" size="45,45" zPosition="4" alphatest="blend" transparent="0">
+      <convert type="TranspBAMSNWeather2">Picon1</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="441,45" zPosition="5" size="70,25" font="Regular; 18" halign="center" transparent="1" text="Precip1" foregroundColor="white" noWrap="1" backgroundColor="transpBA" valign="center">
+      <convert type="TranspBAMSNWeather2">Precip1</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="302,74" zPosition="1" size="215,22" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="transpBA">
+      <convert type="TranspBAMSNWeather2">Skytext1</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="79,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="Sday0" transparent="1" valign="center" noWrap="1" backgroundColor="black" foregroundColor="white">
+      <convert type="TranspBAMSNWeather2">Temp</convert>
+    </widget>
+    <widget source="session.CurrentService" render="TranspBAPiconWeather" path="weather_icons" position="30,48" size="45,45" zPosition="10" alphatest="blend">
+      <convert type="TranspBAMSNWeather2">Picon</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="163,45" zPosition="2" size="70,25" font="Regular; 18" halign="center" text="Humi" transparent="1" valign="center" backgroundColor="black" foregroundColor="white" noWrap="1">
+      <convert type="TranspBAMSNWeather2">Humidity</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="84,74" zPosition="4" size="215,22" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="background">
+      <convert type="TranspBAMSNWeather2">Skytext</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="570,74" zPosition="1" size="215,22" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="transpBA">
+      <convert type="TranspBAMSNWeather2">Skytext2</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="565,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="transpBA" foregroundColor="green">
+      <convert type="TranspBAMSNWeather2">Hightemp2</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="623,45" zPosition="2" size="55,25" font="Regular; 18" halign="center" text="Low0" transparent="1" valign="center" foregroundColor="red" noWrap="1" backgroundColor="transpBA">
+      <convert type="TranspBAMSNWeather2">Lowtemp2</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="710,45" zPosition="5" size="70,25" font="Regular; 18" halign="center" transparent="1" text="Precip1" foregroundColor="white" noWrap="1" backgroundColor="transpBA" valign="center">
+      <convert type="TranspBAMSNWeather2">Precip2</convert>
+    </widget>
+    <widget source="session.CurrentService" render="TranspBAPiconWeather" path="weather_icons" position="517,48" size="45,45" zPosition="4" alphatest="blend" transparent="0">
+      <convert type="TranspBAMSNWeather2">Picon2</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="570,19" zPosition="5" size="215,22" font="Regular; 18" halign="left" transparent="1" text="Date" foregroundColor="white" noWrap="1" backgroundColor="transpBA" valign="center">
+      <convert type="TranspBAMSNWeather2">Date2</convert>
+    </widget>
+    <eLabel text="Today" position="302,19" size="215,22" halign="left" font="Regular; 18" foregroundColor="white" backgroundColor="transpBA" transparent="1" valign="center" zPosition="5" noWrap="1" />
+    <ePixmap pixmap="weather_icons/precip.png" position="412,46" size="24,24" zPosition="3" alphatest="blend" />
+    <ePixmap pixmap="weather_icons/precip.png" position="683,46" size="24,24" zPosition="3" alphatest="blend" />
+    <ePixmap pixmap="weather_icons/humidity.png" position="136,45" size="24,24" zPosition="3" alphatest="blend" />
+    <ePixmap pixmap="weather_icons/meteo.png" position="27,46" size="50,50" zPosition="9" />
+    <ePixmap pixmap="weather_icons/meteo.png" position="245,46" size="50,50" zPosition="3" />
+    <ePixmap pixmap="weather_icons/meteo.png" position="514,46" size="50,50" zPosition="3" />
+    <ePixmap pixmap="weather_icons/165-25.png" position="79,45" size="165,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/215-25.png" position="565,45" size="215,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/215-25.png" position="297,45" size="215,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/framed.png" position="29,18" size="215,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/framed.png" position="297,18" size="215,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/framed.png" position="565,72" size="215,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/framed.png" position="297,72" size="215,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/framed.png" position="565,18" size="215,25" zPosition="0" />
+    <ePixmap pixmap="weather_icons/frameg.png" position="79,72" size="165,25" zPosition="0" />
+  </screen>
+</skin>
