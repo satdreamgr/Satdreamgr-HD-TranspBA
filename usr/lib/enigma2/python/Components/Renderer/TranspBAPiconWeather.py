@@ -69,7 +69,7 @@ class TranspBAPiconWeather(Renderer):
 	def rTimer(self):
 		self.slide = 1
 		self.pics = []
-		self.pics.append(LoadPixmap(self.path + 'na.png'))
+		self.pics.append(LoadPixmap(resolveFilename(SCOPE_CURRENT_SKIN) + '%s/na.png' % self.path))
 		self.timer = eTimer()
 		self.timer.callback.append(self.timerEvent)
 		self.timer.start(1, True)
