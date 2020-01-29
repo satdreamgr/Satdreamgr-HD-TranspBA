@@ -44,6 +44,7 @@ MENUS = {
 	'expert_selection': 'menu/system/user-interface.png',
 	'system_time_setup': 'menu/system/time.png',
 	'epg_settings': 'menu/system/epg-settings.png',
+	'epg_menu': 'menu/system/epg-menu.png',	
 	'iptv_config': 'menu/system/iplayer.png',
 	'AutomaticCleanup': 'menu/system/broom.png',
 	# menu_gui
@@ -51,6 +52,8 @@ MENUS = {
 	'timezone_setup': 'menu/system/timezone.png',
 	'user_interface': 'menu/system/user-interface.png',
 	'skin_selector': 'menu/system/skin.png',
+	'primary_skin_selector': 'menu/system/skin.png',
+	'display_skin_selector': 'menu/system/displayskin.png',	
 	# menu_video
 	'hdmi_cec_setup': 'menu/system/hdmi.png',
 	'auto_3d_setup': 'menu/system/osd.png',

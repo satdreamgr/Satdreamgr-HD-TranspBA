@@ -1449,16 +1449,47 @@
   </screen>
   <screen name="SubtitleDisplay" zPosition="-1" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" />
   <!-- Skin Selector -->
-  <screen name="SkinSelector" position="0,0" size="1280,720" title="Select your skin" flags="wfNoBorder" backgroundColor="transparent">
+    <screen name="SkinSelector" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <eLabel name="" position="310,520" size="830,5" zPosition="5" backgroundColor="transparent" foregroundColor="transparent" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/skin.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="Preview" position="855,150" size="280,210" alphatest="blend" transparent="1" backgroundColor="transpBA" zPosition="2" />
-    <widget name="SkinList" position="320,150" size="520,352" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpBA" font="Regular; 22" foregroundColor="white" />
-    <widget source="introduction" render="Label" position="320,542" size="630,25" backgroundColor="transpBA" shadowColor="black" shadowOffset="-2,-2" zPosition="4" transparent="1" font="Regular; 22" halign="left" foregroundColor="white" />
+    <widget name="preview" position="320,363" size="280,210" alphatest="blend" transparent="1" zPosition="2" />
+    <widget source="skins" render="Listbox" position="320,150" size="800,195" backgroundColor="transpBA" enableWrapAround="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+			{
+			"template": [
+			MultiContentEntryText(pos = (5,0),  size = (790,26), font = 0, flags = RT_HALIGN_LEFT, text = 1), # name
+			MultiContentEntryText(pos = (495,0),  size = (270,26), font = 0, flags = RT_HALIGN_RIGHT, text = 2), # description
+			],
+			"fonts": [gFont("Regular",22)],
+			"itemHeight": 32
+			}			
+	  </convert>
+    </widget>
+    <eLabel name="" position="606,514" size="520,60" zPosition="3" backgroundColor="blue" foregroundColor="transparent" />
+    <widget source="description" render="Label" position="606,514" size="520,60" backgroundColor="blue" zPosition="4" transparent="1" font="Regular; 20" halign="center" valign="center" foregroundColor="white" />
     <ePixmap pixmap="border/line2.png" position="340,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="340,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
+  <screen name="LcdSkinSelector" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
+    <panel name="TBTemplate" />
+    <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/displayskin.png" zPosition="4" transparent="0" alphatest="blend" />
+    <widget source="skins" render="Listbox" position="320,150" size="800,360" backgroundColor="transpBA" enableWrapAround="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+			{
+			"template": [
+			MultiContentEntryText(pos = (5,0),  size = (790,26), font = 0, flags = RT_HALIGN_LEFT, text = 1), # name
+			MultiContentEntryText(pos = (510,0),  size = (270,26), font = 0, flags = RT_HALIGN_RIGHT, text = 2), # description
+			],
+			"fonts": [gFont("Regular",22)],
+			"itemHeight": 32
+			}			
+	  </convert>
+    </widget>
+    <eLabel name="" position="320,514" size="800,60" zPosition="3" backgroundColor="blue" foregroundColor="transparent" />
+    <widget source="description" render="Label" position="320,514" size="800,60" backgroundColor="blue" zPosition="4" transparent="1" font="Regular; 20" halign="center" valign="center" foregroundColor="white" />
+    <ePixmap pixmap="border/line2.png" position="340,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="border/line2.png" position="340,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>  
   <!-- Language Selection -->
   <screen name="LanguageSelection" title="Language selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
