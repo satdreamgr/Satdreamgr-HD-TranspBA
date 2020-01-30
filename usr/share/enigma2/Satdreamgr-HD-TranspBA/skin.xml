@@ -1455,15 +1455,15 @@
     <widget name="preview" position="320,363" size="280,210" alphatest="blend" transparent="1" zPosition="2" />
     <widget source="skins" render="Listbox" position="320,150" size="800,195" backgroundColor="transpBA" enableWrapAround="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
-			{
-			"template": [
-			MultiContentEntryText(pos = (5,0),  size = (790,26), font = 0, flags = RT_HALIGN_LEFT, text = 1), # name
-			MultiContentEntryText(pos = (495,0),  size = (270,26), font = 0, flags = RT_HALIGN_RIGHT, text = 2), # description
-			],
-			"fonts": [gFont("Regular",22)],
-			"itemHeight": 32
-			}			
-	  </convert>
+        {
+          "template": [
+          MultiContentEntryText(pos = (5,0),  size = (790,26), font = 0, flags = RT_HALIGN_LEFT, text = 1), # name
+          MultiContentEntryText(pos = (495,0),  size = (270,26), font = 0, flags = RT_HALIGN_RIGHT, text = 2), # description
+          ],
+          "fonts": [gFont("Regular",22)],
+          "itemHeight": 32
+        }
+      </convert>
     </widget>
     <eLabel name="" position="606,514" size="520,60" zPosition="3" backgroundColor="blue" foregroundColor="transparent" />
     <widget source="description" render="Label" position="606,514" size="520,60" backgroundColor="blue" zPosition="4" transparent="1" font="Regular; 20" halign="center" valign="center" foregroundColor="white" />
@@ -1475,21 +1475,21 @@
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/displayskin.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="skins" render="Listbox" position="320,150" size="800,360" backgroundColor="transpBA" enableWrapAround="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
-			{
-			"template": [
-			MultiContentEntryText(pos = (5,0),  size = (790,26), font = 0, flags = RT_HALIGN_LEFT, text = 1), # name
-			MultiContentEntryText(pos = (510,0),  size = (270,26), font = 0, flags = RT_HALIGN_RIGHT, text = 2), # description
-			],
-			"fonts": [gFont("Regular",22)],
-			"itemHeight": 32
-			}			
-	  </convert>
+        {
+          "template": [
+          MultiContentEntryText(pos = (5,0),  size = (790,26), font = 0, flags = RT_HALIGN_LEFT, text = 1), # name
+          MultiContentEntryText(pos = (510,0),  size = (270,26), font = 0, flags = RT_HALIGN_RIGHT, text = 2), # description
+          ],
+          "fonts": [gFont("Regular",22)],
+          "itemHeight": 32
+        }
+      </convert>
     </widget>
     <eLabel name="" position="320,514" size="800,60" zPosition="3" backgroundColor="blue" foregroundColor="transparent" />
     <widget source="description" render="Label" position="320,514" size="800,60" backgroundColor="blue" zPosition="4" transparent="1" font="Regular; 20" halign="center" valign="center" foregroundColor="white" />
     <ePixmap pixmap="border/line2.png" position="340,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="340,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  </screen>  
+  </screen>
   <!-- Language Selection -->
   <screen name="LanguageSelection" title="Language selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -3628,19 +3628,32 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
     <widget name="mem_8" pixmaps="buttons/SDGRadio/mem_8_empty.png,buttons/SDGRadio/mem_8_stored.png,buttons/SDGRadio/mem_8_selected.png" position="178,463" size="40,30" alphatest="blend"/>
     <widget name="mem_9" pixmaps="buttons/SDGRadio/mem_9_empty.png,buttons/SDGRadio/mem_9_stored.png,buttons/SDGRadio/mem_9_selected.png" position="228,463" size="40,30" alphatest="blend"/>
     <ePixmap pixmap="buttons/SDGRadio/radio-frequency.png" position="310,129" size="830,460" scale="1"/>
-    <widget name="pi" position="320,150" size="150,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
-    <widget name="traffic" position="500,150" size="100,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
-    <widget name="af" position="600,150" size="50,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
-    <widget name="eon" position="650,150" size="70,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
-    <widget name="ct" position="720,150" size="50,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
-    <widget name="rt+" position="770,150" size="50,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
-    <widget name="freq" position="320,200" size="790,90" valign="center" halign="center" font="Digital;100" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
+    <eLabel text="AF" position="330,145" size="40,28" valign="center" halign="center" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
+    <eLabel text="CT" position="375,145" size="40,28" valign="center" halign="center" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
+    <eLabel text="RT+" position="420,145" size="60,28" valign="center" halign="center" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
+    <eLabel text="PI" position="485,145" size="40,28" valign="center" halign="center" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
+    <eLabel text="EON" position="330,192" size="60,28" valign="center" halign="center" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
+    <eLabel text="TP TA" position="395,192" size="80,28" valign="center" halign="center" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
+    <widget name="af" position="330,145" size="40,28" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
+    <widget name="ct" position="375,145" size="40,28" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
+    <widget name="rt+" position="420,145" size="60,28" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
+    <widget name="pi" position="485,145" size="40,28" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
+    <widget name="eon" position="330,192" size="60,28" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
+    <widget name="traffic" position="395,192" size="80,28" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
+    <widget name="freq_off" position="575,149" size="430,67" valign="center" halign="center" font="SDGRadio;65" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
+    <widget name="freq" position="575,149" size="430,67" valign="center" halign="center" font="SDGRadio;65" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
+    <widget name="modulation" position="1010,145" size="105,28" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306"/>
+    <widget name="freq_units" position="1010,192" size="60,28" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306"/>
+    <widget name="dab_channel" position="1065,192" size="50,28" valign="center" halign="right" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306"/>
     <widget name="prog_type" position="650,370" size="300,40" valign="center" halign="center" font="Regular;28" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
     <widget name="radiotext" position="330,490" size="580,80" valign="center" halign="center" font="Regular;24" zPosition="5" transparent="1" foregroundColor="#ff1100" backgroundColor="#ff1100"/>
     <widget name="pic" position="925,435" size="200,150" alphatest="on" backgroundColor="#20000000" zPosition="20"/>
+    <widget name="rds_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0"/> <!-- missing -->
+    <widget name="ps_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0"/> <!-- missing -->
+    <widget name="rt_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0"/> <!-- missing -->
     <ePixmap pixmap="buttons/SDGRadio/key_info.png" position="175,610" size="40,30" alphatest="blend"/>
     <ePixmap pixmap="buttons/SDGRadio/key_menu.png" position="225,610" size="40,30" alphatest="blend"/>
-    <ePixmap pixmap="buttons/SDGRadio/key_pvr.png" position="275,610" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="buttons/key_help.png" position="275,610" size="40,30" alphatest="blend"/>
   </screen>
   <!-- GreekNetRadio -->
   <screen name="GreekNetRadio" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
