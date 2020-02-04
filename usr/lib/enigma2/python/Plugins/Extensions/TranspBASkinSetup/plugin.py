@@ -5,15 +5,17 @@ from Components.ConfigList import ConfigListScreen
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
 from Plugins.Plugin import PluginDescriptor
+from Screens.Console import Console
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Screens.Standby import TryQuitMainloop
-from Tools.Directories import fileExists, resolveFilename, SCOPE_CONFIG
+from Tools.Directories import fileExists, resolveFilename, SCOPE_CONFIG, SCOPE_PLUGINS
 from shutil import move
-import os
+import os.path
 
 
 SKIN_NAME = resolveFilename(SCOPE_CONFIG, "skin_user_Satdreamgr-HD-TranspBA.xml")
+WEATHER_PLUGIN = resolveFilename(SCOPE_PLUGINS, 'Extensions/WeatherMSN/plugin.pyo')
 
 
 config.plugins.SatdreamgrTranspBA = ConfigSubsection()
@@ -63,16 +65,11 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			config.plugins.SatdreamgrTranspBA.infobarStyle,
 			_("Select the type of the infobar.")))
 
-		with open(SKIN_NAME, "r") as f:
-			if "weather" not in f.read():
-				config.plugins.SatdreamgrTranspBA.weather.value = False # for compatibility with existing configs
-				config.plugins.SatdreamgrTranspBA.weather.save()
-
 		configlist.append(getConfigListEntry(_("Weather on infobar"),
 			config.plugins.SatdreamgrTranspBA.weather,
 			_("Show weather information on infobar (the MSN Weather plugin must be installed in your receiver).")))
 
-		ConfigListScreen.__init__(self, configlist, session)
+		ConfigListScreen.__init__(self, configlist, session, self.checkWeatherConfig)
 
 	def go(self):
 		if self["config"].isChanged():
@@ -80,6 +77,23 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			self.session.openWithCallback(self.applySettings, MessageBox, msg, MessageBox.TYPE_YESNO)
 		else: # if no change is made don't re-apply same settings, just close
 			self.close()
+
+	def checkWeatherConfig(self):
+		weather = config.plugins.SatdreamgrTranspBA.weather
+		current = self["config"].getCurrent()[1]
+		if current == weather and current.value is True and not os.path.isfile(WEATHER_PLUGIN):
+			def installWeatherMsnCb(answer):
+				if answer is True:
+					self.session.open(Console, _("Installing WeatherMSN plugin..."), ["opkg install enigma2-plugin-extensions-weathermsn"], showStartStopText=False)
+					self.applyColor()
+					self.applyInfobarStyle()
+					self.applyWeather()
+					self.saveAll()
+					self.session.open(TryQuitMainloop, 3)
+				else:
+					current.value = False
+			msg = _("The 'WeatherMSN' plugin is required to display weather information. Do you want to install it now?")
+			self.session.openWithCallback(installWeatherMsnCb, MessageBox, msg, MessageBox.TYPE_YESNO)
 
 	def applySettings(self, answer):
 		if answer is True:
@@ -164,6 +178,19 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 
 
 def main(session, **kwargs):
+	weather = config.plugins.SatdreamgrTranspBA.weather
+	with open(SKIN_NAME, "r") as f:
+		if "weather" not in f.read():
+			weather.value = False # for compatibility with existing configs
+			weather.save()
+	if weather.value is True and not os.path.isfile(WEATHER_PLUGIN):
+		def confirmedCb(answer):
+			if answer is True:
+				weather.value = False
+				session.open(TranspBASkinSetup)
+		msg = _("The 'WeatherMSN' plugin was not found. Weather on infobar has been turned off.")
+		session.openWithCallback(confirmedCb, MessageBox, msg, MessageBox.TYPE_INFO, timeout=5)
+	else:
 		session.open(TranspBASkinSetup)
 
 

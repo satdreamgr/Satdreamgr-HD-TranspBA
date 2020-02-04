@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TranspBASkinSetup\n"
-"POT-Creation-Date: 2020-01-12 01:25+0200\n"
-"PO-Revision-Date: 2020-01-12 01:26+0200\n"
+"POT-Creation-Date: 2020-02-04 15:08+0200\n"
+"PO-Revision-Date: 2020-02-04 15:11+0200\n"
 "Last-Translator: \n"
 "Language-Team: SatDreamGr\n"
 "Language: el_GR\n"
@@ -14,90 +14,102 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: plugin.py:21
+#: plugin.py:23
 msgid "default"
 msgstr "προεπιλογή"
 
-#: plugin.py:22
+#: plugin.py:24
 msgid "black"
 msgstr "μαύρο"
 
-#: plugin.py:23
+#: plugin.py:25
 msgid "ultra transparent"
 msgstr "διαφανές"
 
-#: plugin.py:24
+#: plugin.py:26
 msgid "blue"
 msgstr "μπλε"
 
-#: plugin.py:25
+#: plugin.py:27
 msgid "green"
 msgstr "πράσινο"
 
-#: plugin.py:26
+#: plugin.py:28
 msgid "navy blue"
 msgstr "μπλε μαρέν"
 
-#: plugin.py:27
+#: plugin.py:29
 msgid "grey"
 msgstr "γκρι"
 
-#: plugin.py:30
+#: plugin.py:32
 msgid "simple"
 msgstr "απλή"
 
-#: plugin.py:31
+#: plugin.py:33
 msgid "full"
 msgstr "πλήρης (πάνω-κάτω)"
 
-#: plugin.py:32
+#: plugin.py:34
 msgid "full bottom"
 msgstr "πλήρης (μόνο κάτω)"
 
-#: plugin.py:41 plugin.py:168 plugin.py:174
+#: plugin.py:43 plugin.py:194 plugin.py:200
 msgid "TranspBA skin setup"
 msgstr "Ρύθμιση θέματος TranspBA"
 
-#: plugin.py:44
+#: plugin.py:46
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: plugin.py:45
+#: plugin.py:47
 msgid "OK"
 msgstr "ΟΚ"
 
-#: plugin.py:58
+#: plugin.py:60
 msgid "Skin color"
 msgstr "Χρώμα θέματος"
 
-#: plugin.py:60
+#: plugin.py:62
 msgid "Choose the background color of the skin."
 msgstr "Επιλέξτε το χρώμα παρασκηνίου."
 
-#: plugin.py:62
+#: plugin.py:64
 msgid "Infobar style"
 msgstr "Μπάρα πληροφοριών"
 
-#: plugin.py:64
+#: plugin.py:66
 msgid "Select the type of the infobar."
 msgstr "Επιλέξτε το στυλ της μπάρας πληροφοριών."
 
-#: plugin.py:66
+#: plugin.py:68
 msgid "Weather on infobar"
 msgstr "Καιρός στην μπάρα πληροφοριών"
 
-#: plugin.py:68
+#: plugin.py:70
 msgid "Show weather information on infobar (the MSN Weather plugin must be installed in your receiver)."
 msgstr "Εμφάνιση καιρού στην μπάρα πληροφοριών (το πρόσθετο MSN Weather πρέπει να είναι εγκατεστημένο στον δέκτη)."
 
-#: plugin.py:74
+#: plugin.py:76
 msgid "Your receiver will be restarted in order to apply the new skin settings. Do you want to proceed?"
 msgstr "Θα γίνει επανεκκίνηση του δέκτη σας για να εφαρμοστούν οι νέες ρυθμίσεις του θέματος. Είστε σίγουροι ότι θέλετε να συνεχίσετε;"
 
-#: plugin.py:122
+#: plugin.py:87
+msgid "Installing WeatherMSN plugin..."
+msgstr "Γίνεται εγκατάσταση του πρόσθετου WeatherMSN..."
+
+#: plugin.py:90
+msgid "The 'WeatherMSN' plugin is required to display weather information. Do you want to install it now?"
+msgstr "Το πρόσθετο WeatherMSN είναι απαραίτητο για την εμφάνιση των πληροφοριών καιρού. Θέλετε να το εγκαταστήσετε τώρα;"
+
+#: plugin.py:131
 msgid "Error applying color settings!"
 msgstr "Σφάλμα κατά τη εφαρμογή των ρυθμίσεων χρώματος του θέματος!"
 
-#: plugin.py:175
+#: plugin.py:186
+msgid "The 'WeatherMSN' plugin was not found. Weather on infobar has been turned off."
+msgstr "Το πρόσθετο WeatherMSN δεν βρέθηκε. Η εμφάνιση του καιρού στην μπάρα πληροφοριών έχει απενεργοποιηθεί."
+
+#: plugin.py:201
 msgid "Setup tool for Satdreamgr-HD-TranspBA skin"
 msgstr "Εργαλείο διαμόρφωσης για το θέμα Satdreamgr-HD-TranspBA"
