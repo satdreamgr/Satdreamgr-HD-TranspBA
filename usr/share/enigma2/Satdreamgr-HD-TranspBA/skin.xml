@@ -3707,7 +3707,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Picture camera -->
   <screen name="PictureCamera" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="title" render="Label" position="40,30" size="1210,60" backgroundColor="#10000000" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="#00f47d19" />
+    <widget source="Title" render="Label" position="40,30" size="1210,60" backgroundColor="#10000000" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="#00f47d19" />
     <widget name="menu" position="47,140" size="425,453" scrollbarMode="showOnDemand" halign="center" alphatest="blend" backgroundColor="#10000000" font="Regular; 22"/>
     <eLabel name="" position="40,90" size="437,554" zPosition="-2" backgroundColor="#10000000" />
     <eLabel name="" position="40,90" size="437,35" zPosition="-1" backgroundColor="#000064c7" />
