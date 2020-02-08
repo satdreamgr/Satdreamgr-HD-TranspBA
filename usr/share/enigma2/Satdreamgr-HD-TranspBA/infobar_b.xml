@@ -35,13 +35,13 @@
     <widget source="session.CurrentService" render="Label" position="391,23" size="40,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="blue">
       <convert type="PliExtraInfo">TransponderPolarization</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="389,54" size="48,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black">
+    <widget source="session.CurrentService" render="Label" position="389,54" size="48,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black" noWrap="1">
       <convert type="PliExtraInfo">TransponderFEC</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="262,54" size="65,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
+    <widget source="session.CurrentService" render="Label" position="262,54" size="65,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black" noWrap="1">
       <convert type="PliExtraInfo">TransponderModulation</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="262,23" size="60,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="right" backgroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="262,23" size="60,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="blue">
       <convert type="PliExtraInfo">TunerSystem</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_agci.png" position="95,32" size="90,8" zPosition="3" borderWidth="1" borderColor="white">
@@ -71,7 +71,7 @@
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
       <convert type="TranspBACpuInfo">CPUtemp</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="blue" foregroundColor="white">
       <convert type="TranspBACamd">Camd</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,642" size="220,20" transparent="1" zPosition="5" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="white">

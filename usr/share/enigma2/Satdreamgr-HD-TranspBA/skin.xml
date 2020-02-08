@@ -70,7 +70,7 @@
   <fonts>
     <alias name="FileList" font="Regular" size="22" height="30" />
     <alias name="PlayList" font="Regular" size="22" height="30" />
-    <alias name="PluginBrowser0" font="Regula" size="25" height="50" />
+    <alias name="PluginBrowser0" font="Regula" size="25" height="60" />
     <alias name="PluginBrowser1" font="Regula" size="18" />
     <alias name="ChoiceList" font="Regula" size="24" height="30" />
     <alias name="ServiceInfo" font="Regular" size="22" height="25" />
@@ -678,13 +678,13 @@
     <widget source="session.CurrentService" render="Label" position="391,23" size="40,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="blue">
       <convert type="PliExtraInfo">TransponderPolarization</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="389,54" size="48,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black">
+    <widget source="session.CurrentService" render="Label" position="389,54" size="48,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black" noWrap="1">
       <convert type="PliExtraInfo">TransponderFEC</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="262,54" size="65,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
+    <widget source="session.CurrentService" render="Label" position="262,54" size="65,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black" noWrap="1">
       <convert type="PliExtraInfo">TransponderModulation</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="262,23" size="60,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="right" backgroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="262,23" size="60,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="blue">
       <convert type="PliExtraInfo">TunerSystem</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_agci.png" position="95,32" size="90,8" zPosition="3" borderWidth="1" borderColor="white">
@@ -714,7 +714,7 @@
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
       <convert type="TranspBACpuInfo">CPUtemp</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="transpBA" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="30,607" zPosition="5" size="220,20" font="Regular; 18" transparent="1" halign="center" backgroundColor="blue" foregroundColor="white">
       <convert type="TranspBACamd">Camd</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,642" size="220,20" transparent="1" zPosition="5" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="white">
@@ -897,7 +897,7 @@
     <widget source="global.CurrentTime" render="Label" position="728,53" zPosition="2" size="70,24" font="Regular; 18" halign="center" text="Humi" transparent="1" valign="center" backgroundColor="black" foregroundColor="white" noWrap="1">
       <convert type="TranspBAMSNWeather2">Humidity</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="585,23" zPosition="4" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="background">
+    <widget source="global.CurrentTime" render="Label" position="585,23" zPosition="4" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="blue">
       <convert type="TranspBAMSNWeather2">Skytext</convert>
     </widget>
     <ePixmap pixmap="weather_icons/precip.png" position="972,54" size="24,24" zPosition="3" alphatest="blend" />
@@ -1205,7 +1205,7 @@
   <!-- Plugin Browser -->
   <screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <widget name="list" enableWrapAround="1" position="330,154" size="790,400" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
+    <widget name="list" enableWrapAround="1" position="330,154" size="790,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/plugins.png" zPosition="4" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
@@ -1215,11 +1215,11 @@
     <ePixmap name="" position="140,671" size="1000,24" pixmap="border/bar_info.png" zPosition="0" alphatest="blend" />
     <ePixmap name="" position="252,612" size="40,30" pixmap="buttons/key_right.png" zPosition="5" alphatest="blend" />
     <ePixmap name="" position="163,612" size="40,30" pixmap="buttons/key_left.png" zPosition="5" alphatest="blend" />
-    <ePixmap name="" position="208,612" size="40,30" pixmap="buttons/key_0.png" zPosition="5" alphatest="blend" />
+    <ePixmap name="" position="210,616" size="40,30" pixmap="buttons/key_0.png" zPosition="5" alphatest="blend" />
   </screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
-    <widget name="list" enableWrapAround="1" position="330,155" size="790,400" foregroundColorSelected="white" backgroundColor="transpBA" scrollbarMode="showOnDemand" transparent="0" zPosition="1" />
+    <widget name="list" enableWrapAround="1" position="330,155" size="790,420" foregroundColorSelected="white" backgroundColor="transpBA" scrollbarMode="showOnDemand" transparent="0" zPosition="1" />
     <widget name="text" font="Regular; 22" position="374,236" size="693,50" halign="center" valign="center" transparent="1" zPosition="1" foregroundColor="white" backgroundColor="transpBA" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/plugins.png" zPosition="4" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />

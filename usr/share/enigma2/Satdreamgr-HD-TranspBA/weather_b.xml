@@ -24,7 +24,7 @@
     <widget source="global.CurrentTime" render="Label" position="728,53" zPosition="2" size="70,24" font="Regular; 18" halign="center" text="Humi" transparent="1" valign="center" backgroundColor="black" foregroundColor="white" noWrap="1">
       <convert type="TranspBAMSNWeather2">Humidity</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="585,23" zPosition="4" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="background">
+    <widget source="global.CurrentTime" render="Label" position="585,23" zPosition="4" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="blue">
       <convert type="TranspBAMSNWeather2">Skytext</convert>
     </widget>
     <ePixmap pixmap="weather_icons/precip.png" position="972,54" size="24,24" zPosition="3" alphatest="blend" />
