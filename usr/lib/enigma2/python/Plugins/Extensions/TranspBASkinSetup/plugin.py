@@ -84,16 +84,15 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 		if current == weather and current.value is True and not os.path.isfile(WEATHER_PLUGIN):
 			def installWeatherMsnCb(answer):
 				if answer is True:
-					self.session.open(Console, _("Installing WeatherMSN plugin..."), ["opkg install enigma2-plugin-extensions-weathermsn"], showStartStopText=False)
-					self.applyColor()
-					self.applyInfobarStyle()
-					self.applyWeather()
-					self.saveAll()
-					self.session.open(TryQuitMainloop, 3)
+					self.session.openWithCallback(self.restart, Console,_("Installing WeatherMSN plugin..."),["opkg install enigma2-plugin-extensions-weathermsn"])
 				else:
 					current.value = False
 			msg = _("The 'WeatherMSN' plugin is required to display weather information. Do you want to install it now?")
 			self.session.openWithCallback(installWeatherMsnCb, MessageBox, msg, MessageBox.TYPE_YESNO)
+			
+	def restart(self):
+		msg = _("Your receiver will be restarted in order to apply the new skin settings. Do you want to proceed?")
+		self.session.openWithCallback(self.applySettings, MessageBox, msg, MessageBox.TYPE_YESNO, timeout=10)			
 
 	def applySettings(self, answer):
 		if answer is True:
