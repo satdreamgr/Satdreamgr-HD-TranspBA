@@ -73,8 +73,7 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 
 	def go(self):
 		if self["config"].isChanged():
-			msg = _("Your receiver will be restarted in order to apply the new skin settings. Do you want to proceed?")
-			self.session.openWithCallback(self.applySettings, MessageBox, msg, MessageBox.TYPE_YESNO)
+			self.restart()
 		else: # if no change is made don't re-apply same settings, just close
 			self.close()
 
