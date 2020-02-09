@@ -981,7 +981,7 @@
   <widget source="ServiceEvent" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="40,660" size="240,40" source="ServiceEvent" render="Label" font="Regular; 18" halign="center" zPosition="4" transparent="0" foregroundColor="white" valign="center" backgroundColor="transpBA" noWrap="1">
+  <widget position="40,660" size="240,40" source="ServiceEvent" render="Label" font="Regular; 18" halign="center" zPosition="4" transparent="0" foregroundColor="white" valign="center" backgroundColor="transpBA">
     <convert type="TranspBAServName">TpansponderInfo</convert>
   </widget>
   <ePixmap pixmap="buttons/menu.png" position="70,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
