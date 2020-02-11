@@ -2332,113 +2332,113 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <!-- Movie Player InfoBar -->
   <screen name="MoviePlayer" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel position="28,70" size="150,130" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" halign="left" text="&gt;" zPosition="1" />
-    <ePixmap pixmap="icons/mp_buttons.png" position="601,614" size="108,13" alphatest="blend" zPosition="3" />
-    <widget source="session.CurrentService" render="Label" zPosition="1" position="264,521" size="120,40" font="Regular; 24" halign="center" valign="center" backgroundColor="black" transparent="1" foregroundColor="white">
+    <ePixmap pixmap="icons/mp_buttons.png" position="1105,677" size="108,13" alphatest="blend" zPosition="3" />
+    <widget source="session.CurrentService" render="Label" zPosition="1" position="122,564" size="120,65" font="Regular; 24" halign="center" valign="center" backgroundColor="transpBA" transparent="1" foregroundColor="white">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <widget source="session.CurrentService" render="PositionGauge" position="274,563" size="786,12" transparent="1" alphatest="blend" zPosition="5" pointer="dvr/position_pointer786.png:786,0">
+    <widget source="session.CurrentService" render="PositionGauge" position="272,642" size="786,12" transparent="1" alphatest="blend" zPosition="5" pointer="dvr/position_pointer786.png:786,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="267,604" size="120,31" backgroundColor="black" zPosition="5" foregroundColor="white" font="Regular; 22" valign="center" halign="center" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="79,633" size="120,31" backgroundColor="blue" zPosition="5" foregroundColor="white" font="Regular; 22" valign="center" halign="center" transparent="1">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="950,603" size="120,31" backgroundColor="black" zPosition="5" foregroundColor="white" font="Regular; 22" valign="center" halign="center" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="1096,633" size="120,31" backgroundColor="blue" zPosition="5" foregroundColor="white" font="Regular; 22" valign="center" halign="center" transparent="1">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <ePixmap name="" position="78,473" size="128,128" pixmap="iconssc/film5.png" zPosition="4" transparent="1" alphatest="blend" />
+    <ePixmap name="" position="39,564" size="64,64" pixmap="iconssc/video.png" zPosition="4" transparent="1" alphatest="blend" />
     <!-- Parameters -->
+    <eLabel name="" position="0,564" size="1280,65" backgroundColor="transpBA" />
     <ePixmap name="" position="170,675" size="20,20" pixmap="infobar/cpu.png" alphatest="blend" zPosition="11" />
-    <ePixmap name="" position="0,462" size="1280,174" pixmap="infobar/infobarpicon.png" alphatest="blend" zPosition="0" />
-    <ePixmap name="" position="0,636" size="1280,84" pixmap="infobar/infobarbas.png" alphatest="blend" zPosition="0" />
+    <ePixmap name="" position="0,630" size="1280,84" pixmap="infobar/movie.png" alphatest="blend" zPosition="0" />
     <widget backgroundColor="blue" position="194,675" size="50,20" font="Regular; 18" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
       <convert type="TranspBACpuInfo">CPUtemp</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="388,521" size="860,40" font="Regular; 26" zPosition="2" transparent="1" valign="center" halign="left" backgroundColor="black" foregroundColor="blue" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="260,564" size="809,65" font="Regular; 26" zPosition="2" transparent="1" valign="center" halign="left" backgroundColor="transpBA" foregroundColor="blue">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="icons/ico_rec_on.png" position="1152,574" size="23,23" zPosition="2" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" pixmap="icons/ico_rec_on.png" position="45,673" size="23,23" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap name="" position="938,643" size="24,20" pixmap="icons/select.png" alphatest="blend" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" position="964,643" size="60,20" transparent="1" zPosition="2" font="Regula; 20" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
+    <ePixmap name="" position="938,675" size="24,20" pixmap="icons/select.png" alphatest="blend" zPosition="2" />
+    <widget source="session.CurrentService" render="Label" position="964,675" size="60,20" transparent="1" zPosition="2" font="Regula; 20" backgroundColor="blue" foregroundColor="white" halign="center" valign="center">
       <convert type="PliExtraInfo">VideoCodec</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="807,643" size="130,20" transparent="1" zPosition="2" font="Regula; 20" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
+    <widget source="session.CurrentService" render="Label" position="807,675" size="130,20" transparent="1" zPosition="2" font="Regula; 20" halign="center" backgroundColor="blue" foregroundColor="white" valign="center">
       <convert type="TranspBAResolution">ResolutionString</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="260,643" size="41,20" zPosition="4" pixmap="icons/ico_hd_on.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="260,675" size="41,20" zPosition="4" pixmap="icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsHD</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_dolby_on.png" position="352,643" size="26,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_dolby_on.png" position="352,675" size="26,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_format_on.png" position="260,643" size="41,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_format_on.png" position="260,675" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsSDAndWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_format_4_3.png" position="260,643" size="41,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_format_4_3.png" position="260,675" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.Event_Now" render="Pixmap" pixmap="icons/ico_pdc.png" position="671,643" size="41,20" zPosition="2" alphatest="blend">
+    <widget source="session.Event_Now" render="Pixmap" pixmap="icons/ico_pdc.png" position="671,675" size="41,20" zPosition="2" alphatest="blend">
       <convert type="EventName">Pdc</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/stream.png" position="717,643" size="21,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/stream.png" position="717,675" size="21,20" zPosition="2" alphatest="blend">
       <convert type="ClientsStreaming" />
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_txt_on.png" position="565,643" size="23,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_txt_on.png" position="565,675" size="23,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="306,643" size="41,20" zPosition="2" pixmap="icons/ico_hbbtv_on.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="306,675" size="41,20" zPosition="2" pixmap="icons/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_crypt_on.png" position="538,643" size="22,20" zPosition="5" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_crypt_on.png" position="538,675" size="22,20" zPosition="5" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/iptv-on.png" position="625,643" size="41,20" alphatest="blend" zPosition="2">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/iptv-on.png" position="625,675" size="41,20" alphatest="blend" zPosition="2">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_sub_on.png" position="593,643" size="27,20" zPosition="3" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_sub_on.png" position="593,675" size="27,20" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_4k.png" position="260,643" size="41,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_4k.png" position="260,675" size="41,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="743,643" size="41,20" zPosition="2" pixmap="icons/sdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="743,675" size="41,20" zPosition="2" pixmap="icons/sdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsSDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="743,643" size="41,20" zPosition="2" pixmap="icons/hdr.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="743,675" size="41,20" zPosition="2" pixmap="icons/hdr.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="743,643" size="60,20" zPosition="2" pixmap="icons/hdr10.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="743,675" size="60,20" zPosition="2" pixmap="icons/hdr10.png" alphatest="blend">
       <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" position="743,643" size="41,20" zPosition="2" pixmap="icons/hlg.png" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" position="743,675" size="41,20" zPosition="2" pixmap="icons/hlg.png" alphatest="blend">
       <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/audiotrack.png" position="513,643" size="20,20" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/audiotrack.png" position="513,675" size="20,20" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">AudioTracksAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap name="" position="383,643" size="20,20" pixmap="icons/audio.png" alphatest="blend" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" position="408,643" size="100,20" font="Regula; 20" foregroundColor="white" backgroundColor="blue" transparent="1" zPosition="3" valign="center" halign="center">
+    <ePixmap name="" position="383,675" size="20,20" pixmap="icons/audio.png" alphatest="blend" zPosition="2" />
+    <widget source="session.CurrentService" render="Label" position="408,675" size="100,20" font="Regula; 20" foregroundColor="white" backgroundColor="blue" transparent="1" zPosition="3" valign="center" halign="center">
       <convert type="TranspBAAudioTrack">atype</convert>
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/wide.png" position="1026,643" size="40,20" zPosition="2" alphatest="blend" transparent="1">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/wide.png" position="1026,675" size="40,20" zPosition="2" alphatest="blend" transparent="1">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
