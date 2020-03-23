@@ -15,21 +15,7 @@
     <widget source="global.CurrentTime" render="Label" position="855,23" zPosition="1" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="blue">
       <convert type="TranspBAMSNWeather2">Skytext1</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="602,54" zPosition="2" size="55,24" font="Regular; 18" halign="center" text="Sday0" transparent="1" valign="center" noWrap="1" backgroundColor="black" foregroundColor="white">
-      <convert type="TranspBAMSNWeather2">Temp</convert>
-    </widget>
-    <widget source="session.CurrentService" render="TranspBAPiconWeather" path="weather_icons" position="533,28" size="45,45" zPosition="10" alphatest="blend">
-      <convert type="TranspBAMSNWeather2">Picon</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="728,53" zPosition="2" size="70,24" font="Regular; 18" halign="center" text="Humi" transparent="1" valign="center" backgroundColor="black" foregroundColor="white" noWrap="1">
-      <convert type="TranspBAMSNWeather2">Humidity</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="585,23" zPosition="4" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="blue">
-      <convert type="TranspBAMSNWeather2">Skytext</convert>
-    </widget>
     <ePixmap pixmap="weather_icons/precip.png" position="972,54" size="24,24" zPosition="3" alphatest="blend" />
-    <ePixmap pixmap="weather_icons/humidity.png" position="699,54" size="24,24" zPosition="3" alphatest="blend" />
-    <ePixmap pixmap="weather_icons/meteo.png" position="531,26" size="50,50" zPosition="9" alphatest="blend" />
     <ePixmap pixmap="weather_icons/meteo.png" position="800,26" size="50,50" zPosition="3" alphatest="blend" />
   </screen>
 </skin>
