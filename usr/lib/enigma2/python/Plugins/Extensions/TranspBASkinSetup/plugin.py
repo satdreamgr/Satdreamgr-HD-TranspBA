@@ -9,12 +9,12 @@ from Screens.Console import Console
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Screens.Standby import TryQuitMainloop
-from Tools.Directories import fileExists, resolveFilename, SCOPE_CONFIG, SCOPE_PLUGINS
+from Tools.Directories import fileExists, resolveFilename, SCOPE_CURRENT_SKIN, SCOPE_PLUGINS
 from shutil import move
 import os.path
 
 
-SKIN_NAME = resolveFilename(SCOPE_CONFIG, "skin_user_Satdreamgr-HD-TranspBA.xml")
+SKIN_NAME = resolveFilename(SCOPE_CURRENT_SKIN, "skin.xml")
 WEATHER_PLUGIN = resolveFilename(SCOPE_PLUGINS, 'Extensions/WeatherMSN/plugin.pyo')
 
 
@@ -83,7 +83,7 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 		if current == weather and current.value is True and not os.path.isfile(WEATHER_PLUGIN):
 			def installWeatherMsnCb(answer):
 				if answer is True:
-					self.session.openWithCallback(self.restart, Console,_("Installing WeatherMSN plugin..."),["opkg install enigma2-plugin-extensions-weathermsn"])
+					self.session.openWithCallback(self.restart, Console,_("Installing WeatherMSN plugin..."),["opkg install enigma2-plugin-extensions-weather_msn"])
 				else:
 					current.value = False
 			msg = _("The 'WeatherMSN' plugin is required to display weather information. Do you want to install it now?")
@@ -95,90 +95,73 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 
 	def applySettings(self, answer):
 		if answer is True:
-			self.applyColor()
-			self.applyInfobarStyle()
-			self.applyWeather()
-			self.saveAll()
-			self.session.open(TryQuitMainloop, 3)
-
-	def applyColor(self):
-		skinSearchAndReplace = []
-		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#20000000":
-			skinSearchAndReplace.append(["#20000000", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#00000000":
-			skinSearchAndReplace.append(["#00000000", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#50000000":
-			skinSearchAndReplace.append(["#50000000", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#00102030":
-			skinSearchAndReplace.append(["#00102030", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#00002222":
-			skinSearchAndReplace.append(["#00002222", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#00080022":
-			skinSearchAndReplace.append(["#00080022", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-		if config.plugins.SatdreamgrTranspBA.SkinColor.value != "#00333333":
-			skinSearchAndReplace.append(["#00333333", config.plugins.SatdreamgrTranspBA.SkinColor.value])
-		try:
-			f = open(SKIN_NAME, "r")
-			lines = f.readlines()
-			f.close()
-			pimpedLines = []
-			for line in lines:
-				for item in skinSearchAndReplace:
-					line = line.replace(item[0], item[1])
-				pimpedLines.append(line)
-			f = open(SKIN_NAME, "w")
-			for line in pimpedLines:
-				f.writelines(line)
-			f.close()
-		except:
-			self.session.open(MessageBox, _("Error applying color settings!"), MessageBox.TYPE_ERROR)
-
-	def applyInfobarStyle(self):
-		f = open(SKIN_NAME, "r")
-		chaine = f.read()
-		f.close()
-		infobarStyle = config.plugins.SatdreamgrTranspBA.infobarStyle.value
-		if infobarStyle == "simple":
-			result = chaine.replace("infobar_b.xml", "infobar_a.xml").replace("infobar_c.xml", "infobar_a.xml")
-		elif infobarStyle == "full":
-			result = chaine.replace("infobar_a.xml", "infobar_b.xml").replace("infobar_c.xml", "infobar_b.xml")
-		elif infobarStyle == "full_bottom":
-			result = chaine.replace("infobar_a.xml", "infobar_c.xml").replace("infobar_b.xml", "infobar_c.xml")
-		f = open(SKIN_NAME, "w")
-		f.write(result)
-		f.close()
-
-	def applyWeather(self):
-		f = open(SKIN_NAME, "r")
-		chaine = f.read()
-		f.close()
-		weather = config.plugins.SatdreamgrTranspBA.weather.value
-		infobarStyle = config.plugins.SatdreamgrTranspBA.infobarStyle.value
-		if "weather" in chaine:
-			if weather is True:
-				if infobarStyle == "simple" or infobarStyle == "full_bottom":
-					result = chaine.replace("weather_off.xml", "weather_ac.xml").replace("weather_b.xml", "weather_ac.xml")
-				elif infobarStyle == "full":
-					result = chaine.replace("weather_off.xml", "weather_b.xml").replace("weather_ac.xml", "weather_b.xml")
+			if patchSkin():
+				self.saveAll()
+				self.session.open(TryQuitMainloop, 3)
 			else:
-				result = chaine.replace("weather_ac.xml", "weather_off.xml").replace("weather_b.xml", "weather_off.xml")
-		else:
-			if weather is True:
-				if infobarStyle == "simple" or infobarStyle == "full_bottom":
-					result = chaine.replace('<skin>\n', '<skin>\n  <include filename="weather_ac.xml" />\n')
-				elif infobarStyle == "full":
-					result = chaine.replace('<skin>\n', '<skin>\n  <include filename="weather_b.xml" />\n')
+				self.session.open(MessageBox, _("Error applying color settings!"), MessageBox.TYPE_ERROR)
+
+
+def patchSkin():
+	def applyColor(lines):
+		updates = []
+		for line in lines:
+			if "<color name=\"transpBA\" value=\"" in line:
+				updates.append("    <color name=\"transpBA\" value=\"%s\" />\n" % config.plugins.SatdreamgrTranspBA.SkinColor.value)
 			else:
-				result = chaine.replace('<skin>\n', '<skin>\n  <include filename="weather_off.xml" />\n')
-		f = open(SKIN_NAME, "w")
-		f.write(result)
-		f.close()
+				updates.append(line)
+		return updates
+
+	def applyInfobarStyle(lines):
+		value = {
+			"simple": "InfoBar_a",
+			"full": "InfoBar_b",
+			"full_bottom": "InfoBar_c"
+		}
+		updates = []
+		for line in lines:
+			if "<panel name=\"InfoBar_" in line:
+				updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "InfoBar_a"))
+			else:
+				updates.append(line)
+		return updates
+
+	def applyWeather(lines):
+		value = {
+			"simple": "WeatherMSN_ac",
+			"full": "WeatherMSN_b",
+			"full_bottom": "WeatherMSN_ac"
+		}
+		updates = []
+		for line in lines:
+			if "<panel name=\"WeatherMSN_" in line:
+				if config.plugins.SatdreamgrTranspBA.weather.value:
+					updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "WeatherMSN_ac"))
+				else:
+					updates.append("    <panel name=\"WeatherMSN_off\" />\n")
+			else:
+				updates.append(line)
+		return updates
+
+	try:
+		with open(SKIN_NAME, "r") as fd:
+			lines = fd.readlines()
+			lines = applyColor(lines)
+			lines = applyInfobarStyle(lines)
+			lines = applyWeather(lines)
+			with open(SKIN_NAME, "w") as fd:
+				for line in lines:
+					fd.writelines(line)
+		return True
+	except (IOError, OSError):
+		pass
+	return False
 
 
 def main(session, **kwargs):
 	weather = config.plugins.SatdreamgrTranspBA.weather
 	with open(SKIN_NAME, "r") as f:
-		if "weather" not in f.read():
+		if "<panel name=\"WeatherMSN_off\" />" in f.read():
 			weather.value = False # for compatibility with existing configs
 			weather.save()
 	if weather.value is True and not os.path.isfile(WEATHER_PLUGIN):
@@ -198,9 +181,14 @@ def menu(menuid, **kwargs):
 	return []
 
 
+def autostart(reason, **kwargs):
+	if reason == 0 and config.skin.primary_skin.value == "Satdreamgr-HD-TranspBA/skin.xml":
+		if not patchSkin():
+			print "[TranspBASkinSetup] Error: Unable to update skin!"
+
+
 def Plugins(**kwargs):
-	return PluginDescriptor(
-		name=_("TranspBA skin setup"),
-		description=_("Setup tool for Satdreamgr-HD-TranspBA skin"),
-		where=PluginDescriptor.WHERE_MENU,
-		fnc=menu)
+	return [
+		PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART], fnc=autostart),
+		PluginDescriptor(name=_("TranspBA skin setup"), description=_("Setup tool for Satdreamgr-HD-TranspBA skin"), where=[PluginDescriptor.WHERE_MENU], fnc=menu)
+	]
