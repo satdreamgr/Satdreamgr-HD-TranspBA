@@ -83,7 +83,7 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 		if current == weather and current.value is True and not os.path.isfile(WEATHER_PLUGIN):
 			def installWeatherMsnCb(answer):
 				if answer is True:
-					self.session.openWithCallback(self.restart, Console,_("Installing WeatherMSN plugin..."),["opkg install enigma2-plugin-extensions-weather_msn"])
+					self.session.openWithCallback(self.restart, Console,_("Installing WeatherMSN plugin..."),["opkg install enigma2-plugin-extensions-weathermsn"])
 				else:
 					current.value = False
 			msg = _("The 'WeatherMSN' plugin is required to display weather information. Do you want to install it now?")

@@ -154,7 +154,7 @@
   <!-- Conditional InfoBar and Weather screens -->
   <screen name="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="InfoBar_b" />
-    <panel name="WeatherMSN_b" />
+    <panel name="WeatherMSN_off" />
   </screen>
   <screen name="InfoBar_a" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!--infobar bas a b c-->
@@ -350,16 +350,16 @@
   <screen name="InfoBar_b" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!--infobar haute b second-->
     <ePixmap name="" position="0,0" size="1280,82" pixmap="infobar/infobarhaute.png" alphatest="blend" zPosition="0" />
-    <eLabel text="AGC " font="Regular; 18" position="32,23" size="60,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
-    <eLabel text="SNR " font="Regular; 18" position="33,54" size="60,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="black" />
-    <widget source="session.FrontendStatus" render="Label" position="188,54" size="70,24" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="center" backgroundColor="black" foregroundColor="white">
+    <eLabel text="AGC " font="Regular; 18" position="32,23" size="50,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="blue" />
+    <eLabel text="SNR " font="Regular; 18" position="33,54" size="50,24" halign="center" transparent="1" valign="center" zPosition="5" foregroundColor="white" backgroundColor="black" />
+    <widget source="session.FrontendStatus" render="Label" position="178,54" size="70,24" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="left" backgroundColor="black" foregroundColor="white">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-	<widget size="25,24" position="436,28" alphatest="blend" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
+    <widget size="25,24" position="684,58" alphatest="blend" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-	<widget source="session.CurrentService" render="Label" position="466,23" size="78,24" transparent="1" zPosition="2" font="Regular; 18" halign="left" backgroundColor="blue" foregroundColor="white" valign="center">
+    <widget source="session.CurrentService" render="Label" position="717,54" size="78,24" transparent="1" zPosition="2" font="Regular; 18" halign="right" backgroundColor="black" foregroundColor="white" valign="center">
       <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1093,20" size="100,32" font="Regular; 26" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="blue">
@@ -374,31 +374,37 @@
     <widget source="global.CurrentTime" render="Label" position="1194,26" size="50,20" font="Regular; 18" halign="left" valign="center" transparent="1" foregroundColor="white" zPosition="3" backgroundColor="blue">
       <convert type="ClockToText">Format: %S</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="327,23" size="60,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="345,23" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue">
       <convert type="PliExtraInfo">TransponderFrequency</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="327,54" size="60,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black">
+    <widget source="session.CurrentService" render="Label" position="471,23" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue">
       <convert type="PliExtraInfo">TransponderSymbolRate</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="391,23" size="40,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="428,23" size="40,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue">
       <convert type="PliExtraInfo">TransponderPolarization</convert>
     </widget>
-	<widget source="session.CurrentService" render="Label" position="389,54" size="155,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="345,54" size="250,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black" noWrap="1">
       <convert type="PliExtraInfo">TransponderFEC</convert>
     </widget>
-	<widget source="session.CurrentService" render="Label" position="262,54" size="65,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="554,23" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" noWrap="1">
       <convert type="PliExtraInfo">TransponderModulation</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="262,23" size="60,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="264,23" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue">
       <convert type="PliExtraInfo">TunerSystem</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_agci.png" position="95,32" size="90,8" zPosition="3" borderWidth="1" borderColor="white">
+    <widget source="session.CurrentService" render="Label" position="264,54" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
+      <convert type="PliExtraInfo">TerrestrialChannelNumber</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="637,23" size="159,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="right" backgroundColor="blue">
+      <convert type="TranspBAServName">Provider</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_agci.png" position="81,32" size="90,8" zPosition="3" borderWidth="1" borderColor="white">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_snri.png" position="95,62" size="90,8" zPosition="3" borderWidth="1" borderColor="grey">
+    <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_snri.png" position="81,63" size="90,8" zPosition="3" borderWidth="1" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="188,23" size="60,24" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="center" backgroundColor="blue" foregroundColor="white">
+    <widget source="session.FrontendStatus" render="Label" position="178,23" size="60,24" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" foregroundColor="white">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <ePixmap pixmap="dvr/scale1024.png" position="0,0" size="0,0" zPosition="1" />
@@ -857,21 +863,7 @@
     <widget source="global.CurrentTime" render="Label" position="855,23" zPosition="1" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="blue">
       <convert type="TranspBAMSNWeather2">Skytext1</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="602,54" zPosition="2" size="55,24" font="Regular; 18" halign="center" text="Sday0" transparent="1" valign="center" noWrap="1" backgroundColor="black" foregroundColor="white">
-      <convert type="TranspBAMSNWeather2">Temp</convert>
-    </widget>
-    <widget source="session.CurrentService" render="TranspBAPiconWeather" path="weather_icons" position="533,28" size="45,45" zPosition="10" alphatest="blend">
-      <convert type="TranspBAMSNWeather2">Picon</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="728,53" zPosition="2" size="70,24" font="Regular; 18" halign="center" text="Humi" transparent="1" valign="center" backgroundColor="black" foregroundColor="white" noWrap="1">
-      <convert type="TranspBAMSNWeather2">Humidity</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="585,23" zPosition="4" size="215,24" font="Regular; 18" halign="left" text="Skytext" transparent="1" valign="center" foregroundColor="white" backgroundColor="blue">
-      <convert type="TranspBAMSNWeather2">Skytext</convert>
-    </widget>
     <ePixmap pixmap="weather_icons/precip.png" position="972,54" size="24,24" zPosition="3" alphatest="blend" />
-    <ePixmap pixmap="weather_icons/humidity.png" position="699,54" size="24,24" zPosition="3" alphatest="blend" />
-    <ePixmap pixmap="weather_icons/meteo.png" position="531,26" size="50,50" zPosition="9" alphatest="blend" />
     <ePixmap pixmap="weather_icons/meteo.png" position="800,26" size="50,50" zPosition="3" alphatest="blend" />
   </screen>
   <!-- Screen Simple Template -->
