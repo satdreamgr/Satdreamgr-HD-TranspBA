@@ -37,6 +37,7 @@
     <color name="transpBlack2" value="#44000000" />
     <color name="transpWhite" value="#77ffffff" />
     <color name="transpyellow" value="#33bab329" />
+    <color name="un10000000" value="#10000000" />
     <color name="un1080911" value="#01080911" />
     <color name="un11aaff" value="#000064c7" />
     <color name="un15" value="#00000015" />
@@ -44,6 +45,7 @@
     <color name="un20000000" value="#20000000" />
     <color name="un253658a4" value="#253658a4" />
     <color name="un254f7497" value="#254f7497" />
+    <color name="un2b0300" value="#002b0300" />
     <color name="un33333a" value="#0033333a" />
     <color name="un35000000" value="#35000000" />
     <color name="un353e575e" value="#353e575e" />
@@ -51,6 +53,7 @@
     <color name="un505555" value="#00505555" />
     <color name="un800000" value="#00800000" />
     <color name="un80000000" value="#80000000" />
+    <color name="un80306" value="#00080306" />
     <color name="un990000" value="#00990000" />
     <color name="un99dd" value="#000099dd" />
     <color name="uncccccc" value="#00cccccc" />
@@ -58,6 +61,7 @@
     <color name="unf0b400" value="#00f0b400" />
     <color name="unff0000" value="#00ff0000" />
     <color name="unff000000" value="#ff000000" />
+    <color name="unff1100" value="#00ff1100" />
     <color name="unffffff" value="#00ffffff" />
     <color name="white" value="#00fefefe" />
     <color name="yellow" value="#00e5b243" />
@@ -355,11 +359,11 @@
     <widget source="session.FrontendStatus" render="Label" position="178,54" size="70,24" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="left" backgroundColor="black" foregroundColor="white">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <widget size="25,24" position="684,58" alphatest="blend" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
+    <widget size="25,24" position="637,58" alphatest="blend" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="717,54" size="78,24" transparent="1" zPosition="2" font="Regular; 18" halign="right" backgroundColor="black" foregroundColor="white" valign="center">
+    <widget source="session.CurrentService" render="Label" position="666,54" size="78,24" transparent="1" zPosition="2" font="Regular; 18" halign="left" backgroundColor="black" foregroundColor="white" valign="center">
       <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1093,20" size="100,32" font="Regular; 26" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="blue">
@@ -395,7 +399,7 @@
     <widget source="session.CurrentService" render="Label" position="264,54" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
       <convert type="PliExtraInfo">TerrestrialChannelNumber</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="637,23" size="159,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="right" backgroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="637,23" size="159,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" noWrap="1">
       <convert type="TranspBAServName">Provider</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_agci.png" position="81,32" size="90,8" zPosition="3" borderWidth="1" borderColor="white">
@@ -1365,11 +1369,11 @@
     <widget source="session.FrontendStatus" render="Label" position="178,54" size="70,24" transparent="1" zPosition="5" font="Regular; 18" valign="center" halign="left" backgroundColor="black" foregroundColor="white">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <widget size="25,24" position="684,58" alphatest="blend" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
+    <widget size="25,24" position="637,58" alphatest="blend" pixmap="skin_default/icons/lock_on.png" source="session.FrontendStatus" render="Pixmap" zPosition="2">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="717,54" size="78,24" transparent="1" zPosition="2" font="Regular; 18" halign="right" backgroundColor="black" foregroundColor="white" valign="center">
+    <widget source="session.CurrentService" render="Label" position="666,54" size="78,24" transparent="1" zPosition="2" font="Regular; 18" halign="left" backgroundColor="black" foregroundColor="white" valign="center">
       <convert type="PliExtraInfo">OrbitalPosition</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1093,20" size="100,32" font="Regular; 26" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="blue">
@@ -1405,7 +1409,7 @@
     <widget source="session.CurrentService" render="Label" position="264,54" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
       <convert type="PliExtraInfo">TerrestrialChannelNumber</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="637,23" size="159,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="right" backgroundColor="blue">
+    <widget source="session.CurrentService" render="Label" position="637,23" size="159,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" noWrap="1">
       <convert type="TranspBAServName">Provider</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Progress" pixmap="border/bar_agci.png" position="81,32" size="90,8" zPosition="3" borderWidth="1" borderColor="white">
@@ -1666,41 +1670,39 @@
   </screen>
   <!-- Channel, EPG, EventInfo -->
   <screen name="ChannelSelection" position="0,0" size="1280,720" transparent="0" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="N3Template" />
-  <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regular; 22" serviceInfoFont="Regular; 22" serviceNumberFont="Regular; 20" colorServiceDescription="#000064c7" foregroundColorEventSelected="jeaune" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
-  <widget source="ServiceEvent" render="Label" position="300,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="center">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" position="380,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="left">
-    <convert type="EventTime">EndTime</convert>
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" zPosition="1" position="468,470" size="754,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" font="Regula; 20" position="300,500" size="922,134" halign="block" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
-    <convert type="EventName">FullDescription</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Label" zPosition="1" position="300,640" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
-    <convert type="TranspBANextEvents">Event1,noDuration</convert>
-  </widget>
-  <widget source="ServiceEvent" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
-    <convert type="ServiceName">Reference</convert>
-  </widget>
-  <widget position="40,660" size="240,40" source="ServiceEvent" render="Label" font="Regular; 18" halign="center" zPosition="4" transparent="0" foregroundColor="white" valign="center" backgroundColor="transpBA">
-    <convert type="TranspBAServName">TpansponderInfo</convert>
-  </widget>
-  <ePixmap pixmap="buttons/menu.png" position="70,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
-  <ePixmap pixmap="buttons/info.png" position="162,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
-  <widget source="ServiceEvent" render="Label" zPosition="1" position="300,670" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
-    <convert type="TranspBANextEvents">Event2,noDuration</convert>
-  </widget>
-  <ePixmap pixmap="border/line2.png" position="410,95" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-  <ePixmap pixmap="border/line2.png" position="410,455" size="750,1" scale="1" zPosition="10" alphatest="blend" />
-
-
-</screen>
+    <panel name="N3Template" />
+    <widget name="list" zPosition="1" position="300,100" size="925,352" scrollbarMode="showOnDemand" serviceItemHeight="32" serviceNameFont="Regular; 22" serviceInfoFont="Regular; 22" serviceNumberFont="Regular; 20" colorServiceDescription="#000064c7" foregroundColorEventSelected="jeaune" transparent="1" backgroundColor="transpBA" foregroundColorServiceNotAvail="red" enableWrapAround="1" />
+    <widget source="ServiceEvent" render="Label" position="300,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="center">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="380,470" size="70,24" font="Regular; 22" transparent="0" zPosition="1" foregroundColor="white" valign="center" backgroundColor="blue" halign="left">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" zPosition="1" position="468,470" size="754,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" font="Regula; 20" position="300,500" size="922,134" halign="block" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" zPosition="1" position="300,640" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
+      <convert type="TranspBANextEvents">Event1,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Picon" position="51,180" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget position="40,660" size="240,40" source="ServiceEvent" render="Label" font="Regular; 18" halign="center" zPosition="4" transparent="0" foregroundColor="white" valign="center" backgroundColor="transpBA">
+      <convert type="TranspBAServName">TpansponderInfo</convert>
+    </widget>
+    <ePixmap pixmap="buttons/menu.png" position="70,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
+    <ePixmap pixmap="buttons/info.png" position="162,616" size="70,35" transparent="1" alphatest="blend" zPosition="1" />
+    <widget source="ServiceEvent" render="Label" zPosition="1" position="300,670" size="922,24" halign="left" valign="center" transparent="0" font="Regular; 22" backgroundColor="blue" foregroundColor="white">
+      <convert type="TranspBANextEvents">Event2,noDuration</convert>
+    </widget>
+    <ePixmap pixmap="border/line2.png" position="410,95" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+    <ePixmap pixmap="border/line2.png" position="410,455" size="750,1" scale="1" zPosition="10" alphatest="blend" />
+  </screen>
   <!-- Simple Channel Selection -->
   <screen name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="N3Template" />
@@ -2156,7 +2158,7 @@
   </screen>
   <screen name="SubtitleDisplay" zPosition="-1" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" />
   <!-- Skin Selector -->
-    <screen name="SkinSelector" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
+  <screen name="SkinSelector" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/system/skin.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget name="preview" position="320,363" size="280,210" alphatest="blend" transparent="1" zPosition="2" />
@@ -4319,59 +4321,62 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   <screen name="SDGRadioScreen" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <eLabel name="Select" text="Select" position="150,210" size="145,24" foregroundColor="white" backgroundColor="transpBA" font="Regular; 22" halign="center" />
-    <ePixmap pixmap="buttons/key_ok.png" position="203,277" size="40,32" alphatest="blend"/>
-    <ePixmap pixmap="border/flecheg.png" position="153,277" size="40,30" alphatest="blend"/>
-    <ePixmap pixmap="border/fleched.png" position="263,277" size="40,30" alphatest="blend"/>
-    <ePixmap pixmap="border/flecheh.png" position="208,235" size="40,30" alphatest="blend"/>
-    <ePixmap pixmap="border/flecheb.png" position="208,315" size="40,30" alphatest="blend"/>
-    <widget name="mem_0" pixmaps="buttons/SDGRadio/mem_0_empty.png,buttons/SDGRadio/mem_0_stored.png,buttons/SDGRadio/mem_0_selected.png" position="178,355" size="40,30" alphatest="blend"/>
-    <widget name="mem_1" pixmaps="buttons/SDGRadio/mem_1_empty.png,buttons/SDGRadio/mem_1_stored.png,buttons/SDGRadio/mem_1_selected.png" position="228,355" size="40,30" alphatest="blend"/>
-    <widget name="mem_2" pixmaps="buttons/SDGRadio/mem_2_empty.png,buttons/SDGRadio/mem_2_stored.png,buttons/SDGRadio/mem_2_selected.png" position="155,390" size="40,30" alphatest="blend"/>
-    <widget name="mem_3" pixmaps="buttons/SDGRadio/mem_3_empty.png,buttons/SDGRadio/mem_3_stored.png,buttons/SDGRadio/mem_3_selected.png" position="203,390" size="40,30" alphatest="blend"/>
-    <widget name="mem_4" pixmaps="buttons/SDGRadio/mem_4_empty.png,buttons/SDGRadio/mem_4_stored.png,buttons/SDGRadio/mem_4_selected.png" position="252,390" size="40,30" alphatest="blend"/>
-    <widget name="mem_5" pixmaps="buttons/SDGRadio/mem_5_empty.png,buttons/SDGRadio/mem_5_stored.png,buttons/SDGRadio/mem_5_selected.png" position="155,425" size="40,30" alphatest="blend"/>
-    <widget name="mem_6" pixmaps="buttons/SDGRadio/mem_6_empty.png,buttons/SDGRadio/mem_6_stored.png,buttons/SDGRadio/mem_6_selected.png" position="203,425" size="40,30" alphatest="blend"/>
-    <widget name="mem_7" pixmaps="buttons/SDGRadio/mem_7_empty.png,buttons/SDGRadio/mem_7_stored.png,buttons/SDGRadio/mem_7_selected.png" position="250,425" size="40,30" alphatest="blend"/>
-    <widget name="mem_8" pixmaps="buttons/SDGRadio/mem_8_empty.png,buttons/SDGRadio/mem_8_stored.png,buttons/SDGRadio/mem_8_selected.png" position="178,463" size="40,30" alphatest="blend"/>
-    <widget name="mem_9" pixmaps="buttons/SDGRadio/mem_9_empty.png,buttons/SDGRadio/mem_9_stored.png,buttons/SDGRadio/mem_9_selected.png" position="228,463" size="40,30" alphatest="blend"/>
-    <ePixmap pixmap="buttons/SDGRadio/radio-frequency.png" position="310,129" size="830,460" scale="1"/>
-    <eLabel text="AF" position="340,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
-    <eLabel text="CT" position="380,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
-    <eLabel text="RT+" position="420,144" size="50,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
-    <eLabel text="TP TA" position="475,144" size="80,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
-    <eLabel text="EON" position="340,168" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
-    <eLabel text="PI" position="400,168" size="90,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
-    <widget name="af" position="340,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="ct" position="380,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="rt+" position="420,144" size="50,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="traffic" position="475,144" size="80,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="eon" position="340,168" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="pi" position="400,168" size="90,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="prog_type" position="340,192" size="160,24" valign="center" halign="left" font="Regular;22" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306"/>
-    <widget name="freq_off" position="565,149" size="430,67" valign="center" halign="center" font="SDGRadio;65" zPosition="4" foregroundColor="#2b0300" backgroundColor="#080306"/>
-    <widget name="freq" position="565,149" size="430,67" valign="center" halign="center" font="SDGRadio;65" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="modulation" position="1000,144" size="115,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306"/>
-    <widget name="dab_channel" position="1000,168" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306"/>
-    <widget name="freq_units" position="1000,192" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306"/>
-    <widget name="radiotext" position="330,490" size="580,80" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="#ff1100" backgroundColor="#080306" transparent="1"/>
-    <widget name="pic" position="925,435" size="200,150" alphatest="on" backgroundColor="#20000000" zPosition="20"/>
-    <widget name="rds_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0"/> <!-- missing -->
-    <widget name="ps_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0"/> <!-- missing -->
-    <widget name="rt_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0"/> <!-- missing -->
-    <ePixmap pixmap="buttons/SDGRadio/key_info.png" position="175,610" size="40,30" alphatest="blend"/>
-    <ePixmap pixmap="buttons/SDGRadio/key_menu.png" position="225,610" size="40,30" alphatest="blend"/>
-    <ePixmap pixmap="buttons/key_help.png" position="275,610" size="40,30" alphatest="blend"/>
+    <ePixmap pixmap="buttons/key_ok.png" position="203,277" size="40,32" alphatest="blend" />
+    <ePixmap pixmap="border/flecheg.png" position="153,277" size="40,30" alphatest="blend" />
+    <ePixmap pixmap="border/fleched.png" position="263,277" size="40,30" alphatest="blend" />
+    <ePixmap pixmap="border/flecheh.png" position="208,235" size="40,30" alphatest="blend" />
+    <ePixmap pixmap="border/flecheb.png" position="208,315" size="40,30" alphatest="blend" />
+    <widget name="mem_0" pixmaps="buttons/SDGRadio/mem_0_empty.png,buttons/SDGRadio/mem_0_stored.png,buttons/SDGRadio/mem_0_selected.png" position="178,355" size="40,30" alphatest="blend" />
+    <widget name="mem_1" pixmaps="buttons/SDGRadio/mem_1_empty.png,buttons/SDGRadio/mem_1_stored.png,buttons/SDGRadio/mem_1_selected.png" position="228,355" size="40,30" alphatest="blend" />
+    <widget name="mem_2" pixmaps="buttons/SDGRadio/mem_2_empty.png,buttons/SDGRadio/mem_2_stored.png,buttons/SDGRadio/mem_2_selected.png" position="155,390" size="40,30" alphatest="blend" />
+    <widget name="mem_3" pixmaps="buttons/SDGRadio/mem_3_empty.png,buttons/SDGRadio/mem_3_stored.png,buttons/SDGRadio/mem_3_selected.png" position="203,390" size="40,30" alphatest="blend" />
+    <widget name="mem_4" pixmaps="buttons/SDGRadio/mem_4_empty.png,buttons/SDGRadio/mem_4_stored.png,buttons/SDGRadio/mem_4_selected.png" position="252,390" size="40,30" alphatest="blend" />
+    <widget name="mem_5" pixmaps="buttons/SDGRadio/mem_5_empty.png,buttons/SDGRadio/mem_5_stored.png,buttons/SDGRadio/mem_5_selected.png" position="155,425" size="40,30" alphatest="blend" />
+    <widget name="mem_6" pixmaps="buttons/SDGRadio/mem_6_empty.png,buttons/SDGRadio/mem_6_stored.png,buttons/SDGRadio/mem_6_selected.png" position="203,425" size="40,30" alphatest="blend" />
+    <widget name="mem_7" pixmaps="buttons/SDGRadio/mem_7_empty.png,buttons/SDGRadio/mem_7_stored.png,buttons/SDGRadio/mem_7_selected.png" position="250,425" size="40,30" alphatest="blend" />
+    <widget name="mem_8" pixmaps="buttons/SDGRadio/mem_8_empty.png,buttons/SDGRadio/mem_8_stored.png,buttons/SDGRadio/mem_8_selected.png" position="178,463" size="40,30" alphatest="blend" />
+    <widget name="mem_9" pixmaps="buttons/SDGRadio/mem_9_empty.png,buttons/SDGRadio/mem_9_stored.png,buttons/SDGRadio/mem_9_selected.png" position="228,463" size="40,30" alphatest="blend" />
+    <ePixmap pixmap="buttons/SDGRadio/radio-frequency.png" position="310,129" size="830,460" scale="1" />
+    <eLabel text="AF" position="340,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="un2b0300" backgroundColor="un80306" />
+    <eLabel text="CT" position="380,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="un2b0300" backgroundColor="un80306" />
+    <eLabel text="RT+" position="420,144" size="50,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="un2b0300" backgroundColor="un80306" />
+    <eLabel text="TP TA" position="475,144" size="80,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="un2b0300" backgroundColor="un80306" />
+    <eLabel text="EON" position="340,168" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="un2b0300" backgroundColor="un80306" />
+    <eLabel text="PI" position="400,168" size="90,24" valign="center" halign="left" font="Regular;24" zPosition="4" foregroundColor="un2b0300" backgroundColor="un80306" />
+    <widget name="af" position="340,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="ct" position="380,144" size="40,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="rt+" position="420,144" size="50,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="traffic" position="475,144" size="80,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="eon" position="340,168" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="pi" position="400,168" size="90,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="prog_type" position="340,192" size="160,24" valign="center" halign="left" font="Regular;22" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" />
+    <widget name="freq_off" position="565,149" size="430,67" valign="center" halign="center" font="SDGRadio;65" zPosition="4" foregroundColor="un2b0300" backgroundColor="un80306" />
+    <widget name="freq" position="565,149" size="430,67" valign="center" halign="center" font="SDGRadio;65" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="modulation" position="1000,144" size="115,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" />
+    <widget name="dab_channel" position="1000,168" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" />
+    <widget name="freq_units" position="1000,192" size="60,24" valign="center" halign="left" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" />
+    <widget name="radiotext" position="330,490" size="580,80" valign="center" halign="center" font="Regular;24" zPosition="5" foregroundColor="unff1100" backgroundColor="un80306" transparent="1" />
+    <widget name="pic" position="925,435" size="200,150" alphatest="on" backgroundColor="transpBA" zPosition="20" />
+    <widget name="rds_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0" />
+    <!-- missing -->
+    <widget name="ps_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0" />
+    <!-- missing -->
+    <widget name="rt_icon" pixmap="buttons/SDGRadio/dummy.png" position="0,0" size="0,0" />
+    <!-- missing -->
+    <ePixmap pixmap="buttons/SDGRadio/key_info.png" position="175,610" size="40,30" alphatest="blend" />
+    <ePixmap pixmap="buttons/SDGRadio/key_menu.png" position="225,610" size="40,30" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_help.png" position="275,610" size="40,30" alphatest="blend" />
   </screen>
   <!-- GreekNetRadio -->
   <screen name="GreekNetRadio" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
     <ePixmap name="" position="159,282" size="128,128" pixmap="menu/panel/radio.png" zPosition="4" transparent="0" alphatest="blend" />
-    <widget name="menu" itemHeight="35" font="Regular; 24" position="330,150" size="790,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white"/>
+    <widget name="menu" itemHeight="35" font="Regular; 24" position="330,150" size="790,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1" backgroundColor="transpBA" foregroundColor="white" />
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <!-- GreekNetRadioPlayer -->  
-  <screen name="GreekNetRadioPlayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">		
+  <!-- GreekNetRadioPlayer -->
+  <screen name="GreekNetRadioPlayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap name="" position="1090,20" size="160,65" pixmap="infobar/clock.png" alphatest="blend" zPosition="0" />
     <widget source="global.CurrentTime" render="Label" position="1093,21" size="100,32" font="Regular; 32" halign="right" transparent="1" valign="center" zPosition="2" foregroundColor="white" backgroundColor="black">
       <convert type="ClockToText">Default</convert>
@@ -4386,13 +4391,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
       <convert type="ClockToText">Format: %S</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,30" size="80,25" font="Regular; 22" backgroundColor="transparent">
-		<convert type="ServicePosition">Position</convert>
-	</widget>
-	<widget name="name" position="130,30" size="600,30" font="Regular; 22" backgroundColor="transparent"/>
-	<widget name="info" position="30,500" size="800,30" font="Regular; 22" backgroundColor="transparent"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="30,670" size="40,30" zPosition="1" alphatest="blend" />
-    <ePixmap pixmap="buttons/key_ok.png" position="90,670" size="40,32" zPosition="1" alphatest="blend" />  
-   </screen>    
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget name="name" position="130,30" size="600,30" font="Regular; 22" backgroundColor="transparent" />
+    <widget name="info" position="30,500" size="800,30" font="Regular; 22" backgroundColor="transparent" />
+    <ePixmap pixmap="buttons/key_exit.png" position="30,670" size="40,30" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="buttons/key_ok.png" position="90,670" size="40,32" zPosition="1" alphatest="blend" />
+  </screen>
   <!-- GreekStream -->
   <screen name="GSMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TBTemplate" />
@@ -4437,32 +4442,32 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey)
   </screen>
   <!-- Picture camera -->
   <screen name="PictureCamera" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="Title" render="Label" position="40,30" size="1210,60" backgroundColor="#10000000" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="#00f47d19" />
-    <widget name="menu" position="47,140" size="425,453" scrollbarMode="showOnDemand" halign="center" alphatest="blend" backgroundColor="#10000000" font="Regular; 22"/>
-    <eLabel name="" position="40,90" size="437,554" zPosition="-2" backgroundColor="#10000000" />
-    <eLabel name="" position="40,90" size="437,35" zPosition="-1" backgroundColor="#000064c7" />
-    <eLabel name="" position="40,609" size="437,35" zPosition="-1" backgroundColor="#000064c7" />
-    <widget name="pic" position="480,93" size="770,548" halign="center" alphatest="blend" backgroundColor="#10000000"/>
-    <eLabel name="" position="480,93" size="770,548" zPosition="-1" backgroundColor="#10000000" />
-    <eLabel name="" position="40,644" size="302,6" zPosition="2" backgroundColor="#00ff4a3c" />
-    <eLabel name="" position="342,644" size="302,6" zPosition="2" backgroundColor="#00389416" />
-    <eLabel name="" position="644,644" size="302,6" zPosition="2" backgroundColor="#00e5b243" />
-    <eLabel name="" position="946,644" size="304,6" zPosition="2" backgroundColor="#000064c7" />
-    <widget name="key_red" position="40,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="#00fefefe" backgroundColor="#10000000" />
-    <widget name="key_green" position="342,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="#00fefefe" backgroundColor="#10000000" />
-    <widget name="key_yellow" position="644,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="#00fefefe" backgroundColor="#10000000" />
-    <widget name="key_blue" position="946,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="#00fefefe" backgroundColor="#10000000" />
-    <eLabel name="" position="40,644" size="1210,60" zPosition="1" backgroundColor="#10000000" />
-    <widget source="global.CurrentTime" render="Label" position="220,95" size="165,25" backgroundColor="#000064c7" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="#00fefefe" zPosition="2">
+    <widget source="Title" render="Label" position="40,30" size="1210,60" backgroundColor="un10000000" zPosition="5" font="Regular; 28" valign="center" halign="center" noWrap="1" foregroundColor="jeaune" />
+    <widget name="menu" position="47,140" size="425,453" scrollbarMode="showOnDemand" halign="center" alphatest="blend" backgroundColor="un10000000" font="Regular; 22" />
+    <eLabel name="" position="40,90" size="437,554" zPosition="-2" backgroundColor="un10000000" />
+    <eLabel name="" position="40,90" size="437,35" zPosition="-1" backgroundColor="blue" />
+    <eLabel name="" position="40,609" size="437,35" zPosition="-1" backgroundColor="blue" />
+    <widget name="pic" position="480,93" size="770,548" halign="center" alphatest="blend" backgroundColor="un10000000" />
+    <eLabel name="" position="480,93" size="770,548" zPosition="-1" backgroundColor="un10000000" />
+    <eLabel name="" position="40,644" size="302,6" zPosition="2" backgroundColor="red" />
+    <eLabel name="" position="342,644" size="302,6" zPosition="2" backgroundColor="green" />
+    <eLabel name="" position="644,644" size="302,6" zPosition="2" backgroundColor="yellow" />
+    <eLabel name="" position="946,644" size="304,6" zPosition="2" backgroundColor="blue" />
+    <widget name="key_red" position="40,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="un10000000" />
+    <widget name="key_green" position="342,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="un10000000" />
+    <widget name="key_yellow" position="644,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="un10000000" />
+    <widget name="key_blue" position="946,650" size="302,50" zPosition="5" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="un10000000" />
+    <eLabel name="" position="40,644" size="1210,60" zPosition="1" backgroundColor="un10000000" />
+    <widget source="global.CurrentTime" render="Label" position="220,95" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%d-%m-%Y</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,95" size="165,25" backgroundColor="#000064c7" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="#00fefefe" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="50,95" size="165,25" backgroundColor="blue" transparent="1" font="Regular; 22" valign="center" halign="center" foregroundColor="white" zPosition="2">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,609" size="110,35" backgroundColor="#000064c7" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="#00fefefe">
+    <widget source="global.CurrentTime" render="Label" position="140,609" size="110,35" backgroundColor="blue" transparent="1" font="Regular; 32" halign="right" valign="center" zPosition="2" foregroundColor="white">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="247,614" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="#000064c7" foregroundColor="#00f47d19" zPosition="2">
+    <widget source="global.CurrentTime" render="Label" position="247,614" size="45,20" font="Regular; 20" halign="left" valign="center" transparent="1" backgroundColor="blue" foregroundColor="jeaune" zPosition="2">
       <convert type="ClockToText">Format: :%S</convert>
     </widget>
   </screen>
