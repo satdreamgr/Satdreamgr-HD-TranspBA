@@ -28,11 +28,12 @@ config.plugins.SatdreamgrTranspBA.SkinColor = ConfigSelection(default="#20000000
 	("#00080022", _("navy blue")),
 	("#00333333", _("grey"))
 ])
-config.plugins.SatdreamgrTranspBA.infobarStyle = ConfigSelection(default="simple", choices=[
+config.plugins.SatdreamgrTranspBA.infobarStyle = ConfigSelection(default="full", choices=[
 	("simple", _("simple")),
 	("full", _("full")),
 	("full_bottom", _("full bottom"))
 ])
+
 config.plugins.SatdreamgrTranspBA.weather = ConfigYesNo(default=False)
 
 
@@ -101,7 +102,6 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			else:
 				self.session.open(MessageBox, _("Error applying color settings!"), MessageBox.TYPE_ERROR)
 
-
 def patchSkin():
 	def applyColor(lines):
 		updates = []
@@ -126,17 +126,33 @@ def patchSkin():
 				updates.append(line)
 		return updates
 
+	def applyInfobarStyle1(lines):
+		value = {
+			"simple": "SecondInfoBar_a",
+			"full": "SecondInfoBar_bc",
+			"full_bottom": "SecondInfoBar_bc"		
+			}
+		updates = []
+
+		for line in lines:
+
+			if "<panel name=\"SecondInfoBar_" in line:
+				updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "SecondInfoBar_bc"))			
+			else:
+				updates.append(line)
+		return updates	
+
 	def applyWeather(lines):
 		value = {
-			"simple": "WeatherMSN_ac",
+			"simple": "WeatherMSN_a",
 			"full": "WeatherMSN_b",
-			"full_bottom": "WeatherMSN_ac"
+			"full_bottom": "WeatherMSN_c"
 		}
 		updates = []
 		for line in lines:
 			if "<panel name=\"WeatherMSN_" in line:
 				if config.plugins.SatdreamgrTranspBA.weather.value:
-					updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "WeatherMSN_ac"))
+					updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "WeatherMSN_a"))
 				else:
 					updates.append("    <panel name=\"WeatherMSN_off\" />\n")
 			else:
@@ -147,7 +163,8 @@ def patchSkin():
 		with open(SKIN_NAME, "r") as fd:
 			lines = fd.readlines()
 			lines = applyColor(lines)
-			lines = applyInfobarStyle(lines)
+			lines = applyInfobarStyle(lines)	
+			lines = applyInfobarStyle1(lines)
 			lines = applyWeather(lines)
 			with open(SKIN_NAME, "w") as fd:
 				for line in lines:
@@ -156,7 +173,6 @@ def patchSkin():
 	except (IOError, OSError):
 		pass
 	return False
-
 
 def main(session, **kwargs):
 	weather = config.plugins.SatdreamgrTranspBA.weather
