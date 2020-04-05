@@ -302,7 +302,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-  </screen>    
+  </screen>
   <!--infobar b-->
   <screen name="InfoBar_b" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <!--infobar haute b second-->
@@ -340,7 +340,7 @@
     <widget source="session.CurrentService" render="Label" position="428,23" size="40,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue">
       <convert type="PliExtraInfo">TransponderPolarization</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="345,54" size="250,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="375,54" size="250,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black" noWrap="1">
       <convert type="PliExtraInfo">TransponderFEC</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="554,23" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" noWrap="1">
@@ -351,6 +351,9 @@
     </widget>
     <widget source="session.CurrentService" render="Label" position="264,54" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
       <convert type="PliExtraInfo">TerrestrialChannelNumber</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="264,54" size="180,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
+      <convert type="PliExtraInfo">TransponderInfoMisPls</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="637,23" size="159,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" noWrap="1">
       <convert type="TranspBAServName">Provider</convert>
@@ -822,7 +825,7 @@
     <ePixmap pixmap="weather_icons/framed.png" position="565,72" size="215,25" zPosition="0" />
     <ePixmap pixmap="weather_icons/framed.png" position="297,72" size="215,25" zPosition="0" />
     <ePixmap pixmap="weather_icons/framed.png" position="565,18" size="215,25" zPosition="0" />
-    <ePixmap pixmap="weather_icons/frameg.png" position="79,72" size="165,25" zPosition="0" />   
+    <ePixmap pixmap="weather_icons/frameg.png" position="79,72" size="165,25" zPosition="0" />
   </screen>
   <screen name="WeatherMSN_b" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="856,54" zPosition="2" size="55,24" font="Regular; 18" halign="center" text="High0" noWrap="1" transparent="1" valign="center" backgroundColor="black" foregroundColor="green">
@@ -1277,7 +1280,7 @@
     <ePixmap pixmap="border/line2.png" position="349,140" size="750,1" scale="1" zPosition="10" alphatest="blend" />
     <ePixmap pixmap="border/line2.png" position="349,580" size="750,1" scale="1" zPosition="10" alphatest="blend" />
   </screen>
-  <!-- SecondInfoBar_a -->  
+  <!-- SecondInfoBar_a -->
   <screen name="SecondInfoBar_a" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" transparent="1" borderWidth="0" borderColor="transparent">
     <!--infobar_a-->
     <ePixmap name="" pixmap="infobar_a/logo_a.png" position="30,90" size="100,60" alphatest="blend" zPosition="0" />
@@ -1657,7 +1660,7 @@
     <widget source="session.CurrentService" render="Label" position="428,23" size="40,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue">
       <convert type="PliExtraInfo">TransponderPolarization</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="345,54" size="250,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="375,54" size="250,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="center" backgroundColor="black" noWrap="1">
       <convert type="PliExtraInfo">TransponderFEC</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="554,23" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" noWrap="1">
@@ -1668,6 +1671,9 @@
     </widget>
     <widget source="session.CurrentService" render="Label" position="264,54" size="80,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
       <convert type="PliExtraInfo">TerrestrialChannelNumber</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="264,54" size="180,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="black">
+      <convert type="PliExtraInfo">TransponderInfoMisPls</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="637,23" size="159,24" transparent="1" zPosition="2" foregroundColor="white" font="Regular; 18" valign="center" halign="left" backgroundColor="blue" noWrap="1">
       <convert type="TranspBAServName">Provider</convert>
