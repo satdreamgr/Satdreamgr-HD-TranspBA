@@ -284,7 +284,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="global.CurrentTime" render="Label" position="854,15" size="200,60" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="0" valign="center">
-      <convert type="ClockToText">Format:%a %d %h %H:%H</convert>
+      <convert type="ClockToText">Format:%a %d %h %H:%M</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="141,163" size="710,24" transparent="1" zPosition="0" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="white" valign="center" noWrap="1">
       <convert type="EventName">Name</convert>
@@ -1401,7 +1401,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="global.CurrentTime" render="Label" position="854,15" size="200,60" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="0" valign="center">
-      <convert type="ClockToText">Format:%a %d %h %H:%H</convert>
+      <convert type="ClockToText">Format:%a %d %h %H:%M</convert>
     </widget>
     <!--infobar_second_a -->
     <ePixmap name="" position="140,155" size="1110,162" pixmap="infobar_a/second_a_epg.png" alphatest="off" zPosition="-9" />
