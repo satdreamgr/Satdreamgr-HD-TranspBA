@@ -47,10 +47,12 @@ class TranspBAServName(Converter, object):
 			if not servicelist is None:
 				while True:
 					s = servicelist.getNext()
-					if not s.valid(): break
+					if not s.valid():
+						break
 					if not (s.flags & (eServiceReference.isMarker|eServiceReference.isDirectory)):
 						num += 1
-						if s == ref: return s, num
+						if s == ref:
+							return s, num
 			return None, num
 
 		if isinstance(ref, eServiceReference):
@@ -70,7 +72,8 @@ class TranspBAServName(Converter, object):
 				acount = False
 			rootstr = ''
 			for x in lastpath.split(';'):
-				if x != '': rootstr = x
+				if x != '':
+					rootstr = x
 			serviceHandler = eServiceCenter.getInstance()
 			if acount is True or not config.usage.multibouquet.value:
 				bouquet = eServiceReference(rootstr)
@@ -87,10 +90,12 @@ class TranspBAServName(Converter, object):
 				if not bouquetlist is None:
 					while True:
 						bouquet = bouquetlist.getNext()
-						if not bouquet.valid(): break
+						if not bouquet.valid():
+							break
 						if bouquet.flags & eServiceReference.isDirectory:
 							service, number = searchHelper(serviceHandler, number, bouquet)
-							if not service is None and cur == bouquet: break
+							if not service is None and cur == bouquet:
+								break
 			if not service is None:
 				info = serviceHandler.info(bouquet)
 				name = info and info.getName(bouquet) or ''
@@ -109,13 +114,15 @@ class TranspBAServName(Converter, object):
 			if not providerlist is None:
 				while True:
 					provider = providerlist.getNext()
-					if not provider.valid(): break
+					if not provider.valid():
+						break
 					if provider.flags & eServiceReference.isDirectory:
 						servicelist = serviceHandler.list(provider)
 						if not servicelist is None:
 							while True:
 								service = servicelist.getNext()
-								if not service.valid(): break
+								if not service.valid():
+									break
 								if service == ref:
 									info = serviceHandler.info(provider)
 									return info and info.getName(provider) or "Unknown"
@@ -227,7 +234,8 @@ class TranspBAServName(Converter, object):
 					result += x in range(5) and {0:'None',1:'1',2:'2',3:'4',4:'Auto'}[x] or ''
 			else:
 				result += f
-			if pos+1 >= l: break
+			if pos+1 >= l:
+				break
 			fmt = fmt[pos+1:]
 		return result
 
@@ -241,7 +249,8 @@ class TranspBAServName(Converter, object):
 				name = _("Terrestrial")
 			else: #Satellite
 				orbpos = ref.getData(4) >> 16
-				if orbpos < 0: orbpos += 3600
+				if orbpos < 0:
+					orbpos += 3600
 				try:
 					from Components.NimManager import nimmanager
 					name = str(nimmanager.getSatDescription(orbpos))
@@ -258,7 +267,8 @@ class TranspBAServName(Converter, object):
 		else: # reference
 			info = service and self.source.info
 			ref = service
-		if info is None: return ""
+		if info is None:
+			return ""
 		
 		if self.type == self.NAME:
 			name = ref and (info.getName(ref) or 'N/A') or (info.getName() or 'N/A')
@@ -310,7 +320,8 @@ class TranspBAServName(Converter, object):
 					ret += self.getTransponderInfo(info, ref, '%'+f)
 				else:
 					ret += f
-				if pos+1 >= l: break
+				if pos+1 >= l:
+					break
 				tmp = tmp[pos+1:]
 			return '%s'%(ret.replace('N/A', ''))
 
