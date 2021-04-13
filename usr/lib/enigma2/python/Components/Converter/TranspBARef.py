@@ -5,6 +5,7 @@ import NavigationInstance
 from ServiceReference import ServiceReference
 from Components.config import config
 
+
 class TranspBARef(Poll, Converter, object):
     ServiceRef = 0
 

@@ -4,6 +4,7 @@ from Components.Element import cached
 import os
 import re
 
+
 class TranspBACpuInfo(Converter):
 
 	def __init__(self, type):

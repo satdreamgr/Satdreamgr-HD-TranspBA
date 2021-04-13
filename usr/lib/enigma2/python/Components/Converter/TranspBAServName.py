@@ -4,6 +4,7 @@ from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr, e
 from Components.Element import cached
 from Components.config import config
 
+
 class TranspBAServName(Converter, object):
 	NAME = 0
 	NUMBER = 1

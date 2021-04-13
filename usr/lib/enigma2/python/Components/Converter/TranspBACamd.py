@@ -7,6 +7,7 @@ from Tools.Directories import fileExists
 from Poll import Poll
 import os
 
+
 class TranspBACamd(Poll, Converter, object):
         def __init__(self, type):
                 Converter.__init__(self, type)
