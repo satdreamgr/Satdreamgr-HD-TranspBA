@@ -34,7 +34,7 @@ class TranspBAAudioTrack(Poll, Converter, object):
 		atype = ""
 		audio = service.audioTracks()
 		if audio and audio.getCurrentTrack() > -1:
-			atype = str(audio.getTrackInfo(audio.getCurrentTrack()).getDescription()).replace(",","")
+			atype = str(audio.getTrackInfo(audio.getCurrentTrack()).getDescription()).replace(",", "")
 
 		if self.type == self.atype:
 			return atype
