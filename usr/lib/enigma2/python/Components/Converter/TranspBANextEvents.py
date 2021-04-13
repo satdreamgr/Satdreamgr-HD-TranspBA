@@ -26,12 +26,12 @@ class TranspBANextEvents(Converter, object):
 		self.epgcache = eEPGCache.getInstance()
 
 		args = type.split(',')
-		if len(args) != 2: 
+		if len(args) != 2:
 			raise ElementError("type must contain exactly 2 arguments")
-	
+
 		type = args.pop(0)
 		showDuration = args.pop(0)
-				
+
 		if type == "Event2":
 			self.type = self.Event2
 		elif type == "Event3":
@@ -40,14 +40,14 @@ class TranspBANextEvents(Converter, object):
 			self.type = self.PrimeTime
 		else:
 			self.type = self.Event1
-			
+
 		if showDuration == "noDuration":
 			self.showDuration = self.noDuration
 		elif showDuration == "onlyDuration":
 			self.showDuration = self.onlyDuration
 		else:
 			self.showDuration = self.withDuration
-	
+
 	@cached
 	def getText(self):
 		ref = self.source.service
@@ -66,7 +66,7 @@ class TranspBANextEvents(Converter, object):
 				next = self.epgcache.getNextTimeEntry()
 				if next:
 					textvalue = self.formatEvent(next)
-		
+
 		elif self.type == self.PrimeTime:
 			curEvent = self.source.getCurrentEvent()
 			if curEvent:
@@ -80,7 +80,7 @@ class TranspBANextEvents(Converter, object):
 		return textvalue
 
 	text = property(getText)
-	
+
 	def formatEvent(self, event):
 		begin = strftime("%H:%M", localtime(event.getBeginTime()))
 		end = strftime("%H:%M", localtime(event.getBeginTime() + event.getDuration()))

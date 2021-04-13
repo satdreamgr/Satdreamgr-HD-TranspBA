@@ -37,7 +37,7 @@ class TranspBAServName(Converter, object):
 		else:
 			self.type = self.FORMAT
 			self.sfmt = type[:]
-		
+
 		self.what = self.tpdata = None
 		self.Timer = eTimer()
 		self.Timer.callback.append(self.neededChange)
@@ -270,7 +270,7 @@ class TranspBAServName(Converter, object):
 			ref = service
 		if info is None:
 			return ""
-		
+
 		if self.type == self.NAME:
 			name = ref and (info.getName(ref) or 'N/A') or (info.getName() or 'N/A')
 			return name.replace('\xc2\x86', '').replace('\xc2\x87', '')
@@ -342,6 +342,3 @@ class TranspBAServName(Converter, object):
 				self.Timer.start(200, True)
 			else:
 				Converter.changed(self, what)
-
-
-

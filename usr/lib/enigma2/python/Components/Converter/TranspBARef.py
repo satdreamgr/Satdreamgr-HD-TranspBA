@@ -25,7 +25,7 @@ class TranspBARef(Poll, Converter, object):
                 return refservice
             else:
                 return ""
-                
+
     @cached
     def getText(self):
         service = self.source.service
