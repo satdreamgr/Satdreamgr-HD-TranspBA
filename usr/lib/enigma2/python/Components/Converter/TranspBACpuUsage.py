@@ -82,7 +82,7 @@ class TranspBACpuUsageMonitor(Poll, object):
 
 	def __init__(self):
 		Poll.__init__(self)
-		self.__callbacks = [ ]
+		self.__callbacks = []
 		self.__curr_info = self.getCpusInfo()
 		self.poll_interval = 500
 
@@ -113,11 +113,11 @@ class TranspBACpuUsageMonitor(Poll, object):
 	def poll(self):
 		prev_info, self.__curr_info = self.__curr_info, self.getCpusInfo()
 		if len(self.__callbacks):
-			info = [ ]
+			info = []
 			for i in range(len(self.__curr_info)):
 				# xxx% = (cur_xxx - prev_xxx) / (cur_total - prev_total) * 100
 				try:
-					p = 100 * ( self.__curr_info[i][2] - prev_info[i][2] ) / ( self.__curr_info[i][1] - prev_info[i][1] )
+					p = 100 * (self.__curr_info[i][2] - prev_info[i][2]) / (self.__curr_info[i][1] - prev_info[i][1])
 				except ZeroDivisionError:
 					p = 0
 				info.append(p)
