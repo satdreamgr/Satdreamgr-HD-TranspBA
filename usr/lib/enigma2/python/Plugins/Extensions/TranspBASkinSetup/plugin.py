@@ -102,6 +102,7 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 			else:
 				self.session.open(MessageBox, _("Error applying color settings!"), MessageBox.TYPE_ERROR)
 
+
 def patchSkin():
 	def applyColor(lines):
 		updates = []
@@ -173,6 +174,7 @@ def patchSkin():
 	except (IOError, OSError):
 		pass
 	return False
+
 
 def main(session, **kwargs):
 	weather = config.plugins.SatdreamgrTranspBA.weather

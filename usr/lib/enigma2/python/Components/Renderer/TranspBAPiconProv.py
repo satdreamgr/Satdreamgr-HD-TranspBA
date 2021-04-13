@@ -4,6 +4,7 @@ from Tools.Directories import fileExists, SCOPE_CURRENT_SKIN, resolveFilename
 from Tools.LoadPixmap import LoadPixmap
 import os.path
 
+
 class TranspBAPiconProv(Renderer):
 
     __module__ = __name__

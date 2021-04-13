@@ -9,6 +9,7 @@ from enigma import iServiceInformation, iPlayableService, iAudioTrackInfo
 from Components.config import config
 from Components.Element import cached
 
+
 class TranspBAAudioTrack(Poll, Converter, object):
 	atype = 0
 	vtype = 1

@@ -45,6 +45,7 @@ if weather_location == 'en-EN':
 time_update = 20
 time_update_ms = 3000
 
+
 class TranspBAMSNWeather2(Poll, Converter, object):
 
 	VFD = 1

@@ -8,6 +8,7 @@ from Tools.LoadPixmap import LoadPixmap
 
 class TranspBAPiconWeather(Renderer):
 	__module__ = __name__
+
 	def __init__(self):
 		Renderer.__init__(self)
 		self.path = 'piconUni'

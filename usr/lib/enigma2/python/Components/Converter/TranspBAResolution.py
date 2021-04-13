@@ -4,6 +4,7 @@ from Components.Element import cached
 from Components.config import config
 from Poll import Poll
 
+
 class TranspBAResolution(Poll, Converter, object):
 	def __init__(self, type):
 		Converter.__init__(self, type)

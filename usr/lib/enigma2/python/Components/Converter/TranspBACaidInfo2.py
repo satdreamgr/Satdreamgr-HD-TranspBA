@@ -14,6 +14,7 @@ import os
 info = {}
 old_ecm_mtime = None
 
+
 class TranspBACaidInfo2(Poll, Converter, object):
 	CAID = 0
 	PID = 1
@@ -56,7 +57,6 @@ class TranspBACaidInfo2(Poll, Converter, object):
 	IS_FTA = 38
 	IS_CRYPTED = 39
 	my_interval = 1000
-
 
 	def __init__(self, type):
 		Poll.__init__(self)
