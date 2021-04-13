@@ -66,12 +66,12 @@ class TranspBASpaceInfo(Poll, Converter):
 			text = self.getLoadAvg()
 		else:
 			entry = {
-					self.MEMTOTAL:  ("Mem","Ram"),
-					self.MEMFREE:   ("Mem","Ram"),
+					self.MEMTOTAL: ("Mem","Ram"),
+					self.MEMFREE: ("Mem","Ram"),
 					self.SWAPTOTAL: ("Swap","Swap"),
-					self.SWAPFREE:  ("Swap","Swap"),
-					self.USBINFO:   ("/media/usb","USB"),
-					self.HDDINFO:   ("/media/hdd","HDD"),
+					self.SWAPFREE: ("Swap","Swap"),
+					self.USBINFO: ("/media/usb","USB"),
+					self.HDDINFO: ("/media/hdd","HDD"),
 					self.FLASHINFO: ("/","Flash"),
 				}[self.type]
 			if self.type in (self.USBINFO,self.HDDINFO,self.FLASHINFO):

@@ -18,7 +18,7 @@ class TranspBAResolution(Poll, Converter, object):
 			return ""
 		yres = info.getInfo(iServiceInformation.sVideoHeight)
 		mode = ("i", "p", "", " ")[info.getInfo(iServiceInformation.sProgressive)]
-		fps  = str((info.getInfo(iServiceInformation.sFrameRate) + 500) / 1000)
+		fps = str((info.getInfo(iServiceInformation.sFrameRate) + 500) / 1000)
 		if int(fps) <= 0:
 			fps = ""
 		return str(xres) + "x" + str(yres) + mode + fps

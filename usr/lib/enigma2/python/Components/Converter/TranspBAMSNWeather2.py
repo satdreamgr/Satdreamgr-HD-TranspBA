@@ -285,7 +285,7 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 			}
 		low0weather, hi0weather, low1weather, hi1weather, low2weather, hi2weather, low3weather, hi3weather, low4weather, hi4weather = '', '', '', '', '', '', '', '', '', ''
 		if fileExists("/tmp/weathermsn.xml"):
-			if int((time.time() - os.stat("/tmp/weathermsn.xml").st_mtime)/60) >= time_update:
+			if int((time.time() - os.stat("/tmp/weathermsn.xml").st_mtime) / 60) >= time_update:
 				self.get_xmlfile()
 		else:
 			self.get_xmlfile()
@@ -315,7 +315,7 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 						msnweather['Feelslike'] = line.split('feelslike')[1].split('"')[1] + '%s%s' % (unichr(176).encode("latin-1"), degreetype)
 					msnweather['Picon'] = line.split('skycode')[1].split('"')[1]
 					msnweather['Skytext'] = line.split('skytext')[1].split('"')[1]
-					msnweather['Humidity'] = line.split('humidity')[1].split('"')[1] + ' %s'  % unichr(37).encode("latin-1")
+					msnweather['Humidity'] = line.split('humidity')[1].split('"')[1] + ' %s' % unichr(37).encode("latin-1")
 					try:
 						msnweather['Wind'] = line.split('winddisplay')[1].split('"')[1].split(' ')[2]
 					except:
@@ -329,9 +329,9 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 						msnweather['Windspeed'] = '%.01ff m/s' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 0.45)
 			# ft/s
 					elif windtype == 'fts' and line.split('windspeed')[1].split('"')[1].split(' ')[1] == 'm/s':
-						msnweather['Windspeed']= '%.01f ft/s' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 3.28)
+						msnweather['Windspeed'] = '%.01f ft/s' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 3.28)
 					elif windtype == 'fts' and line.split('windspeed')[1].split('"')[1].split(' ')[1] == 'kmph':
-						msnweather['Windspeed']= '%.01f ft/s' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 0.91)
+						msnweather['Windspeed'] = '%.01f ft/s' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 0.91)
 					elif windtype == 'ms' and line.split('windspeed')[1].split('"')[1].split(' ')[1] == 'mph':
 						msnweather['Windspeed'] = '%.01f ft/s' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 1.47)
 			# mp/h
@@ -340,7 +340,7 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 					elif windtype == 'mph' and line.split('windspeed')[1].split('"')[1].split(' ')[1] == 'kmph':
 						msnweather['Windspeed'] = '%.01f mp/h' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 0.62)
 					elif windtype == 'ms' and line.split('windspeed')[1].split('"')[1].split(' ')[1] == 'mph':
-						msnweather['Windspeed'] =  '%s mp/h' % line.split('windspeed')[1].split('"')[1].split(' ')[0]
+						msnweather['Windspeed'] = '%s mp/h' % line.split('windspeed')[1].split('"')[1].split(' ')[0]
 			# knots
 					elif windtype == 'knots' and line.split('windspeed')[1].split('"')[1].split(' ')[1] == 'm/s':
 						msnweather['Windspeed'] = '%.01f knots' % (float(line.split('windspeed')[1].split('"')[1].split(' ')[0]) * 1.94)
@@ -373,14 +373,14 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 					else:
 						hi0weather = line.split('high')[1].split('"')[1] + '%s' % unichr(176).encode("latin-1")
 						msnweather['Hightemp0'] = '%s%s' % (hi0weather, degreetype)
-					msnweather['Temp0'] =  '%s / %s' % (hi0weather, low0weather)
+					msnweather['Temp0'] = '%s / %s' % (hi0weather, low0weather)
 					msnweather['Picon0'] = line.split('skycodeday')[1].split('"')[1]
 					msnweather['Date0'] = line.split('date')[2].split('"')[1].split('-')[2].strip() + '.' + line.split('date')[2].split('"')[1].split('-')[1].strip() + '.' + line.split('date')[2].split('"')[1].split('-')[0].strip()
 					msnweather['Shortdate0'] = line.split('shortday')[2].split('"')[1] + ' ' + line.split('date')[2].split('"')[1].split('-')[2].strip()
 					msnweather['Day0'] = line.split(' day')[2].split('"')[1]
 					msnweather['Shortday0'] = line.split('shortday')[2].split('"')[1]
 					msnweather['Skytext0'] = line.split('skytextday')[1].split('"')[1]
-					msnweather['Precip0'] = line.split('precip')[1].split('"')[1] + ' %s'  % unichr(37).encode("latin-1")
+					msnweather['Precip0'] = line.split('precip')[1].split('"')[1] + ' %s' % unichr(37).encode("latin-1")
 #	day 1	#
 				if "<forecast" in line:
 					if not line.split('low')[2].split('"')[1][0] is '-' and not line.split('low')[2].split('"')[1][0] is '0':
@@ -395,14 +395,14 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 					else:
 						hi1weather = line.split('high')[2].split('"')[1] + '%s' % unichr(176).encode("latin-1")
 						msnweather['Hightemp1'] = '%s%s' % (hi1weather, degreetype)
-					msnweather['Temp1'] =  '%s / %s' % (hi1weather, low1weather)
+					msnweather['Temp1'] = '%s / %s' % (hi1weather, low1weather)
 					msnweather['Picon1'] = line.split('skycodeday')[2].split('"')[1]
 					msnweather['Date1'] = line.split('date')[3].split('"')[1].split('-')[2].strip() + '.' + line.split('date')[3].split('"')[1].split('-')[1].strip() + '.' + line.split('date')[3].split('"')[1].split('-')[0].strip()
 					msnweather['Shortdate1'] = line.split('shortday')[3].split('"')[1] + ' ' + line.split('date')[3].split('"')[1].split('-')[2].strip()
 					msnweather['Day1'] = line.split(' day')[3].split('"')[1]
 					msnweather['Shortday1'] = line.split('shortday')[3].split('"')[1]
 					msnweather['Skytext1'] = line.split('skytextday')[2].split('"')[1]
-					msnweather['Precip1'] = line.split('precip')[2].split('"')[1] + ' %s'  % unichr(37).encode("latin-1")
+					msnweather['Precip1'] = line.split('precip')[2].split('"')[1] + ' %s' % unichr(37).encode("latin-1")
 #	day 2	#
 				if "<forecast" in line:
 					if not line.split('low')[3].split('"')[1][0] is '-' and not line.split('low')[3].split('"')[1][0] is '0':
@@ -417,14 +417,14 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 					else:
 						hi2weather = line.split('high')[3].split('"')[1] + '%s' % unichr(176).encode("latin-1")
 						msnweather['Hightemp2'] = '%s%s' % (hi2weather, degreetype)
-					msnweather['Temp2'] =  '%s / %s' % (hi2weather, low2weather)
+					msnweather['Temp2'] = '%s / %s' % (hi2weather, low2weather)
 					msnweather['Picon2'] = line.split('skycodeday')[3].split('"')[1]
 					msnweather['Date2'] = line.split('date')[4].split('"')[1].split('-')[2].strip() + '.' + line.split('date')[4].split('"')[1].split('-')[1].strip() + '.' + line.split('date')[4].split('"')[1].split('-')[0].strip()
 					msnweather['Shortdate2'] = line.split('shortday')[4].split('"')[1] + ' ' + line.split('date')[4].split('"')[1].split('-')[2].strip()
 					msnweather['Day2'] = line.split(' day')[4].split('"')[1]
 					msnweather['Shortday2'] = line.split('shortday')[4].split('"')[1]
 					msnweather['Skytext2'] = line.split('skytextday')[3].split('"')[1]
-					msnweather['Precip2'] = line.split('precip')[3].split('"')[1] + ' %s'  % unichr(37).encode("latin-1")
+					msnweather['Precip2'] = line.split('precip')[3].split('"')[1] + ' %s' % unichr(37).encode("latin-1")
 #	day 3	#
 				if "<forecast" in line:
 					if not line.split('low')[4].split('"')[1][0] is '-' and not line.split('low')[4].split('"')[1][0] is '0':
@@ -439,14 +439,14 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 					else:
 						hi3weather = line.split('high')[4].split('"')[1] + '%s' % unichr(176).encode("latin-1")
 						msnweather['Hightemp3'] = '%s%s' % (hi3weather, degreetype)
-					msnweather['Temp3'] =  '%s / %s' % (hi3weather, low3weather)
+					msnweather['Temp3'] = '%s / %s' % (hi3weather, low3weather)
 					msnweather['Picon3'] = line.split('skycodeday')[4].split('"')[1]
 					msnweather['Date3'] = line.split('date')[5].split('"')[1].split('-')[2].strip() + '.' + line.split('date')[5].split('"')[1].split('-')[1].strip() + '.' + line.split('date')[5].split('"')[1].split('-')[0].strip()
 					msnweather['Shortdate3'] = line.split('shortday')[5].split('"')[1] + ' ' + line.split('date')[5].split('"')[1].split('-')[2].strip()
 					msnweather['Day3'] = line.split(' day')[5].split('"')[1]
 					msnweather['Shortday3'] = line.split('shortday')[5].split('"')[1]
 					msnweather['Skytext3'] = line.split('skytextday')[4].split('"')[1]
-					msnweather['Precip3'] = line.split('precip')[4].split('"')[1] + ' %s'  % unichr(37).encode("latin-1")
+					msnweather['Precip3'] = line.split('precip')[4].split('"')[1] + ' %s' % unichr(37).encode("latin-1")
 #	day 4	#
 				if "<forecast" in line:
 					if not line.split('low')[5].split('"')[1][0] is '-' and not line.split('low')[5].split('"')[1][0] is '0':
@@ -461,14 +461,14 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 					else:
 						hi4weather = line.split('high')[5].split('"')[1] + '%s' % unichr(176).encode("latin-1")
 						msnweather['Hightemp4'] = '%s%s' % (hi4weather, degreetype)
-					msnweather['Temp4'] =  '%s / %s' % (hi4weather, low4weather)
+					msnweather['Temp4'] = '%s / %s' % (hi4weather, low4weather)
 					msnweather['Picon4'] = line.split('skycodeday')[5].split('"')[1]
 					msnweather['Date4'] = line.split('date')[6].split('"')[1].split('-')[2].strip() + '.' + line.split('date')[6].split('"')[1].split('-')[1].strip() + '.' + line.split('date')[6].split('"')[1].split('-')[0].strip()
 					msnweather['Shortdate4'] = line.split('shortday')[6].split('"')[1] + ' ' + line.split('date')[6].split('"')[1].split('-')[2].strip()
 					msnweather['Day4'] = line.split(' day')[6].split('"')[1]
 					msnweather['Shortday4'] = line.split('shortday')[6].split('"')[1]
 					msnweather['Skytext4'] = line.split('skytextday')[5].split('"')[1]
-					msnweather['Precip4'] = line.split('precip')[5].split('"')[1] + ' %s'  % unichr(37).encode("latin-1")
+					msnweather['Precip4'] = line.split('precip')[5].split('"')[1] + ' %s' % unichr(37).encode("latin-1")
 			except:
 				pass
 #

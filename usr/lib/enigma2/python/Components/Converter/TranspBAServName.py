@@ -49,7 +49,7 @@ class TranspBAServName(Converter, object):
 					s = servicelist.getNext()
 					if not s.valid():
 						break
-					if not (s.flags & (eServiceReference.isMarker|eServiceReference.isDirectory)):
+					if not (s.flags & (eServiceReference.isMarker | eServiceReference.isDirectory)):
 						num += 1
 						if s == ref:
 							return s, num
@@ -107,7 +107,7 @@ class TranspBAServName(Converter, object):
 			from Screens.ChannelSelection import service_types_radio, service_types_tv
 			typestr = ref.getData(0) in (2,10) and service_types_radio or service_types_tv
 			pos = typestr.rfind(':')
-			rootstr = '%s (channelID == %08x%04x%04x) && %s FROM PROVIDERS ORDER BY name' %(typestr[:pos+1],ref.getUnsignedData(4),ref.getUnsignedData(2),ref.getUnsignedData(3),typestr[pos+1:])
+			rootstr = '%s (channelID == %08x%04x%04x) && %s FROM PROVIDERS ORDER BY name' % (typestr[:pos + 1],ref.getUnsignedData(4),ref.getUnsignedData(2),ref.getUnsignedData(3),typestr[pos + 1:])
 			provider_root = eServiceReference(rootstr)
 			serviceHandler = eServiceCenter.getInstance()
 			providerlist = serviceHandler.list(provider_root)
@@ -168,11 +168,11 @@ class TranspBAServName(Converter, object):
 				else:
 					result += type
 			elif f == 'F':	# %F - frequency (dvb-s/s2/c/t) in KHz
-				result += '%d'%(self.tpdata.get('frequency', 0) / 1000)
+				result += '%d' % (self.tpdata.get('frequency', 0) / 1000)
 			elif f == 'f':	# %f - fec_inner (dvb-s/s2/c/t)
 				if type in ('DVB-S','DVB-C'):
 					x = self.tpdata.get('fec_inner', 15)
-					result += x in range(10)+[15] and {0:'Auto',1:'1/2',2:'2/3',3:'3/4',4:'5/6',5:'7/8',6:'8/9',7:'3/5',8:'4/5',9:'9/10',15:'None'}[x] or ''
+					result += x in range(10) + [15] and {0:'Auto',1:'1/2',2:'2/3',3:'3/4',4:'5/6',5:'7/8',6:'8/9',7:'3/5',8:'4/5',9:'9/10',15:'None'}[x] or ''
 				elif type == 'DVB-T':
 					x = self.tpdata.get('code_rate_lp', 5)
 					result += x in range(6) and {0:'1/2',1:'2/3',2:'3/4',3:'5/6',4:'7/8',5:'Auto'}[x] or ''
@@ -182,7 +182,7 @@ class TranspBAServName(Converter, object):
 			elif f == 'O':	# %O - orbital_position (dvb-s/s2)
 				if type == 'DVB-S':
 					x = self.tpdata.get('orbital_position', 0)
-					result += x > 1800 and "%d.%d°W"%((3600-x)/10, (3600-x)%10) or "%d.%d°E"%(x/10, x%10)
+					result += x > 1800 and "%d.%d°W" % ((3600 - x) / 10, (3600 - x) % 10) or "%d.%d°E" % (x / 10, x % 10)
 			elif f == 'M':	# %M - modulation (dvb-s/s2/c)
 				x = self.tpdata.get('modulation', 1)
 				if type == 'DVB-S':
@@ -195,7 +195,7 @@ class TranspBAServName(Converter, object):
 					result += x in range(4) and {0:'H',1:'V',2:'L',3:'R'}[x] or '?'
 			elif f == 'Y':	# %Y - symbol_rate (dvb-s/s2/c)
 				if type in ('DVB-S','DVB-C'):
-					result += '%d'%(self.tpdata.get('symbol_rate', 0) / 1000)
+					result += '%d' % (self.tpdata.get('symbol_rate', 0) / 1000)
 			elif f == 'r':	# %r - rolloff (dvb-s2)
 				x = self.tpdata.get('rolloff')
 				if not x is None:
@@ -234,9 +234,9 @@ class TranspBAServName(Converter, object):
 					result += x in range(5) and {0:'None',1:'1',2:'2',3:'4',4:'Auto'}[x] or ''
 			else:
 				result += f
-			if pos+1 >= l:
+			if pos + 1 >= l:
 				break
-			fmt = fmt[pos+1:]
+			fmt = fmt[pos + 1:]
 		return result
 
 	def getSatelliteName(self, ref):
@@ -255,7 +255,7 @@ class TranspBAServName(Converter, object):
 					from Components.NimManager import nimmanager
 					name = str(nimmanager.getSatDescription(orbpos))
 				except:
-					name = orbpos > 1800 and "%d.%d°W"%((3600-orbpos)/10, (3600-orbpos)%10) or "%d.%d°E"%(orbpos/10, orbpos%10)
+					name = orbpos > 1800 and "%d.%d°W" % ((3600 - orbpos) / 10, (3600 - orbpos) % 10) or "%d.%d°E" % (orbpos / 10, orbpos % 10)
 		return name
 
 	@cached
@@ -317,13 +317,13 @@ class TranspBAServName(Converter, object):
 				elif f == 'S':	# %S - Satellite
 					ret += self.getSatelliteName(ref or eServiceReference(info.getInfoString(iServiceInformation.sServiceref)))
 				elif f in 'TtsFfiOMpYroclhmgbe':
-					ret += self.getTransponderInfo(info, ref, '%'+f)
+					ret += self.getTransponderInfo(info, ref, '%' + f)
 				else:
 					ret += f
-				if pos+1 >= l:
+				if pos + 1 >= l:
 					break
-				tmp = tmp[pos+1:]
-			return '%s'%(ret.replace('N/A', ''))
+				tmp = tmp[pos + 1:]
+			return '%s' % (ret.replace('N/A', ''))
 
 	text = property(getText)
 
