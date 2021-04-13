@@ -20,7 +20,7 @@ class TranspBARef(Poll, Converter, object):
             refstr = playref.toString()
             if "%3a//" in refstr:
                 ref = refstr.split(":")
-                refservice = ref[10].replace("%3a",":")
+                refservice = ref[10].replace("%3a", ":")
                 return refservice
             else:
                 return ""
