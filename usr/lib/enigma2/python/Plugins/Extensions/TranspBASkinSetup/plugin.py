@@ -89,10 +89,10 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 					current.value = False
 			msg = _("The 'WeatherMSN' plugin is required to display weather information. Do you want to install it now?")
 			self.session.openWithCallback(installWeatherMsnCb, MessageBox, msg, MessageBox.TYPE_YESNO)
-			
+
 	def restart(self):
 		msg = _("Your receiver will be restarted in order to apply the new skin settings. Do you want to proceed?")
-		self.session.openWithCallback(self.applySettings, MessageBox, msg, MessageBox.TYPE_YESNO, timeout=10)			
+		self.session.openWithCallback(self.applySettings, MessageBox, msg, MessageBox.TYPE_YESNO, timeout=10)
 
 	def applySettings(self, answer):
 		if answer is True:
@@ -131,17 +131,17 @@ def patchSkin():
 		value = {
 			"simple": "SecondInfoBar_a",
 			"full": "SecondInfoBar_bc",
-			"full_bottom": "SecondInfoBar_bc"		
+			"full_bottom": "SecondInfoBar_bc"
 			}
 		updates = []
 
 		for line in lines:
 
 			if "<panel name=\"SecondInfoBar_" in line:
-				updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "SecondInfoBar_bc"))			
+				updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "SecondInfoBar_bc"))
 			else:
 				updates.append(line)
-		return updates	
+		return updates
 
 	def applyWeather(lines):
 		value = {
@@ -164,7 +164,7 @@ def patchSkin():
 		with open(SKIN_NAME, "r") as fd:
 			lines = fd.readlines()
 			lines = applyColor(lines)
-			lines = applyInfobarStyle(lines)	
+			lines = applyInfobarStyle(lines)
 			lines = applyInfobarStyle1(lines)
 			lines = applyWeather(lines)
 			with open(SKIN_NAME, "w") as fd:

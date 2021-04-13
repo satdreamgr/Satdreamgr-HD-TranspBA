@@ -639,5 +639,3 @@ class TranspBACaidInfo2(Poll, Converter, object):
 
 	def changed(self, what):
 		Converter.changed(self, (self.CHANGED_POLL,))
-
-

@@ -14,7 +14,7 @@ class TranspBACamd(Poll, Converter, object):
                 Poll.__init__(self)
                 self.poll_interval = 2000
                 self.poll_enabled = True
-                
+
         @cached
         def getText(self):
                 service = self.source.service
@@ -50,7 +50,7 @@ class TranspBACamd(Poll, Converter, object):
                                 serlist = ""
                                 camdlist = ""
                         return ("%s %s" % (serlist, camdlist))
-                
+
                 if serlist is not None:
                         try:
                                 cardserver = ""
@@ -72,9 +72,9 @@ class TranspBACamd(Poll, Converter, object):
                                 pass
                 else:
                         emu = "NA"
-                        
+
                 return "%s %s" % (cardserver.split('\n')[0], emu.split('\n')[0])
-                
+
         text = property(getText)
 
         def changed(self, what):

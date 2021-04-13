@@ -10,7 +10,7 @@ class TranspBAAlwaysTrue(Converter, object):
 	@cached
 	def getBoolean(self):
 		return True
-		
+
 	boolean = property(getBoolean)
 
 	def changed(self, what):

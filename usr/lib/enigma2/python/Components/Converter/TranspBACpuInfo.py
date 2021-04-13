@@ -33,4 +33,3 @@ class TranspBACpuInfo(Converter):
 		return ""
 
 	text = property(getText)
-
