@@ -202,7 +202,7 @@ def menu(menuid, **kwargs):
 def autostart(reason, **kwargs):
 	if reason == 0 and config.skin.primary_skin.value == "Satdreamgr-HD-TranspBA/skin.xml":
 		if not patchSkin():
-			print "[TranspBASkinSetup] Error: Unable to update skin!"
+			print("[TranspBASkinSetup] Error: Unable to update skin!")
 
 
 def Plugins(**kwargs):
