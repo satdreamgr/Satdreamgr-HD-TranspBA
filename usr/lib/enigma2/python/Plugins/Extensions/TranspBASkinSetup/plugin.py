@@ -1,6 +1,7 @@
-from . import _
+from os.path import isfile
+
 from Components.ActionMap import ActionMap
-from Components.config import config, ConfigSubsection, ConfigSelection, ConfigYesNo, getConfigListEntry
+from Components.config import ConfigSelection, ConfigSubsection, ConfigYesNo, config, getConfigListEntry
 from Components.ConfigList import ConfigListScreen
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
@@ -9,10 +10,9 @@ from Screens.Console import Console
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Screens.Standby import TryQuitMainloop
-from Tools.Directories import fileExists, resolveFilename, SCOPE_CURRENT_SKIN, SCOPE_PLUGINS
-from shutil import move
-import os.path
+from Tools.Directories import SCOPE_CURRENT_SKIN, SCOPE_PLUGINS, resolveFilename
 
+from . import _
 
 SKIN_NAME = resolveFilename(SCOPE_CURRENT_SKIN, "skin.xml")
 WEATHER_PLUGIN = resolveFilename(SCOPE_PLUGINS, 'Extensions/WeatherMSN/plugin.pyo')
@@ -81,7 +81,7 @@ class TranspBASkinSetup(ConfigListScreen, Screen):
 	def checkWeatherConfig(self):
 		weather = config.plugins.SatdreamgrTranspBA.weather
 		current = self["config"].getCurrent()[1]
-		if current == weather and current.value is True and not os.path.isfile(WEATHER_PLUGIN):
+		if current == weather and current.value is True and not isfile(WEATHER_PLUGIN):
 			def installWeatherMsnCb(answer):
 				if answer is True:
 					self.session.openWithCallback(self.restart, Console, _("Installing WeatherMSN plugin..."), ["opkg install enigma2-plugin-extensions-weathermsn"])
@@ -182,7 +182,7 @@ def main(session, **kwargs):
 		if "<panel name=\"WeatherMSN_off\" />" in f.read():
 			weather.value = False # for compatibility with existing configs
 			weather.save()
-	if weather.value is True and not os.path.isfile(WEATHER_PLUGIN):
+	if weather.value is True and not isfile(WEATHER_PLUGIN):
 		def confirmedCb(answer):
 			if answer is True:
 				weather.value = False

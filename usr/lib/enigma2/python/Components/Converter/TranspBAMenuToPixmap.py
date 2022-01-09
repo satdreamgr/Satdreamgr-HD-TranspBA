@@ -1,7 +1,3 @@
-# -*- coding: UTF-8 -*-
-#
-# Converter - TranspBAMenuToPixmap
-# Developer - SatDreamGr
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Tools.Directories import SCOPE_CURRENT_SKIN, resolveFilename

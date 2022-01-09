@@ -1,13 +1,8 @@
-# -*- coding: UTF-8 -*-
-#
-# Converter - TranspBAAudioTrack
-# Developer - SatDreamGr
-from Poll import Poll
 from Components.Converter.Converter import Converter
 from Components.Converter.PliExtraInfo import codec_data
-from enigma import iServiceInformation, iPlayableService, iAudioTrackInfo
-from Components.config import config
+from Components.Converter.Poll import Poll
 from Components.Element import cached
+from enigma import iServiceInformation
 
 
 class TranspBAAudioTrack(Poll, Converter, object):

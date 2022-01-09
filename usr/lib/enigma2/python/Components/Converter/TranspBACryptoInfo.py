@@ -1,9 +1,10 @@
-#
-from enigma import iServiceInformation
+from os import stat
+
 from Components.Converter.Converter import Converter
+from Components.Converter.Poll import Poll
 from Components.Element import cached
-from Poll import Poll
-import os
+from enigma import iServiceInformation
+
 ECM_INFO = '/tmp/ecm.info'
 old_ecm_mtime = None
 data = None
@@ -193,7 +194,7 @@ class TranspBACryptoInfo(Poll, Converter, object):
         global old_ecm_mtime
         global data
         try:
-            ecm_mtime = os.stat(ECM_INFO).st_mtime
+            ecm_mtime = stat(ECM_INFO).st_mtime
         except:
             ecm_mtime = None
 

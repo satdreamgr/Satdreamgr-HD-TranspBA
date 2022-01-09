@@ -3,13 +3,14 @@
 #  ver 1.2.2 28.12.2014
 #
 #  Coded by bigroma & 2boom
+#
+from os import stat
 
 from Components.Converter.Converter import Converter
-from enigma import iServiceInformation, iPlayableService
-from Tools.Directories import fileExists
+from Components.Converter.Poll import Poll
 from Components.Element import cached
-from Poll import Poll
-import os
+from enigma import iServiceInformation
+from Tools.Directories import fileExists
 
 info = {}
 old_ecm_mtime = None
@@ -522,8 +523,8 @@ class TranspBACaidInfo2(Poll, Converter, object):
 		service = self.source.service
 		if service:
 			try:
-				ecm_mtime = os.stat("/tmp/ecm.info").st_mtime
-				if not os.stat("/tmp/ecm.info").st_size > 0:
+				ecm_mtime = stat("/tmp/ecm.info").st_mtime
+				if not stat("/tmp/ecm.info").st_size > 0:
 					info = {}
 				if ecm_mtime == old_ecm_mtime:
 					return info

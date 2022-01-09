@@ -1,8 +1,9 @@
-from Renderer import Renderer
+from os.path import join as pathjoin
+
+from Components.Renderer.Renderer import Renderer
 from enigma import ePixmap, eTimer
-from Tools.Directories import fileExists, SCOPE_CURRENT_SKIN, resolveFilename
+from Tools.Directories import SCOPE_CURRENT_SKIN, fileExists, resolveFilename
 from Tools.LoadPixmap import LoadPixmap
-import os.path
 
 
 class TranspBAPiconProv(Renderer):
@@ -57,7 +58,7 @@ class TranspBAPiconProv(Renderer):
 
     def findPicon(self, serviceName):
         for path in self.searchPaths:
-            pngname = os.path.join(path, self.path, serviceName + '.png')
+            pngname = pathjoin(path, self.path, serviceName + '.png')
             if fileExists(pngname):
                 return pngname
         return ''

@@ -3,12 +3,12 @@
 # by m0rphU & LN
 # thanks to Shaderman & Dr.Best
 #
-from Components.Converter.Converter import Converter
-from Components.Element import cached
-from Components.VariableText import VariableText
-from enigma import eLabel, eEPGCache, eServiceReference
-from time import localtime, strftime, mktime, time
 from datetime import datetime
+from time import localtime, mktime, strftime, time
+
+from Components.Converter.Converter import Converter
+from Components.Element import cached, ElementError
+from enigma import eEPGCache, eServiceReference
 
 
 class TranspBANextEvents(Converter, object):

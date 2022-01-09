@@ -1,8 +1,7 @@
-from enigma import iServiceInformation, iPlayableService
 from Components.Converter.Converter import Converter
+from Components.Converter.Poll import Poll
 from Components.Element import cached
-from Components.config import config
-from Poll import Poll
+from enigma import iServiceInformation
 
 
 class TranspBAResolution(Poll, Converter, object):

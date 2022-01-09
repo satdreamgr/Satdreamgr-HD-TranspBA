@@ -18,17 +18,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
-from Tools.Directories import fileExists, pathExists
+from os import stat
+from time import time
+
+from Components.config import config
+from Components.Console import Console
 from Components.Converter.Converter import Converter
+from Components.Converter.Poll import Poll
 from Components.Element import cached
-from Components.config import config, configfile
-from Components.Console import Console as iConsole
-from Components.Language import language
-from os import environ
-from Poll import Poll
-import gettext
-import time
-import os
+from Tools.Directories import fileExists
 
 weather_city = config.plugins.weathermsn.city.value
 degreetype = config.plugins.weathermsn.degreetype.value
@@ -256,7 +254,7 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 		elif type == "Precip4":
 			self.type = self.PRECIP4
 
-		self.iConsole = iConsole()
+		self.iConsole = Console()
 		self.poll_interval = time_update_ms
 		self.poll_enabled = True
 
@@ -286,7 +284,7 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 			}
 		low0weather, hi0weather, low1weather, hi1weather, low2weather, hi2weather, low3weather, hi3weather, low4weather, hi4weather = '', '', '', '', '', '', '', '', '', ''
 		if fileExists("/tmp/weathermsn.xml"):
-			if int((time.time() - os.stat("/tmp/weathermsn.xml").st_mtime) // 60) >= time_update:
+			if int((time() - stat("/tmp/weathermsn.xml").st_mtime) // 60) >= time_update:
 				self.get_xmlfile()
 		else:
 			self.get_xmlfile()

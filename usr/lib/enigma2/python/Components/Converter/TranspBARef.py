@@ -1,9 +1,7 @@
 ﻿from Components.Converter.Converter import Converter
+from Components.Converter.Poll import Poll
 from Components.Element import cached
-from Poll import Poll
-import NavigationInstance
-from ServiceReference import ServiceReference
-from Components.config import config
+from NavigationInstance import instance as navInstance
 
 
 class TranspBARef(Poll, Converter, object):
@@ -16,7 +14,7 @@ class TranspBARef(Poll, Converter, object):
             self.type = self.ServiceRef
 
     def refservice(self):
-        playref = NavigationInstance.instance.getCurrentlyPlayingServiceReference()
+        playref = navInstance.getCurrentlyPlayingServiceReference()
         if playref:
             refstr = playref.toString()
             if "%3a//" in refstr:

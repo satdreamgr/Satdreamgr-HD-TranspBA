@@ -1,11 +1,7 @@
-from enigma import iServiceInformation
 from Components.Converter.Converter import Converter
-from Components.ConfigList import ConfigListScreen
-from Components.config import config, getConfigListEntry, ConfigText, ConfigPassword, ConfigClock, ConfigSelection, ConfigSubsection, ConfigYesNo, configfile, NoSave
+from Components.Converter.Poll import Poll
 from Components.Element import cached
 from Tools.Directories import fileExists
-from Poll import Poll
-import os
 
 
 class TranspBACamd(Poll, Converter, object):

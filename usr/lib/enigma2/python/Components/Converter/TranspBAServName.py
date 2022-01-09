@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
-from Components.Converter.Converter import Converter
-from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr, eServiceReference, eServiceCenter, eTimer
-from Components.Element import cached
 from Components.config import config
+from Components.Converter.Converter import Converter
+from Components.Element import cached
+from enigma import eServiceCenter, eServiceReference, eTimer, iPlayableService, iPlayableServicePtr, iServiceInformation
 
 
 class TranspBAServName(Converter, object):

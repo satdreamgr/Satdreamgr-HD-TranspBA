@@ -1,8 +1,8 @@
 #(c) 2boom mod 2012
 # 26.09.2012 added search mountpoints
-from Renderer import Renderer
+from Components.Renderer.Renderer import Renderer
 from enigma import ePixmap, eTimer
-from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
+from Tools.Directories import SCOPE_CURRENT_SKIN, SCOPE_SKIN_IMAGE,fileExists, resolveFilename
 from Tools.LoadPixmap import LoadPixmap
 
 
