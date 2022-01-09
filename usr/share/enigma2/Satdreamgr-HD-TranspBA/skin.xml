@@ -2598,7 +2598,7 @@ self["list"].instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, (720 - wsizey) / 2))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, (720 - wsizey) // 2))
     </applet>
   </screen>
   <!-- Choice Box -->

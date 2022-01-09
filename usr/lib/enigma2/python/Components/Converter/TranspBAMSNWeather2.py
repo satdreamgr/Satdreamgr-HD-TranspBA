@@ -286,7 +286,7 @@ class TranspBAMSNWeather2(Poll, Converter, object):
 			}
 		low0weather, hi0weather, low1weather, hi1weather, low2weather, hi2weather, low3weather, hi3weather, low4weather, hi4weather = '', '', '', '', '', '', '', '', '', ''
 		if fileExists("/tmp/weathermsn.xml"):
-			if int((time.time() - os.stat("/tmp/weathermsn.xml").st_mtime) / 60) >= time_update:
+			if int((time.time() - os.stat("/tmp/weathermsn.xml").st_mtime) // 60) >= time_update:
 				self.get_xmlfile()
 		else:
 			self.get_xmlfile()

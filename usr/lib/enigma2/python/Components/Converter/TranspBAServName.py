@@ -169,7 +169,7 @@ class TranspBAServName(Converter, object):
 				else:
 					result += type
 			elif f == 'F':	# %F - frequency (dvb-s/s2/c/t) in KHz
-				result += '%d' % (self.tpdata.get('frequency', 0) / 1000)
+				result += '%d' % (self.tpdata.get('frequency', 0) // 1000)
 			elif f == 'f':	# %f - fec_inner (dvb-s/s2/c/t)
 				if type in ('DVB-S', 'DVB-C'):
 					x = self.tpdata.get('fec_inner', 15)
@@ -183,7 +183,7 @@ class TranspBAServName(Converter, object):
 			elif f == 'O':	# %O - orbital_position (dvb-s/s2)
 				if type == 'DVB-S':
 					x = self.tpdata.get('orbital_position', 0)
-					result += x > 1800 and "%d.%d°W" % ((3600 - x) / 10, (3600 - x) % 10) or "%d.%d°E" % (x / 10, x % 10)
+					result += x > 1800 and "%d.%d°W" % ((3600 - x) // 10, (3600 - x) % 10) or "%d.%d°E" % (x // 10, x % 10)
 			elif f == 'M':	# %M - modulation (dvb-s/s2/c)
 				x = self.tpdata.get('modulation', 1)
 				if type == 'DVB-S':
@@ -196,7 +196,7 @@ class TranspBAServName(Converter, object):
 					result += x in range(4) and {0: 'H', 1: 'V', 2: 'L', 3: 'R'}[x] or '?'
 			elif f == 'Y':	# %Y - symbol_rate (dvb-s/s2/c)
 				if type in ('DVB-S', 'DVB-C'):
-					result += '%d' % (self.tpdata.get('symbol_rate', 0) / 1000)
+					result += '%d' % (self.tpdata.get('symbol_rate', 0) // 1000)
 			elif f == 'r':	# %r - rolloff (dvb-s2)
 				x = self.tpdata.get('rolloff')
 				if not x is None:
@@ -256,7 +256,7 @@ class TranspBAServName(Converter, object):
 					from Components.NimManager import nimmanager
 					name = str(nimmanager.getSatDescription(orbpos))
 				except:
-					name = orbpos > 1800 and "%d.%d°W" % ((3600 - orbpos) / 10, (3600 - orbpos) % 10) or "%d.%d°E" % (orbpos / 10, orbpos % 10)
+					name = orbpos > 1800 and "%d.%d°W" % ((3600 - orbpos) // 10, (3600 - orbpos) % 10) or "%d.%d°E" % (orbpos // 10, orbpos % 10)
 		return name
 
 	@cached

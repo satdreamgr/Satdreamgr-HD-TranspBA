@@ -85,7 +85,7 @@ class TranspBANextEvents(Converter, object):
 		begin = strftime("%H:%M", localtime(event.getBeginTime()))
 		end = strftime("%H:%M", localtime(event.getBeginTime() + event.getDuration()))
 		title = event.getEventName()#[:self.titleWidth]
-		duration = "%d min" % (event.getDuration() / 60)
+		duration = "%d min" % (event.getDuration() // 60)
 		if self.showDuration == self.withDuration:
 			f = "{begin} - {end:10}{title:<} -  {duration}"
 			return f.format(begin=begin, end=end, title=title, duration=duration)
