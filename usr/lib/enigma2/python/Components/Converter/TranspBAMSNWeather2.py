@@ -44,7 +44,7 @@ time_update = 20
 time_update_ms = 3000
 
 
-class TranspBAMSNWeather2(Poll, Converter, object):
+class TranspBAMSNWeather2(Converter, Poll):
 
 	VFD = 1
 	DATE = 2

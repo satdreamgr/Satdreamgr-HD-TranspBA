@@ -28,7 +28,7 @@ from enigma import eServiceReference
 from Screens.InfoBar import InfoBar
 
 
-class TranspBARefString(Converter, object):
+class TranspBARefString(Converter):
 	CURRENT = 0
 	EVENT = 1
 

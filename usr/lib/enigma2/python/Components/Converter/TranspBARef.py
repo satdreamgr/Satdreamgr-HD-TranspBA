@@ -4,7 +4,7 @@ from Components.Element import cached
 from NavigationInstance import instance as navInstance
 
 
-class TranspBARef(Poll, Converter, object):
+class TranspBARef(Converter, Poll):
     ServiceRef = 0
 
     def __init__(self, type):

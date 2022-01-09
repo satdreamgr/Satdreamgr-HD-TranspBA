@@ -134,9 +134,7 @@ def patchSkin():
 			"full_bottom": "SecondInfoBar_bc"
 			}
 		updates = []
-
 		for line in lines:
-
 			if "<panel name=\"SecondInfoBar_" in line:
 				updates.append("    <panel name=\"%s\" />\n" % value.get(config.plugins.SatdreamgrTranspBA.infobarStyle.value, "SecondInfoBar_bc"))
 			else:

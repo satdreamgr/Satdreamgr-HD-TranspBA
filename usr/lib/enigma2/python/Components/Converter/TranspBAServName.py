@@ -4,7 +4,7 @@ from Components.Element import cached
 from enigma import eServiceCenter, eServiceReference, eTimer, iPlayableService, iPlayableServicePtr, iServiceInformation
 
 
-class TranspBAServName(Converter, object):
+class TranspBAServName(Converter):
 	NAME = 0
 	NUMBER = 1
 	BOUQUET = 2

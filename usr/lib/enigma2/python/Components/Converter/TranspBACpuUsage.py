@@ -78,7 +78,7 @@ class TranspBACpuUsage(Converter):
 	range = 100
 
 
-class TranspBACpuUsageMonitor(Poll, object):
+class TranspBACpuUsageMonitor(Poll):
 
 	def __init__(self):
 		Poll.__init__(self)

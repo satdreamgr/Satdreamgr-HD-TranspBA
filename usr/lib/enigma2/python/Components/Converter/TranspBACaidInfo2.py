@@ -16,7 +16,7 @@ info = {}
 old_ecm_mtime = None
 
 
-class TranspBACaidInfo2(Poll, Converter, object):
+class TranspBACaidInfo2(Converter, Poll):
 	CAID = 0
 	PID = 1
 	PROV = 2

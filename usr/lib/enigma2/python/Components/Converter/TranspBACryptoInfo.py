@@ -10,7 +10,7 @@ old_ecm_mtime = None
 data = None
 
 
-class TranspBACryptoInfo(Poll, Converter, object):
+class TranspBACryptoInfo(Converter, Poll):
     IRDCRYPT = 0
     SECACRYPT = 1
     NAGRACRYPT = 2
@@ -187,7 +187,6 @@ class TranspBACryptoInfo(Poll, Converter, object):
                 caid = caid.upper()
                 if caid == iscaid:
                     return True
-
         return False
 
     def getCaid(self):
@@ -211,11 +210,9 @@ class TranspBACryptoInfo(Poll, Converter, object):
                 d = line.split(':', 1)
                 if len(d) > 1:
                     info[d[0].strip()] = d[1].strip()
-
             caid = info.get('caid', '')
         except:
             caid = ''
-
         if caid:
             idx = caid.index('x')
             caid = caid[idx + 1:]

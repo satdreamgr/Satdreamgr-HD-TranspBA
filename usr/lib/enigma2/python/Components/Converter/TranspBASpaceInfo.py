@@ -8,7 +8,7 @@ from Components.Element import cached
 SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB", "EB"]
 
 
-class TranspBASpaceInfo(Poll, Converter):
+class TranspBASpaceInfo(Converter, Poll):
 	HDDTEMP = 0
 	LOADAVG = 1
 	MEMTOTAL = 2

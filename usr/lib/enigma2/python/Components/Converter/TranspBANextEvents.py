@@ -11,7 +11,7 @@ from Components.Element import cached, ElementError
 from enigma import eEPGCache, eServiceReference
 
 
-class TranspBANextEvents(Converter, object):
+class TranspBANextEvents(Converter):
 	Event1 = 0
 	Event2 = 1
 	Event3 = 2
@@ -59,7 +59,6 @@ class TranspBANextEvents(Converter, object):
 			curEvent = self.source.getCurrentEvent()
 			if curEvent:
 				self.epgcache.startTimeQuery(eServiceReference(ref.toString()), curEvent.getBeginTime() + curEvent.getDuration())
-				nextEvents = []
 				for i in range(self.type): # Hole x-1 Eintraege aus dem EPG
 					self.epgcache.getNextTimeEntry()
 				#nextEvent.getEventId(), sRef, nextEvent.getBeginTime(), nextEvent.getDuration(), nextEvent.getEventName(), nextEvent.getShortDescription(), nextEvent.getExtendedDescription()

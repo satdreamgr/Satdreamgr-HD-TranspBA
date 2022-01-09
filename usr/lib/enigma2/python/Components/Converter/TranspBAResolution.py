@@ -4,7 +4,7 @@ from Components.Element import cached
 from enigma import iServiceInformation
 
 
-class TranspBAResolution(Poll, Converter, object):
+class TranspBAResolution(Converter, Poll):
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		Poll.__init__(self)

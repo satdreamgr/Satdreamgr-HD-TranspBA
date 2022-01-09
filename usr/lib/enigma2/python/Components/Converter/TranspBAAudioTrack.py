@@ -5,7 +5,7 @@ from Components.Element import cached
 from enigma import iServiceInformation
 
 
-class TranspBAAudioTrack(Poll, Converter, object):
+class TranspBAAudioTrack(Converter, Poll):
 	atype = 0
 	vtype = 1
 	avtype = 2

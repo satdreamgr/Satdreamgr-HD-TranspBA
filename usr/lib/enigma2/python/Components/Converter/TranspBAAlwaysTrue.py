@@ -2,7 +2,7 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 
 
-class TranspBAAlwaysTrue(Converter, object):
+class TranspBAAlwaysTrue(Converter):
 
 	def __init__(self, type):
 		Converter.__init__(self, type)
