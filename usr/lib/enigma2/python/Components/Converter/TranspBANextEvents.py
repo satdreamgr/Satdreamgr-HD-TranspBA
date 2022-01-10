@@ -59,7 +59,7 @@ class TranspBANextEvents(Converter):
 			curEvent = self.source.getCurrentEvent()
 			if curEvent:
 				self.epgcache.startTimeQuery(eServiceReference(ref.toString()), curEvent.getBeginTime() + curEvent.getDuration())
-				for i in range(self.type): # Hole x-1 Eintraege aus dem EPG
+				for i in range(self.type): # Get x-1 items from EPG
 					self.epgcache.getNextTimeEntry()
 				#nextEvent.getEventId(), sRef, nextEvent.getBeginTime(), nextEvent.getDuration(), nextEvent.getEventName(), nextEvent.getShortDescription(), nextEvent.getExtendedDescription()
 				next = self.epgcache.getNextTimeEntry()

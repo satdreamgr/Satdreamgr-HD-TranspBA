@@ -63,7 +63,7 @@ class TranspBACpuUsage(Converter):
 
 	@cached
 	def getValue(self):
-		if self.type in range(len(self.percentlist)):
+		if self.type in list(range(len(self.percentlist))):
 			i = self.type
 		else:
 			i = 0
