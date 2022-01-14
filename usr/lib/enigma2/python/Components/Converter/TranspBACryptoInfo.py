@@ -204,7 +204,7 @@ class TranspBACryptoInfo(Converter, Poll):
 
     def getCaidFromEcmInfo(self):
         try:
-            ecm = open(ECM_INFO, 'rb').readlines()
+            ecm = open(ECM_INFO, 'r').readlines()
             info = {}
             for line in ecm:
                 d = line.split(':', 1)
