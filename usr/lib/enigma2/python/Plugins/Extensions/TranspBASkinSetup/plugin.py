@@ -15,7 +15,7 @@ from Tools.Directories import SCOPE_CURRENT_SKIN, SCOPE_PLUGINS, resolveFilename
 from . import _
 
 SKIN_NAME = resolveFilename(SCOPE_CURRENT_SKIN, "skin.xml")
-WEATHER_PLUGIN = resolveFilename(SCOPE_PLUGINS, 'Extensions/WeatherMSN/plugin.pyo')
+WEATHER_PLUGIN = resolveFilename(SCOPE_PLUGINS, 'Extensions/WeatherMSN/plugin.py')
 
 
 config.plugins.SatdreamgrTranspBA = ConfigSubsection()
