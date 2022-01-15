@@ -259,7 +259,7 @@ class TranspBAMSNWeather2(Converter, Poll):
 		self.poll_enabled = True
 
 	def control_xml(self, result, retval, extra_args):
-		if retval is not 0:
+		if retval != 0:
 			self.write_none()
 
 	def write_none(self):
@@ -291,24 +291,24 @@ class TranspBAMSNWeather2(Converter, Poll):
 		if not fileExists("/tmp/weathermsn.xml"):
 			self.write_none()
 			return info
-		if fileExists("/tmp/weathermsn.xml") and open("/tmp/weathermsn.xml").read() is 'None':
+		if fileExists("/tmp/weathermsn.xml") and open("/tmp/weathermsn.xml").read() == 'None':
 			return info
 		for line in open("/tmp/weathermsn.xml"):
 			try:
 				if "<weather" in line:
 					msnweather['Location'] = line.split('weatherlocationname')[1].split('"')[1].split(',')[0]
-					if not line.split('timezone')[1].split('"')[1][0] is '0':
+					if line.split('timezone')[1].split('"')[1][0] != '0':
 						msnweather['Timezone'] = '+' + line.split('timezone')[1].split('"')[1] + ' h'
 					else:
 						msnweather['Timezone'] = line.split('timezone')[1].split('"')[1] + ' h'
 					msnweather['Latitude'] = line.split(' lat')[1].split('"')[1]
 					msnweather['Longitude'] = line.split(' long')[1].split('"')[1]
 				if "<current" in line:
-					if not line.split('temperature')[1].split('"')[1][0] is '-' and not line.split('temperature')[1].split('"')[1][0] is '0':
+					if line.split('temperature')[1].split('"')[1][0] == '-' or line.split('temperature')[1].split('"')[1][0] == '0':
 						msnweather['Temp'] = '+' + line.split('temperature')[1].split('"')[1] + '%s%s' % (chr(176).encode("latin-1"), degreetype)
 					else:
 						msnweather['Temp'] = line.split('temperature')[1].split('"')[1] + '%s%s' % (chr(176).encode("latin-1"), degreetype)
-					if not line.split('feelslike')[1].split('"')[1][0] is '-' and not line.split('feelslike')[1].split('"')[1][0] is '0':
+					if line.split('feelslike')[1].split('"')[1][0] == '-' or line.split('feelslike')[1].split('"')[1][0] == '0':
 						msnweather['Feelslike'] = '+' + line.split('feelslike')[1].split('"')[1] + '%s%s' % (chr(176).encode("latin-1"), degreetype)
 					else:
 						msnweather['Feelslike'] = line.split('feelslike')[1].split('"')[1] + '%s%s' % (chr(176).encode("latin-1"), degreetype)
@@ -360,13 +360,13 @@ class TranspBAMSNWeather2(Converter, Poll):
 					msnweather['Shortday'] = line.split('shortday')[1].split('"')[1]
 #	today	#
 				if "<forecast" in line:
-					if not line.split('low')[1].split('"')[1][0] is '-' and not line.split('low')[1].split('"')[1][0] is '0':
+					if line.split('low')[1].split('"')[1][0] == '-' or line.split('low')[1].split('"')[1][0] == '0':
 						low0weather = '+' + line.split('low')[1].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp0'] = '%s%s' % (low0weather, degreetype)
 					else:
 						low0weather = line.split('low')[1].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp0'] = '%s%s' % (low0weather, degreetype)
-					if not line.split('high')[1].split('"')[1][0] is '-' and not line.split('high')[1].split('"')[1][0] is '0':
+					if line.split('high')[1].split('"')[1][0] == '-' or line.split('high')[1].split('"')[1][0] == '0':
 						hi0weather = '+' + line.split('high')[1].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Hightemp0'] = '%s%s' % (hi0weather, degreetype)
 					else:
@@ -382,13 +382,13 @@ class TranspBAMSNWeather2(Converter, Poll):
 					msnweather['Precip0'] = line.split('precip')[1].split('"')[1] + ' %s' % chr(37).encode("latin-1")
 #	day 1	#
 				if "<forecast" in line:
-					if not line.split('low')[2].split('"')[1][0] is '-' and not line.split('low')[2].split('"')[1][0] is '0':
+					if line.split('low')[2].split('"')[1][0] == '-' or line.split('low')[2].split('"')[1][0] == '0':
 						low1weather = '+' + line.split('low')[2].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp1'] = '%s%s' % (low1weather, degreetype)
 					else:
 						low1weather = line.split('low')[2].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp1'] = '%s%s' % (low1weather, degreetype)
-					if not line.split('high')[2].split('"')[1][0] is '-' and not line.split('high')[2].split('"')[1][0] is '0':
+					if line.split('high')[2].split('"')[1][0] == '-' or line.split('high')[2].split('"')[1][0] == '0':
 						hi1weather = '+' + line.split('high')[2].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Hightemp1'] = '%s%s' % (hi1weather, degreetype)
 					else:
@@ -404,13 +404,13 @@ class TranspBAMSNWeather2(Converter, Poll):
 					msnweather['Precip1'] = line.split('precip')[2].split('"')[1] + ' %s' % chr(37).encode("latin-1")
 #	day 2	#
 				if "<forecast" in line:
-					if not line.split('low')[3].split('"')[1][0] is '-' and not line.split('low')[3].split('"')[1][0] is '0':
+					if line.split('low')[3].split('"')[1][0] == '-' or line.split('low')[3].split('"')[1][0] == '0':
 						low2weather = '+' + line.split('low')[3].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp2'] = '%s%s' % (low2weather, degreetype)
 					else:
 						low2weather = line.split('low')[3].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp2'] = '%s%s' % (low2weather, degreetype)
-					if not line.split('high')[3].split('"')[1][0] is '-' and not line.split('high')[3].split('"')[1][0] is '0':
+					if line.split('high')[3].split('"')[1][0] == '-' or line.split('high')[3].split('"')[1][0] == '0':
 						hi2weather = '+' + line.split('high')[3].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Hightemp2'] = '%s%s' % (hi2weather, degreetype)
 					else:
@@ -426,13 +426,13 @@ class TranspBAMSNWeather2(Converter, Poll):
 					msnweather['Precip2'] = line.split('precip')[3].split('"')[1] + ' %s' % chr(37).encode("latin-1")
 #	day 3	#
 				if "<forecast" in line:
-					if not line.split('low')[4].split('"')[1][0] is '-' and not line.split('low')[4].split('"')[1][0] is '0':
+					if line.split('low')[4].split('"')[1][0] == '-' or line.split('low')[4].split('"')[1][0] == '0':
 						low3weather = '+' + line.split('low')[4].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp3'] = '%s%s' % (low3weather, degreetype)
 					else:
 						low3weather = line.split('low')[4].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp3'] = '%s%s' % (low3weather, degreetype)
-					if not line.split('high')[4].split('"')[1][0] is '-' and not line.split('high')[4].split('"')[1][0] is '0':
+					if line.split('high')[4].split('"')[1][0] == '-' or line.split('high')[4].split('"')[1][0] == '0':
 						hi3weather = '+' + line.split('high')[4].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Hightemp3'] = '%s%s' % (hi3weather, degreetype)
 					else:
@@ -448,13 +448,13 @@ class TranspBAMSNWeather2(Converter, Poll):
 					msnweather['Precip3'] = line.split('precip')[4].split('"')[1] + ' %s' % chr(37).encode("latin-1")
 #	day 4	#
 				if "<forecast" in line:
-					if not line.split('low')[5].split('"')[1][0] is '-' and not line.split('low')[5].split('"')[1][0] is '0':
+					if line.split('low')[5].split('"')[1][0] == '-' or line.split('low')[5].split('"')[1][0] == '0':
 						low4weather = '+' + line.split('low')[5].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp4'] = '%s%s' % (low4weather, degreetype)
 					else:
 						low4weather = line.split('low')[5].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Lowtemp4'] = '%s%s' % (low4weather, degreetype)
-					if not line.split('high')[5].split('"')[1][0] is '-' and not line.split('high')[5].split('"')[1][0] is '0':
+					if line.split('high')[5].split('"')[1][0] == '-' or line.split('high')[5].split('"')[1][0] == '0':
 						hi4weather = '+' + line.split('high')[5].split('"')[1] + '%s' % chr(176).encode("latin-1")
 						msnweather['Hightemp4'] = '%s%s' % (hi4weather, degreetype)
 					else:
