@@ -291,7 +291,7 @@ class TranspBAMSNWeather2(Converter, Poll):
 		if not fileExists("/tmp/weathermsn.xml"):
 			self.write_none()
 			return info
-		if fileExists("/tmp/weathermsn.xml") and open("/tmp/weathermsn.xml", encoding="UTF-8").read() == '':
+		if fileExists("/tmp/weathermsn.xml") and open("/tmp/weathermsn.xml", encoding="UTF-8").read() == 'None':
 			return info
 		for line in open("/tmp/weathermsn.xml", encoding="UTF-8"):
 			try:
