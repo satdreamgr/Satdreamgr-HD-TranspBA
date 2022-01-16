@@ -291,9 +291,9 @@ class TranspBAMSNWeather2(Converter, Poll):
 		if not fileExists("/tmp/weathermsn.xml"):
 			self.write_none()
 			return info
-		if fileExists("/tmp/weathermsn.xml") and open("/tmp/weathermsn.xml").read() == 'None':
+		if fileExists("/tmp/weathermsn.xml") and open("/tmp/weathermsn.xml", encoding="UTF-8").read() == '':
 			return info
-		for line in open("/tmp/weathermsn.xml"):
+		for line in open("/tmp/weathermsn.xml", encoding="UTF-8"):
 			try:
 				if "<weather" in line:
 					msnweather['Location'] = line.split('weatherlocationname')[1].split('"')[1].split(',')[0]
