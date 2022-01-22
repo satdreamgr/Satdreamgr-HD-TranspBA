@@ -75,7 +75,6 @@ class TranspBAMSNWeather2(Converter, Poll):
 			'Date3': '', 'Shortdate3': '', 'Day3': '', 'Shortday3': '', 'Temp3': '', 'Lowtemp3': '', 'Hightemp3': '', 'Picon3': '', 'Skytext3': '', 'Precip3': '',
 			'Date4': '', 'Shortdate4': '', 'Day4': '', 'Shortday4': '', 'Temp4': '', 'Lowtemp4': '', 'Hightemp4': '', 'Picon4': '', 'Skytext4': '', 'Precip4': '',
 			}
-		low0weather, hi0weather, low1weather, hi1weather, low2weather, hi2weather, low3weather, hi3weather, low4weather, hi4weather = '', '', '', '', '', '', '', '', '', ''
 		if fileExists("/tmp/weathermsn.xml"):
 			if int((time() - stat("/tmp/weathermsn.xml").st_mtime) // 60) >= time_update:
 				self.get_xmlfile()
@@ -92,8 +91,8 @@ class TranspBAMSNWeather2(Converter, Poll):
 			msnweather['Location'] = tree.weather.attrib['weatherlocationname'].split(',')[0]
 			timezone = float(tree.weather.attrib['timezone'])
 			msnweather['Timezone'] = '+' + tree.weather.attrib['timezone'] if timezone > 0 else tree.weather.attrib['timezone']
-			msnweather['Latitude'] = latitude = tree.weather.attrib['lat'].replace(',', '.')
-			msnweather['Longitude'] = longitude = tree.weather.attrib['long'].replace(',', '.')
+			msnweather['Latitude'] = tree.weather.attrib['lat'].replace(',', '.')
+			msnweather['Longitude'] = tree.weather.attrib['long'].replace(',', '.')
 
 			msnweather['Time'] = tree.weather.current.attrib['observationtime']
 			msnweather['Point'] = tree.weather.current.attrib['observationpoint']
