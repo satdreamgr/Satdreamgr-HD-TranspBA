@@ -1894,7 +1894,7 @@
   </screen>
   <screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" title="Audio" backgroundColor="transparent">
     <panel name="PTTemplate" />
-    <widget name="config" position="440,140" size="620,120" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" font="Regular; 22" zPosition="1" />
+    <widget name="config" position="440,140" size="620,120" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" font="Regular; 17" zPosition="1" />
     <ePixmap name="" position="239,290" size="128,128" pixmap="iconssc/audio.png" zPosition="4" transparent="0" alphatest="blend" />
     <widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="418,143" size="30,30" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide" />
